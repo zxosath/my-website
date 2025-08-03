@@ -161,6 +161,9 @@ html {
 
 .logo-icon {
   transition: all 0.3s ease;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .logo-container:hover .logo-icon {
@@ -1275,6 +1278,9 @@ html {
 
 .footer-logo-icon {
   transition: all 0.3s ease;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 
 .footer-logo:hover .footer-logo-icon {

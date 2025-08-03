@@ -2,53 +2,6 @@ import { useState, useEffect } from 'react'
 import { ChevronDown, Menu, X, ArrowRight, Play, Calendar, BookOpen, Headphones, Users, HelpCircle, FileText, Building, Star, CheckCircle, TrendingUp, DollarSign, Activity, BarChart3, Settings, Globe, Shield, Zap } from 'lucide-react'
 import './App.css'
 
-// VIRIDTY Logo Component
-const ViridityLogo = ({ size = 40, className = "" }) => {
-  return (
-    <svg 
-      width={size} 
-      height={size} 
-      viewBox="0 0 100 100" 
-      className={className}
-      fill="none" 
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      {/* Cloud Outline */}
-      <path 
-        d="M25 45C25 35 35 25 50 25C65 25 75 35 75 45C75 55 65 65 50 65C35 65 25 55 25 45Z" 
-        stroke="#1a5f3a" 
-        strokeWidth="4" 
-        fill="none"
-      />
-      
-      {/* Upward Arrow with Leaf Element */}
-      <path 
-        d="M35 55C35 55 40 50 45 50C50 50 55 55 60 45C65 35 70 30 75 25" 
-        stroke="#4ade80" 
-        strokeWidth="4" 
-        strokeLinecap="round"
-        fill="none"
-      />
-      
-      {/* Arrow Head */}
-      <path 
-        d="M70 30L75 25L80 30" 
-        stroke="#4ade80" 
-        strokeWidth="4" 
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
-      
-      {/* Leaf/Swirl Element */}
-      <path 
-        d="M45 50C45 50 42 48 40 50C38 52 40 55 45 55C50 55 52 52 50 50C48 48 45 50 45 50Z" 
-        fill="#4ade80"
-      />
-    </svg>
-  )
-}
-
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [productDropdownOpen, setProductDropdownOpen] = useState(false)
@@ -111,7 +64,7 @@ function App() {
         <div className="header-container">
           <div className="logo">
             <div className="logo-container">
-              <ViridityLogo size={40} className="logo-icon" />
+              <img src="/IMG_3102.PNG" alt="VIRIDTY Logo" className="logo-icon" />
               <h2>VIRIDTY</h2>
             </div>
           </div>
@@ -581,7 +534,7 @@ function App() {
           <div className="footer-content">
             <div className="footer-section">
               <div className="footer-logo">
-                <ViridityLogo size={32} className="footer-logo-icon" />
+                <img src="/IMG_3102.PNG" alt="VIRIDTY Logo" className="footer-logo-icon" />
                 <h3>VIRIDTY</h3>
               </div>
               <div className="footer-links">
