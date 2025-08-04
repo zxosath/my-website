@@ -503,7 +503,7 @@ html {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #1e293b 0%, #334155 20%, #6366f1 40%, #8b5cf6 60%, #ec4899 80%, #16a34a 100%);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 25%, #475569 40%, #6366f1 60%, #16a34a 100%);
   background-size: 300% 300%;
   animation: gradientShift 12s ease infinite;
   color: white;
