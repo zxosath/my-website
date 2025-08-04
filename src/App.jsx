@@ -153,12 +153,16 @@ function App() {
 
         {mobileMenuOpen && (
           <div className="mobile-menu">
-            <a href="#" onClick={() => setMobileMenuOpen(false)}>Product</a>
-            <a href="#" onClick={() => setMobileMenuOpen(false)}>Resources</a>
-            <a href="#" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
-            <a href="#" onClick={() => setMobileMenuOpen(false)}>Company</a>
-            <button className="btn-secondary">Log In</button>
-            <button className="btn-primary" onClick={() => { scrollToSection('cta'); setMobileMenuOpen(false); }}>Get a Demo</button>
+            <div className="mobile-menu-links">
+              <a href="#" onClick={() => setMobileMenuOpen(false)}>Product</a>
+              <a href="#" onClick={() => setMobileMenuOpen(false)}>Resources</a>
+              <a href="#" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
+              <a href="#" onClick={() => setMobileMenuOpen(false)}>Company</a>
+            </div>
+            <div className="mobile-menu-actions">
+              <button className="btn-secondary">Log In</button>
+              <button className="btn-primary" onClick={() => { scrollToSection('cta'); setMobileMenuOpen(false); }}>Get a Demo</button>
+            </div>
           </div>
         )}
       </header>
