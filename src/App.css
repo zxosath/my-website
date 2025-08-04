@@ -579,12 +579,10 @@ html {
 }
 
 .dashboard-preview {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 24px;
+  background: white;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   animation: float 6s ease-in-out infinite;
@@ -592,15 +590,13 @@ html {
 
 .dashboard-preview:hover {
   transform: perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1.02);
-  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.2);
 }
 
 .dashboard-header {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
+  background: #f8fafc;
   padding: 1.25rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .dashboard-tabs {
@@ -614,26 +610,20 @@ html {
   font-size: 0.875rem;
   font-weight: 500;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
-  color: rgba(255, 255, 255, 0.8);
+  color: #64748b;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .tab.active {
-  background: rgba(37, 99, 235, 0.9);
+  background: #2563eb;
   color: white;
   transform: scale(1.05);
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 .tab:hover:not(.active) {
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  border-color: rgba(255, 255, 255, 0.2);
+  background: #e2e8f0;
+  color: #475569;
 }
 
 .dashboard-content {
@@ -643,15 +633,13 @@ html {
 }
 
 .metric-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  background: #f8fafc;
   padding: 1.5rem;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .metric-card::before {
@@ -672,12 +660,11 @@ html {
 
 .metric-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .metric-card h3 {
-  color: rgba(255, 255, 255, 0.9);
+  color: #64748b;
   font-size: 0.875rem;
   font-weight: 600;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
@@ -685,7 +672,7 @@ html {
 }
 
 .metric-value {
-  color: white;
+  color: #1e293b;
   font-size: 1.75rem;
   font-weight: 700;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
@@ -693,7 +680,6 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Stats Section */
