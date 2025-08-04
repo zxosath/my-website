@@ -171,7 +171,7 @@ html {
 }
 
 .logo h2 {
-  background: linear-gradient(135deg, #16a34a 0%, #22c55e 50%, #4ade80 100%);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #16a34a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -184,7 +184,7 @@ html {
 }
 
 .logo-container:hover h2 {
-  background: linear-gradient(135deg, #15803d 0%, #16a34a 50%, #22c55e 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #16a34a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -367,7 +367,7 @@ html {
 
 /* Buttons */
 .btn-primary {
-  background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #16a34a 100%);
   color: white;
   border: none;
   padding: 0.875rem 1.75rem;
@@ -397,9 +397,9 @@ html {
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #15803d 0%, #16a34a 100%);
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #15803d 100%);
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(22, 163, 74, 0.3);
+  box-shadow: 0 10px 25px rgba(30, 64, 175, 0.3);
 }
 
 .btn-secondary {
@@ -425,7 +425,7 @@ html {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #16a34a 0%, #22c55e 50%, #4ade80 100%);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 25%, #6366f1 50%, #8b5cf6 75%, #16a34a 100%);
   background-size: 200% 200%;
   animation: gradientShift 8s ease infinite;
   color: white;
@@ -582,7 +582,7 @@ html {
   color: #1e293b;
   font-size: 1.75rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #16a34a, #22c55e);
+  background: linear-gradient(135deg, #6366f1, #16a34a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -628,7 +628,7 @@ html {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #16a34a, #22c55e);
+  background: linear-gradient(90deg, #6366f1, #16a34a);
   transform: scaleX(0);
   transition: transform 0.4s ease;
 }
@@ -651,7 +651,7 @@ html {
 }
 
 .stat-item:hover h3 {
-  color: #16a34a;
+  color: #6366f1;
 }
 
 .stat-item p {
@@ -664,7 +664,7 @@ html {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #16a34a;
+  color: #6366f1;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.875rem;
@@ -672,7 +672,7 @@ html {
 }
 
 .read-more:hover {
-  color: #15803d;
+  color: #16a34a;
   transform: translateX(5px);
 }
 
@@ -846,7 +846,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(22, 163, 74, 0.05), rgba(34, 197, 94, 0.05));
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(22, 163, 74, 0.05));
   opacity: 0;
   transition: opacity 0.4s ease;
 }
@@ -857,11 +857,11 @@ html {
 
 .benefit-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 25px 50px rgba(22, 163, 74, 0.1);
+  box-shadow: 0 25px 50px rgba(99, 102, 241, 0.1);
 }
 
 .benefit-icon {
-  color: #16a34a;
+  color: #6366f1;
   margin-bottom: 1.5rem;
   transition: all 0.3s ease;
 }
@@ -965,13 +965,13 @@ html {
   left: 0;
   width: 100%;
   height: 3px;
-  background: #16a34a;
+  background: linear-gradient(90deg, #6366f1, #16a34a);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
 
 .tab-btn.active {
-  color: #16a34a;
+  color: #6366f1;
 }
 
 .tab-btn.active::after {
@@ -1061,7 +1061,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(22, 163, 74, 0.05), rgba(34, 197, 94, 0.05));
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(22, 163, 74, 0.05));
   opacity: 0;
   transition: opacity 0.4s ease;
 }
@@ -1072,15 +1072,15 @@ html {
 
 .enterprise-stats .stat:hover {
   transform: translateY(-10px);
-  box-shadow: 0 25px 50px rgba(22, 163, 74, 0.1);
+  box-shadow: 0 25px 50px rgba(99, 102, 241, 0.1);
 }
 
 .enterprise-stats .stat h3 {
-  color: #16a34a;
+  color: #6366f1;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #16a34a, #22c55e);
+  background: linear-gradient(135deg, #6366f1, #16a34a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1129,7 +1129,7 @@ html {
   top: 1rem;
   left: 1rem;
   font-size: 4rem;
-  color: #16a34a;
+  color: #6366f1;
   opacity: 0.1;
   font-family: serif;
 }
@@ -1200,7 +1200,7 @@ html {
 }
 
 .cta-benefits .benefit:hover {
-  color: #16a34a;
+  color: #6366f1;
   transform: translateY(-2px);
 }
 
@@ -1235,8 +1235,8 @@ html {
 
 .form-field input:focus {
   outline: none;
-  border-color: #16a34a;
-  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
   transform: translateY(-2px);
 }
 
@@ -1558,7 +1558,7 @@ html {
   }
   
   .tab-btn.active {
-  border-bottom: 2px solid #16a34a;
+  border-bottom: 2px solid #6366f1;
 }
   
   .tab-content {
