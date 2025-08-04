@@ -237,41 +237,7 @@ function App() {
         </div>
       </section>
 
-      {/* Customer Logos */}
-      <section className="customers">
-        <div className="container">
-          <div className="customer-logos">
-            <div className="logo-grid">
-              <div className="customer-logo animate-on-scroll">TechCorp</div>
-              <div className="customer-logo animate-on-scroll">DataFlow</div>
-              <div className="customer-logo animate-on-scroll">CloudScale</div>
-              <div className="customer-logo animate-on-scroll">InnovateTech</div>
-              <div className="customer-logo animate-on-scroll">DigitalFirst</div>
-              <div className="customer-logo animate-on-scroll">CloudNative</div>
-              <div className="customer-logo animate-on-scroll">ScaleUp</div>
-              <div className="customer-logo animate-on-scroll">TechStart</div>
-              <div className="customer-logo animate-on-scroll">CloudOps</div>
-              <div className="customer-logo animate-on-scroll">DataWorks</div>
-              <div className="customer-logo animate-on-scroll">InnovateCloud</div>
-              <div className="customer-logo animate-on-scroll">TechFlow</div>
-              <div className="customer-logo animate-on-scroll">CloudTech</div>
-              <div className="customer-logo animate-on-scroll">ScaleTech</div>
-              <div className="customer-logo animate-on-scroll">DigitalScale</div>
-              <div className="customer-logo animate-on-scroll">CloudFirst</div>
-              <div className="customer-logo animate-on-scroll">TechScale</div>
-              <div className="customer-logo animate-on-scroll">DataTech</div>
-              <div className="customer-logo animate-on-scroll">InnovateScale</div>
-              <div className="customer-logo animate-on-scroll">CloudWorks</div>
-              <div className="customer-logo animate-on-scroll">TechWorks</div>
-              <div className="customer-logo animate-on-scroll">ScaleWorks</div>
-              <div className="customer-logo animate-on-scroll">DigitalWorks</div>
-              <div className="customer-logo animate-on-scroll">CloudScale</div>
-              <div className="customer-logo animate-on-scroll">TechFlow</div>
-              <div className="customer-logo animate-on-scroll">DataFlow</div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Challenges Section */}
       <section className="challenges">

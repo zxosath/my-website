@@ -1489,31 +1489,43 @@ html {
   }
   
   /* Stats and cards mobile improvements */
-  .stats-grid,
-  .challenges-grid,
-  .benefits-grid,
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .challenges-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
   .testimonials-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
   
-  .stat-item,
-  .challenge-card,
-  .benefit-card,
+  .stat-item {
+    padding: 1rem;
+  }
+  
+  .challenge-card {
+    padding: 1.5rem;
+  }
+  
+  .benefit-card {
+    padding: 1rem;
+  }
+  
   .testimonial-card {
     padding: 1.5rem;
   }
   
-  /* Customer logos mobile improvements */
-  .logo-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-  
-  .customer-logo {
-    padding: 1rem;
-    font-size: 0.75rem;
-  }
+
   
   /* CTA section mobile improvements */
   .cta-benefits {
@@ -1568,19 +1580,19 @@ html {
   /* Enterprise stats mobile improvements */
   .enterprise-stats .stats-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
   }
   
   .enterprise-stats .stat {
-    padding: 2rem 1rem;
+    padding: 1rem 0.5rem;
   }
   
   .enterprise-stats .stat h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   
   .enterprise-stats .stat p {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -1666,30 +1678,43 @@ html {
     font-size: 1.75rem;
   }
   
-  .stats-grid,
-  .challenges-grid,
-  .benefits-grid,
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .challenges-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  
   .testimonials-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
   
-  .stat-item,
-  .challenge-card,
-  .benefit-card,
+  .stat-item {
+    padding: 1rem;
+  }
+  
+  .challenge-card {
+    padding: 1.25rem;
+  }
+  
+  .benefit-card {
+    padding: 1rem;
+  }
+  
   .testimonial-card {
     padding: 1.25rem;
   }
   
-  .logo-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
-  }
-  
-  .customer-logo {
-    padding: 0.75rem;
-    font-size: 0.625rem;
-  }
+
   
   .cta-benefits {
     gap: 0.75rem;
@@ -1705,7 +1730,7 @@ html {
   }
   
   .enterprise-stats .stats-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .enterprise-stats .stat {
