@@ -314,7 +314,7 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
+      </div>
       </section>
 
       {/* Savings as a Service Section */}
@@ -344,7 +344,7 @@ function App() {
                 onClick={() => handleTabChange('Resellers')}
               >
                 MSPs/Partners
-              </button>
+        </button>
             </div>
             
             <div className="tab-content">
@@ -549,7 +549,7 @@ function App() {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
   )
 }
 
