@@ -510,8 +510,6 @@ html {
   position: relative;
   overflow: hidden;
   box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.1);
-  -webkit-mask: linear-gradient(to bottom, transparent 0%, transparent 85%, rgba(0,0,0,0.1) 90%, rgba(0,0,0,0.3) 95%, black 100%);
-  mask: linear-gradient(to bottom, transparent 0%, transparent 85%, rgba(0,0,0,0.1) 90%, rgba(0,0,0,0.3) 95%, black 100%);
 }
 
 .hero::before {
