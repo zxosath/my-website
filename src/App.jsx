@@ -552,14 +552,4 @@ function App() {
       </div>
   )
 }
-export default function App() {
-  return (
-    <div className="min-h-screen flex flex-col justify-center items-center text-center px-4">
-      <h1 className="text-3xl font-bold mb-4">🚧 Site Paused Temporarily</h1>
-      <p className="text-gray-600 max-w-md">
-        This project is currently offline to preserve edge limits. Please check back later.
-      </p>
-    </div>
-  );
-}
 export default App
