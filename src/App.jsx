@@ -65,7 +65,7 @@ function App() {
           <div className="logo">
             <div className="logo-container">
               <img src="/IMG_3102.PNG" alt="VIRIDTY Logo" className="logo-icon" />
-              <h2>VIRIDTY</h2>
+              <h2>VIRIDITY</h2>
             </div>
           </div>
           
@@ -115,7 +115,7 @@ function App() {
                     </div>
                   </div>
                   <div className="dropdown-section">
-                    <h4>Using VIRIDTY</h4>
+                    <h4>Using VIRIDITY</h4>
                     <div className="resource-links">
                       <a href="#"><HelpCircle size={16} /> Help Center</a>
                       <a href="#"><FileText size={16} /> Legal</a>
@@ -131,7 +131,7 @@ function App() {
               <span>Company <ChevronDown size={16} /></span>
               {companyDropdownOpen && (
                 <div className="dropdown-menu">
-                  <a href="#">About VIRIDTY</a>
+                  <a href="#">About VIRIDITY</a>
                   <a href="#">News</a>
                   <a href="#">Contact</a>
                   <a href="#">Careers</a>
@@ -267,7 +267,7 @@ function App() {
       {/* Why VIRIDTY Section */}
       <section className="why-prosperops">
         <div className="container">
-          <h2 className="animate-on-scroll">Why VIRIDTY</h2>
+                        <h2 className="animate-on-scroll">Why VIRIDITY</h2>
           <div className="benefits-grid">
             <div className="benefit-card animate-on-scroll">
               <div className="benefit-icon">
@@ -285,7 +285,7 @@ function App() {
                 <Settings size={32} />
               </div>
               <h3>Offload work, scale FinOps</h3>
-              <p>Managing AWS costs via manual reporting tools can lead to suboptimal results. Give this work to VIRIDTY automation and eliminate human involvement.</p>
+              <p>Managing AWS costs via manual reporting tools can lead to suboptimal results. Give this work to VIRIDITY automation and eliminate human involvement.</p>
               <div className="benefit-actions">
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
                 <button className="btn-secondary" onClick={() => scrollToSection('cta')}>Request a Demo</button>
@@ -296,7 +296,7 @@ function App() {
                 <BarChart3 size={32} />
               </div>
               <h3>Gain insights, avoid analysis paralysis</h3>
-              <p>Unlike traditional AWS cost tools that overwhelm practitioners with excess data, VIRIDTY not only provides immediate results, but also tracks core optimization KPIs.</p>
+              <p>Unlike traditional AWS cost tools that overwhelm practitioners with excess data, VIRIDITY not only provides immediate results, but also tracks core optimization KPIs.</p>
               <div className="benefit-actions">
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
                 <button className="btn-secondary" onClick={() => scrollToSection('cta')}>Request a Demo</button>
@@ -307,7 +307,7 @@ function App() {
                 <DollarSign size={32} />
               </div>
               <h3>Increase ROI, decrease wasted spend</h3>
-              <p>Maximize the value of your AWS investments with VIRIDTY. It generates incremental savings that more than offsets the charge.</p>
+              <p>Maximize the value of your AWS investments with VIRIDITY. It generates incremental savings that more than offsets the charge.</p>
               <div className="benefit-actions">
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
                 <button className="btn-secondary" onClick={() => scrollToSection('cta')}>Request a Demo</button>
@@ -351,7 +351,7 @@ function App() {
               {activeTab === 'FinOps' && (
                 <div className="practitioner-card">
                   <h3>Higher margins without the work</h3>
-                  <p>VIRIDTY automatically manages and optimizes AWS discount instruments.</p>
+                  <p>VIRIDITY automatically manages and optimizes AWS discount instruments.</p>
                   <ul>
                     <li>Save more money with less waste than on-demand AWS pricing</li>
                     <li>Maximize AWS Savings Plans and Reserved Instance flexibility</li>
@@ -370,7 +370,7 @@ function App() {
                     <li>Zero dependencies on AWS infrastructure and resources</li>
                     <li>AWS financial commitments won't dictate architecture</li>
                   </ul>
-                  <p>VIRIDTY autonomously manages AWS discounts, so engineers can focus on building.</p>
+                  <p>VIRIDITY autonomously manages AWS discounts, so engineers can focus on building.</p>
                   <button className="btn-primary" onClick={() => scrollToSection('cta')}>Request a Demo</button>
                 </div>
               )}
@@ -383,7 +383,7 @@ function App() {
                     <li>Cross-org AWS financial reporting</li>
                     <li>AWS commitment load balancing</li>
                   </ul>
-                  <p>VIRIDTY is purpose built for the AWS partner use case.</p>
+                  <p>VIRIDITY is purpose built for the AWS partner use case.</p>
                   <button className="btn-primary" onClick={() => scrollToSection('cta')}>Request a Demo</button>
                 </div>
               )}
@@ -396,7 +396,7 @@ function App() {
       <section className="enterprise-stats">
         <div className="container">
           <h2 className="animate-on-scroll">Enterprise-scale for sophisticated AWS cost optimizers.</h2>
-          <p className="animate-on-scroll">VIRIDTY manages AWS cost optimization for DevOps and FinOps teams from startups to enterprises and AWS partners across the globe.</p>
+          <p className="animate-on-scroll">VIRIDITY manages AWS cost optimization for DevOps and FinOps teams from startups to enterprises and AWS partners across the globe.</p>
           
           <div className="stats-grid">
             <div className="stat animate-on-scroll">
@@ -422,11 +422,11 @@ function App() {
       {/* Testimonials */}
       <section className="testimonials">
         <div className="container">
-          <h2 className="animate-on-scroll">What customers say about VIRIDTY</h2>
+          <h2 className="animate-on-scroll">What customers say about VIRIDITY</h2>
           <div className="testimonials-grid">
             <div className="testimonial-card animate-on-scroll">
               <div className="testimonial-content">
-                <p>"VIRIDTY saves us a considerable amount of money automating AWS cost optimization tasks. The pricing model based on savings makes it essentially free."</p>
+                <p>"VIRIDITY saves us a considerable amount of money automating AWS cost optimization tasks. The pricing model based on savings makes it essentially free."</p>
               </div>
               <div className="testimonial-author">
                 <h4>Sarah Johnson</h4>
@@ -435,7 +435,7 @@ function App() {
             </div>
             <div className="testimonial-card animate-on-scroll">
               <div className="testimonial-content">
-                <p>"Action-oriented AWS cost management—we set parameters for coverage and risk, and VIRIDTY takes actions with the best AWS financial instruments to meet our goals."</p>
+                <p>"Action-oriented AWS cost management—we set parameters for coverage and risk, and VIRIDITY takes actions with the best AWS financial instruments to meet our goals."</p>
               </div>
               <div className="testimonial-author">
                 <h4>Enterprise Customer</h4>
@@ -460,7 +460,7 @@ function App() {
         <div className="container">
           <h2 className="animate-on-scroll">Request a Free AWS Cost Analysis</h2>
           <p className="animate-on-scroll">3 out of 4 customers see at least a 40% reduction in AWS costs.</p>
-          <p className="animate-on-scroll">Get a deeper understanding of your current AWS spend and savings, and find out how much more you can save with VIRIDTY!</p>
+          <p className="animate-on-scroll">Get a deeper understanding of your current AWS spend and savings, and find out how much more you can save with VIRIDITY!</p>
           
           <div className="cta-benefits">
             <div className="benefit animate-on-scroll">
@@ -505,7 +505,7 @@ function App() {
             <div className="footer-section">
               <div className="footer-logo">
                 <img src="/IMG_3102.PNG" alt="VIRIDTY Logo" className="footer-logo-icon" />
-                <h3>VIRIDTY</h3>
+                <h3>VIRIDITY</h3>
               </div>
               <div className="footer-links">
                 <a href="#">Home</a>

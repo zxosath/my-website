@@ -1490,7 +1490,7 @@ html {
   
   /* Hero section mobile improvements */
   .hero {
-    padding: 4rem 0 3rem;
+    padding: 8rem 0 3rem;
   }
   
   .hero-content {
@@ -1712,7 +1712,7 @@ html {
   }
   
   .hero {
-    padding: 3rem 0 2rem;
+    padding: 6rem 0 2rem;
   }
   
   .hero-text h1 {
