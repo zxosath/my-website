@@ -142,8 +142,8 @@ function App() {
           </nav>
 
           <div className="header-actions">
-            <button className="btn-secondary">Log In</button>
-            <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get a Demo</button>
+            <button className="btn-secondary desktop-only">Log In</button>
+            <button className="btn-primary desktop-only" onClick={() => scrollToSection('cta')}>Get a Demo</button>
           </div>
 
           <button className="mobile-menu-btn" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>

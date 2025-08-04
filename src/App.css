@@ -120,9 +120,8 @@ html {
 
 /* Header */
 .header {
-  background: rgba(0, 0, 0, 0.05);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.05) 50%, transparent 100%);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: fixed;
   top: 0;
   left: 0;
@@ -171,9 +170,17 @@ html {
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
+.header.scrolled .logo-icon {
+  filter: none;
+}
+
 .logo-container:hover .logo-icon {
   transform: scale(1.1);
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.header.scrolled .logo-container:hover .logo-icon {
+  filter: none;
 }
 
 .logo h2 {
@@ -204,7 +211,8 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-shadow: none;
+  filter: none;
 }
 
 .header.scrolled .logo-container:hover h2 {
@@ -212,6 +220,8 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-shadow: none;
+  filter: none;
 }
 
 .nav-desktop {
