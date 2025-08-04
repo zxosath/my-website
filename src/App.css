@@ -367,7 +367,7 @@ html {
 
 /* Buttons */
 .btn-primary {
-  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
   color: white;
   border: none;
   padding: 0.875rem 1.75rem;
@@ -397,9 +397,9 @@ html {
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  background: linear-gradient(135deg, #15803d 0%, #16a34a 100%);
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 10px 25px rgba(22, 163, 74, 0.3);
 }
 
 .btn-secondary {
@@ -425,7 +425,7 @@ html {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #16a34a 0%, #22c55e 50%, #4ade80 100%);
   background-size: 200% 200%;
   animation: gradientShift 8s ease infinite;
   color: white;
@@ -582,7 +582,7 @@ html {
   color: #1e293b;
   font-size: 1.75rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  background: linear-gradient(135deg, #16a34a, #22c55e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -628,7 +628,7 @@ html {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  background: linear-gradient(90deg, #16a34a, #22c55e);
   transform: scaleX(0);
   transition: transform 0.4s ease;
 }
@@ -651,7 +651,7 @@ html {
 }
 
 .stat-item:hover h3 {
-  color: #2563eb;
+  color: #16a34a;
 }
 
 .stat-item p {
@@ -664,7 +664,7 @@ html {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #2563eb;
+  color: #16a34a;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.875rem;
@@ -672,7 +672,7 @@ html {
 }
 
 .read-more:hover {
-  color: #1d4ed8;
+  color: #15803d;
   transform: translateX(5px);
 }
 
@@ -846,7 +846,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(29, 78, 216, 0.05));
+  background: linear-gradient(135deg, rgba(22, 163, 74, 0.05), rgba(34, 197, 94, 0.05));
   opacity: 0;
   transition: opacity 0.4s ease;
 }
@@ -857,11 +857,11 @@ html {
 
 .benefit-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 25px 50px rgba(37, 99, 235, 0.1);
+  box-shadow: 0 25px 50px rgba(22, 163, 74, 0.1);
 }
 
 .benefit-icon {
-  color: #2563eb;
+  color: #16a34a;
   margin-bottom: 1.5rem;
   transition: all 0.3s ease;
 }
@@ -965,13 +965,13 @@ html {
   left: 0;
   width: 100%;
   height: 3px;
-  background: #2563eb;
+  background: #16a34a;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
 
 .tab-btn.active {
-  color: #2563eb;
+  color: #16a34a;
 }
 
 .tab-btn.active::after {
@@ -1061,7 +1061,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(29, 78, 216, 0.05));
+  background: linear-gradient(135deg, rgba(22, 163, 74, 0.05), rgba(34, 197, 94, 0.05));
   opacity: 0;
   transition: opacity 0.4s ease;
 }
@@ -1072,15 +1072,15 @@ html {
 
 .enterprise-stats .stat:hover {
   transform: translateY(-10px);
-  box-shadow: 0 25px 50px rgba(37, 99, 235, 0.1);
+  box-shadow: 0 25px 50px rgba(22, 163, 74, 0.1);
 }
 
 .enterprise-stats .stat h3 {
-  color: #2563eb;
+  color: #16a34a;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  background: linear-gradient(135deg, #16a34a, #22c55e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1129,7 +1129,7 @@ html {
   top: 1rem;
   left: 1rem;
   font-size: 4rem;
-  color: #2563eb;
+  color: #16a34a;
   opacity: 0.1;
   font-family: serif;
 }
@@ -1200,7 +1200,7 @@ html {
 }
 
 .cta-benefits .benefit:hover {
-  color: #2563eb;
+  color: #16a34a;
   transform: translateY(-2px);
 }
 
@@ -1235,8 +1235,8 @@ html {
 
 .form-field input:focus {
   outline: none;
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
   transform: translateY(-2px);
 }
 
@@ -1558,8 +1558,8 @@ html {
   }
   
   .tab-btn.active {
-    border-bottom: 2px solid #2563eb;
-  }
+  border-bottom: 2px solid #16a34a;
+}
   
   .tab-content {
     padding: 2rem 1.5rem;
