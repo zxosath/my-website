@@ -565,8 +565,8 @@ html {
   content: '';
   position: absolute;
   bottom: -2px;
-  left: -20px;
-  right: -20px;
+  left: 0;
+  right: 0;
   height: 2px;
   background: white;
   opacity: 0.9;
@@ -1542,8 +1542,8 @@ html {
   .highlight-significantly::after {
     height: 3px;
     bottom: -2px;
-    left: -15px;
-    right: -15px;
+    left: 0;
+    right: 0;
   }
   
   /* Hero section mobile improvements */
@@ -1783,8 +1783,8 @@ html {
   .highlight-significantly::after {
     height: 2px;
     bottom: -1px;
-    left: -10px;
-    right: -10px;
+    left: 0;
+    right: 0;
   }
   
   .hero {
