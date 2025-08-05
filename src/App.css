@@ -1537,6 +1537,7 @@ html {
     line-height: 1.1;
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
+    white-space: nowrap;
   }
   
   .hero-text p {
@@ -1762,6 +1763,7 @@ html {
   .hero-text h1 {
     font-size: 1.875rem;
     line-height: 1.1;
+    white-space: nowrap;
   }
   
   .hero-text p {
