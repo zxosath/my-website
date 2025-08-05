@@ -542,7 +542,7 @@ html {
 }
 
 .hero-text h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
   line-height: 1.05;
@@ -552,9 +552,6 @@ html {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  white-space: nowrap;
-  overflow-wrap: normal;
-  word-break: keep-all;
 }
 
 .hero-text p {
@@ -1526,7 +1523,7 @@ html {
   
   /* Hero section mobile improvements */
   .hero {
-    padding-top: 8rem;
+    padding: 35rem 0 3rem;
   }
   
   .hero-content {
@@ -1535,12 +1532,11 @@ html {
   }
   
   .hero-text h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
-    white-space: nowrap;
   }
   
   .hero-text p {
@@ -1766,7 +1762,6 @@ html {
   .hero-text h1 {
     font-size: 1.875rem;
     line-height: 1.1;
-    white-space: nowrap;
   }
   
   .hero-text p {
