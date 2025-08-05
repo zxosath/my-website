@@ -1526,7 +1526,7 @@ html {
   
   /* Hero section mobile improvements */
   .hero {
-    padding: 35rem 0 3rem;
+    padding-top: 8rem;
   }
   
   .hero-content {
