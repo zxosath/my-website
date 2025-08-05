@@ -552,6 +552,24 @@ html {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.main-headline {
+  display: block;
+  position: relative;
+}
+
+.fix-text {
+  position: absolute;
+  bottom: -0.5rem;
+  right: -2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transform: rotate(-45deg);
+  color: #16a34a;
+  text-shadow: 0 2px 4px rgba(22, 163, 74, 0.3);
+  animation: pulse 2s ease-in-out infinite;
 }
 
 .hero-text p {
@@ -1539,6 +1557,12 @@ html {
     letter-spacing: -0.02em;
   }
   
+  .fix-text {
+    font-size: 1rem;
+    bottom: -0.25rem;
+    right: -1rem;
+  }
+  
   .hero-text p {
     font-size: 1.125rem;
     font-weight: 500;
@@ -1762,6 +1786,12 @@ html {
   .hero-text h1 {
     font-size: 1.875rem;
     line-height: 1.1;
+  }
+  
+  .fix-text {
+    font-size: 0.75rem;
+    bottom: -0.125rem;
+    right: -0.5rem;
   }
   
   .hero-text p {
