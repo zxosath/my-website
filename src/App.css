@@ -506,7 +506,7 @@ html {
   background-size: 200% 200%;
   animation: gradientShift 25s ease infinite;
   color: white;
-  padding: 40rem 0 6rem;
+  padding: 6rem 0;
   position: relative;
   overflow: hidden;
   box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.1);
@@ -1548,7 +1548,7 @@ html {
   
   /* Hero section mobile improvements */
   .hero {
-    padding: 35rem 0 3rem;
+    padding: 40rem 0 3rem;
   }
   
   .hero-content {
