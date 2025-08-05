@@ -564,11 +564,11 @@ html {
 .highlight-significantly::after {
   content: '';
   position: absolute;
-  bottom: -3px;
-  left: -1px;
-  right: -1px;
-  height: 4px;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10"><path d="M5,5 Q15,2 25,5 T45,5 Q55,8 65,5 T85,5 Q95,2 95,5" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M10,6 Q20,3 30,6 T50,6 Q60,9 70,6 T90,6" stroke="white" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.6"/></svg>') no-repeat;
+  bottom: -4px;
+  left: -2px;
+  right: -2px;
+  height: 8px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><path d="M5,10 Q15,5 25,10 T45,10 Q55,15 65,10 T85,10 Q95,5 95,10" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M10,12 Q20,7 30,12 T50,12 Q60,17 70,12 T90,12" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/></svg>') no-repeat;
   background-size: 100% 100%;
   opacity: 0.9;
 }
