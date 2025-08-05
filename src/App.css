@@ -565,10 +565,10 @@ html {
   content: '';
   position: absolute;
   bottom: -6px;
-  left: -8px;
-  right: -8px;
+  left: -20px;
+  right: -20px;
   height: 12px;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 30"><path d="M10,15 Q50,8 90,12 T170,18 Q210,10 250,15 T330,12 Q370,8 390,15" stroke="white" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M15,17 Q55,10 95,14 T175,20 Q215,12 255,17 T335,14 Q375,10 395,17" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/><path d="M20,19 Q60,12 100,16 T180,22 Q220,14 260,19 T340,16 Q380,12 390,19" stroke="white" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/></svg>') no-repeat;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 30"><path d="M10,15 Q200,8 400,12 T700,18 Q800,10 990,15" stroke="white" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M15,17 Q205,10 405,14 T705,20 Q805,12 995,17" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/><path d="M20,19 Q210,12 410,16 T710,22 Q810,14 990,19" stroke="white" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/></svg>') no-repeat;
   background-size: 100% 100%;
   opacity: 0.9;
 }
