@@ -172,7 +172,7 @@ function App() {
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
-              <h1 className="animate-on-scroll">Tailored AWS</h1>
+              <h1 className="animate-on-scroll">You're most likely overpaying significantly for AWS</h1>
               <p className="animate-on-scroll">Pay less for the same infrastructure. Reallocate the savings where it counts.</p>
               <div className="hero-buttons">
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Start Optimizing</button>
