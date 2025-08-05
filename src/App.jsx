@@ -172,10 +172,10 @@ function App() {
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
-              <h1 className="animate-on-scroll">You're Overpaying for AWS. We Fix That.</h1>
+              <h1 className="animate-on-scroll">You're Overpaying for AWS.<br />We Fix That.</h1>
               <p className="animate-on-scroll">Pay less for the same infrastructure. Reallocate the savings where it counts.</p>
               <div className="hero-buttons">
-                <button className="btn-primary" onClick={() => scrollToSection('cta')}>Enquire</button>
+                <button className="btn-primary" onClick={() => scrollToSection('cta')}>Request Consultation</button>
                 <button className="btn-secondary" onClick={() => scrollToSection('cta')}>Free AWS Cost Analysis</button>
               </div>
             </div>
