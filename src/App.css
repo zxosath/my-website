@@ -557,6 +557,8 @@ html {
 .highlight-significantly {
   position: relative;
   display: inline-block;
+  color: white !important;
+  -webkit-text-fill-color: white !important;
 }
 
 .highlight-significantly::after {
@@ -568,8 +570,21 @@ html {
   height: 2px;
   background: white;
   opacity: 0.9;
-  border-radius: 1px;
-  transform: translateX(1px) scaleX(0.98);
+  transform: translateX(1px) scaleX(0.95);
+  clip-path: polygon(0 0, 85% 0, 90% 100%, 15% 100%);
+}
+
+.highlight-significantly::before {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 2px;
+  right: -2px;
+  height: 1px;
+  background: white;
+  opacity: 0.6;
+  transform: translateX(-1px) scaleX(0.7);
+  clip-path: polygon(10% 0, 95% 0, 100% 100%, 5% 100%);
 }
 
 .hero-text p {
