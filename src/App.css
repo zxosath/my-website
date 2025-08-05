@@ -564,10 +564,10 @@ html {
 .highlight-significantly::after {
   content: '';
   position: absolute;
-  bottom: -6px;
+  bottom: -2px;
   left: -20px;
   right: -20px;
-  height: 3px;
+  height: 2px;
   background: white;
   opacity: 0.9;
 }
@@ -1540,8 +1540,8 @@ html {
   }
 
   .highlight-significantly::after {
-    height: 8px;
-    bottom: -4px;
+    height: 3px;
+    bottom: -2px;
     left: -15px;
     right: -15px;
   }
@@ -1781,8 +1781,8 @@ html {
   }
 
   .highlight-significantly::after {
-    height: 6px;
-    bottom: -3px;
+    height: 2px;
+    bottom: -1px;
     left: -10px;
     right: -10px;
   }
