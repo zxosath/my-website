@@ -143,7 +143,7 @@ function App() {
 
           <div className="header-actions">
             <button className="btn-secondary desktop-only">Log In</button>
-            <button className="btn-primary desktop-only" onClick={() => scrollToSection('cta')}>Get a Demo</button>
+            <button className="btn-primary desktop-only" onClick={() => scrollToSection('cta')}>Get a Free Audit</button>
           </div>
 
           <button className="mobile-menu-btn" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -161,7 +161,7 @@ function App() {
             </div>
             <div className="mobile-menu-actions">
               <button className="btn-secondary">Log In</button>
-              <button className="btn-primary" onClick={() => { scrollToSection('cta'); setMobileMenuOpen(false); }}>Get a Demo</button>
+              <button className="btn-primary" onClick={() => { scrollToSection('cta'); setMobileMenuOpen(false); }}>Get a Free Audit</button>
             </div>
           </div>
         )}
@@ -323,7 +323,7 @@ function App() {
           <h2 className="animate-on-scroll">Reduce your overall AWS costs and see the benefits across your company</h2>
           <h3 className="animate-on-scroll">AWS Cost Optimization For All Cloud Practitioners</h3>
           <p className="animate-on-scroll">We put money back into your AWS budget and generate more savings than our charge.</p>
-          <button className="btn-primary animate-on-scroll" onClick={() => scrollToSection('cta')}>Get a Demo</button>
+          <button className="btn-primary animate-on-scroll" onClick={() => scrollToSection('cta')}>Get a Free Audit</button>
           
           <div className="practitioner-tabs animate-on-scroll">
             <div className="tab-buttons">
@@ -519,7 +519,7 @@ function App() {
             <div className="footer-section">
               <h4>Actions</h4>
               <div className="footer-links">
-                <a href="#" onClick={() => scrollToSection('cta')}>Get a Demo</a>
+                <a href="#" onClick={() => scrollToSection('cta')}>Get a Free Audit</a>
                 <a href="#">Start for Free</a>
                 <a href="#" onClick={() => scrollToSection('cta')}>AWS Cost Analysis</a>
                 <a href="#">Become a Partner</a>
