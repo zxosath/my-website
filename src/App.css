@@ -1514,7 +1514,7 @@ html {
 /* Pricing Section */
 .pricing {
   padding: 200px 0 80px;
-  background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #1a1a1a 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
   position: relative;
   overflow: hidden;
   color: white;
@@ -1528,8 +1528,9 @@ html {
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -1543,7 +1544,10 @@ html {
 .pricing-header h2 {
   font-size: 4rem;
   font-weight: 800;
-  color: #ffffff;
+  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 2rem;
   line-height: 1.1;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -1551,7 +1555,7 @@ html {
 
 .pricing-header p {
   font-size: 1.35rem;
-  color: #f8f9fa;
+  color: #cbd5e1;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
@@ -1568,14 +1572,14 @@ html {
 }
 
 .pricing-card {
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
   border-radius: 24px;
   padding: 3rem;
   box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.3);
   color: white;
 }
 
@@ -1585,9 +1589,9 @@ html {
   top: 0;
   left: 0;
   right: 0;
-  height: 2px;
-  background: linear-gradient(135deg, #ffffff 0%, #e9ecef 100%);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  height: 4px;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #10b981 100%);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
 }
 
 .pricing-card::after {
@@ -1597,7 +1601,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.01) 100%);
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
@@ -1609,9 +1613,9 @@ html {
 
 .pricing-card.featured {
   transform: scale(1.02);
-  box-shadow: 0 35px 100px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #1a1a1a 100%);
+  box-shadow: 0 35px 100px rgba(99, 102, 241, 0.3);
+  border: 2px solid #6366f1;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
   position: relative;
 }
 
@@ -1622,7 +1626,7 @@ html {
 
 .pricing-card.featured:hover {
   transform: scale(1.02) translateY(-8px);
-  box-shadow: 0 45px 120px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 45px 120px rgba(99, 102, 241, 0.4);
 }
 
 .pricing-card-header {
@@ -1641,16 +1645,16 @@ html {
 }
 
 .pricing-badge {
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-  color: #000000;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: #ffffff;
   padding: 0.75rem 1.5rem;
   border-radius: 25px;
   font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .pricing-card-content h4 {
@@ -1662,7 +1666,7 @@ html {
 }
 
 .pricing-card-content p {
-  color: #f8f9fa;
+  color: #e2e8f0;
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
@@ -1674,7 +1678,7 @@ html {
 }
 
 .pricing-card-content li {
-  color: #f8f9fa;
+  color: #e2e8f0;
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 0.75rem;
@@ -1686,10 +1690,10 @@ html {
   content: '✓';
   position: absolute;
   left: 0;
-  color: #ffffff;
+  color: #10b981;
   font-weight: bold;
   font-size: 1.1rem;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  text-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
 }
 
 .pricing-card-content .btn-primary {
@@ -1709,7 +1713,10 @@ html {
 .pricing-benefits h3 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #ffffff;
+  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 3rem;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -1721,25 +1728,25 @@ html {
 }
 
 .benefit-item {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(10, 10, 10, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(51, 65, 85, 0.9) 100%);
   border-radius: 20px;
   padding: 2rem;
   text-align: center;
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.2);
   backdrop-filter: blur(10px);
 }
 
 .benefit-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(99, 102, 241, 0.4);
 }
 
 .benefit-item svg {
-  color: #ffffff;
+  color: #6366f1;
   margin-bottom: 1rem;
-  filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.2));
+  filter: drop-shadow(0 4px 8px rgba(99, 102, 241, 0.3));
 }
 
 .benefit-item h4 {
@@ -1750,7 +1757,7 @@ html {
 }
 
 .benefit-item p {
-  color: #f8f9fa;
+  color: #e2e8f0;
   font-size: 0.95rem;
   line-height: 1.5;
 }
