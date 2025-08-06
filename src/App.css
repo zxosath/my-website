@@ -3853,18 +3853,12 @@ html {
     height: 60px;
   }
   
-  .gauge-chart {
-    width: 60px;
-    height: 60px;
+  .efficiency-stats {
+    gap: 0.25rem;
   }
   
-  .gauge-center {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .gauge-value {
-    font-size: 0.875rem;
+  .efficiency-item {
+    padding: 0.25rem;
   }
   
   .accounts-grid {
@@ -3878,5 +3872,681 @@ html {
   .resource-item {
     width: 4px;
     height: 4px;
+  }
+}
+
+/* Meaningful Data Visualizations */
+.stat-visual {
+  margin-top: 1rem;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cost Reduction - Real Savings Data */
+.cost-reduction-chart {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #8b5cf6 100%);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-title {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.chart-bars {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 1.5rem;
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bar {
+  width: 40px;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  animation: growBar 1.5s ease-out;
+}
+
+.before-bar {
+  background: linear-gradient(180deg, #ef4444 0%, #dc2626 100%);
+}
+
+.after-bar {
+  background: linear-gradient(180deg, #10b981 0%, #059669 100%);
+}
+
+.bar-label {
+  color: white;
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+.bar-value {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.chart-legend {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.legend-item {
+  color: #10b981;
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+/* Savings Plans - Real Customer Data */
+.savings-plans-chart {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #c084fc 100%);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sp-bar {
+  background: linear-gradient(180deg, #8b5cf6 0%, #7c3aed 100%);
+}
+
+.ri-bar {
+  background: linear-gradient(180deg, #a855f7 0%, #9333ea 100%);
+}
+
+/* Reserved Instances - Coverage vs Savings */
+.reserved-instances-chart {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-line {
+  position: relative;
+  flex: 1;
+  margin: 1rem 0;
+}
+
+.trend-line {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: rgba(255,255,255,0.3);
+  transform: translateY(-50%);
+}
+
+.line-point {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.point-label {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 0.625rem;
+  white-space: nowrap;
+}
+
+.point-value {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #10b981;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* Cost Allocation - Real Distribution */
+.cost-allocation-chart {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 50%, #f87171 100%);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.pie-chart {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: conic-gradient(
+    #3b82f6 0deg 126deg,
+    #10b981 126deg 252deg,
+    #f59e0b 252deg 360deg
+  );
+}
+
+.pie-segment {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pie-segment span {
+  color: white;
+  font-size: 0.5rem;
+  font-weight: bold;
+  transform: translateY(-30px);
+  white-space: nowrap;
+}
+
+/* Expert Actions - Real Monthly Data */
+.expert-actions-chart {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.action-bar {
+  background: linear-gradient(180deg, #60a5fa 0%, #3b82f6 100%);
+}
+
+/* Resource Utilization - Real Efficiency Data */
+.resource-utilization-chart {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #7c2d12 0%, #ea580c 50%, #fb923c 100%);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.efficiency-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.efficiency-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.1);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.efficiency-label {
+  color: white;
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+.efficiency-value {
+  color: #10b981;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* Enterprise Stats Visualizations */
+.stat-visual-container {
+  margin-top: 1rem;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Spend Management - Real Spend Data */
+.spend-management-chart {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #8b5cf6 100%);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.spend-management-chart .chart-title {
+  margin-bottom: 0.5rem;
+}
+
+.spend-bars {
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+  gap: 0.5rem;
+  flex: 1;
+  padding: 0 0.5rem;
+}
+
+.spend-bar {
+  background: rgba(255,255,255,0.8);
+  border-radius: 4px 4px 0 0;
+  animation: growBar 2s ease-out;
+  position: relative;
+  min-width: 20px;
+}
+
+.spend-bar::after {
+  content: '$';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* Savings Generated - Real Savings Data */
+.savings-generated-chart {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.savings-generated-chart .chart-title {
+  margin-bottom: 0.5rem;
+}
+
+.savings-growth {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.savings-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #059669;
+  font-size: 0.75rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Accounts Optimized - Real Account Data */
+.accounts-optimized-chart {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #c084fc 100%);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.accounts-optimized-chart .chart-title {
+  margin-bottom: 0.5rem;
+}
+
+.accounts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  flex: 1;
+  max-width: 80px;
+  margin: 0 auto;
+}
+
+.account-item {
+  background: rgba(255,255,255,0.3);
+  border-radius: 4px;
+  height: 12px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Resources Managed - Real Resource Data */
+.resources-managed-chart {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 50%, #f87171 100%);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.resources-managed-chart .chart-title {
+  margin-bottom: 0.5rem;
+}
+
+.resources-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  max-width: 80px;
+  margin: 0 auto;
+}
+
+.resource-item {
+  width: 6px;
+  height: 6px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 2px;
+  animation: blink 1.5s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes growBar {
+  0% { transform: scaleY(0); }
+  100% { transform: scaleY(1); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .stat-visual {
+    height: 100px;
+  }
+  
+  .stat-visual-container {
+    height: 80px;
+  }
+  
+  .chart-bars {
+    gap: 1rem;
+  }
+  
+  .bar {
+    width: 30px;
+  }
+  
+  .pie-chart {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .efficiency-stats {
+    gap: 0.25rem;
+  }
+  
+  .efficiency-item {
+    padding: 0.25rem;
+  }
+  
+  .accounts-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .resources-flow {
+    gap: 2px;
+  }
+  
+  .resource-item {
+    width: 4px;
+    height: 4px;
+  }
+}
+
+/* Analytics Section */
+.analytics {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+}
+
+.analytics h2 {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.analytics p {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 1.125rem;
+  margin-bottom: 3rem;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.analytics-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.analytics-card h3 {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.analytics-chart {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chart-bars {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 2rem;
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.bar {
+  width: 50px;
+  border-radius: 6px 6px 0 0;
+  position: relative;
+  animation: growBar 1.5s ease-out;
+}
+
+.before-bar {
+  background: linear-gradient(180deg, #ef4444 0%, #dc2626 100%);
+}
+
+.after-bar {
+  background: linear-gradient(180deg, #10b981 0%, #059669 100%);
+}
+
+.sp-bar {
+  background: linear-gradient(180deg, #8b5cf6 0%, #7c3aed 100%);
+}
+
+.ri-bar {
+  background: linear-gradient(180deg, #a855f7 0%, #9333ea 100%);
+}
+
+.action-bar {
+  background: linear-gradient(180deg, #60a5fa 0%, #3b82f6 100%);
+}
+
+.bar-label {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.bar-value {
+  color: white;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.chart-summary {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.savings-highlight {
+  color: #10b981;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.chart-line {
+  position: relative;
+  height: 100%;
+  margin: 1rem 0;
+}
+
+.trend-line {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  height: 3px;
+  background: rgba(255,255,255,0.3);
+  transform: translateY(-50%);
+}
+
+.line-point {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.point-label {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.point-value {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #10b981;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+/* Animations */
+@keyframes growBar {
+  0% { transform: scaleY(0); }
+  100% { transform: scaleY(1); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .analytics {
+    padding: 3rem 0;
+  }
+  
+  .analytics h2 {
+    font-size: 2rem;
+  }
+  
+  .analytics-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .analytics-card {
+    padding: 1.5rem;
+  }
+  
+  .chart-bars {
+    gap: 1rem;
+  }
+  
+  .bar {
+    width: 40px;
+  }
+  
+  .analytics-chart {
+    height: 150px;
   }
 }

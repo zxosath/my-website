@@ -200,125 +200,112 @@ function HomePage() {
             <div className="stat-item animate-on-scroll">
               <h3>Cost Reduction</h3>
               <p>Achieve significant AWS cost savings through expert resource optimization and strategic billing management.</p>
-              <div className="stat-visual">
-                <div className="cost-reduction-chart">
-                  <div className="chart-title">Monthly AWS Costs</div>
-                  <div className="chart-bars">
-                    <div className="bar-group">
-                      <div className="bar before-bar" style={{height: '100%'}}></div>
-                      <div className="bar-label">Before</div>
-                    </div>
-                    <div className="bar-group">
-                      <div className="bar after-bar" style={{height: '60%'}}></div>
-                      <div className="bar-label">After</div>
-                    </div>
-                  </div>
-                  <div className="chart-legend">
-                    <span className="legend-item">40% Average Reduction</span>
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="stat-item animate-on-scroll">
               <h3>Savings Plans Optimization</h3>
               <p>Expert management of AWS Savings Plans to maximize your discount while maintaining flexibility.</p>
-              <div className="stat-visual">
-                <div className="savings-plans-chart">
-                  <div className="chart-title">Savings by Commitment Type</div>
-                  <div className="chart-bars">
-                    <div className="bar-group">
-                      <div className="bar sp-bar" style={{height: '72%'}}></div>
-                      <div className="bar-label">Savings Plans</div>
-                      <div className="bar-value">-72%</div>
-                    </div>
-                    <div className="bar-group">
-                      <div className="bar ri-bar" style={{height: '60%'}}></div>
-                      <div className="bar-label">Reserved Instances</div>
-                      <div className="bar-value">-60%</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="stat-item animate-on-scroll">
               <h3>Reserved Instances</h3>
               <p>Strategic Reserved Instance management to lock in savings for predictable workloads.</p>
-              <div className="stat-visual">
-                <div className="reserved-instances-chart">
-                  <div className="chart-title">Savings by Term Length</div>
-                  <div className="chart-line">
-                    <div className="line-point" style={{left: '20%', top: '40%'}}>
-                      <div className="point-label">1 Year</div>
-                      <div className="point-value">-60%</div>
-                    </div>
-                    <div className="line-point" style={{left: '80%', top: '28%'}}>
-                      <div className="point-label">3 Years</div>
-                      <div className="point-value">-72%</div>
-                    </div>
-                    <div className="trend-line"></div>
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="stat-item animate-on-scroll">
               <h3>Cost Allocation</h3>
               <p>Accurate cost allocation and showback for better financial transparency and accountability.</p>
-              <div className="stat-visual">
-                <div className="cost-allocation-chart">
-                  <div className="chart-title">Cost Distribution</div>
-                  <div className="pie-chart">
-                    <div className="pie-segment dev" style={{transform: 'rotate(0deg)'}}>
-                      <span>Dev 35%</span>
-                    </div>
-                    <div className="pie-segment prod" style={{transform: 'rotate(126deg)'}}>
-                      <span>Prod 45%</span>
-                    </div>
-                    <div className="pie-segment staging" style={{transform: 'rotate(252deg)'}}>
-                      <span>Staging 20%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="stat-item animate-on-scroll">
               <h3>Expert Actions</h3>
               <p>VIRIDITY takes thousands of strategic actions monthly to continuously optimize your AWS costs.</p>
-              <div className="stat-visual">
-                <div className="expert-actions-chart">
-                  <div className="chart-title">Monthly Actions</div>
-                  <div className="chart-bars">
-                    <div className="bar-group">
-                      <div className="bar action-bar" style={{height: '80%'}}></div>
-                      <div className="bar-label">SP Purchases</div>
-                      <div className="bar-value">1,247</div>
-                    </div>
-                    <div className="bar-group">
-                      <div className="bar action-bar" style={{height: '60%'}}></div>
-                      <div className="bar-label">RI Modifications</div>
-                      <div className="bar-value">892</div>
-                    </div>
-                    <div className="bar-group">
-                      <div className="bar action-bar" style={{height: '40%'}}></div>
-                      <div className="bar-label">Cost Analysis</div>
-                      <div className="bar-value">708</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="stat-item animate-on-scroll">
               <h3>Resource Utilization</h3>
               <p>Increase your AWS resource utilization through strategic scheduling and optimization.</p>
-              <div className="stat-visual">
-                <div className="resource-utilization-chart">
-                  <div className="chart-title">Utilization Rate</div>
-                  <div className="gauge-chart">
-                    <div className="gauge-background"></div>
-                    <div className="gauge-fill" style={{transform: 'rotate(85deg)'}}></div>
-                    <div className="gauge-center">
-                      <div className="gauge-value">85%</div>
-                      <div className="gauge-label">Utilized</div>
-                    </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Analytics Section */}
+      <section className="analytics">
+        <div className="container">
+          <h2 className="animate-on-scroll">Real Results from Real Customers</h2>
+          <p className="animate-on-scroll">See the actual impact VIRIDITY delivers through expert AWS optimization.</p>
+          
+          <div className="analytics-grid">
+            <div className="analytics-card animate-on-scroll">
+              <h3>Monthly Cost Reduction</h3>
+              <div className="analytics-chart">
+                <div className="chart-bars">
+                  <div className="bar-group">
+                    <div className="bar before-bar" style={{height: '100%'}}></div>
+                    <div className="bar-label">Before</div>
+                    <div className="bar-value">$50K/mo</div>
+                  </div>
+                  <div className="bar-group">
+                    <div className="bar after-bar" style={{height: '30%'}}></div>
+                    <div className="bar-label">After</div>
+                    <div className="bar-value">$15K/mo</div>
+                  </div>
+                </div>
+                <div className="chart-summary">
+                  <span className="savings-highlight">$35K Monthly Savings</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="analytics-card animate-on-scroll">
+              <h3>Savings by Optimization Type</h3>
+              <div className="analytics-chart">
+                <div className="chart-bars">
+                  <div className="bar-group">
+                    <div className="bar sp-bar" style={{height: '85%'}}></div>
+                    <div className="bar-label">Savings Plans</div>
+                    <div className="bar-value">$28K/mo</div>
+                  </div>
+                  <div className="bar-group">
+                    <div className="bar ri-bar" style={{height: '65%'}}></div>
+                    <div className="bar-label">Reserved Instances</div>
+                    <div className="bar-value">$22K/mo</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="analytics-card animate-on-scroll">
+              <h3>Coverage vs Savings Impact</h3>
+              <div className="analytics-chart">
+                <div className="chart-line">
+                  <div className="line-point" style={{left: '25%', top: '60%'}}>
+                    <div className="point-label">30% Coverage</div>
+                    <div className="point-value">$15K/mo</div>
+                  </div>
+                  <div className="line-point" style={{left: '75%', top: '25%'}}>
+                    <div className="point-label">85% Coverage</div>
+                    <div className="point-value">$42K/mo</div>
+                  </div>
+                  <div className="trend-line"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="analytics-card animate-on-scroll">
+              <h3>Monthly Optimization Actions</h3>
+              <div className="analytics-chart">
+                <div className="chart-bars">
+                  <div className="bar-group">
+                    <div className="bar action-bar" style={{height: '90%'}}></div>
+                    <div className="bar-label">SP Purchases</div>
+                    <div className="bar-value">247</div>
+                  </div>
+                  <div className="bar-group">
+                    <div className="bar action-bar" style={{height: '70%'}}></div>
+                    <div className="bar-label">RI Modifications</div>
+                    <div className="bar-value">192</div>
+                  </div>
+                  <div className="bar-group">
+                    <div className="bar action-bar" style={{height: '50%'}}></div>
+                    <div className="bar-label">Cost Analysis</div>
+                    <div className="bar-value">108</div>
                   </div>
                 </div>
               </div>
