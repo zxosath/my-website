@@ -95,8 +95,8 @@ function HomePage() {
                   <div className="dropdown-section">
                     <h4>Billing Optimization</h4>
                     <div className="resource-links">
-                      <a href="#"><DollarSign size={16} /> Automated AWS Cost Management</a>
-                      <a href="#"><Activity size={16} /> Intelligent Resource Scheduling</a>
+                      <a href="#"><DollarSign size={16} /> Expert AWS Cost Management</a>
+                      <a href="#"><Activity size={16} /> Strategic Resource Optimization</a>
                     </div>
                   </div>
                   <div className="dropdown-section">
@@ -199,28 +199,27 @@ function HomePage() {
           <div className="stats-grid">
             <div className="stat-item animate-on-scroll">
               <h3>Cost Reduction</h3>
-              <p>Achieve significant AWS cost savings through intelligent resource optimization and automated billing management.</p>
-              <a href="#" className="read-more">Read More <ArrowRight size={16} /></a>
+              <p>Achieve significant AWS cost savings through expert resource optimization and strategic billing management.</p>
             </div>
             <div className="stat-item animate-on-scroll">
               <h3>Savings Plans Optimization</h3>
-              <p>Automatically manage AWS Savings Plans to maximize your discount while maintaining flexibility.</p>
+              <p>Expert management of AWS Savings Plans to maximize your discount while maintaining flexibility.</p>
             </div>
             <div className="stat-item animate-on-scroll">
               <h3>Reserved Instances</h3>
-              <p>Intelligent Reserved Instance management to lock in savings for predictable workloads.</p>
+              <p>Strategic Reserved Instance management to lock in savings for predictable workloads.</p>
             </div>
             <div className="stat-item animate-on-scroll">
               <h3>Cost Allocation</h3>
               <p>Accurate cost allocation and showback for better financial transparency and accountability.</p>
             </div>
             <div className="stat-item animate-on-scroll">
-              <h3>Automated Actions</h3>
-              <p>VIRIDITY takes thousands of automated actions monthly to continuously optimize your AWS costs.</p>
+              <h3>Expert Actions</h3>
+              <p>VIRIDITY takes thousands of strategic actions monthly to continuously optimize your AWS costs.</p>
             </div>
             <div className="stat-item animate-on-scroll">
               <h3>Resource Utilization</h3>
-              <p>Increase your AWS resource utilization through intelligent scheduling and optimization.</p>
+              <p>Increase your AWS resource utilization through strategic scheduling and optimization.</p>
             </div>
           </div>
         </div>
@@ -240,8 +239,8 @@ function HomePage() {
               <p>Cost optimization must not compromise application performance, infrastructure, or compliance with business rules.</p>
             </div>
             <div className="challenge-card animate-on-scroll">
-              <h3>AWS commitments are effective, but require automation</h3>
-              <p>Optimizing AWS Savings Plans and Reserved Instances may offer the best savings; automated management delivers greater outcomes with lower risk.</p>
+              <h3>AWS commitments are effective, but require expertise</h3>
+              <p>Optimizing AWS Savings Plans and Reserved Instances may offer the best savings; expert management delivers greater outcomes with lower risk.</p>
             </div>
           </div>
         </div>
@@ -268,7 +267,7 @@ function HomePage() {
                 <Settings size={32} />
               </div>
               <h3>Offload work, scale FinOps</h3>
-              <p>Managing AWS costs via manual reporting tools can lead to suboptimal results. Give this work to VIRIDITY automation and eliminate human involvement.</p>
+              <p>Managing AWS costs via manual reporting tools can lead to suboptimal results. Give this work to VIRIDITY experts and eliminate human involvement.</p>
               <div className="benefit-actions">
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
                 <button className="btn-secondary" onClick={() => scrollToSection('cta')}>Request a Demo</button>
@@ -334,11 +333,11 @@ function HomePage() {
               {activeTab === 'FinOps' && (
                 <div className="practitioner-card">
                   <h3>Higher margins without the work</h3>
-                  <p>VIRIDITY automatically manages and optimizes AWS discount instruments.</p>
+                  <p>VIRIDITY expertly manages and optimizes AWS discount instruments.</p>
                   <ul>
                     <li>Save more money with less waste than on-demand AWS pricing</li>
                     <li>Maximize AWS Savings Plans and Reserved Instance flexibility</li>
-                    <li>Automate away repetitive AWS cost optimization tasks</li>
+                    <li>Eliminate repetitive AWS cost optimization tasks</li>
                   </ul>
                   <p>FinOps teams can focus on higher-value tasks.</p>
                   <button className="btn-primary" onClick={() => scrollToSection('cta')}>Request a Demo</button>
@@ -353,7 +352,7 @@ function HomePage() {
                     <li>Zero dependencies on AWS infrastructure and resources</li>
                     <li>AWS financial commitments won't dictate architecture</li>
                   </ul>
-                  <p>VIRIDITY autonomously manages AWS discounts, so engineers can focus on building.</p>
+                  <p>VIRIDITY expertly manages AWS discounts, so engineers can focus on building.</p>
                   <button className="btn-primary" onClick={() => scrollToSection('cta')}>Request a Demo</button>
                 </div>
               )}
@@ -409,7 +408,7 @@ function HomePage() {
           <div className="testimonials-grid">
             <div className="testimonial-card animate-on-scroll">
               <div className="testimonial-content">
-                <p>"VIRIDITY saves us a considerable amount of money automating AWS cost optimization tasks. The pricing model based on savings makes it essentially free."</p>
+                <p>"VIRIDITY saves us a considerable amount of money through expert AWS cost optimization. The pricing model based on savings makes it essentially free."</p>
               </div>
               <div className="testimonial-author">
                 <h4>Sarah Johnson</h4>

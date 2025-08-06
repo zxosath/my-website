@@ -85,8 +85,8 @@ function Pricing() {
                   <div className="dropdown-section">
                     <h4>Billing Optimization</h4>
                     <div className="resource-links">
-                      <a href="#"><DollarSign size={16} /> Automated AWS Cost Management</a>
-                      <a href="#"><Activity size={16} /> Intelligent Resource Scheduling</a>
+                      <a href="#"><DollarSign size={16} /> Expert AWS Cost Management</a>
+                      <a href="#"><Activity size={16} /> Strategic Resource Optimization</a>
                     </div>
                   </div>
                   <div className="dropdown-section">
@@ -175,14 +175,14 @@ function Pricing() {
                 <div className="pricing-badge">Pay Only for Savings</div>
               </div>
               <div className="pricing-card-content">
-                <h4>Automated AWS Cost Optimization</h4>
-                <p>Our AI-powered platform automatically optimizes your AWS spend 24/7, delivering consistent savings while you focus on building your business.</p>
+                <h4>Expert AWS Cost Optimization</h4>
+                <p>Our expert team manually optimizes your AWS spend through strategic analysis and hands-on optimization, delivering consistent savings while you focus on building your business.</p>
                 <ul>
                   <li>Pay only for the savings we generate</li>
-                  <li>Fully automated optimization</li>
-                  <li>Real-time savings tracking</li>
+                  <li>Expert manual optimization by certified professionals</li>
+                  <li>Real-time savings tracking and reporting</li>
                   <li>Zero infrastructure access needed</li>
-                  <li>Set up once, save forever</li>
+                  <li>Ongoing optimization support</li>
                 </ul>
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Start Saving Now</button>
               </div>
@@ -202,8 +202,8 @@ function Pricing() {
               <div className="benefit-item">
                 <CheckCircle size={24} />
                 <div>
-                  <h4>AI-Powered Optimization</h4>
-                  <p>Our algorithms work 24/7 to continuously find and capture new savings opportunities.</p>
+                  <h4>Expert-Driven Optimization</h4>
+                  <p>Our certified AWS professionals work continuously to find and capture new savings opportunities through strategic analysis.</p>
                 </div>
               </div>
               <div className="benefit-item">
@@ -218,8 +218,8 @@ function Pricing() {
 
           <div className="pricing-stats animate-on-scroll">
             <h3>Your Savings Compound Daily</h3>
-            <p>VIRIDITY doesn't just find savings—we capture them automatically. While you sleep, our AI optimizes your AWS spend, ensuring you never overpay again.</p>
-            <p>Every day, our platform analyzes millions of data points to identify new savings opportunities, automatically applying the right discounts at the right time.</p>
+            <p>VIRIDITY doesn't just find savings—we capture them through expert analysis and strategic optimization. Our team continuously monitors your AWS spend, ensuring you never overpay again.</p>
+            <p>Every day, our experts analyze your usage patterns to identify new savings opportunities, applying the right optimizations at the right time through hands-on management.</p>
             <div className="stats-highlight">
               <h4>Risk-Free Guarantee</h4>
               <div className="highlight-amount">Pay Only for Results</div>
