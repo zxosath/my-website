@@ -200,26 +200,85 @@ function HomePage() {
             <div className="stat-item animate-on-scroll">
               <h3>Cost Reduction</h3>
               <p>Achieve significant AWS cost savings through expert resource optimization and strategic billing management.</p>
+              <div className="stat-visual">
+                <div className="cost-reduction-chart">
+                  <div className="cost-reduction-bar"></div>
+                  <div className="cost-reduction-label">-40% Avg</div>
+                </div>
+              </div>
             </div>
             <div className="stat-item animate-on-scroll">
               <h3>Savings Plans Optimization</h3>
               <p>Expert management of AWS Savings Plans to maximize your discount while maintaining flexibility.</p>
+              <div className="stat-visual">
+                <div className="savings-plans-chart">
+                  <div className="savings-plans-grid">
+                    <div className="savings-plan-item"></div>
+                    <div className="savings-plan-item"></div>
+                    <div className="savings-plan-item"></div>
+                    <div className="savings-plan-item"></div>
+                    <div className="savings-plan-item"></div>
+                    <div className="savings-plan-item"></div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="stat-item animate-on-scroll">
               <h3>Reserved Instances</h3>
               <p>Strategic Reserved Instance management to lock in savings for predictable workloads.</p>
+              <div className="stat-visual">
+                <div className="reserved-instances-chart">
+                  <div className="reserved-instances-dots">
+                    <div className="reserved-instance-dot"></div>
+                    <div className="reserved-instance-dot"></div>
+                    <div className="reserved-instance-dot"></div>
+                    <div className="reserved-instance-dot"></div>
+                    <div className="reserved-instance-dot"></div>
+                    <div className="reserved-instance-dot"></div>
+                    <div className="reserved-instance-dot"></div>
+                    <div className="reserved-instance-dot"></div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="stat-item animate-on-scroll">
               <h3>Cost Allocation</h3>
               <p>Accurate cost allocation and showback for better financial transparency and accountability.</p>
+              <div className="stat-visual">
+                <div className="cost-allocation-chart">
+                  <div className="cost-allocation-sectors">
+                    <div className="cost-sector"></div>
+                    <div className="cost-sector"></div>
+                    <div className="cost-sector"></div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="stat-item animate-on-scroll">
               <h3>Expert Actions</h3>
               <p>VIRIDITY takes thousands of strategic actions monthly to continuously optimize your AWS costs.</p>
+              <div className="stat-visual">
+                <div className="expert-actions-chart">
+                  <div className="expert-actions-flow">
+                    <div className="action-step"></div>
+                    <div className="action-step"></div>
+                    <div className="action-step"></div>
+                    <div className="action-step"></div>
+                    <div className="action-step"></div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="stat-item animate-on-scroll">
               <h3>Resource Utilization</h3>
               <p>Increase your AWS resource utilization through strategic scheduling and optimization.</p>
+              <div className="stat-visual">
+                <div className="resource-utilization-chart">
+                  <div className="utilization-gauge">
+                    <div className="utilization-center">85%</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -341,7 +400,7 @@ function HomePage() {
                 className={`tab-btn ${activeTab === 'Resellers' ? 'active' : ''}`}
                 onClick={() => handleTabChange('Resellers')}
               >
-                MSPs/Partners
+                Enterprise
         </button>
             </div>
             
@@ -374,14 +433,14 @@ function HomePage() {
               )}
               {activeTab === 'Resellers' && (
                 <div className="practitioner-card">
-                  <h3>Technology that scales your business</h3>
-                  <p>Our platform supports all AWS service delivery models with an integrated view of cost optimization.</p>
+                  <h3>Enterprise-scale AWS optimization</h3>
+                  <p>Our expert team provides comprehensive AWS cost optimization for large-scale enterprise environments with complex multi-account setups.</p>
                   <ul>
-                    <li>End customer AWS dashboards</li>
-                    <li>Cross-org AWS financial reporting</li>
-                    <li>AWS commitment load balancing</li>
+                    <li>Multi-account AWS cost optimization</li>
+                    <li>Enterprise-grade reporting and analytics</li>
+                    <li>Strategic AWS commitment management</li>
                   </ul>
-                  <p>VIRIDITY is purpose built for the AWS partner use case.</p>
+                  <p>VIRIDITY delivers enterprise-scale savings through expert manual optimization.</p>
                   <button className="btn-primary" onClick={() => scrollToSection('cta')}>Request a Demo</button>
                 </div>
               )}
@@ -394,22 +453,75 @@ function HomePage() {
       <section className="enterprise-stats">
         <div className="container">
           <h2 className="animate-on-scroll">Enterprise-scale for sophisticated AWS cost optimizers.</h2>
-          <p className="animate-on-scroll">VIRIDITY manages AWS cost optimization for DevOps and FinOps teams from startups to enterprises and AWS partners across the globe.</p>
+          <p className="animate-on-scroll">VIRIDITY manages AWS cost optimization for DevOps and FinOps teams from startups to enterprises across the globe.</p>
           
           <div className="stats-grid">
             <div className="stat animate-on-scroll">
+              <div className="stat-visual-container">
+                <div className="spend-management-chart">
+                  <div className="spend-bars">
+                    <div className="spend-bar"></div>
+                    <div className="spend-bar"></div>
+                    <div className="spend-bar"></div>
+                    <div className="spend-bar"></div>
+                  </div>
+                </div>
+              </div>
               <h3>$50M+</h3>
               <p>Annual AWS Spend Under Management</p>
             </div>
             <div className="stat animate-on-scroll">
+              <div className="stat-visual-container">
+                <div className="savings-generated-chart">
+                  <div className="savings-growth">
+                    <div className="savings-circle">$15M+</div>
+                  </div>
+                </div>
+              </div>
               <h3>$15M+</h3>
               <p>Lifetime AWS Savings Generated</p>
             </div>
             <div className="stat animate-on-scroll">
+              <div className="stat-visual-container">
+                <div className="accounts-optimized-chart">
+                  <div className="accounts-grid">
+                    <div className="account-item"></div>
+                    <div className="account-item"></div>
+                    <div className="account-item"></div>
+                    <div className="account-item"></div>
+                    <div className="account-item"></div>
+                    <div className="account-item"></div>
+                    <div className="account-item"></div>
+                    <div className="account-item"></div>
+                  </div>
+                </div>
+              </div>
               <h3>500+</h3>
               <p>AWS Accounts Optimized</p>
             </div>
             <div className="stat animate-on-scroll">
+              <div className="stat-visual-container">
+                <div className="resources-managed-chart">
+                  <div className="resources-flow">
+                    <div className="resource-item"></div>
+                    <div className="resource-item"></div>
+                    <div className="resource-item"></div>
+                    <div className="resource-item"></div>
+                    <div className="resource-item"></div>
+                    <div className="resource-item"></div>
+                    <div className="resource-item"></div>
+                    <div className="resource-item"></div>
+                    <div className="resource-item"></div>
+                    <div className="resource-item"></div>
+                    <div className="resource-item"></div>
+                    <div className="resource-item"></div>
+                    <div className="resource-item"></div>
+                    <div className="resource-item"></div>
+                    <div className="resource-item"></div>
+                    <div className="resource-item"></div>
+                  </div>
+                </div>
+              </div>
               <h3>10K+</h3>
               <p>AWS Resources Managed</p>
             </div>
@@ -507,7 +619,6 @@ function HomePage() {
               </div>
               <div className="footer-links">
                 <a href="#/pricing">Pricing</a>
-                <a href="#">Partners</a>
                 <a href="#">About Us</a>
                 <a href="#">News</a>
                 <a href="#">AWS Cost Optimization Blog</a>
@@ -519,7 +630,6 @@ function HomePage() {
                 <a href="#" onClick={() => scrollToSection('cta')}>Free Analysis</a>
                 <a href="#">Start for Free</a>
                 <a href="#" onClick={() => scrollToSection('cta')}>AWS Cost Analysis</a>
-                <a href="#">Become a Partner</a>
                 <a href="#">Resource Center</a>
                 <a href="#">AWS Cost Optimization</a>
               </div>

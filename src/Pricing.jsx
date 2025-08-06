@@ -171,7 +171,7 @@ function Pricing() {
 
             <div className="pricing-card featured animate-on-scroll">
               <div className="pricing-card-header">
-                <h3>VIRIDITY Optimization Platform</h3>
+                <h3>VIRIDITY Expert Optimization</h3>
                 <div className="pricing-badge">Pay Only for Savings</div>
               </div>
               <div className="pricing-card-content">
@@ -296,7 +296,6 @@ function Pricing() {
               </div>
               <div className="footer-links">
                 <a href="#/pricing">Pricing</a>
-                <a href="#">Partners</a>
                 <a href="#">About Us</a>
                 <a href="#">News</a>
                 <a href="#">AWS Cost Optimization Blog</a>
