@@ -523,9 +523,9 @@ html {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #000000 0%, #000000 30%, #0a0a0a 50%, #1a1a1a 70%, #3b82f6 85%, #8b5cf6 100%);
-  background-size: 200% 200%;
-  animation: gradientShift 25s ease infinite;
+  background: linear-gradient(135deg, #000000 0%, #000000 15%, #0a0a0a 35%, #1a1a1a 55%, #3b82f6 70%, #8b5cf6 85%, #a855f7 100%);
+  background-size: 300% 300%;
+  animation: gradientShift 15s ease infinite;
   color: white;
   padding: 7.5rem 0; /* Restored desktop padding */
   position: relative;
