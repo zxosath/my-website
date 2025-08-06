@@ -57,7 +57,7 @@ function Pricing() {
   return (
     <div className="app">
       {/* Header */}
-      <header className="header scrolled">
+      <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <div className="header-container">
           <div className="logo">
             <a href="#/" className="logo-container">
@@ -145,7 +145,7 @@ function Pricing() {
       <section className="pricing">
         <div className="container">
           <div className="pricing-header">
-            <h2 className="animate-on-scroll">Stop Overpaying AWS. Start Saving 40%+ Today.</h2>
+            <h2 className="animate-on-scroll">Stop Overpaying AWS. Start Saving Today.</h2>
             <p className="animate-on-scroll">While others charge you to manage your cloud costs, we only get paid when we actually save you money. No risk. No upfront fees. Just guaranteed AWS savings.</p>
           </div>
 
@@ -157,13 +157,13 @@ function Pricing() {
               </div>
               <div className="pricing-card-content">
                 <h4>Discover Your Hidden Savings</h4>
-                <p>See exactly how much you're overpaying AWS and get a personalized savings roadmap. Most companies find 30-60% in immediate savings opportunities.</p>
+                <p>See exactly how much you're overpaying AWS and get a personalized savings roadmap. Most companies find significant savings opportunities they never knew existed.</p>
                 <ul>
-                  <li>🔍 Deep-dive AWS spending analysis</li>
-                  <li>📊 Compare against industry benchmarks</li>
-                  <li>💰 See your exact savings potential</li>
-                  <li>🛡️ Read-only access - we never touch your infrastructure</li>
-                  <li>⚡ 10-minute setup, instant insights</li>
+                  <li>Deep-dive AWS spending analysis</li>
+                  <li>Compare against industry benchmarks</li>
+                  <li>See your exact savings potential</li>
+                  <li>Read-only access - we never touch your infrastructure</li>
+                  <li>10-minute setup, instant insights</li>
                 </ul>
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Your Free Analysis</button>
               </div>
@@ -175,14 +175,14 @@ function Pricing() {
                 <div className="pricing-badge">Pay Only for Savings</div>
               </div>
               <div className="pricing-card-content">
-                <h4>Automated AWS Cost Slashing</h4>
-                <p>Our AI-powered platform automatically optimizes your AWS spend 24/7, delivering 40%+ savings while you focus on building your business.</p>
+                <h4>Automated AWS Cost Optimization</h4>
+                <p>Our AI-powered platform automatically optimizes your AWS spend 24/7, delivering consistent savings while you focus on building your business.</p>
                 <ul>
-                  <li>🚀 Pay only 15% of what we save you</li>
-                  <li>🤖 Fully automated optimization</li>
-                  <li>📈 Real-time savings tracking</li>
-                  <li>🛡️ Zero infrastructure access needed</li>
-                  <li>⚡ Set up once, save forever</li>
+                  <li>Pay only for the savings we generate</li>
+                  <li>Fully automated optimization</li>
+                  <li>Real-time savings tracking</li>
+                  <li>Zero infrastructure access needed</li>
+                  <li>Set up once, save forever</li>
                 </ul>
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Start Saving Now</button>
               </div>
@@ -210,7 +210,7 @@ function Pricing() {
                 <CheckCircle size={24} />
                 <div>
                   <h4>Proven Results</h4>
-                  <p>Average customer saves 40%+ on AWS costs within the first 30 days.</p>
+                  <p>Average customer sees significant savings on AWS costs within the first month.</p>
                 </div>
               </div>
             </div>
@@ -223,13 +223,13 @@ function Pricing() {
             <div className="stats-highlight">
               <h4>Risk-Free Guarantee</h4>
               <div className="highlight-amount">Pay Only for Results</div>
-              <p>We only charge 15% of the actual savings we deliver. If we don't save you money, you don't pay us anything.</p>
+              <p>We only charge a percentage of the actual savings we deliver. If we don't save you money, you don't pay us anything.</p>
             </div>
           </div>
 
           <div className="pricing-cta animate-on-scroll">
             <h3>Ready to Stop Overpaying AWS?</h3>
-            <p>Join 500+ companies already saving millions on their AWS bills. Get your free analysis and see your savings potential in minutes.</p>
+            <p>Join hundreds of companies already saving on their AWS bills. Get your free analysis and see your savings potential in minutes.</p>
             <div className="cta-buttons">
               <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Free Analysis</button>
               <button className="btn-secondary" onClick={() => scrollToSection('cta')}>See Demo</button>
@@ -242,30 +242,30 @@ function Pricing() {
       <section id="cta" className="cta">
         <div className="container">
           <h2 className="animate-on-scroll">Stop Overpaying AWS in 10 Minutes</h2>
-          <p className="animate-on-scroll">Join 500+ companies saving $2M+ annually on AWS costs.</p>
+          <p className="animate-on-scroll">Join hundreds of companies saving on their AWS costs.</p>
           <p className="animate-on-scroll">Get your personalized savings analysis and see exactly how much you're overpaying—no strings attached.</p>
           
           <div className="cta-benefits">
             <div className="benefit animate-on-scroll">
               <CheckCircle size={20} />
-              <span>🔍 See your exact AWS waste (usually 30-60%)</span>
+              <span>See your exact AWS waste and savings potential</span>
             </div>
             <div className="benefit animate-on-scroll">
               <CheckCircle size={20} />
-              <span>📊 Compare against industry benchmarks</span>
+              <span>Compare against industry benchmarks</span>
             </div>
             <div className="benefit animate-on-scroll">
               <CheckCircle size={20} />
-              <span>⚡ 10-minute setup, instant insights</span>
+              <span>10-minute setup, instant insights</span>
             </div>
             <div className="benefit animate-on-scroll">
               <CheckCircle size={20} />
-              <span>🛡️ Read-only access - zero risk</span>
+              <span>Read-only access - zero risk</span>
             </div>
           </div>
           
           <div className="cta-form animate-on-scroll">
-            <p>Get your free AWS cost analysis and join companies saving millions.</p>
+            <p>Get your free AWS cost analysis and join companies saving on their cloud bills.</p>
             <div className="form-placeholder">
               <div className="form-field">
                 <input type="text" placeholder="First Name" />
