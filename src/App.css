@@ -520,7 +520,9 @@ html {
 
 /* Hero Section */
 .hero {
-  background: #000000; /* Solid black base */
+  background: linear-gradient(135deg, #000000 0%, #000000 25%, #0a0a0a 35%, #1a1a2e 50%, #16213e 65%, #3b82f6 80%, #000000 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 25s ease infinite;
   color: white;
   padding: 7.5rem 0; /* Restored desktop padding */
   position: relative;
