@@ -1514,7 +1514,7 @@ html {
 /* Pricing Section */
 .pricing {
   padding: 200px 0 80px;
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2d2d2d 100%);
+  background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #1a1a1a 100%);
   position: relative;
   overflow: hidden;
   color: white;
@@ -1528,9 +1528,8 @@ html {
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
-    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -1544,7 +1543,7 @@ html {
 .pricing-header h2 {
   font-size: 4rem;
   font-weight: 800;
-  color: #f8f9fa;
+  color: #ffffff;
   margin-bottom: 2rem;
   line-height: 1.1;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -1552,7 +1551,7 @@ html {
 
 .pricing-header p {
   font-size: 1.35rem;
-  color: #e9ecef;
+  color: #f8f9fa;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
@@ -1569,14 +1568,14 @@ html {
 }
 
 .pricing-card {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
   border-radius: 24px;
   padding: 3rem;
   box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
 }
 
@@ -1586,9 +1585,9 @@ html {
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
-  background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+  height: 2px;
+  background: linear-gradient(135deg, #ffffff 0%, #e9ecef 100%);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .pricing-card::after {
@@ -1598,7 +1597,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.01) 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
@@ -1610,15 +1609,20 @@ html {
 
 .pricing-card.featured {
   transform: scale(1.02);
-  box-shadow: 0 35px 100px rgba(212, 175, 55, 0.2);
-  border: 2px solid #d4af37;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #3d3d3d 100%);
+  box-shadow: 0 35px 100px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #1a1a1a 100%);
   position: relative;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
 }
 
 .pricing-card.featured:hover {
   transform: scale(1.02) translateY(-8px);
-  box-shadow: 0 45px 120px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 45px 120px rgba(0, 0, 0, 0.6);
 }
 
 .pricing-card-header {
@@ -1631,34 +1635,34 @@ html {
 .pricing-card-header h3 {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #f8f9fa;
+  color: #ffffff;
   margin-bottom: 0.5rem;
   line-height: 1.3;
 }
 
 .pricing-badge {
-  background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
-  color: #1a1a1a;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  color: #000000;
   padding: 0.75rem 1.5rem;
   border-radius: 25px;
   font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .pricing-card-content h4 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #f8f9fa;
+  color: #ffffff;
   margin-bottom: 1rem;
   line-height: 1.3;
 }
 
 .pricing-card-content p {
-  color: #e9ecef;
+  color: #f8f9fa;
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
@@ -1670,7 +1674,7 @@ html {
 }
 
 .pricing-card-content li {
-  color: #e9ecef;
+  color: #f8f9fa;
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 0.75rem;
@@ -1682,10 +1686,10 @@ html {
   content: '✓';
   position: absolute;
   left: 0;
-  color: #d4af37;
+  color: #ffffff;
   font-weight: bold;
   font-size: 1.1rem;
-  text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .pricing-card-content .btn-primary {
@@ -1705,7 +1709,7 @@ html {
 .pricing-benefits h3 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #f8f9fa;
+  color: #ffffff;
   margin-bottom: 3rem;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -1717,36 +1721,36 @@ html {
 }
 
 .benefit-item {
-  background: linear-gradient(135deg, rgba(26, 26, 26, 0.9) 0%, rgba(45, 45, 45, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(10, 10, 10, 0.9) 100%);
   border-radius: 20px;
   padding: 2rem;
   text-align: center;
   transition: all 0.3s ease;
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
 }
 
 .benefit-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-  border-color: rgba(212, 175, 55, 0.4);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .benefit-item svg {
-  color: #d4af37;
+  color: #ffffff;
   margin-bottom: 1rem;
-  filter: drop-shadow(0 4px 8px rgba(212, 175, 55, 0.3));
+  filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.2));
 }
 
 .benefit-item h4 {
-  color: #f8f9fa;
+  color: #ffffff;
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
 }
 
 .benefit-item p {
-  color: #e9ecef;
+  color: #f8f9fa;
   font-size: 0.95rem;
   line-height: 1.5;
 }
