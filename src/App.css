@@ -1866,7 +1866,7 @@ html {
   }
 
   .header-container {
-    padding: 1rem 1.5rem;
+    padding: 0.75rem 1rem;
   }
 
   .logo h2 {
@@ -1895,13 +1895,13 @@ html {
 
   .highlight-significantly::after {
     height: 3px;
-    bottom: -2px;
+    bottom: -1px;
     left: 0;
     right: 0;
   }
 
   .hero {
-    padding: 3rem 0 3rem !important;
+    padding: 9rem 0 3rem !important; /* CACHE BUST - Mobile hero padding */
   }
 
   .hero-content {
@@ -2350,5 +2350,12 @@ html {
 
   .highlight-amount {
     font-size: 2rem;
+  }
+}
+
+/* Force mobile hero padding override */
+@media (max-width: 768px) {
+  .app .hero {
+    padding: 6rem 0 3rem !important; /* CACHE BUST - Mobile hero padding */
   }
 }
