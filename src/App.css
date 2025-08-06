@@ -999,14 +999,12 @@ html {
 .benefit-actions {
   margin-top: auto;
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.benefit-actions .btn-primary,
-.benefit-actions .btn-secondary {
-  flex: 1;
-  min-width: 120px;
+.benefit-actions .btn-primary {
+  width: 100%;
+  max-width: 200px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

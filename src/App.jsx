@@ -259,7 +259,6 @@ function HomePage() {
               <p>Continuously optimize your AWS spending while adapting to changes in usage in real time to safely increase savings while avoiding lock-in risk.</p>
               <div className="benefit-actions">
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
-                <button className="btn-secondary" onClick={() => scrollToSection('cta')}>Request a Demo</button>
               </div>
             </div>
             <div className="benefit-card animate-on-scroll">
@@ -270,7 +269,6 @@ function HomePage() {
               <p>Managing AWS costs via manual reporting tools can lead to suboptimal results. Give this work to VIRIDITY experts and eliminate human involvement.</p>
               <div className="benefit-actions">
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
-                <button className="btn-secondary" onClick={() => scrollToSection('cta')}>Request a Demo</button>
               </div>
             </div>
             <div className="benefit-card animate-on-scroll">
@@ -281,7 +279,6 @@ function HomePage() {
               <p>Unlike traditional AWS cost tools that overwhelm practitioners with excess data, VIRIDITY not only provides immediate results, but also tracks core optimization KPIs.</p>
               <div className="benefit-actions">
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
-                <button className="btn-secondary" onClick={() => scrollToSection('cta')}>Request a Demo</button>
               </div>
             </div>
             <div className="benefit-card animate-on-scroll">
@@ -292,7 +289,6 @@ function HomePage() {
               <p>Maximize the value of your AWS investments with VIRIDITY. It generates incremental savings that more than offsets the charge.</p>
               <div className="benefit-actions">
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
-                <button className="btn-secondary" onClick={() => scrollToSection('cta')}>Request a Demo</button>
               </div>
             </div>
           </div>
