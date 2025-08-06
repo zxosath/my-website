@@ -1543,7 +1543,7 @@ html {
   }
 
   .hero {
-    padding: 60rem 0 3rem; /* Much more padding for mobile */
+    padding: 80rem 0 3rem; /* Massive padding for complete free space on mobile */
   }
 
   .hero-content {
