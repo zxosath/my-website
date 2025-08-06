@@ -531,7 +531,7 @@ html {
 .hero {
   background: linear-gradient(135deg, #000000 0%, #000000 15%, #0a0a0a 35%, #1a1a1a 55%, #3b82f6 70%, #8b5cf6 85%, #a855f7 100%);
   background-size: 150% 150%;
-  animation: gradientShift 45s ease-in-out infinite;
+  animation: gradientShift 30s ease-in-out infinite;
   color: white;
   padding: 7.5rem 0; /* Restored desktop padding */
   position: relative;
