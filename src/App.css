@@ -18,14 +18,14 @@ body {
   overflow-x: hidden;
   overscroll-behavior: none;
   -webkit-overflow-scrolling: touch;
-  background: linear-gradient(135deg, #000000 0%, #000000 30%, #1a1a1a 50%, #6366f1 70%, #16a34a 100%);
-  background-size: 200% 200%;
-  animation: gradientShift 25s ease infinite;
   min-height: 100vh;
 }
 
 .app {
   min-height: 100vh;
+  background: linear-gradient(135deg, #000000 0%, #000000 30%, #1a1a1a 50%, #6366f1 70%, #16a34a 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 25s ease infinite;
 }
 
 .container {
