@@ -57,7 +57,7 @@ function Pricing() {
   return (
     <div className="app">
       {/* Header */}
-      <header className={`header ${scrolled ? 'scrolled' : ''}`}>
+      <header className="header scrolled">
         <div className="header-container">
           <div className="logo">
             <a href="#/" className="logo-container">
