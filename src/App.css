@@ -2098,7 +2098,7 @@ html {
   }
 
   .pricing-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr; /* Changed from 1fr to 2 columns */
     gap: 1rem; /* Reduced from 1.5rem */
   }
 
@@ -2336,6 +2336,11 @@ html {
 
   .pricing-header h2 {
     font-size: 1.75rem;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr 1fr; /* 2 columns on small screens */
+    gap: 0.75rem; /* Smaller gap for very small screens */
   }
 
   .pricing-card {
