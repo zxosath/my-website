@@ -2103,7 +2103,7 @@ html {
   }
 
   .pricing-card {
-    padding: 1.5rem; /* Reduced from 2rem */
+    padding: 0.75rem; /* Even smaller padding */
   }
 
   .pricing-card.featured {
@@ -2112,6 +2112,33 @@ html {
 
   .pricing-card.featured:hover {
     transform: translateY(-5px);
+  }
+
+  .pricing-card-header h3 {
+    font-size: 0.75rem; /* Even smaller title */
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+  }
+
+  .pricing-badge {
+    font-size: 0.625rem; /* Smaller badge */
+    padding: 0.2rem 0.4rem;
+  }
+
+  .pricing-card-content h4 {
+    font-size: 0.75rem; /* Smaller subtitle */
+    margin-bottom: 0.5rem;
+  }
+
+  .pricing-card-content p {
+    font-size: 0.625rem; /* Smaller body text */
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+  }
+
+  .pricing-card-content .btn-primary {
+    font-size: 0.625rem; /* Smaller button */
+    padding: 0.4rem 0.6rem;
   }
 
   .pricing-benefits h3,
@@ -2127,7 +2154,7 @@ html {
   }
 
   .benefit-item {
-    padding: 0.75rem; /* Reduced from 1rem */
+    padding: 0.5rem; /* Reduced from 0.75rem */
   }
 
   .stats-highlight {
