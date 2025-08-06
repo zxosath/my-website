@@ -531,7 +531,7 @@ function HomePage() {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
   );
 }
 
