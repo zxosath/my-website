@@ -44,10 +44,10 @@ function Pricing() {
       <header className="header scrolled">
         <div className="header-container">
           <div className="logo">
-            <div className="logo-container">
+            <a href="#/" className="logo-container">
               <img src="/IMG_3102.PNG" alt="VIRIDITY Logo" className="logo-icon" />
               <h2>VIRIDITY</h2>
-            </div>
+            </a>
           </div>
           
           <nav className="nav-desktop">
@@ -58,8 +58,6 @@ function Pricing() {
             <div className="nav-item dropdown">
               <span>Resources <ChevronDown size={16} /></span>
             </div>
-            
-            <a href="#/" className="nav-item">Home</a>
           </nav>
 
           <div className="header-actions">
@@ -220,7 +218,6 @@ function Pricing() {
                 <h3>VIRIDITY</h3>
               </div>
               <div className="footer-links">
-                <a href="#/">Home</a>
                 <a href="#/pricing">Pricing</a>
                 <a href="#">Partners</a>
                 <a href="#">About Us</a>

@@ -70,10 +70,10 @@ function HomePage() {
       <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <div className="header-container">
           <div className="logo">
-            <div className="logo-container">
+            <a href="#/" className="logo-container">
               <img src="/IMG_3102.PNG" alt="VIRIDITY Logo" className="logo-icon" />
               <h2>VIRIDITY</h2>
-            </div>
+            </a>
           </div>
           
           <nav className="nav-desktop">
@@ -491,7 +491,6 @@ function HomePage() {
                 <h3>VIRIDITY</h3>
               </div>
               <div className="footer-links">
-                <a href="#/">Home</a>
                 <a href="#/pricing">Pricing</a>
                 <a href="#">Partners</a>
                 <a href="#">About Us</a>
