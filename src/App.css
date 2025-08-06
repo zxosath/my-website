@@ -1782,33 +1782,34 @@ html {
 }
 
 .stats-highlight {
-  background: linear-gradient(135deg, rgba(26, 26, 26, 0.9) 0%, rgba(45, 45, 45, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(51, 65, 85, 0.8) 100%);
   border-radius: 20px;
   padding: 3rem;
   margin-top: 3rem;
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  border: 1px solid rgba(99, 102, 241, 0.2);
   backdrop-filter: blur(10px);
 }
 
 .stats-highlight h4 {
-  color: #f8f9fa;
+  color: #e2e8f0;
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .highlight-amount {
-  font-size: 3.5rem;
-  font-weight: 800;
-  color: #d4af37;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
   margin: 1rem 0;
-  text-shadow: 0 4px 8px rgba(212, 175, 55, 0.3);
+  line-height: 1.2;
 }
 
 .stats-highlight p {
-  color: #e9ecef;
+  color: #cbd5e1;
   font-size: 1rem;
   margin-top: 1rem;
+  line-height: 1.5;
 }
 
 .pricing-cta {
@@ -1900,7 +1901,7 @@ html {
   }
 
   .hero {
-    padding: 120rem 0 3rem; /* Massive padding to completely hide content below */
+    padding: 30rem 0 3rem;
   }
 
   .hero-content {
@@ -2131,7 +2132,7 @@ html {
   }
 
   .highlight-amount {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .cta-buttons {
@@ -2187,7 +2188,7 @@ html {
   }
 
   .hero {
-    padding: 120rem 0 3rem; /* Massive padding for complete free space on mobile */
+    padding: 30rem 0 3rem; /* Massive padding for complete free space on mobile */
   }
 
   .hero-text h1 {
