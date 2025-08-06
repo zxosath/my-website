@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ChevronDown, Menu, X, ArrowRight, Check, Star, TrendingUp, Shield, Zap, Users, BarChart3, Settings, FileText, Calendar, DollarSign, Target, Award, Clock, Globe, Lock, Eye, Heart, Sparkles, Cloud, Server, Database, Network, Monitor, Smartphone, Tablet, Laptop, Desktop, SmartphoneIcon, TabletIcon, MonitorIcon, LaptopIcon, DesktopIcon, BookOpen, Headphones } from 'lucide-react';
+import { ChevronDown, Menu, X, ArrowRight, Play, Calendar, BookOpen, Headphones, Users, HelpCircle, FileText, Building, Star, CheckCircle, TrendingUp, DollarSign, Activity, BarChart3, Settings, Globe, Shield, Zap } from 'lucide-react';
 import './App.css';
 import Pricing from './Pricing';
 
@@ -115,36 +115,11 @@ function HomePage() {
               {resourcesDropdownOpen && (
                 <div className="dropdown-menu">
                   <div className="dropdown-section">
-                    <h4>LEARN & MEET</h4>
                     <div className="resource-links">
-                      <a href="#"><BookOpen size={16} /> Library</a>
-                      <span>In-depth research and strategies to guide your FinOps strategy.</span>
-                      <a href="#"><Calendar size={16} /> Events</a>
-                      <span>Join VIRIDITY for upcoming events, including conferences, trade shows, and local meetups.</span>
-                      <a href="#"><Users size={16} /> Webinars</a>
-                      <span>Register to join us live, or watch recordings of our webcasts about AWS cost optimization.</span>
-                    </div>
-                  </div>
-                  <div className="dropdown-section">
-                    <h4>USING VIRIDITY</h4>
-                    <div className="resource-links">
-                      <a href="#"><FileText size={16} /> Blog</a>
-                      <span>Get best practices, tips, and strategies for maximum AWS cost savings.</span>
-                      <a href="#"><Headphones size={16} /> Podcast</a>
-                      <span>Candid conversations with practitioners, influencers, and thought leaders in cloud financial management.</span>
-                      <a href="#"><Star size={16} /> Success Stories</a>
-                      <span>Learn how our automated cost optimization software helps customers conquer AWS economics.</span>
                       <a href="#"><HelpCircle size={16} /> Help Center</a>
-                      <span>Get help with frequently asked questions and get started quickly.</span>
                       <a href="#"><FileText size={16} /> Legal</a>
-                      <span>Learn more about our service terms, privacy policy, and more.</span>
-                    </div>
-                  </div>
-                  <div className="dropdown-section featured">
-                    <div className="featured-content">
-                      <h4>FinOps Automation Video Series</h4>
-                      <p>Learn how to implement automated FinOps tools within your cloud financial management practice, measure your success, and achieve better outcomes.</p>
-                      <a href="#" className="learn-more">Learn More →</a>
+                      <a href="#"><Building size={16} /> About</a>
+                      <a href="#"><Users size={16} /> Contact</a>
                     </div>
                   </div>
                 </div>
@@ -556,7 +531,7 @@ function HomePage() {
           </div>
         </div>
       </footer>
-      </div>
+    </div>
   );
 }
 

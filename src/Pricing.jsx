@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { CheckCircle, ArrowLeft } from 'lucide-react';
+import { CheckCircle, ChevronDown, Menu } from 'lucide-react';
 import './App.css';
 
 function Pricing() {
@@ -8,12 +8,35 @@ function Pricing() {
     window.scrollTo(0, 0);
   }, []);
 
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  // Scroll animations
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
     }
-  };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible')
+        }
+      })
+    }, observerOptions)
+
+    const animatedElements = document.querySelectorAll('.animate-on-scroll')
+    animatedElements.forEach(el => observer.observe(el))
+
+    return () => {
+      animatedElements.forEach(el => observer.unobserve(el))
+    }
+  }, [])
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   return (
     <div className="app">
@@ -28,15 +51,24 @@ function Pricing() {
           </div>
           
           <nav className="nav-desktop">
-            <a href="/" className="nav-item">
-              <ArrowLeft size={16} style={{ marginRight: '8px' }} />
-              Back to Home
-            </a>
+            <div className="nav-item dropdown">
+              <span>Product <ChevronDown size={16} /></span>
+            </div>
+            
+            <div className="nav-item dropdown">
+              <span>Resources <ChevronDown size={16} /></span>
+            </div>
+            
+            <a href="/" className="nav-item">Home</a>
           </nav>
 
           <div className="header-actions">
-            <button className="btn-primary desktop-only" onClick={() => window.location.href = '/'}>Free Analysis</button>
+            <button className="btn-primary desktop-only" onClick={() => scrollToSection('cta')}>Free Analysis</button>
           </div>
+
+          <button className="mobile-menu-btn">
+            <Menu size={24} />
+          </button>
         </div>
       </header>
 
@@ -63,7 +95,7 @@ function Pricing() {
                   <li>Detailed review with our AWS cost optimization experts</li>
                   <li>Read-only access to billing data only - no infrastructure access</li>
                 </ul>
-                <button className="btn-primary" onClick={() => window.location.href = '/'}>Get Your Free Assessment</button>
+                <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Your Free Assessment</button>
               </div>
             </div>
 
@@ -81,7 +113,7 @@ function Pricing() {
                   <li>Comprehensive financial reporting</li>
                   <li>Read-only billing access - we never touch your infrastructure</li>
                 </ul>
-                <button className="btn-primary" onClick={() => window.location.href = '/'}>Start Optimizing</button>
+                <button className="btn-primary" onClick={() => scrollToSection('cta')}>Start Optimizing</button>
               </div>
             </div>
           </div>
@@ -128,8 +160,51 @@ function Pricing() {
             <h3>Start saving today</h3>
             <p>On average, VIRIDITY customers see a 60% improvement in their cloud savings compared to manual optimization efforts.</p>
             <div className="cta-buttons">
-              <button className="btn-primary" onClick={() => window.location.href = '/'}>Begin Saving</button>
-              <button className="btn-secondary" onClick={() => window.location.href = '/'}>Schedule Demo</button>
+              <button className="btn-primary" onClick={() => scrollToSection('cta')}>Begin Saving</button>
+              <button className="btn-secondary" onClick={() => scrollToSection('cta')}>Schedule Demo</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section id="cta" className="cta">
+        <div className="container">
+          <h2 className="animate-on-scroll">Request a Free AWS Cost Analysis</h2>
+          <p className="animate-on-scroll">3 out of 4 customers see at least a 40% reduction in AWS costs.</p>
+          <p className="animate-on-scroll">Get a deeper understanding of your current AWS spend and savings, and find out how much more you can save with VIRIDITY!</p>
+          
+          <div className="cta-benefits">
+            <div className="benefit animate-on-scroll">
+              <CheckCircle size={20} />
+              <span>Visualize your AWS savings potential</span>
+            </div>
+            <div className="benefit animate-on-scroll">
+              <CheckCircle size={20} />
+              <span>Benchmark AWS performance vs. peers</span>
+            </div>
+            <div className="benefit animate-on-scroll">
+              <CheckCircle size={20} />
+              <span>10-minute setup, no strings attached</span>
+            </div>
+          </div>
+          
+          <div className="cta-form animate-on-scroll">
+            <p>Submit the form to request your free AWS cost analysis.</p>
+            <div className="form-placeholder">
+              <div className="form-field">
+                <input type="text" placeholder="First Name" />
+              </div>
+              <div className="form-field">
+                <input type="text" placeholder="Last Name" />
+              </div>
+              <div className="form-field">
+                <input type="email" placeholder="Work Email" />
+              </div>
+              <div className="form-field">
+                <input type="text" placeholder="Company" />
+              </div>
+              <button className="btn-primary">Request Analysis</button>
             </div>
           </div>
         </div>
@@ -156,9 +231,9 @@ function Pricing() {
             <div className="footer-section">
               <h4>Actions</h4>
               <div className="footer-links">
-                <a href="/">Free Analysis</a>
+                <a href="#" onClick={() => scrollToSection('cta')}>Free Analysis</a>
                 <a href="#">Start for Free</a>
-                <a href="/">AWS Cost Analysis</a>
+                <a href="#" onClick={() => scrollToSection('cta')}>AWS Cost Analysis</a>
                 <a href="#">Become a Partner</a>
                 <a href="#">Resource Center</a>
                 <a href="#">AWS Cost Optimization</a>
