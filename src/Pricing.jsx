@@ -219,9 +219,9 @@ function Pricing() {
             <p>VIRIDITY immediately starts generating savings and reducing your AWS costs. As your usage patterns evolve, our algorithms continuously optimize your discount portfolio to unlock even greater savings.</p>
             <p>Our intelligent systems work around the clock—24/7—automatically aligning your discount instruments with usage fluctuations, all without any manual intervention required.</p>
             <div className="stats-highlight">
-              <h4>VIRIDITY has delivered over</h4>
-              <div className="highlight-amount">$2,147,483,647</div>
-              <p>in AWS cost savings to our customers</p>
+              <h4>Our Guarantee</h4>
+              <div className="highlight-amount">Pay Nothing Unless We Save You Money</div>
+              <p>30% of cloud spend is typically wasted. We only charge when we deliver actual savings to your AWS budget.</p>
             </div>
           </div>
 
