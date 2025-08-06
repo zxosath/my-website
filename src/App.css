@@ -266,6 +266,20 @@ html {
   width: 100%;
 }
 
+.nav-item.active {
+  color: #6366f1;
+  font-weight: 600;
+}
+
+.nav-item.active::after {
+  width: 100%;
+  background: #6366f1;
+}
+
+.header.scrolled .nav-item.active {
+  color: #6366f1;
+}
+
 .dropdown {
   position: relative;
 }

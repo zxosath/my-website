@@ -1,12 +1,28 @@
-import React, { useEffect } from 'react';
-import { CheckCircle, ChevronDown, Menu } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { CheckCircle, ChevronDown, Menu, X, DollarSign, Activity, BarChart3, TrendingUp, HelpCircle, FileText, Building, Users } from 'lucide-react';
 import './App.css';
 
 function Pricing() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [productDropdownOpen, setProductDropdownOpen] = useState(false);
+  const [resourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
   // Scroll to top on component mount
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Scroll effect for header
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 50
+      setScrolled(isScrolled)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   // Scroll animations
   useEffect(() => {
@@ -41,7 +57,7 @@ function Pricing() {
   return (
     <div className="app">
       {/* Header */}
-      <header className="header scrolled">
+      <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <div className="header-container">
           <div className="logo">
             <a href="#/" className="logo-container">
@@ -51,23 +67,78 @@ function Pricing() {
           </div>
           
           <nav className="nav-desktop">
-            <div className="nav-item dropdown">
+            <div className="nav-item dropdown" onMouseEnter={() => setProductDropdownOpen(true)} onMouseLeave={() => setProductDropdownOpen(false)}>
               <span>Product <ChevronDown size={16} /></span>
+              {productDropdownOpen && (
+                <div className="dropdown-menu">
+                  <div className="dropdown-section">
+                    <h4>AWS Cost Optimization</h4>
+                    <div className="cloud-providers">
+                      <div className="provider">
+                        <h5>Amazon Web Services</h5>
+                        <p>EC2, Lambda, Fargate Cost Optimization</p>
+                        <p>RDS, ElastiCache, MemoryDB, Redshift, OpenSearch</p>
+                        <p>Savings Plans & Reserved Instances Management</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="dropdown-section">
+                    <h4>Billing Optimization</h4>
+                    <div className="resource-links">
+                      <a href="#"><DollarSign size={16} /> Automated AWS Cost Management</a>
+                      <a href="#"><Activity size={16} /> Intelligent Resource Scheduling</a>
+                    </div>
+                  </div>
+                  <div className="dropdown-section">
+                    <h4>Reporting & Insights</h4>
+                    <div className="resource-links">
+                      <a href="#"><BarChart3 size={16} /> Cost Allocation & Showback</a>
+                      <a href="#"><TrendingUp size={16} /> Savings Analytics & Forecasting</a>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
             
-            <div className="nav-item dropdown">
+            <div className="nav-item dropdown" onMouseEnter={() => setResourcesDropdownOpen(true)} onMouseLeave={() => setResourcesDropdownOpen(false)}>
               <span>Resources <ChevronDown size={16} /></span>
+              {resourcesDropdownOpen && (
+                <div className="dropdown-menu">
+                  <div className="dropdown-section">
+                    <div className="resource-links">
+                      <a href="#"><HelpCircle size={16} /> Help Center</a>
+                      <a href="#"><FileText size={16} /> Legal</a>
+                      <a href="#"><Building size={16} /> About</a>
+                      <a href="#"><Users size={16} /> Contact</a>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
+            <a href="#/pricing" className="nav-item active">Pricing</a>
           </nav>
 
           <div className="header-actions">
             <button className="btn-primary desktop-only" onClick={() => scrollToSection('cta')}>Free Analysis</button>
           </div>
 
-          <button className="mobile-menu-btn">
-            <Menu size={24} />
+          <button className="mobile-menu-btn" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
+
+        {mobileMenuOpen && (
+          <div className="mobile-menu">
+            <div className="mobile-menu-links">
+              <a href="#" onClick={() => setMobileMenuOpen(false)}>Product</a>
+              <a href="#" onClick={() => setMobileMenuOpen(false)}>Resources</a>
+              <a href="#/pricing" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
+            </div>
+            <div className="mobile-menu-actions">
+              <button className="btn-primary" onClick={() => { scrollToSection('cta'); setMobileMenuOpen(false); }}>Free Analysis</button>
+            </div>
+          </div>
+        )}
       </header>
 
       {/* Pricing Section */}
