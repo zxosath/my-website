@@ -2188,7 +2188,7 @@ html {
   }
 
   .hero {
-    padding: 5rem 0 3rem;
+    padding: 15rem 0 3rem !important;
   }
 
   .hero-text h1 {
