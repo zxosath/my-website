@@ -202,18 +202,19 @@ function HomePage() {
               <p>Achieve significant AWS cost savings through expert resource optimization and strategic billing management.</p>
               <div className="stat-visual">
                 <div className="cost-reduction-chart">
-                  <div className="cost-before-after">
-                    <div className="cost-before">
-                      <div className="cost-label">Before</div>
-                      <div className="cost-bar before-bar"></div>
-                      <div className="cost-amount">$1000</div>
+                  <div className="chart-title">Monthly AWS Costs</div>
+                  <div className="chart-bars">
+                    <div className="bar-group">
+                      <div className="bar before-bar" style={{height: '100%'}}></div>
+                      <div className="bar-label">Before</div>
                     </div>
-                    <div className="cost-arrow">→</div>
-                    <div className="cost-after">
-                      <div className="cost-label">After</div>
-                      <div className="cost-bar after-bar"></div>
-                      <div className="cost-amount">$600</div>
+                    <div className="bar-group">
+                      <div className="bar after-bar" style={{height: '60%'}}></div>
+                      <div className="bar-label">After</div>
                     </div>
+                  </div>
+                  <div className="chart-legend">
+                    <span className="legend-item">40% Average Reduction</span>
                   </div>
                 </div>
               </div>
@@ -223,16 +224,17 @@ function HomePage() {
               <p>Expert management of AWS Savings Plans to maximize your discount while maintaining flexibility.</p>
               <div className="stat-visual">
                 <div className="savings-plans-chart">
-                  <div className="savings-plan-types">
-                    <div className="plan-type">
-                      <div className="plan-icon">SP</div>
-                      <div className="plan-label">Savings Plans</div>
-                      <div className="plan-discount">-72%</div>
+                  <div className="chart-title">Savings by Commitment Type</div>
+                  <div className="chart-bars">
+                    <div className="bar-group">
+                      <div className="bar sp-bar" style={{height: '72%'}}></div>
+                      <div className="bar-label">Savings Plans</div>
+                      <div className="bar-value">-72%</div>
                     </div>
-                    <div className="plan-type">
-                      <div className="plan-icon">RI</div>
-                      <div className="plan-label">Reserved Instances</div>
-                      <div className="plan-discount">-60%</div>
+                    <div className="bar-group">
+                      <div className="bar ri-bar" style={{height: '60%'}}></div>
+                      <div className="bar-label">Reserved Instances</div>
+                      <div className="bar-value">-60%</div>
                     </div>
                   </div>
                 </div>
@@ -243,15 +245,17 @@ function HomePage() {
               <p>Strategic Reserved Instance management to lock in savings for predictable workloads.</p>
               <div className="stat-visual">
                 <div className="reserved-instances-chart">
-                  <div className="ri-timeline">
-                    <div className="timeline-point">
+                  <div className="chart-title">Savings by Term Length</div>
+                  <div className="chart-line">
+                    <div className="line-point" style={{left: '20%', top: '40%'}}>
                       <div className="point-label">1 Year</div>
-                      <div className="point-discount">-60%</div>
+                      <div className="point-value">-60%</div>
                     </div>
-                    <div className="timeline-point">
+                    <div className="line-point" style={{left: '80%', top: '28%'}}>
                       <div className="point-label">3 Years</div>
-                      <div className="point-discount">-72%</div>
+                      <div className="point-value">-72%</div>
                     </div>
+                    <div className="trend-line"></div>
                   </div>
                 </div>
               </div>
@@ -261,15 +265,16 @@ function HomePage() {
               <p>Accurate cost allocation and showback for better financial transparency and accountability.</p>
               <div className="stat-visual">
                 <div className="cost-allocation-chart">
-                  <div className="allocation-pie">
+                  <div className="chart-title">Cost Distribution</div>
+                  <div className="pie-chart">
                     <div className="pie-segment dev" style={{transform: 'rotate(0deg)'}}>
-                      <span>Dev</span>
+                      <span>Dev 35%</span>
                     </div>
-                    <div className="pie-segment prod" style={{transform: 'rotate(120deg)'}}>
-                      <span>Prod</span>
+                    <div className="pie-segment prod" style={{transform: 'rotate(126deg)'}}>
+                      <span>Prod 45%</span>
                     </div>
-                    <div className="pie-segment staging" style={{transform: 'rotate(240deg)'}}>
-                      <span>Staging</span>
+                    <div className="pie-segment staging" style={{transform: 'rotate(252deg)'}}>
+                      <span>Staging 20%</span>
                     </div>
                   </div>
                 </div>
@@ -280,13 +285,22 @@ function HomePage() {
               <p>VIRIDITY takes thousands of strategic actions monthly to continuously optimize your AWS costs.</p>
               <div className="stat-visual">
                 <div className="expert-actions-chart">
-                  <div className="actions-counter">
-                    <div className="counter-number">2,847</div>
-                    <div className="counter-label">Actions This Month</div>
-                    <div className="action-types">
-                      <div className="action-type">SP Purchases</div>
-                      <div className="action-type">RI Modifications</div>
-                      <div className="action-type">Cost Analysis</div>
+                  <div className="chart-title">Monthly Actions</div>
+                  <div className="chart-bars">
+                    <div className="bar-group">
+                      <div className="bar action-bar" style={{height: '80%'}}></div>
+                      <div className="bar-label">SP Purchases</div>
+                      <div className="bar-value">1,247</div>
+                    </div>
+                    <div className="bar-group">
+                      <div className="bar action-bar" style={{height: '60%'}}></div>
+                      <div className="bar-label">RI Modifications</div>
+                      <div className="bar-value">892</div>
+                    </div>
+                    <div className="bar-group">
+                      <div className="bar action-bar" style={{height: '40%'}}></div>
+                      <div className="bar-label">Cost Analysis</div>
+                      <div className="bar-value">708</div>
                     </div>
                   </div>
                 </div>
@@ -297,13 +311,13 @@ function HomePage() {
               <p>Increase your AWS resource utilization through strategic scheduling and optimization.</p>
               <div className="stat-visual">
                 <div className="resource-utilization-chart">
-                  <div className="utilization-meter">
-                    <div className="meter-circle">
-                      <div className="meter-fill" style={{transform: 'rotate(85deg)'}}></div>
-                      <div className="meter-center">
-                        <div className="utilization-percent">85%</div>
-                        <div className="utilization-label">Utilization</div>
-                      </div>
+                  <div className="chart-title">Utilization Rate</div>
+                  <div className="gauge-chart">
+                    <div className="gauge-background"></div>
+                    <div className="gauge-fill" style={{transform: 'rotate(85deg)'}}></div>
+                    <div className="gauge-center">
+                      <div className="gauge-value">85%</div>
+                      <div className="gauge-label">Utilized</div>
                     </div>
                   </div>
                 </div>
