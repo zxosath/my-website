@@ -10,6 +10,11 @@ function App() {
   const [scrolled, setScrolled] = useState(false)
   const [activeTab, setActiveTab] = useState('FinOps')
 
+  // Scroll to top on component mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // Scroll effect for header
   useEffect(() => {
     const handleScroll = () => {

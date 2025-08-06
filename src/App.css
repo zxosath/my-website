@@ -1498,43 +1498,39 @@ html {
   .nav-desktop {
     display: none;
   }
-  
+
   .mobile-menu-btn {
-    display: block;
-  }
-  
-  .mobile-menu {
     display: flex;
   }
-  
-  /* Header mobile improvements */
+
+  .mobile-menu {
+    display: block;
+  }
+
   .header-container {
-    padding: 0.75rem 1rem;
+    padding: 1rem 1.5rem;
   }
-  
+
   .logo h2 {
-    font-size: 1.75rem;
-    letter-spacing: -0.01em;
-    transform: translateY(1px);
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: -0.02em;
   }
-  
+
   .logo-icon {
-    width: 40px;
-    height: 40px;
+    width: 2rem;
+    height: 2rem;
   }
-  
+
   .logo-container {
     gap: 0.75rem;
-    align-items: center;
+    padding: 0.5rem;
+    border-radius: 12px;
   }
-  
 
-  
   .header-actions {
     display: none;
   }
-  
+
   .desktop-only {
     display: none;
   }
@@ -1545,203 +1541,187 @@ html {
     left: 0;
     right: 0;
   }
-  
-  /* Hero section mobile improvements */
+
   .hero {
-    padding: 40rem 0 3rem;
+    padding: 60rem 0 3rem; /* Much more padding for mobile */
   }
-  
+
   .hero-content {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .hero-text h1 {
     font-size: 2.5rem;
-    font-weight: 800;
     line-height: 1.1;
-    margin-bottom: 1rem;
     letter-spacing: -0.02em;
   }
-  
+
   .hero-text p {
     font-size: 1.125rem;
-    font-weight: 500;
     margin-bottom: 2rem;
-    line-height: 1.4;
-    letter-spacing: -0.005em;
   }
-  
+
   .hero-buttons {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .hero-buttons .btn-primary,
   .hero-buttons .btn-secondary {
     width: 100%;
-    padding: 1rem;
-    font-size: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
   }
-  
-  /* Dashboard preview mobile improvements */
+
   .dashboard-preview {
-    transform: none;
-    margin: 0 1rem;
+    margin-top: 2rem;
   }
-  
+
   .dashboard-preview:hover {
-    transform: scale(1.02);
+    transform: none;
   }
-  
+
   .dashboard-header {
-    padding: 1rem;
+    padding: 1.5rem;
   }
-  
+
   .dashboard-tabs {
     gap: 0.5rem;
   }
-  
+
   .tab {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.75rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
   }
-  
+
   .dashboard-content {
     padding: 1.5rem;
-    gap: 1rem;
   }
-  
+
   .metric-card {
-    padding: 1rem;
+    padding: 1.5rem;
   }
-  
+
   .metric-value {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
-  
-  /* Section headings mobile improvements */
+
   .challenges h2,
   .why-prosperops h2,
   .savings-service h2,
   .enterprise-stats h2,
   .testimonials h2,
   .cta h2 {
-    font-size: 1.75rem;
-    line-height: 1.4;
-    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
   }
-  
-  /* Stats and cards mobile improvements */
+
   .stats-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .challenges-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .benefits-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
   }
-  
+
   .testimonials-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .stat-item {
+    padding: 2rem 1.5rem;
+  }
+
+  .challenge-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .benefit-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .benefit-card .benefit-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .testimonial-card {
+    padding: 2rem 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-benefits {
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
-  .stat-item {
-    padding: 2rem;
-  }
-  
-  .challenge-card {
-    padding: 2rem;
-  }
-  
-  .benefit-card {
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .benefit-card .benefit-icon {
-    margin: 0 auto 1.5rem;
-  }
-  
-  .testimonial-card {
-    padding: 2rem;
-  }
-  
 
-  
-  /* CTA section mobile improvements */
-  .cta-benefits {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  
   .cta-benefits .benefit {
-    font-size: 0.875rem;
-    text-align: center;
+    padding: 1.5rem;
   }
-  
+
   .form-placeholder {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    padding: 2rem 1.5rem;
   }
-  
+
   .form-field input {
-    padding: 0.875rem;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
   }
-  
-  /* Footer mobile improvements */
+
   .footer-bottom {
     flex-direction: column;
+    gap: 1rem;
     text-align: center;
-    gap: 1rem;
   }
-  
+
   .footer-legal {
-    gap: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
   }
-  
-  /* Tab buttons mobile improvements */
+
   .tab-buttons {
     flex-direction: column;
+    gap: 0.5rem;
   }
-  
+
   .tab-btn {
-    border-bottom: 1px solid #e5e7eb;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
   }
-  
+
   .tab-btn.active {
-  border-bottom: 2px solid #6366f1;
-}
-  
+    background: #2563eb;
+  }
+
   .tab-content {
     padding: 2rem 1.5rem;
   }
-  
-  /* Enterprise stats mobile improvements */
+
   .enterprise-stats .stats-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .enterprise-stats .stat {
-    padding: 1.5rem 1rem;
+    padding: 2rem 1.5rem;
   }
-  
+
   .enterprise-stats .stat h3 {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
   }
-  
+
   .enterprise-stats .stat p {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
 
