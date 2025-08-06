@@ -291,6 +291,26 @@ function HomePage() {
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
               </div>
             </div>
+            <div className="benefit-card animate-on-scroll">
+              <div className="benefit-icon">
+                <Activity size={32} />
+              </div>
+              <h3>Real-time optimization, continuous savings</h3>
+              <p>VIRIDITY's expert team continuously monitors your AWS usage patterns and adjusts discount strategies in real-time to maximize your savings potential.</p>
+              <div className="benefit-actions">
+                <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
+              </div>
+            </div>
+            <div className="benefit-card animate-on-scroll">
+              <div className="benefit-icon">
+                <Globe size={32} />
+              </div>
+              <h3>Global AWS expertise, local results</h3>
+              <p>Leverage our deep AWS knowledge across all regions and services to optimize costs globally while maintaining performance and compliance standards.</p>
+              <div className="benefit-actions">
+                <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
+              </div>
+            </div>
           </div>
       </div>
       </section>
