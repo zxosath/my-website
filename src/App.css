@@ -1007,6 +1007,9 @@ html {
 .benefit-actions .btn-secondary {
   flex: 1;
   min-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Savings as a Service Section */
