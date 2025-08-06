@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { ChevronDown, Menu, X, ArrowRight, Play, Calendar, BookOpen, Headphones, Users, HelpCircle, FileText, Building, Star, CheckCircle, TrendingUp, DollarSign, Activity, BarChart3, Settings, Globe, Shield, Zap } from 'lucide-react';
 import './App.css';
 import Pricing from './Pricing';
@@ -126,7 +126,7 @@ function HomePage() {
               )}
             </div>
             
-            <a href="/pricing" className="nav-item">Pricing</a>
+            <a href="#/pricing" className="nav-item">Pricing</a>
           </nav>
 
           <div className="header-actions">
@@ -143,7 +143,7 @@ function HomePage() {
             <div className="mobile-menu-links">
               <a href="#" onClick={() => setMobileMenuOpen(false)}>Product</a>
               <a href="#" onClick={() => setMobileMenuOpen(false)}>Resources</a>
-              <a href="/pricing" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
+              <a href="#/pricing" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
             </div>
             <div className="mobile-menu-actions">
               <button className="btn-primary" onClick={() => { scrollToSection('cta'); setMobileMenuOpen(false); }}>Free Analysis</button>
@@ -491,8 +491,8 @@ function HomePage() {
                 <h3>VIRIDITY</h3>
               </div>
               <div className="footer-links">
-                <a href="/">Home</a>
-                <a href="/pricing">Pricing</a>
+                <a href="#/">Home</a>
+                <a href="#/pricing">Pricing</a>
                 <a href="#">Partners</a>
                 <a href="#">About Us</a>
                 <a href="#">News</a>

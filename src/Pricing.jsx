@@ -59,7 +59,7 @@ function Pricing() {
               <span>Resources <ChevronDown size={16} /></span>
             </div>
             
-            <a href="/" className="nav-item">Home</a>
+            <a href="#/" className="nav-item">Home</a>
           </nav>
 
           <div className="header-actions">
@@ -220,8 +220,8 @@ function Pricing() {
                 <h3>VIRIDITY</h3>
               </div>
               <div className="footer-links">
-                <a href="/">Home</a>
-                <a href="/pricing">Pricing</a>
+                <a href="#/">Home</a>
+                <a href="#/pricing">Pricing</a>
                 <a href="#">Partners</a>
                 <a href="#">About Us</a>
                 <a href="#">News</a>
