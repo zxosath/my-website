@@ -1645,6 +1645,8 @@ html {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .pricing-card-content {

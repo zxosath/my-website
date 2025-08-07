@@ -153,8 +153,8 @@ function Pricing() {
             <div className="pricing-card animate-on-scroll">
               <div className="pricing-card-header">
                 <h3>Free AWS Cost Analysis</h3>
-                <div className="pricing-badge">Free</div>
               </div>
+              <div className="pricing-badge">Free</div>
               <div className="pricing-card-content">
                 <h4>Discover Your Hidden Savings</h4>
                 <p>See exactly how much you're overpaying AWS and get a personalized savings roadmap. Most companies find significant savings opportunities they never knew existed.</p>
@@ -172,8 +172,8 @@ function Pricing() {
             <div className="pricing-card animate-on-scroll">
               <div className="pricing-card-header">
                 <h3>VIRIDITY Expert Optimization</h3>
-                <div className="pricing-badge">Percentage of Savings</div>
               </div>
+              <div className="pricing-badge">Percentage of Savings</div>
               <div className="pricing-card-content">
                 <h4>Expert AWS Cost Optimization</h4>
                 <p>Our expert team manually optimizes your AWS spend through strategic analysis and hands-on optimization, delivering consistent savings while you focus on building your business.</p>
