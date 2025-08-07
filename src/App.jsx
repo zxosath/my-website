@@ -11,6 +11,7 @@ function HomePage() {
   const [companyDropdownOpen, setCompanyDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeTab, setActiveTab] = useState('FinOps');
+  const [dashboardTab, setDashboardTab] = useState('results');
 
   // Scroll to top on component mount
   useEffect(() => {
@@ -54,6 +55,11 @@ function HomePage() {
   // Tab switching functionality
   const handleTabChange = (tab) => {
     setActiveTab(tab)
+  }
+
+  // Dashboard tab switching functionality
+  const handleDashboardTabChange = (tab) => {
+    setDashboardTab(tab)
   }
 
   // Smooth scroll to section
@@ -168,9 +174,24 @@ function HomePage() {
               <div className="dashboard-preview">
                 <div className="dashboard-header">
                   <div className="dashboard-tabs">
-                    <span className="tab active">Our Results</span>
-                    <span className="tab">Case Studies</span>
-                    <span className="tab">Testimonials</span>
+                    <span 
+                      className={`tab ${dashboardTab === 'results' ? 'active' : ''}`}
+                      onClick={() => handleDashboardTabChange('results')}
+                    >
+                      Our Results
+                    </span>
+                    <span 
+                      className={`tab ${dashboardTab === 'case-studies' ? 'active' : ''}`}
+                      onClick={() => handleDashboardTabChange('case-studies')}
+                    >
+                      Case Studies
+                    </span>
+                    <span 
+                      className={`tab ${dashboardTab === 'testimonials' ? 'active' : ''}`}
+                      onClick={() => handleDashboardTabChange('testimonials')}
+                    >
+                      Testimonials
+                    </span>
                   </div>
                 </div>
                 <div className="dashboard-content">
