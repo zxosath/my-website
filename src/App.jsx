@@ -225,94 +225,88 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Analytics Section */}
-      <section className="analytics">
-        <div className="container">
-          <h2 className="animate-on-scroll">Real Results from Real Customers</h2>
-          <p className="animate-on-scroll">See the actual impact VIRIDITY delivers through expert AWS optimization.</p>
-          
-          <div className="analytics-grid">
-            <div className="analytics-card animate-on-scroll">
-              <h3>Monthly Cost Reduction</h3>
-              <div className="analytics-chart">
-                <div className="chart-bars">
-                  <div className="bar-group">
-                    <div className="bar before-bar" style={{height: '100%'}}></div>
-                    <div className="bar-label">Before</div>
-                    <div className="bar-value">$50K/mo</div>
+        {/* Analytics Section */}
+        <section className="analytics">
+          <div className="container">
+            <h2 className="animate-on-scroll">Manual vs Expert AWS Optimization</h2>
+            <p className="animate-on-scroll">See the difference between manual AWS cost management and VIRIDITY's expert optimization.</p>
+            
+            <div className="comparison-chart animate-on-scroll">
+              <div className="chart-container">
+                <div className="chart-section without-viridity">
+                  <h3>Without VIRIDITY: Manual Management Risks</h3>
+                  <div className="chart-bars">
+                    <div className="bar-group">
+                      <div className="bar missed-savings" style={{height: '60%'}}></div>
+                      <div className="bar-label">Missed Savings</div>
+                    </div>
+                    <div className="bar-group">
+                      <div className="bar wasted-spend" style={{height: '80%'}}></div>
+                      <div className="bar-label">Wasted Spend</div>
+                    </div>
+                    <div className="bar-group">
+                      <div className="bar missed-savings" style={{height: '40%'}}></div>
+                      <div className="bar-label">Missed Savings</div>
+                    </div>
+                    <div className="bar-group">
+                      <div className="bar wasted-spend" style={{height: '90%'}}></div>
+                      <div className="bar-label">Wasted Spend</div>
+                    </div>
+                    <div className="bar-group">
+                      <div className="bar missed-savings" style={{height: '70%'}}></div>
+                      <div className="bar-label">Missed Savings</div>
+                    </div>
                   </div>
-                  <div className="bar-group">
-                    <div className="bar after-bar" style={{height: '30%'}}></div>
-                    <div className="bar-label">After</div>
-                    <div className="bar-value">$15K/mo</div>
-                  </div>
+                  <div className="usage-line manual-usage"></div>
                 </div>
-                <div className="chart-summary">
-                  <span className="savings-highlight">$35K Monthly Savings</span>
+                
+                <div className="chart-divider"></div>
+                
+                <div className="chart-section with-viridity">
+                  <h3>With VIRIDITY: Expert Optimization</h3>
+                  <div className="chart-bars">
+                    <div className="bar-group">
+                      <div className="bar optimal" style={{height: '65%'}}></div>
+                      <div className="bar-label">Optimal</div>
+                    </div>
+                    <div className="bar-group">
+                      <div className="bar optimal" style={{height: '75%'}}></div>
+                      <div className="bar-label">Optimal</div>
+                    </div>
+                    <div className="bar-group">
+                      <div className="bar optimal" style={{height: '45%'}}></div>
+                      <div className="bar-label">Optimal</div>
+                    </div>
+                    <div className="bar-group">
+                      <div className="bar optimal" style={{height: '85%'}}></div>
+                      <div className="bar-label">Optimal</div>
+                    </div>
+                    <div className="bar-group">
+                      <div className="bar optimal" style={{height: '70%'}}></div>
+                      <div className="bar-label">Optimal</div>
+                    </div>
+                  </div>
+                  <div className="usage-line expert-usage"></div>
                 </div>
               </div>
-            </div>
-            
-            <div className="analytics-card animate-on-scroll">
-              <h3>Savings by Optimization Type</h3>
-              <div className="analytics-chart">
-                <div className="chart-bars">
-                  <div className="bar-group">
-                    <div className="bar sp-bar" style={{height: '85%'}}></div>
-                    <div className="bar-label">Savings Plans</div>
-                    <div className="bar-value">$28K/mo</div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar ri-bar" style={{height: '65%'}}></div>
-                    <div className="bar-label">Reserved Instances</div>
-                    <div className="bar-value">$22K/mo</div>
-                  </div>
+              
+              <div className="chart-legend">
+                <div className="legend-item">
+                  <div className="legend-color missed-savings"></div>
+                  <span>Missed Savings: Under-commitment leads to missed opportunities</span>
                 </div>
-              </div>
-            </div>
-            
-            <div className="analytics-card animate-on-scroll">
-              <h3>Coverage vs Savings Impact</h3>
-              <div className="analytics-chart">
-                <div className="chart-line">
-                  <div className="line-point" style={{left: '25%', top: '60%'}}>
-                    <div className="point-label">30% Coverage</div>
-                    <div className="point-value">$15K/mo</div>
-                  </div>
-                  <div className="line-point" style={{left: '75%', top: '25%'}}>
-                    <div className="point-label">85% Coverage</div>
-                    <div className="point-value">$42K/mo</div>
-                  </div>
-                  <div className="trend-line"></div>
+                <div className="legend-item">
+                  <div className="legend-color wasted-spend"></div>
+                  <span>Wasted Spend: Over-commitment leads to unused resources</span>
                 </div>
-              </div>
-            </div>
-            
-            <div className="analytics-card animate-on-scroll">
-              <h3>Monthly Optimization Actions</h3>
-              <div className="analytics-chart">
-                <div className="chart-bars">
-                  <div className="bar-group">
-                    <div className="bar action-bar" style={{height: '90%'}}></div>
-                    <div className="bar-label">SP Purchases</div>
-                    <div className="bar-value">247</div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar action-bar" style={{height: '70%'}}></div>
-                    <div className="bar-label">RI Modifications</div>
-                    <div className="bar-value">192</div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar action-bar" style={{height: '50%'}}></div>
-                    <div className="bar-label">Cost Analysis</div>
-                    <div className="bar-value">108</div>
-                  </div>
+                <div className="legend-item">
+                  <div className="legend-color optimal"></div>
+                  <span>Optimal: Expert management aligns commitments with usage</span>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       {/* Challenges Section */}
       <section className="challenges">
