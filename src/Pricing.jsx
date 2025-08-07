@@ -184,7 +184,7 @@ function Pricing() {
                   <li>Zero infrastructure access needed</li>
                   <li>Ongoing optimization support</li>
                 </ul>
-                <button className="btn-primary" onClick={() => scrollToSection('cta')}>Start Saving Now</button>
+                <button className="btn-primary" onClick={() => scrollToSection('cta')}>Contact Sales</button>
               </div>
             </div>
           </div>

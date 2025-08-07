@@ -750,42 +750,87 @@ html {
 }
 
 .stat-item {
-  background: white;
-  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3rem;
   border-radius: 16px;
-  border: 1px solid #e5e7eb;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
   position: relative;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   cursor: pointer;
 }
 
+.stat-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  padding: 1px;
+  background: linear-gradient(135deg, #8b5cf6 0%, #10b981 50%, #3b82f6 100%);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  opacity: 0.6;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stat-item:hover::before {
+  opacity: 1;
+}
+
+.stat-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(16, 185, 129, 0.1) 50%, rgba(59, 130, 246, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.stat-item:hover::after {
+  opacity: 1;
+}
+
 .stat-item:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-  border-color: #6366f1;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4), 0 0 30px rgba(139, 92, 246, 0.3);
 }
 
 .stat-item h3 {
-  color: #1f2937;
+  color: white;
   font-size: 1.25rem;
   font-weight: 600;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
   margin-bottom: 1rem;
   transition: color 0.3s ease;
   line-height: 1.3;
+  position: relative;
+  z-index: 1;
 }
 
 .stat-item:hover h3 {
-  color: #6366f1;
+  color: white;
 }
 
 .stat-item p {
-  color: #6b7280;
+  color: #94a3b8;
   margin-bottom: 0;
   line-height: 1.6;
   font-size: 0.95rem;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+  position: relative;
+  z-index: 1;
 }
 
 /* Customer Logos */
