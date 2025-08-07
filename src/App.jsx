@@ -267,58 +267,46 @@ function HomePage() {
         <div className="container">
           <div className="stats-grid">
             <div className={`stat-item animate-on-scroll ${expandedTiles['cost-reduction'] ? 'expanded' : ''}`} onClick={() => handleTileClick('cost-reduction')}>
-              <div className="tile-header">
-                <h3>40-60% Cost Reduction</h3>
-                <span className="expand-icon">+</span>
-              </div>
+              <h3>40-60% Cost Reduction</h3>
               {expandedTiles['cost-reduction'] && (
                 <p>Achieve significant AWS cost savings through expert resource optimization and strategic billing management.</p>
               )}
+              <span className="expand-icon">+</span>
             </div>
             <div className={`stat-item animate-on-scroll ${expandedTiles['savings-plans'] ? 'expanded' : ''}`} onClick={() => handleTileClick('savings-plans')}>
-              <div className="tile-header">
-                <h3>Savings Plans: Up to 72% Off</h3>
-                <span className="expand-icon">+</span>
-              </div>
+              <h3>Savings Plans: Up to 72% Off</h3>
               {expandedTiles['savings-plans'] && (
                 <p>Expert management of AWS Savings Plans to maximize your discount while maintaining flexibility.</p>
               )}
+              <span className="expand-icon">+</span>
             </div>
             <div className={`stat-item animate-on-scroll ${expandedTiles['reserved-instances'] ? 'expanded' : ''}`} onClick={() => handleTileClick('reserved-instances')}>
-              <div className="tile-header">
-                <h3>Reserved Instances: 75% Savings</h3>
-                <span className="expand-icon">+</span>
-              </div>
+              <h3>Reserved Instances: 75% Savings</h3>
               {expandedTiles['reserved-instances'] && (
                 <p>Strategic Reserved Instance management to lock in savings for predictable workloads.</p>
               )}
+              <span className="expand-icon">+</span>
             </div>
             <div className={`stat-item animate-on-scroll ${expandedTiles['cost-transparency'] ? 'expanded' : ''}`} onClick={() => handleTileClick('cost-transparency')}>
-              <div className="tile-header">
-                <h3>100% Cost Transparency</h3>
-                <span className="expand-icon">+</span>
-              </div>
+              <h3>100% Cost Transparency</h3>
               {expandedTiles['cost-transparency'] && (
                 <p>Accurate cost allocation and showback for better financial transparency and accountability.</p>
               )}
+              <span className="expand-icon">+</span>
             </div>
             <div className={`stat-item animate-on-scroll ${expandedTiles['monthly-actions'] ? 'expanded' : ''}`} onClick={() => handleTileClick('monthly-actions')}>
-              <div className="tile-header">
-                <h3>2,500+ Monthly Actions</h3>
-                <span className="expand-icon">+</span>
-              </div>
+              <h3>2,500+ Monthly Actions</h3>
               {expandedTiles['monthly-actions'] && (
                 <p>VIRIDITY takes thousands of strategic actions monthly to continuously optimize your AWS costs.</p>
               )}
+              <span className="expand-icon">+</span>
             </div>
             <div className={`stat-item animate-on-scroll ${expandedTiles['resource-utilization'] ? 'expanded' : ''}`} onClick={() => handleTileClick('resource-utilization')}>
-              <div className="tile-header">
-                <h3>85% Resource Utilization</h3>
-                <span className="expand-icon">+</span>
-              </div>
+              <h3>85% Resource Utilization</h3>
               {expandedTiles['resource-utilization'] && (
                 <p>Increase your AWS resource utilization through strategic scheduling and optimization.</p>
               )}
+              <span className="expand-icon">+</span>
             </div>
           </div>
         </div>
