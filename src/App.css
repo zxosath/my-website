@@ -845,7 +845,7 @@ html {
 }
 
 .stat-item p {
-  color: white;
+  color: #1f2937;
   font-size: 1rem;
   line-height: 1.6;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
@@ -853,6 +853,8 @@ html {
   opacity: 0;
   transform: translateY(10px);
   transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
 }
 
 .stat-item.expanded p {
