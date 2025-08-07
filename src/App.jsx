@@ -60,7 +60,6 @@ function HomePage() {
   // Dashboard tab switching functionality
   const handleDashboardTabChange = (tab) => {
     console.log('Dashboard tab clicked:', tab);
-    alert(`Tab clicked: ${tab}`);
     setDashboardTab(tab)
   }
 

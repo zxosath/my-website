@@ -670,6 +670,8 @@ html {
 .dashboard-tabs {
   display: flex;
   gap: 1rem;
+  position: relative;
+  z-index: 10;
 }
 
 .tab {
@@ -685,6 +687,8 @@ html {
   border: 1px solid rgba(255, 255, 255, 0.1);
   pointer-events: auto;
   user-select: none;
+  position: relative;
+  z-index: 11;
 }
 
 .tab.active {
