@@ -233,7 +233,7 @@ function HomePage() {
             
             <div className="comparison-chart animate-on-scroll">
               <div className="chart-container">
-                <div className="chart-section without-viridity">
+                <div className="chart-section without-viridity animate-on-scroll">
                   <h3>Without VIRIDITY: Manual Management Risks</h3>
                   <div className="chart-bars">
                     <div className="bar-group">
@@ -262,7 +262,7 @@ function HomePage() {
                 
                 <div className="chart-divider"></div>
                 
-                <div className="chart-section with-viridity">
+                <div className="chart-section with-viridity animate-on-scroll">
                   <h3>With VIRIDITY: Expert Optimization</h3>
                   <div className="chart-bars">
                     <div className="bar-group">
@@ -290,7 +290,7 @@ function HomePage() {
                 </div>
               </div>
               
-              <div className="chart-legend">
+              <div className="chart-legend animate-on-scroll">
                 <div className="legend-item">
                   <div className="legend-color missed-savings"></div>
                   <span>Missed Savings: Under-commitment leads to missed opportunities</span>
