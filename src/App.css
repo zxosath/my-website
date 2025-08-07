@@ -783,51 +783,6 @@ html {
   border-color: rgba(0, 0, 0, 0.2);
 }
 
-.stat-item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 16px;
-  padding: 1px;
-  background: linear-gradient(135deg, #8b5cf6 0%, #10b981 50%, #3b82f6 100%);
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: exclude;
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  opacity: 0.6;
-  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.stat-item:hover::before {
-  opacity: 1;
-}
-
-.stat-item::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 16px;
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(16, 185, 129, 0.1) 50%, rgba(59, 130, 246, 0.1) 100%);
-  opacity: 0;
-  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  pointer-events: none;
-}
-
-.stat-item:hover::after {
-  opacity: 1;
-}
-
-.stat-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4), 0 0 30px rgba(139, 92, 246, 0.3);
-}
-
 .stat-item h3 {
   color: #1f2937;
   font-size: 1.25rem;
