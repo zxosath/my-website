@@ -196,18 +196,56 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="dashboard-content">
-                  <div className="metric-card">
-                    <h3>Average Total Monthly Savings</h3>
-                    <div className="metric-value">$127K+</div>
-                  </div>
-                  <div className="metric-card">
-                    <h3>Average Cost Reduction</h3>
-                    <div className="metric-value">47%+</div>
-                  </div>
-                  <div className="metric-card">
-                    <h3>ROI on Investment</h3>
-                    <div className="metric-value">1,200%+</div>
-                  </div>
+                  {dashboardTab === 'results' && (
+                    <>
+                      <div className="metric-card">
+                        <h3>Average Total Monthly Savings</h3>
+                        <div className="metric-value">$127K+</div>
+                      </div>
+                      <div className="metric-card">
+                        <h3>Average Cost Reduction</h3>
+                        <div className="metric-value">47%+</div>
+                      </div>
+                      <div className="metric-card">
+                        <h3>ROI on Investment</h3>
+                        <div className="metric-value">1,200%+</div>
+                      </div>
+                    </>
+                  )}
+                  
+                  {dashboardTab === 'case-studies' && (
+                    <>
+                      <div className="metric-card">
+                        <h3>Tech Startup</h3>
+                        <div className="metric-value">$89K/month</div>
+                      </div>
+                      <div className="metric-card">
+                        <h3>Enterprise Client</h3>
+                        <div className="metric-value">$234K/month</div>
+                      </div>
+                      <div className="metric-card">
+                        <h3>E-commerce Platform</h3>
+                        <div className="metric-value">$156K/month</div>
+                      </div>
+                    </>
+                  )}
+                  
+                  {dashboardTab === 'testimonials' && (
+                    <>
+                      <div className="metric-card">
+                        <h3>"Game-changing savings"</h3>
+                        <div className="metric-value">- CTO, TechCorp</div>
+                      </div>
+                      <div className="metric-card">
+                        <h3>"ROI exceeded expectations"</h3>
+                        <div className="metric-value">- CFO, DataFlow</div>
+                      </div>
+                      <div className="metric-card">
+                        <h3>"Best investment we made"</h3>
+                        <div className="metric-value">- CEO, CloudScale</div>
+                      </div>
+                    </>
+                  )}
                 </div>
               </div>
             </div>
