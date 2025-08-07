@@ -258,27 +258,27 @@ function HomePage() {
         <div className="container">
           <div className="stats-grid">
             <div className="stat-item animate-on-scroll">
-              <h3>Cost Reduction</h3>
+              <h3>40-60% Cost Reduction</h3>
               <p>Achieve significant AWS cost savings through expert resource optimization and strategic billing management.</p>
             </div>
             <div className="stat-item animate-on-scroll">
-              <h3>Savings Plans Optimization</h3>
+              <h3>Savings Plans: Up to 72% Off</h3>
               <p>Expert management of AWS Savings Plans to maximize your discount while maintaining flexibility.</p>
             </div>
             <div className="stat-item animate-on-scroll">
-              <h3>Reserved Instances</h3>
+              <h3>Reserved Instances: 75% Savings</h3>
               <p>Strategic Reserved Instance management to lock in savings for predictable workloads.</p>
             </div>
             <div className="stat-item animate-on-scroll">
-              <h3>Cost Allocation</h3>
+              <h3>100% Cost Transparency</h3>
               <p>Accurate cost allocation and showback for better financial transparency and accountability.</p>
             </div>
             <div className="stat-item animate-on-scroll">
-              <h3>Expert Actions</h3>
+              <h3>2,500+ Monthly Actions</h3>
               <p>VIRIDITY takes thousands of strategic actions monthly to continuously optimize your AWS costs.</p>
             </div>
             <div className="stat-item animate-on-scroll">
-              <h3>Resource Utilization</h3>
+              <h3>85% Resource Utilization</h3>
               <p>Increase your AWS resource utilization through strategic scheduling and optimization.</p>
             </div>
           </div>
