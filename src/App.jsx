@@ -267,37 +267,55 @@ function HomePage() {
         <div className="container">
           <div className="stats-grid">
             <div className={`stat-item animate-on-scroll ${expandedTiles['cost-reduction'] ? 'expanded' : ''}`} onClick={() => handleTileClick('cost-reduction')}>
-              <h3>40-60% Cost Reduction</h3>
+              <div className="tile-header">
+                <h3>40-60% Cost Reduction</h3>
+                <span className="expand-icon">+</span>
+              </div>
               {expandedTiles['cost-reduction'] && (
                 <p>Achieve significant AWS cost savings through expert resource optimization and strategic billing management.</p>
               )}
             </div>
             <div className={`stat-item animate-on-scroll ${expandedTiles['savings-plans'] ? 'expanded' : ''}`} onClick={() => handleTileClick('savings-plans')}>
-              <h3>Savings Plans: Up to 72% Off</h3>
+              <div className="tile-header">
+                <h3>Savings Plans: Up to 72% Off</h3>
+                <span className="expand-icon">+</span>
+              </div>
               {expandedTiles['savings-plans'] && (
                 <p>Expert management of AWS Savings Plans to maximize your discount while maintaining flexibility.</p>
               )}
             </div>
             <div className={`stat-item animate-on-scroll ${expandedTiles['reserved-instances'] ? 'expanded' : ''}`} onClick={() => handleTileClick('reserved-instances')}>
-              <h3>Reserved Instances: 75% Savings</h3>
+              <div className="tile-header">
+                <h3>Reserved Instances: 75% Savings</h3>
+                <span className="expand-icon">+</span>
+              </div>
               {expandedTiles['reserved-instances'] && (
                 <p>Strategic Reserved Instance management to lock in savings for predictable workloads.</p>
               )}
             </div>
             <div className={`stat-item animate-on-scroll ${expandedTiles['cost-transparency'] ? 'expanded' : ''}`} onClick={() => handleTileClick('cost-transparency')}>
-              <h3>100% Cost Transparency</h3>
+              <div className="tile-header">
+                <h3>100% Cost Transparency</h3>
+                <span className="expand-icon">+</span>
+              </div>
               {expandedTiles['cost-transparency'] && (
                 <p>Accurate cost allocation and showback for better financial transparency and accountability.</p>
               )}
             </div>
             <div className={`stat-item animate-on-scroll ${expandedTiles['monthly-actions'] ? 'expanded' : ''}`} onClick={() => handleTileClick('monthly-actions')}>
-              <h3>2,500+ Monthly Actions</h3>
+              <div className="tile-header">
+                <h3>2,500+ Monthly Actions</h3>
+                <span className="expand-icon">+</span>
+              </div>
               {expandedTiles['monthly-actions'] && (
                 <p>VIRIDITY takes thousands of strategic actions monthly to continuously optimize your AWS costs.</p>
               )}
             </div>
             <div className={`stat-item animate-on-scroll ${expandedTiles['resource-utilization'] ? 'expanded' : ''}`} onClick={() => handleTileClick('resource-utilization')}>
-              <h3>85% Resource Utilization</h3>
+              <div className="tile-header">
+                <h3>85% Resource Utilization</h3>
+                <span className="expand-icon">+</span>
+              </div>
               {expandedTiles['resource-utilization'] && (
                 <p>Increase your AWS resource utilization through strategic scheduling and optimization.</p>
               )}
