@@ -3263,11 +3263,14 @@ html {
 }
 
 .accounts-grid {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 20%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 4px;
-  width: 100%;
-  max-width: 80px;
+  gap: 6px;
 }
 
 .account-item {
@@ -4550,4 +4553,28 @@ html {
   .usage-line {
     bottom: 50px;
   }
+}
+
+/* Pricing Card Animation */
+.pricing-card-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.pricing-card-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ensure pricing card animation works */
+.pricing-card.featured.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.pricing-card.featured.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
