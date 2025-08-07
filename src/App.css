@@ -759,9 +759,10 @@ html {
 }
 
 .stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
+  align-items: stretch;
 }
 
 .stat-item {
@@ -777,6 +778,7 @@ html {
   padding-bottom: 4rem;
   opacity: 1 !important;
   visibility: visible !important;
+  flex: 1 1 300px;
 }
 
 .stat-item.expanded {
