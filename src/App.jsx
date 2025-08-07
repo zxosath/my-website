@@ -12,6 +12,7 @@ function HomePage() {
   const [scrolled, setScrolled] = useState(false);
   const [activeTab, setActiveTab] = useState('FinOps');
   const [dashboardTab, setDashboardTab] = useState('results');
+  const [expandedTiles, setExpandedTiles] = useState({});
 
   // Scroll to top on component mount
   useEffect(() => {
@@ -61,6 +62,14 @@ function HomePage() {
   const handleDashboardTabChange = (tab) => {
     console.log('Dashboard tab clicked:', tab);
     setDashboardTab(tab)
+  }
+
+  // Tile expansion functionality
+  const handleTileClick = (tileId) => {
+    setExpandedTiles(prev => ({
+      ...prev,
+      [tileId]: !prev[tileId]
+    }));
   }
 
   // Smooth scroll to section
@@ -257,29 +266,41 @@ function HomePage() {
       <section className="stats">
         <div className="container">
           <div className="stats-grid">
-            <div className="stat-item animate-on-scroll">
+            <div className={`stat-item animate-on-scroll ${expandedTiles['cost-reduction'] ? 'expanded' : ''}`} onClick={() => handleTileClick('cost-reduction')}>
               <h3>40-60% Cost Reduction</h3>
-              <p>Achieve significant AWS cost savings through expert resource optimization and strategic billing management.</p>
+              {expandedTiles['cost-reduction'] && (
+                <p>Achieve significant AWS cost savings through expert resource optimization and strategic billing management.</p>
+              )}
             </div>
-            <div className="stat-item animate-on-scroll">
+            <div className={`stat-item animate-on-scroll ${expandedTiles['savings-plans'] ? 'expanded' : ''}`} onClick={() => handleTileClick('savings-plans')}>
               <h3>Savings Plans: Up to 72% Off</h3>
-              <p>Expert management of AWS Savings Plans to maximize your discount while maintaining flexibility.</p>
+              {expandedTiles['savings-plans'] && (
+                <p>Expert management of AWS Savings Plans to maximize your discount while maintaining flexibility.</p>
+              )}
             </div>
-            <div className="stat-item animate-on-scroll">
+            <div className={`stat-item animate-on-scroll ${expandedTiles['reserved-instances'] ? 'expanded' : ''}`} onClick={() => handleTileClick('reserved-instances')}>
               <h3>Reserved Instances: 75% Savings</h3>
-              <p>Strategic Reserved Instance management to lock in savings for predictable workloads.</p>
+              {expandedTiles['reserved-instances'] && (
+                <p>Strategic Reserved Instance management to lock in savings for predictable workloads.</p>
+              )}
             </div>
-            <div className="stat-item animate-on-scroll">
+            <div className={`stat-item animate-on-scroll ${expandedTiles['cost-transparency'] ? 'expanded' : ''}`} onClick={() => handleTileClick('cost-transparency')}>
               <h3>100% Cost Transparency</h3>
-              <p>Accurate cost allocation and showback for better financial transparency and accountability.</p>
+              {expandedTiles['cost-transparency'] && (
+                <p>Accurate cost allocation and showback for better financial transparency and accountability.</p>
+              )}
             </div>
-            <div className="stat-item animate-on-scroll">
+            <div className={`stat-item animate-on-scroll ${expandedTiles['monthly-actions'] ? 'expanded' : ''}`} onClick={() => handleTileClick('monthly-actions')}>
               <h3>2,500+ Monthly Actions</h3>
-              <p>VIRIDITY takes thousands of strategic actions monthly to continuously optimize your AWS costs.</p>
+              {expandedTiles['monthly-actions'] && (
+                <p>VIRIDITY takes thousands of strategic actions monthly to continuously optimize your AWS costs.</p>
+              )}
             </div>
-            <div className="stat-item animate-on-scroll">
+            <div className={`stat-item animate-on-scroll ${expandedTiles['resource-utilization'] ? 'expanded' : ''}`} onClick={() => handleTileClick('resource-utilization')}>
               <h3>85% Resource Utilization</h3>
-              <p>Increase your AWS resource utilization through strategic scheduling and optimization.</p>
+              {expandedTiles['resource-utilization'] && (
+                <p>Increase your AWS resource utilization through strategic scheduling and optimization.</p>
+              )}
             </div>
           </div>
         </div>
