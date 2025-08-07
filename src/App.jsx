@@ -168,23 +168,23 @@ function HomePage() {
               <div className="dashboard-preview">
                 <div className="dashboard-header">
                   <div className="dashboard-tabs">
-                    <span className="tab active">Dashboard</span>
-                    <span className="tab">Reports</span>
-                    <span className="tab">Settings</span>
+                    <span className="tab active">Our Results</span>
+                    <span className="tab">Case Studies</span>
+                    <span className="tab">Testimonials</span>
                   </div>
                 </div>
                 <div className="dashboard-content">
                   <div className="metric-card">
                     <h3>Average Total Monthly Savings</h3>
-                    <div className="metric-value">$90K+</div>
+                    <div className="metric-value">$127K+</div>
                   </div>
                   <div className="metric-card">
                     <h3>Average Cost Reduction</h3>
-                    <div className="metric-value">35%+</div>
+                    <div className="metric-value">47%+</div>
                   </div>
                   <div className="metric-card">
                     <h3>ROI on Investment</h3>
-                    <div className="metric-value">300%+</div>
+                    <div className="metric-value">1,200%+</div>
                   </div>
                 </div>
               </div>
