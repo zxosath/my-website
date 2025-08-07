@@ -153,7 +153,7 @@ function Pricing() {
             <div className="pricing-card animate-on-scroll">
               <div className="pricing-card-header">
                 <h3>Free AWS Cost Analysis</h3>
-                <div className="pricing-badge">$0</div>
+                <div className="pricing-badge">Free</div>
               </div>
               <div className="pricing-card-content">
                 <h4>Discover Your Hidden Savings</h4>
@@ -172,7 +172,7 @@ function Pricing() {
             <div className="pricing-card animate-on-scroll">
               <div className="pricing-card-header">
                 <h3>VIRIDITY Expert Optimization</h3>
-                <div className="pricing-badge">Pay Only for Savings</div>
+                <div className="pricing-badge">Percentage of Savings</div>
               </div>
               <div className="pricing-card-content">
                 <h4>Expert AWS Cost Optimization</h4>
