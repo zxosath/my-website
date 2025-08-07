@@ -681,9 +681,10 @@ html {
 }
 
 .dashboard-header {
-  background: #f8fafc;
+  background: rgba(255, 255, 255, 0.05);
   padding: 1.25rem;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .dashboard-tabs {
@@ -697,20 +698,25 @@ html {
   font-size: 0.875rem;
   font-weight: 500;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
-  color: #64748b;
+  color: #94a3b8;
   cursor: pointer;
   transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .tab.active {
-  background: #2563eb;
+  background: linear-gradient(135deg, #8b5cf6 0%, #10b981 100%);
   color: white;
   transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
 }
 
 .tab:hover:not(.active) {
-  background: #e2e8f0;
-  color: #475569;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .dashboard-content {
@@ -720,10 +726,11 @@ html {
 }
 
 .metric-card {
-  background: #f8fafc;
+  background: rgba(255, 255, 255, 0.05);
   padding: 1.5rem;
   border-radius: 12px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -736,7 +743,7 @@ html {
   left: 0;
   width: 4px;
   height: 100%;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  background: linear-gradient(135deg, #8b5cf6 0%, #10b981 100%);
   transform: scaleY(0);
   transition: transform 0.3s ease;
 }
@@ -747,11 +754,12 @@ html {
 
 .metric-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(139, 92, 246, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .metric-card h3 {
-  color: #64748b;
+  color: #94a3b8;
   font-size: 0.875rem;
   font-weight: 600;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
@@ -759,11 +767,11 @@ html {
 }
 
 .metric-value {
-  color: #1e293b;
+  color: white;
   font-size: 1.75rem;
   font-weight: 700;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
-  background: linear-gradient(135deg, #6366f1, #16a34a);
+  background: linear-gradient(135deg, #8b5cf6 0%, #10b981 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -4328,7 +4336,7 @@ html {
 /* Enterprise Stats Visualizations */
 .stat-visual-container {
   margin-top: 1rem;
-  height: 100px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
