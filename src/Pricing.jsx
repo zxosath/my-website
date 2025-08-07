@@ -169,7 +169,7 @@ function Pricing() {
               </div>
             </div>
 
-            <div className="pricing-card featured animate-on-scroll">
+            <div className="pricing-card animate-on-scroll">
               <div className="pricing-card-header">
                 <h3>VIRIDITY Expert Optimization</h3>
                 <div className="pricing-badge">Pay Only for Savings</div>
