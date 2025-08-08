@@ -759,12 +759,11 @@ html {
 }
 
 .stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-  align-items: start;
-  grid-auto-rows: 200px;
+  align-items: flex-start;
 }
 
 .stat-item {
@@ -784,6 +783,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 0 1 300px;
 }
 
 .stat-item.expanded {
@@ -791,7 +791,6 @@ html {
   opacity: 1 !important;
   visibility: visible !important;
   height: 300px;
-  grid-row: span 2;
 }
 
 .stat-item:hover {
@@ -2073,12 +2072,11 @@ html {
   .stat-item {
     padding: 1.5rem;
     height: 200px;
-    grid-row: span 1;
+    flex: 0 1 300px;
   }
   
   .stat-item.expanded {
     height: 300px;
-    grid-row: span 2;
   }
 
   .challenge-card {
@@ -2374,12 +2372,11 @@ html {
   .stat-item {
     padding: 1.5rem;
     height: 200px;
-    grid-row: span 1;
+    flex: 0 1 300px;
   }
   
   .stat-item.expanded {
     height: 300px;
-    grid-row: span 2;
   }
 
   .challenge-card {
