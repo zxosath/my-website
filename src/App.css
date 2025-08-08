@@ -6072,8 +6072,10 @@ html {
     font-size: 0.65rem !important;
     bottom: 0.4rem !important;
   }
+  
+  .benefit-card .benefit-actions {
+    display: none !important;
+  }
 }
 
-.benefit-card .benefit-actions {
-  display: none !important;
-}
+
