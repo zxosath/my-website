@@ -6038,8 +6038,8 @@ html {
     margin-bottom: 0.75rem !important;
   }
   
-  .benefit-actions {
-    margin-top: auto !important;
+  .benefit-card .benefit-actions {
+    display: none !important;
   }
   
   .btn-primary {
@@ -6071,10 +6071,6 @@ html {
   .expand-icon {
     font-size: 0.65rem !important;
     bottom: 0.4rem !important;
-  }
-  
-  .benefit-card .benefit-actions {
-    display: none !important;
   }
 }
 
