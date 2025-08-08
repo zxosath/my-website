@@ -1126,9 +1126,7 @@ html {
 }
 
 .benefit-actions {
-  margin-top: auto !important;
-  display: flex;
-  justify-content: center;
+  display: none !important;
 }
 
 .benefit-actions .btn-primary {
