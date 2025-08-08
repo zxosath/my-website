@@ -267,36 +267,50 @@ function HomePage() {
         <div className="container">
           <h2 className="animate-on-scroll">Why VIRIDITY</h2>
           <div className="benefits-grid">
-            <div className="benefit-card animate-on-scroll">
-              <div className="benefit-icon">
-                <TrendingUp size={32} />
+              <div className="benefit-card animate-on-scroll">
+                <div className="benefit-card-left">
+                  <div className="benefit-icon">
+                    <TrendingUp className="w-6 h-6" />
+                  </div>
+                  <h3>Reduce AWS costs, mitigate risk</h3>
+                  <div className="benefit-actions">
+                    <button className="btn-primary">Get Started</button>
+                  </div>
+                </div>
+                <div className="benefit-card-right">
+                  <p>Continuously optimize your AWS spending while adapting to changes in usage in real time to safely increase savings while avoiding lock-in risk.</p>
+                </div>
               </div>
-              <h3>Reduce AWS costs, mitigate risk</h3>
-              <p>Continuously optimize your AWS spending while adapting to changes in usage in real time to safely increase savings while avoiding lock-in risk.</p>
-              <div className="benefit-actions">
-                <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
+
+              <div className="benefit-card animate-on-scroll">
+                <div className="benefit-card-left">
+                  <div className="benefit-icon">
+                    <Settings className="w-6 h-6" />
+                  </div>
+                  <h3>Offload work, scale FinOps</h3>
+                  <div className="benefit-actions">
+                    <button className="btn-primary">Get Started</button>
+                  </div>
+                </div>
+                <div className="benefit-card-right">
+                  <p>Managing AWS costs via manual reporting tools can lead to suboptimal results. Give this work to VIRIDITY experts and eliminate human involvement.</p>
+                </div>
               </div>
-            </div>
-            <div className="benefit-card animate-on-scroll">
-              <div className="benefit-icon">
-                <Settings size={32} />
+
+              <div className="benefit-card animate-on-scroll">
+                <div className="benefit-card-left">
+                  <div className="benefit-icon">
+                    <BarChart3 className="w-6 h-6" />
+                  </div>
+                  <h3>Gain insights, avoid analysis paralysis</h3>
+                  <div className="benefit-actions">
+                    <button className="btn-primary">Get Started</button>
+                  </div>
+                </div>
+                <div className="benefit-card-right">
+                  <p>Unlike traditional AWS cost tools that overwhelm practitioners with excess data, VIRIDITY not only provides immediate results, but also tracks core optimization KPIs.</p>
+                </div>
               </div>
-              <h3>Offload work, scale FinOps</h3>
-              <p>Managing AWS costs via manual reporting tools can lead to suboptimal results. Give this work to VIRIDITY experts and eliminate human involvement.</p>
-              <div className="benefit-actions">
-                <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
-              </div>
-            </div>
-            <div className="benefit-card animate-on-scroll">
-              <div className="benefit-icon">
-                <BarChart3 size={32} />
-              </div>
-              <h3>Gain insights, avoid analysis paralysis</h3>
-              <p>Unlike traditional AWS cost tools that overwhelm practitioners with excess data, VIRIDITY not only provides immediate results, but also tracks core optimization KPIs.</p>
-              <div className="benefit-actions">
-                <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
-              </div>
-            </div>
             <div className="benefit-card animate-on-scroll">
               <div className="benefit-icon">
                 <DollarSign size={32} />
