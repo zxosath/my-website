@@ -2158,8 +2158,8 @@ html {
     margin-bottom: 0.75rem !important;
   }
 
-  .benefit-actions {
-    margin-top: auto !important;
+  .benefit-card .benefit-actions {
+    display: none !important;
   }
 
   .btn-primary {
@@ -2471,8 +2471,8 @@ html {
     margin-bottom: 0.75rem !important;
   }
 
-  .benefit-actions {
-    margin-top: auto !important;
+  .benefit-card .benefit-actions {
+    display: none !important;
   }
 
   .btn-primary {
