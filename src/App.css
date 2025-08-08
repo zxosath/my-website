@@ -5256,10 +5256,10 @@ html {
 
 .point-value {
   position: absolute;
-  bottom: -20px;
+  bottom: -25px;
   left: 50%;
   transform: translateX(-50%);
-  color: #10b981;
+  color: white;
   font-size: 0.75rem;
   font-weight: bold;
 }
