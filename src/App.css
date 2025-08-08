@@ -774,14 +774,11 @@ html {
   position: relative;
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  overflow: visible;
+  overflow: hidden;
   cursor: pointer;
   padding-bottom: 4rem;
   opacity: 1 !important;
   visibility: visible !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   flex: 0 1 300px;
   align-self: flex-start;
   height: 200px;
@@ -792,6 +789,7 @@ html {
   opacity: 1 !important;
   visibility: visible !important;
   z-index: 10;
+  height: 300px;
 }
 
 .stat-item:hover {
@@ -825,16 +823,7 @@ html {
   opacity: 0;
   transform: translateY(10px);
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.95);
-  padding: 1.5rem;
-  border-radius: 0 0 16px 16px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-top: none;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  position: relative;
   z-index: 2;
   font-weight: 500;
   max-height: 0;
@@ -845,7 +834,7 @@ html {
   opacity: 1;
   transform: translateY(0);
   max-height: 200px;
-  margin-top: 0;
+  margin-top: 1rem;
 }
 
 .tile-header {
@@ -2090,7 +2079,7 @@ html {
   }
   
   .stat-item.expanded {
-    /* height: 300px; removed to prevent tile movement */
+    height: 300px;
   }
 
   .challenge-card {
@@ -2390,6 +2379,7 @@ html {
   }
   
   .stat-item.expanded {
+    height: 300px;
   }
 
   .challenge-card {
