@@ -783,18 +783,42 @@ html {
   height: 250px;
 }
 
-.stat-item.expanded {
-  background: rgba(255, 255, 255, 0.9) !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  z-index: 10;
-  height: 350px;
-  padding-bottom: 6rem;
-}
-
 .stat-item:hover {
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
   border-color: rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+.stat-item:hover .expand-icon {
+  color: #1f2937;
+  transform: translateX(-50%) scale(1.2);
+}
+
+.expand-icon {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #6b7280;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  line-height: 1;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.stat-item:hover .expand-icon {
+  opacity: 1;
+  color: #1f2937;
+  transform: translateX(-50%) scale(1.2);
+}
+
+.stat-item.expanded .expand-icon {
+  transform: translateX(-50%) rotate(45deg);
+  color: #1f2937;
+  opacity: 1;
 }
 
 .stat-item h3 {
@@ -5769,4 +5793,19 @@ html {
 .pricing-card.featured.animate-on-scroll.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.stat-item.expanded {
+  background: rgba(255, 255, 255, 0.9) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 10;
+  height: 350px;
+  padding-bottom: 6rem;
+}
+
+.stat-item:hover {
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
 }
