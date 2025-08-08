@@ -761,11 +761,10 @@ html {
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
-  grid-template-rows: repeat(auto-fit, minmax(200px, auto));
   gap: 2rem;
   justify-content: center;
   align-items: start;
-  grid-auto-flow: row;
+  grid-auto-rows: 200px;
 }
 
 .stat-item {
@@ -782,9 +781,6 @@ html {
   opacity: 1 !important;
   visibility: visible !important;
   height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .stat-item.expanded {
