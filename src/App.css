@@ -2071,7 +2071,14 @@ html {
   }
 
   .stat-item {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem;
+    height: 200px;
+    grid-row: span 1;
+  }
+  
+  .stat-item.expanded {
+    height: 300px;
+    grid-row: span 2;
   }
 
   .challenge-card {
@@ -2366,6 +2373,13 @@ html {
 
   .stat-item {
     padding: 1.5rem;
+    height: 200px;
+    grid-row: span 1;
+  }
+  
+  .stat-item.expanded {
+    height: 300px;
+    grid-row: span 2;
   }
 
   .challenge-card {
