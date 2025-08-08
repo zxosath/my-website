@@ -338,86 +338,17 @@ function HomePage() {
           <p className="animate-on-scroll">See the difference between manual AWS cost management and VIRIDITY's expert optimization.</p>
           
           <div className="comparison-chart animate-on-scroll">
-            <div className="chart-container">
-              <div className="chart-section without-viridity animate-on-scroll">
-                <h3>Without VIRIDITY: Manual Management</h3>
-                <div className="chart-bars">
-                  <div className="bar-group">
-                    <div className="bar missed-savings" style={{height: '30%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar missed-savings" style={{height: '45%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar missed-savings" style={{height: '25%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar missed-savings" style={{height: '40%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar wasted-spend" style={{height: '85%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar wasted-spend" style={{height: '90%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar wasted-spend" style={{height: '75%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar wasted-spend" style={{height: '95%'}}></div>
-                  </div>
-                </div>
-                <div className="usage-line manual-usage"></div>
-              </div>
-              
-              <div className="chart-divider"></div>
-              
-              <div className="chart-section with-viridity animate-on-scroll">
-                <h3>With VIRIDITY: Expert Optimization</h3>
-                <div className="chart-bars">
-                  <div className="bar-group">
-                    <div className="bar optimal" style={{height: '60%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar optimal" style={{height: '65%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar optimal" style={{height: '55%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar optimal" style={{height: '70%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar optimal" style={{height: '65%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar optimal" style={{height: '60%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar optimal" style={{height: '70%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar optimal" style={{height: '65%'}}></div>
-                  </div>
-                </div>
-                <div className="usage-line expert-usage"></div>
-              </div>
-            </div>
-            
-            <div className="chart-legend animate-on-scroll">
-              <div className="legend-item">
-                <div className="legend-color missed-savings"></div>
-                <span>Missed Savings: Under-commitment leads to missed opportunities</span>
-              </div>
-              <div className="legend-item">
-                <div className="legend-color wasted-spend"></div>
-                <span>Wasted Spend: Over-commitment leads to unused resources</span>
-              </div>
-              <div className="legend-item">
-                <div className="legend-color optimal"></div>
-                <span>Optimal: Expert management aligns commitments with usage</span>
-              </div>
-            </div>
+            <img 
+              src="/f08f2585-af0e-4765-ae1a-720a784c27fb.png" 
+              alt="Manual vs Expert AWS Optimization Chart" 
+              style={{
+                width: '100%',
+                maxWidth: '800px',
+                height: 'auto',
+                borderRadius: '12px',
+                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)'
+              }}
+            />
           </div>
         </div>
       </section>
