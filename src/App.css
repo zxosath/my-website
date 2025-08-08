@@ -784,6 +784,7 @@ html {
   flex-direction: column;
   justify-content: space-between;
   flex: 0 1 300px;
+  align-self: flex-start;
 }
 
 .stat-item.expanded {
