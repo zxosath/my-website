@@ -788,24 +788,23 @@ html {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(107, 114, 128, 0.08), rgba(156, 163, 175, 0.08));
-  opacity: 0;
-  transition: opacity 0.4s ease;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(107, 114, 128, 0.1), transparent);
+  transition: left 0.8s ease;
   border-radius: 20px;
   z-index: 0;
+}
+
+.stat-item:hover::before {
+  left: 100%;
 }
 
 .stat-item:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15), 0 8px 32px rgba(107, 114, 128, 0.15), 0 0 0 1px rgba(107, 114, 128, 0.2);
   border-color: rgba(107, 114, 128, 0.3);
-}
-
-.stat-item:hover::before {
-  opacity: 1;
 }
 
 .stat-item:hover .expand-icon {
