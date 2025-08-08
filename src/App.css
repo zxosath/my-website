@@ -5739,10 +5739,7 @@ html {
   100% { transform: scaleY(1); }
 }
 
-@keyframes wave {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-5px); }
-}
+
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
