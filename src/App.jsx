@@ -380,12 +380,6 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="usage-line manual-usage"></div>
-                <div className="missed-savings-area">
-                  <span className="area-label">Missed Savings</span>
-                </div>
-                <div className="wasted-spend-area">
-                  <span className="area-label">Wasted Spend</span>
-                </div>
               </div>
               
               <div className="chart-divider"></div>

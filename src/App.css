@@ -5640,6 +5640,7 @@ html {
   height: 200px;
   position: relative;
   padding: 0 1rem;
+  margin-bottom: 2rem;
 }
 
 .bar-group {
@@ -5648,6 +5649,7 @@ html {
   align-items: center;
   flex: 1;
   position: relative;
+  height: 100%;
 }
 
 .bar {
@@ -5656,6 +5658,8 @@ html {
   border-radius: 4px 4px 0 0;
   position: relative;
   transition: all 0.3s ease;
+  min-height: 20px;
+  z-index: 5;
 }
 
 .missed-savings {
