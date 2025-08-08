@@ -1065,7 +1065,7 @@ html {
 
 .benefit-card {
   background: white;
-  padding: 1.5rem !important;
+  padding: 1rem !important;
   min-height: auto !important;
   border-radius: 16px;
   border: 1px solid #e5e7eb;
@@ -1110,9 +1110,9 @@ html {
 
 .benefit-card h3 {
   color: #1f2937;
-  font-size: 0.875rem !important;
+  font-size: 0.8rem !important;
   font-weight: 700;
-  margin-bottom: 0.75rem !important;
+  margin-bottom: 0.5rem !important;
   line-height: 1.2 !important;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
 }
@@ -1120,7 +1120,7 @@ html {
 .benefit-card p {
   color: #6b7280;
   line-height: 1.4 !important;
-  margin-bottom: 1rem !important;
+  margin-bottom: 0.75rem !important;
   flex-grow: 1;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
 }
@@ -1138,7 +1138,7 @@ html {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 0.7rem !important;
-  padding: 0.5rem 1rem !important;
+  padding: 0.4rem 0.75rem !important;
 }
 
 /* Savings as a Service Section */
@@ -2141,21 +2141,21 @@ html {
   }
 
   .benefit-card {
-    padding: 0.75rem !important;
+    padding: 1rem !important;
     min-height: auto !important;
     height: auto !important;
   }
 
   .benefit-card h3 {
-    font-size: 0.65rem !important;
-    margin-bottom: 0.4rem !important;
-    line-height: 1.1 !important;
+    font-size: 0.8rem !important;
+    margin-bottom: 0.5rem !important;
+    line-height: 1.2 !important;
   }
 
   .benefit-card p {
-    font-size: 0.55rem !important;
-    line-height: 1.2 !important;
-    margin-bottom: 0.5rem !important;
+    font-size: 0.7rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.75rem !important;
   }
 
   .benefit-actions {
@@ -2163,8 +2163,8 @@ html {
   }
 
   .btn-primary {
-    font-size: 0.5rem !important;
-    padding: 0.3rem 0.5rem !important;
+    font-size: 0.65rem !important;
+    padding: 0.4rem 0.75rem !important;
   }
 
   .cta-benefits {
@@ -2454,21 +2454,21 @@ html {
   }
 
   .benefit-card {
-    padding: 0.75rem !important;
+    padding: 1rem !important;
     min-height: auto !important;
     height: auto !important;
   }
 
   .benefit-card h3 {
-    font-size: 0.65rem !important;
-    margin-bottom: 0.4rem !important;
-    line-height: 1.1 !important;
+    font-size: 0.8rem !important;
+    margin-bottom: 0.5rem !important;
+    line-height: 1.2 !important;
   }
 
   .benefit-card p {
-    font-size: 0.55rem !important;
-    line-height: 1.2 !important;
-    margin-bottom: 0.5rem !important;
+    font-size: 0.7rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.75rem !important;
   }
 
   .benefit-actions {
@@ -2476,8 +2476,8 @@ html {
   }
 
   .btn-primary {
-    font-size: 0.5rem !important;
-    padding: 0.3rem 0.5rem !important;
+    font-size: 0.65rem !important;
+    padding: 0.4rem 0.75rem !important;
   }
 
   .cta-benefits {
@@ -5499,39 +5499,18 @@ html {
   }
   
   .benefits-grid {
-    grid-template-columns: 1fr !important;
-    gap: 1rem !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.75rem !important;
   }
   
   .benefit-card {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
     padding: 1rem !important;
-    min-height: auto !important;
-    height: auto !important;
-    gap: 1rem !important;
-  }
-  
-  .benefit-card-left {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    flex-shrink: 0 !important;
-    width: 80px !important;
-  }
-  
-  .benefit-card-right {
-    flex: 1 !important;
-    display: flex !important;
-    flex-direction: column !important;
   }
   
   .benefit-card h3 {
-    font-size: 0.75rem !important;
+    font-size: 0.8rem !important;
     margin-bottom: 0.5rem !important;
     line-height: 1.2 !important;
-    text-align: center !important;
   }
   
   .benefit-card p {
@@ -5541,13 +5520,12 @@ html {
   }
   
   .benefit-actions {
-    margin-top: 0.5rem !important;
+    margin-top: auto !important;
   }
   
   .btn-primary {
-    font-size: 0.6rem !important;
+    font-size: 0.65rem !important;
     padding: 0.4rem 0.75rem !important;
-    white-space: nowrap !important;
   }
   
   .stats-grid {
