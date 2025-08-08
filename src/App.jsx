@@ -272,7 +272,7 @@ function HomePage() {
                 <TrendingUp size={32} />
               </div>
               <h3>Reduce AWS costs, mitigate risk</h3>
-              <p>Continuously optimize your AWS spending while adapting to changes in usage in real time to safely increase savings while avoiding lock-in risk.</p>
+              <p>Optimize AWS spending in real-time while avoiding lock-in risk.</p>
               <div className="benefit-actions">
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
               </div>
@@ -282,7 +282,7 @@ function HomePage() {
                 <Settings size={32} />
               </div>
               <h3>Offload work, scale FinOps</h3>
-              <p>Managing AWS costs via manual reporting tools can lead to suboptimal results. Give this work to VIRIDITY experts and eliminate human involvement.</p>
+              <p>Let VIRIDITY experts handle AWS cost management while you focus on strategic initiatives.</p>
               <div className="benefit-actions">
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
               </div>
@@ -292,7 +292,7 @@ function HomePage() {
                 <BarChart3 size={32} />
               </div>
               <h3>Gain insights, avoid analysis paralysis</h3>
-              <p>Unlike traditional AWS cost tools that overwhelm practitioners with excess data, VIRIDITY not only provides immediate results, but also tracks core optimization KPIs.</p>
+              <p>Get immediate results and track core optimization KPIs without data overload.</p>
               <div className="benefit-actions">
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
               </div>
@@ -302,7 +302,7 @@ function HomePage() {
                 <DollarSign size={32} />
               </div>
               <h3>Increase ROI, decrease wasted spend</h3>
-              <p>Maximize the value of your AWS investments with VIRIDITY. It generates incremental savings that more than offsets the charge.</p>
+              <p>Generate incremental savings that exceed our fees and maximize AWS ROI.</p>
               <div className="benefit-actions">
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
               </div>
@@ -312,7 +312,7 @@ function HomePage() {
                 <Activity size={32} />
               </div>
               <h3>Real-time optimization, continuous savings</h3>
-              <p>VIRIDITY's expert team continuously monitors your AWS usage patterns and adjusts discount strategies in real-time to maximize your savings potential.</p>
+              <p>Expert team monitors usage patterns and adjusts strategies in real-time for maximum savings.</p>
               <div className="benefit-actions">
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
               </div>
@@ -322,7 +322,7 @@ function HomePage() {
                 <Globe size={32} />
               </div>
               <h3>Global AWS expertise, local results</h3>
-              <p>Leverage our deep AWS knowledge across all regions and services to optimize costs globally while maintaining performance and compliance standards.</p>
+              <p>Leverage deep AWS expertise across all regions while maintaining performance and compliance.</p>
               <div className="benefit-actions">
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
               </div>
