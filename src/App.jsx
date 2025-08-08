@@ -335,18 +335,17 @@ function HomePage() {
       <section className="analytics">
         <div className="container">
           <h2 className="animate-on-scroll">Manual vs Expert AWS Optimization</h2>
-          <p className="animate-on-scroll">See the difference between manual AWS cost management and VIRIDITY's expert optimization.</p>
           
           <div className="analytics-content animate-on-scroll">
             <div className="analytics-text">
               <p>
-                Optimizing a portfolio of AWS commitments is inherently complex. Commit conservatively, and you forfeit substantial cost savings opportunities. Commit aggressively, and you risk significant financial waste when usage patterns shift unexpectedly.
+                AWS commitment optimization presents a critical dilemma: commit conservatively and miss savings, or commit aggressively and risk waste when usage changes.
               </p>
               <p>
-                Managing commitments manually is necessary but fundamentally non-strategic, consuming valuable time that could be allocated to higher-order FinOps initiatives where human expertise and judgment deliver maximum value.
+                Manual management consumes time that could be spent on strategic FinOps initiatives where human expertise delivers maximum value.
               </p>
               <p>
-                VIRIDITY's expert optimization eliminates this trade-off, delivering precise alignment between commitments and actual usage patterns through sophisticated analysis and strategic planning.
+                VIRIDITY eliminates this trade-off through expert analysis and strategic planning, delivering precise alignment between commitments and usage patterns.
               </p>
             </div>
             
