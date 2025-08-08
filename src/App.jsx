@@ -262,164 +262,10 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="stats">
-        <div className="container">
-          <div className="stats-grid">
-            <div className={`stat-item ${expandedTiles['cost-reduction'] ? 'expanded' : ''}`} onClick={() => handleTileClick('cost-reduction')}>
-              <h3>40-60% Cost Reduction</h3>
-              {expandedTiles['cost-reduction'] && (
-                <p>Achieve significant AWS cost savings through expert resource optimization and strategic billing management.</p>
-              )}
-              <span className="expand-icon">+</span>
-            </div>
-            <div className={`stat-item ${expandedTiles['savings-plans'] ? 'expanded' : ''}`} onClick={() => handleTileClick('savings-plans')}>
-              <h3>Savings Plans: Up to 72% Off</h3>
-              {expandedTiles['savings-plans'] && (
-                <p>Expert management of AWS Savings Plans to maximize your discount while maintaining flexibility.</p>
-              )}
-              <span className="expand-icon">+</span>
-            </div>
-            <div className={`stat-item ${expandedTiles['reserved-instances'] ? 'expanded' : ''}`} onClick={() => handleTileClick('reserved-instances')}>
-              <h3>Reserved Instances: 75% Savings</h3>
-              {expandedTiles['reserved-instances'] && (
-                <p>Strategic Reserved Instance management to lock in savings for predictable workloads.</p>
-              )}
-              <span className="expand-icon">+</span>
-            </div>
-            <div className={`stat-item ${expandedTiles['cost-transparency'] ? 'expanded' : ''}`} onClick={() => handleTileClick('cost-transparency')}>
-              <h3>100% Cost Transparency</h3>
-              {expandedTiles['cost-transparency'] && (
-                <p>Accurate cost allocation and showback for better financial transparency and accountability.</p>
-              )}
-              <span className="expand-icon">+</span>
-            </div>
-            <div className={`stat-item ${expandedTiles['monthly-actions'] ? 'expanded' : ''}`} onClick={() => handleTileClick('monthly-actions')}>
-              <h3>2,500+ Monthly Actions</h3>
-              {expandedTiles['monthly-actions'] && (
-                <p>VIRIDITY takes thousands of strategic actions monthly to continuously optimize your AWS costs.</p>
-              )}
-              <span className="expand-icon">+</span>
-            </div>
-            <div className={`stat-item ${expandedTiles['resource-utilization'] ? 'expanded' : ''}`} onClick={() => handleTileClick('resource-utilization')}>
-              <h3>85% Resource Utilization</h3>
-              {expandedTiles['resource-utilization'] && (
-                <p>Increase your AWS resource utilization through strategic scheduling and optimization.</p>
-              )}
-              <span className="expand-icon">+</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-        {/* Analytics Section */}
-        <section className="analytics">
-          <div className="container">
-            <h2 className="animate-on-scroll">Manual vs Expert AWS Optimization</h2>
-            <p className="animate-on-scroll">See the difference between manual AWS cost management and VIRIDITY's expert optimization.</p>
-            
-            <div className="comparison-chart animate-on-scroll">
-              <div className="chart-container">
-                <div className="chart-section without-viridity animate-on-scroll">
-                  <h3>Without VIRIDITY: Manual Management Risks</h3>
-                  <div className="chart-bars">
-                    <div className="bar-group">
-                      <div className="bar missed-savings" style={{height: '60%'}}></div>
-                      <div className="bar-label">Missed Savings</div>
-                    </div>
-                    <div className="bar-group">
-                      <div className="bar wasted-spend" style={{height: '80%'}}></div>
-                      <div className="bar-label">Wasted Spend</div>
-                    </div>
-                    <div className="bar-group">
-                      <div className="bar missed-savings" style={{height: '40%'}}></div>
-                      <div className="bar-label">Missed Savings</div>
-                    </div>
-                    <div className="bar-group">
-                      <div className="bar wasted-spend" style={{height: '90%'}}></div>
-                      <div className="bar-label">Wasted Spend</div>
-                    </div>
-                    <div className="bar-group">
-                      <div className="bar missed-savings" style={{height: '70%'}}></div>
-                      <div className="bar-label">Missed Savings</div>
-                    </div>
-                  </div>
-                  <div className="usage-line manual-usage"></div>
-                </div>
-                
-                <div className="chart-divider"></div>
-                
-                <div className="chart-section with-viridity animate-on-scroll">
-                  <h3>With VIRIDITY: Expert Optimization</h3>
-                  <div className="chart-bars">
-                    <div className="bar-group">
-                      <div className="bar optimal" style={{height: '65%'}}></div>
-                      <div className="bar-label">Optimal</div>
-                    </div>
-                    <div className="bar-group">
-                      <div className="bar optimal" style={{height: '75%'}}></div>
-                      <div className="bar-label">Optimal</div>
-                    </div>
-                    <div className="bar-group">
-                      <div className="bar optimal" style={{height: '45%'}}></div>
-                      <div className="bar-label">Optimal</div>
-                    </div>
-                    <div className="bar-group">
-                      <div className="bar optimal" style={{height: '85%'}}></div>
-                      <div className="bar-label">Optimal</div>
-                    </div>
-                    <div className="bar-group">
-                      <div className="bar optimal" style={{height: '70%'}}></div>
-                      <div className="bar-label">Optimal</div>
-                    </div>
-                  </div>
-                  <div className="usage-line expert-usage"></div>
-                </div>
-              </div>
-              
-              <div className="chart-legend animate-on-scroll">
-                <div className="legend-item">
-                  <div className="legend-color missed-savings"></div>
-                  <span>Missed Savings: Under-commitment leads to missed opportunities</span>
-                </div>
-                <div className="legend-item">
-                  <div className="legend-color wasted-spend"></div>
-                  <span>Wasted Spend: Over-commitment leads to unused resources</span>
-                </div>
-                <div className="legend-item">
-                  <div className="legend-color optimal"></div>
-                  <span>Optimal: Expert management aligns commitments with usage</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-      {/* Challenges Section */}
-      <section className="challenges">
-        <div className="container">
-          <h2 className="animate-on-scroll">AWS cost optimization and achieving consistent savings is an ongoing struggle for FinOps teams</h2>
-          <div className="challenges-grid">
-            <div className="challenge-card animate-on-scroll">
-              <h3>Roughly 30% of AWS spend is estimated to be waste</h3>
-              <p>The dynamic nature of AWS workloads makes ongoing cost optimization challenging for both FinOps and engineering teams.</p>
-            </div>
-            <div className="challenge-card animate-on-scroll">
-              <h3>Managing AWS costs without compromise is hard</h3>
-              <p>Cost optimization must not compromise application performance, infrastructure, or compliance with business rules.</p>
-            </div>
-            <div className="challenge-card animate-on-scroll">
-              <h3>AWS commitments are effective, but require expertise</h3>
-              <p>Optimizing AWS Savings Plans and Reserved Instances may offer the best savings; expert management delivers greater outcomes with lower risk.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why VIRIDTY Section */}
+      {/* Why VIRIDITY Section */}
       <section className="why-prosperops">
         <div className="container">
-                        <h2 className="animate-on-scroll">Why VIRIDITY</h2>
+          <h2 className="animate-on-scroll">Why VIRIDITY</h2>
           <div className="benefits-grid">
             <div className="benefit-card animate-on-scroll">
               <div className="benefit-icon">
@@ -482,7 +328,111 @@ function HomePage() {
               </div>
             </div>
           </div>
-      </div>
+        </div>
+      </section>
+
+      {/* Analytics Section */}
+      <section className="analytics">
+        <div className="container">
+          <h2 className="animate-on-scroll">Manual vs Expert AWS Optimization</h2>
+          <p className="animate-on-scroll">See the difference between manual AWS cost management and VIRIDITY's expert optimization.</p>
+          
+          <div className="comparison-chart animate-on-scroll">
+            <div className="chart-container">
+              <div className="chart-section without-viridity animate-on-scroll">
+                <h3>Without VIRIDITY: Manual Management Risks</h3>
+                <div className="chart-bars">
+                  <div className="bar-group">
+                    <div className="bar missed-savings" style={{height: '60%'}}></div>
+                    <div className="bar-label">Missed Savings</div>
+                  </div>
+                  <div className="bar-group">
+                    <div className="bar wasted-spend" style={{height: '80%'}}></div>
+                    <div className="bar-label">Wasted Spend</div>
+                  </div>
+                  <div className="bar-group">
+                    <div className="bar missed-savings" style={{height: '40%'}}></div>
+                    <div className="bar-label">Missed Savings</div>
+                  </div>
+                  <div className="bar-group">
+                    <div className="bar wasted-spend" style={{height: '90%'}}></div>
+                    <div className="bar-label">Wasted Spend</div>
+                  </div>
+                  <div className="bar-group">
+                    <div className="bar missed-savings" style={{height: '70%'}}></div>
+                    <div className="bar-label">Missed Savings</div>
+                  </div>
+                </div>
+                <div className="usage-line manual-usage"></div>
+              </div>
+              
+              <div className="chart-divider"></div>
+              
+              <div className="chart-section with-viridity animate-on-scroll">
+                <h3>With VIRIDITY: Expert Optimization</h3>
+                <div className="chart-bars">
+                  <div className="bar-group">
+                    <div className="bar optimal" style={{height: '65%'}}></div>
+                    <div className="bar-label">Optimal</div>
+                  </div>
+                  <div className="bar-group">
+                    <div className="bar optimal" style={{height: '75%'}}></div>
+                    <div className="bar-label">Optimal</div>
+                  </div>
+                  <div className="bar-group">
+                    <div className="bar optimal" style={{height: '45%'}}></div>
+                    <div className="bar-label">Optimal</div>
+                  </div>
+                  <div className="bar-group">
+                    <div className="bar optimal" style={{height: '85%'}}></div>
+                    <div className="bar-label">Optimal</div>
+                  </div>
+                  <div className="bar-group">
+                    <div className="bar optimal" style={{height: '70%'}}></div>
+                    <div className="bar-label">Optimal</div>
+                  </div>
+                </div>
+                <div className="usage-line expert-usage"></div>
+              </div>
+            </div>
+            
+            <div className="chart-legend animate-on-scroll">
+              <div className="legend-item">
+                <div className="legend-color missed-savings"></div>
+                <span>Missed Savings: Under-commitment leads to missed opportunities</span>
+              </div>
+              <div className="legend-item">
+                <div className="legend-color wasted-spend"></div>
+                <span>Wasted Spend: Over-commitment leads to unused resources</span>
+              </div>
+              <div className="legend-item">
+                <div className="legend-color optimal"></div>
+                <span>Optimal: Expert management aligns commitments with usage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Challenges Section */}
+      <section className="challenges">
+        <div className="container">
+          <h2 className="animate-on-scroll">AWS cost optimization and achieving consistent savings is an ongoing struggle for FinOps teams</h2>
+          <div className="challenges-grid">
+            <div className="challenge-card animate-on-scroll">
+              <h3>Roughly 30% of AWS spend is estimated to be waste</h3>
+              <p>The dynamic nature of AWS workloads makes ongoing cost optimization challenging for both FinOps and engineering teams.</p>
+            </div>
+            <div className="challenge-card animate-on-scroll">
+              <h3>Managing AWS costs without compromise is hard</h3>
+              <p>Cost optimization must not compromise application performance, infrastructure, or compliance with business rules.</p>
+            </div>
+            <div className="challenge-card animate-on-scroll">
+              <h3>AWS commitments are effective, but require expertise</h3>
+              <p>Optimizing AWS Savings Plans and Reserved Instances may offer the best savings; expert management delivers greater outcomes with lower risk.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Savings as a Service Section */}
@@ -512,7 +462,7 @@ function HomePage() {
                 onClick={() => handleTabChange('Resellers')}
               >
                 Enterprise
-        </button>
+              </button>
             </div>
             
             <div className="tab-content">
@@ -555,86 +505,6 @@ function HomePage() {
                   <button className="btn-primary" onClick={() => scrollToSection('cta')}>Request a Demo</button>
                 </div>
               )}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Enterprise Stats */}
-      <section className="enterprise-stats">
-        <div className="container">
-          <h2 className="animate-on-scroll">Enterprise-scale for sophisticated AWS cost optimizers.</h2>
-          <p className="animate-on-scroll">VIRIDITY manages AWS cost optimization for DevOps and FinOps teams from startups to enterprises across the globe.</p>
-          
-          <div className="stats-grid">
-            <div className="stat animate-on-scroll">
-              <div className="stat-visual-container">
-                <div className="spend-management-chart">
-                  <div className="spend-bars">
-                    <div className="spend-bar"></div>
-                    <div className="spend-bar"></div>
-                    <div className="spend-bar"></div>
-                    <div className="spend-bar"></div>
-                  </div>
-                </div>
-              </div>
-              <h3>$50M+</h3>
-              <p>Annual AWS Spend Under Management</p>
-            </div>
-            <div className="stat animate-on-scroll">
-              <div className="stat-visual-container">
-                <div className="savings-generated-chart">
-                  <div className="savings-growth">
-                    <div className="savings-circle">$15M+</div>
-                  </div>
-                </div>
-              </div>
-              <h3>$15M+</h3>
-              <p>Lifetime AWS Savings Generated</p>
-            </div>
-            <div className="stat animate-on-scroll">
-              <div className="stat-visual-container">
-                <div className="accounts-optimized-chart">
-                  <div className="accounts-grid">
-                    <div className="account-item"></div>
-                    <div className="account-item"></div>
-                    <div className="account-item"></div>
-                    <div className="account-item"></div>
-                    <div className="account-item"></div>
-                    <div className="account-item"></div>
-                    <div className="account-item"></div>
-                    <div className="account-item"></div>
-                  </div>
-                </div>
-              </div>
-              <h3>500+</h3>
-              <p>AWS Accounts Optimized</p>
-            </div>
-            <div className="stat animate-on-scroll">
-              <div className="stat-visual-container">
-                <div className="resources-managed-chart">
-                  <div className="resources-flow">
-                    <div className="resource-item"></div>
-                    <div className="resource-item"></div>
-                    <div className="resource-item"></div>
-                    <div className="resource-item"></div>
-                    <div className="resource-item"></div>
-                    <div className="resource-item"></div>
-                    <div className="resource-item"></div>
-                    <div className="resource-item"></div>
-                    <div className="resource-item"></div>
-                    <div className="resource-item"></div>
-                    <div className="resource-item"></div>
-                    <div className="resource-item"></div>
-                    <div className="resource-item"></div>
-                    <div className="resource-item"></div>
-                    <div className="resource-item"></div>
-                    <div className="resource-item"></div>
-                  </div>
-                </div>
-              </div>
-              <h3>10K+</h3>
-              <p>AWS Resources Managed</p>
             </div>
           </div>
         </div>
