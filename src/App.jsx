@@ -337,18 +337,32 @@ function HomePage() {
           <h2 className="animate-on-scroll">Manual vs Expert AWS Optimization</h2>
           <p className="animate-on-scroll">See the difference between manual AWS cost management and VIRIDITY's expert optimization.</p>
           
-          <div className="comparison-chart animate-on-scroll">
-            <img 
-              src="/f08f2585-af0e-4765-ae1a-720a784c27fb.png" 
-              alt="Manual vs Expert AWS Optimization Chart" 
-              style={{
-                width: '100%',
-                maxWidth: '800px',
-                height: 'auto',
-                borderRadius: '12px',
-                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)'
-              }}
-            />
+          <div className="analytics-content animate-on-scroll">
+            <div className="analytics-text">
+              <h3>Strategic Commitment Management</h3>
+              <p>
+                Optimizing a portfolio of AWS commitments is inherently complex. Commit conservatively, and you forfeit substantial cost savings opportunities. Commit aggressively, and you risk significant financial waste when usage patterns shift unexpectedly.
+              </p>
+              <p>
+                Managing commitments manually is necessary but fundamentally non-strategic, consuming valuable time that could be allocated to higher-order FinOps initiatives where human expertise and judgment deliver maximum value.
+              </p>
+              <p>
+                VIRIDITY's expert optimization eliminates this trade-off, delivering precise alignment between commitments and actual usage patterns through sophisticated analysis and strategic planning.
+              </p>
+            </div>
+            
+            <div className="analytics-visual">
+              <img 
+                src="/f08f2585-af0e-4765-ae1a-720a784c27fb.png" 
+                alt="Manual vs Expert AWS Optimization Chart" 
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  borderRadius: '12px',
+                  boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)'
+                }}
+              />
+            </div>
           </div>
         </div>
       </section>
