@@ -1137,8 +1137,6 @@ html {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 0.7rem !important;
-  padding: 0.4rem 0.75rem !important;
 }
 
 /* Savings as a Service Section */
