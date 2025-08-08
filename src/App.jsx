@@ -89,8 +89,8 @@ function HomePage() {
             <a href="#/" className="logo-container">
               <img src="/IMG_3102.PNG" alt="VIRIDITY Logo" className="logo-icon" />
               <h2>VIRIDITY</h2>
-            </a>
-          </div>
+        </a>
+      </div>
           
           <nav className="nav-desktop">
             <div className="nav-item dropdown" onMouseEnter={() => setProductDropdownOpen(true)} onMouseLeave={() => setProductDropdownOpen(false)}>
@@ -151,7 +151,7 @@ function HomePage() {
 
           <button className="mobile-menu-btn" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+        </button>
         </div>
 
         {mobileMenuOpen && (
