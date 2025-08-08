@@ -1065,7 +1065,8 @@ html {
 
 .benefit-card {
   background: white;
-  padding: 2.5rem;
+  padding: 1.5rem !important;
+  min-height: auto !important;
   border-radius: 16px;
   border: 1px solid #e5e7eb;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1073,7 +1074,7 @@ html {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: auto !important;
 }
 
 .benefit-card::before {
@@ -1109,23 +1110,23 @@ html {
 
 .benefit-card h3 {
   color: #1f2937;
-  font-size: 1.5rem;
+  font-size: 0.875rem !important;
   font-weight: 700;
-  margin-bottom: 1rem;
-  line-height: 1.3;
+  margin-bottom: 0.75rem !important;
+  line-height: 1.2 !important;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
 }
 
 .benefit-card p {
   color: #6b7280;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+  line-height: 1.4 !important;
+  margin-bottom: 1rem !important;
   flex-grow: 1;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
 }
 
 .benefit-actions {
-  margin-top: auto;
+  margin-top: auto !important;
   display: flex;
   justify-content: center;
 }
@@ -1136,6 +1137,8 @@ html {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 0.7rem !important;
+  padding: 0.5rem 1rem !important;
 }
 
 /* Savings as a Service Section */
@@ -2138,17 +2141,30 @@ html {
   }
 
   .benefit-card {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem !important;
+    min-height: auto !important;
+    height: auto !important;
   }
 
-  .benefit-card .benefit-icon {
-    width: 3rem;
-    height: 3rem;
+  .benefit-card h3 {
+    font-size: 0.875rem !important;
+    margin-bottom: 0.75rem !important;
+    line-height: 1.2 !important;
   }
 
-  .testimonial-card {
-    padding: 2rem 1.5rem;
-    margin-bottom: 1.5rem;
+  .benefit-card p {
+    font-size: 0.75rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .benefit-actions {
+    margin-top: auto !important;
+  }
+
+  .btn-primary {
+    font-size: 0.7rem !important;
+    padding: 0.5rem 1rem !important;
   }
 
   .cta-benefits {
@@ -5995,30 +6011,28 @@ html {
   }
   
   .benefit-card {
-    padding: 1rem !important;
-    min-height: auto !important;
+    padding: 1.25rem !important;
   }
   
   .benefit-card h3 {
-    font-size: 0.875rem !important;
-    margin-bottom: 0.5rem !important;
+    font-size: 1rem !important;
+    margin-bottom: 0.75rem !important;
     line-height: 1.2 !important;
   }
   
   .benefit-card p {
-    font-size: 0.75rem !important;
-    line-height: 1.3 !important;
-    margin-bottom: 0.75rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 1rem !important;
   }
   
   .benefit-actions {
-    margin-top: 0.75rem !important;
+    margin-top: 1rem !important;
   }
   
   .btn-primary {
-    font-size: 0.7rem !important;
-    padding: 0.4rem 0.75rem !important;
-    white-space: nowrap !important;
+    font-size: 0.8rem !important;
+    padding: 0.5rem 1rem !important;
   }
   
   .stats-grid {
