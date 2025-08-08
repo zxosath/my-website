@@ -5869,3 +5869,33 @@ html {
 .comparison-chart .optimal {
   background: linear-gradient(180deg, #10b981 0%, #059669 100%);
 }
+
+.comparison-chart .usage-line {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 2px;
+  z-index: 10;
+}
+
+.comparison-chart .manual-usage {
+  background: linear-gradient(90deg, #3b82f6 0%, #1d4ed8 100%);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  /* Create undulating path */
+  clip-path: polygon(
+    0% 20%, 8% 15%, 16% 25%, 24% 10%, 32% 30%, 40% 5%, 48% 35%, 
+    56% 0%, 64% 40%, 72% 15%, 80% 45%, 88% 20%, 96% 50%, 100% 25%
+  );
+}
+
+.comparison-chart .expert-usage {
+  background: linear-gradient(90deg, #3b82f6 0%, #1d4ed8 100%);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  /* Create smoother, more aligned path */
+  clip-path: polygon(
+    0% 30%, 8% 35%, 16% 30%, 24% 35%, 32% 30%, 40% 35%, 48% 30%, 
+    56% 35%, 64% 30%, 72% 35%, 80% 30%, 88% 35%, 96% 30%, 100% 35%
+  );
+}

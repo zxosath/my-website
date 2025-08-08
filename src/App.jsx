@@ -340,25 +340,19 @@ function HomePage() {
           <div className="comparison-chart animate-on-scroll">
             <div className="chart-container">
               <div className="chart-section without-viridity animate-on-scroll">
-                <h3>Without VIRIDITY: Risks from inelastic commitments</h3>
+                <h3>Without VIRIDITY: Manual Management</h3>
                 <div className="chart-bars">
+                  <div className="bar-group">
+                    <div className="bar missed-savings" style={{height: '30%'}}></div>
+                  </div>
                   <div className="bar-group">
                     <div className="bar missed-savings" style={{height: '45%'}}></div>
                   </div>
                   <div className="bar-group">
-                    <div className="bar missed-savings" style={{height: '50%'}}></div>
+                    <div className="bar missed-savings" style={{height: '25%'}}></div>
                   </div>
                   <div className="bar-group">
                     <div className="bar missed-savings" style={{height: '40%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar missed-savings" style={{height: '55%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar missed-savings" style={{height: '35%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar missed-savings" style={{height: '60%'}}></div>
                   </div>
                   <div className="bar-group">
                     <div className="bar wasted-spend" style={{height: '85%'}}></div>
@@ -372,12 +366,6 @@ function HomePage() {
                   <div className="bar-group">
                     <div className="bar wasted-spend" style={{height: '95%'}}></div>
                   </div>
-                  <div className="bar-group">
-                    <div className="bar wasted-spend" style={{height: '80%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar wasted-spend" style={{height: '70%'}}></div>
-                  </div>
                 </div>
                 <div className="usage-line manual-usage"></div>
               </div>
@@ -385,49 +373,34 @@ function HomePage() {
               <div className="chart-divider"></div>
               
               <div className="chart-section with-viridity animate-on-scroll">
-                <h3>With VIRIDITY: Optimal commitment management</h3>
+                <h3>With VIRIDITY: Expert Optimization</h3>
                 <div className="chart-bars">
                   <div className="bar-group">
-                    <div className="bar optimal" style={{height: '65%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar optimal" style={{height: '70%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar optimal" style={{height: '55%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar optimal" style={{height: '75%'}}></div>
-                  </div>
-                  <div className="bar-group">
                     <div className="bar optimal" style={{height: '60%'}}></div>
-                  </div>
-                  <div className="bar-group">
-                    <div className="bar optimal" style={{height: '80%'}}></div>
                   </div>
                   <div className="bar-group">
                     <div className="bar optimal" style={{height: '65%'}}></div>
                   </div>
                   <div className="bar-group">
-                    <div className="bar optimal" style={{height: '70%'}}></div>
-                  </div>
-                  <div className="bar-group">
                     <div className="bar optimal" style={{height: '55%'}}></div>
                   </div>
                   <div className="bar-group">
-                    <div className="bar optimal" style={{height: '75%'}}></div>
+                    <div className="bar optimal" style={{height: '70%'}}></div>
+                  </div>
+                  <div className="bar-group">
+                    <div className="bar optimal" style={{height: '65%'}}></div>
                   </div>
                   <div className="bar-group">
                     <div className="bar optimal" style={{height: '60%'}}></div>
                   </div>
                   <div className="bar-group">
-                    <div className="bar optimal" style={{height: '80%'}}></div>
+                    <div className="bar optimal" style={{height: '70%'}}></div>
+                  </div>
+                  <div className="bar-group">
+                    <div className="bar optimal" style={{height: '65%'}}></div>
                   </div>
                 </div>
                 <div className="usage-line expert-usage"></div>
-                <div className="usage-line-label">
-                  <span>Usage Line</span>
-                </div>
               </div>
             </div>
             
@@ -737,3 +710,4 @@ function App() {
 }
 
 export default App;
+
