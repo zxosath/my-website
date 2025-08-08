@@ -759,12 +759,11 @@ html {
 }
 
 .stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-  align-items: start;
-  grid-auto-rows: 200px;
+  align-items: flex-start;
 }
 
 .stat-item {
@@ -780,14 +779,15 @@ html {
   padding-bottom: 4rem;
   opacity: 1 !important;
   visibility: visible !important;
-  height: 200px;
+  flex: 0 1 300px;
+  min-height: 200px;
 }
 
 .stat-item.expanded {
   background: rgba(255, 255, 255, 0.9) !important;
   opacity: 1 !important;
   visibility: visible !important;
-  height: 300px;
+  min-height: 300px;
 }
 
 .stat-item:hover {
