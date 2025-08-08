@@ -273,9 +273,7 @@ function HomePage() {
               </div>
               <h3>Reduce AWS costs, mitigate risk</h3>
               <p>Optimize AWS spending in real-time while avoiding lock-in risk.</p>
-              <div className="benefit-actions">
-                <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
-              </div>
+
             </div>
             <div className="benefit-card animate-on-scroll">
               <div className="benefit-icon">
@@ -283,9 +281,7 @@ function HomePage() {
               </div>
               <h3>Offload work, scale FinOps</h3>
               <p>Let VIRIDITY experts handle AWS cost management while you focus on strategic initiatives.</p>
-              <div className="benefit-actions">
-                <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
-              </div>
+
             </div>
             <div className="benefit-card animate-on-scroll">
               <div className="benefit-icon">
@@ -293,9 +289,7 @@ function HomePage() {
               </div>
               <h3>Gain insights, avoid analysis paralysis</h3>
               <p>Get immediate results and track core optimization KPIs without data overload.</p>
-              <div className="benefit-actions">
-                <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
-              </div>
+
             </div>
             <div className="benefit-card animate-on-scroll">
               <div className="benefit-icon">
@@ -303,9 +297,7 @@ function HomePage() {
               </div>
               <h3>Increase ROI, decrease wasted spend</h3>
               <p>Generate incremental savings that exceed our fees and maximize AWS ROI.</p>
-              <div className="benefit-actions">
-                <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
-              </div>
+
             </div>
             <div className="benefit-card animate-on-scroll">
               <div className="benefit-icon">
@@ -313,9 +305,7 @@ function HomePage() {
               </div>
               <h3>Real-time optimization, continuous savings</h3>
               <p>Expert team monitors usage patterns and adjusts strategies in real-time for maximum savings.</p>
-              <div className="benefit-actions">
-                <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
-              </div>
+
             </div>
             <div className="benefit-card animate-on-scroll">
               <div className="benefit-icon">
@@ -323,9 +313,7 @@ function HomePage() {
               </div>
               <h3>Global AWS expertise, local results</h3>
               <p>Leverage deep AWS expertise across all regions while maintaining performance and compliance.</p>
-              <div className="benefit-actions">
-                <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
-              </div>
+
             </div>
           </div>
         </div>
