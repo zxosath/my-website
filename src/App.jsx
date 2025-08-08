@@ -339,7 +339,6 @@ function HomePage() {
           
           <div className="analytics-content animate-on-scroll">
             <div className="analytics-text">
-              <h3>Strategic Commitment Management</h3>
               <p>
                 Optimizing a portfolio of AWS commitments is inherently complex. Commit conservatively, and you forfeit substantial cost savings opportunities. Commit aggressively, and you risk significant financial waste when usage patterns shift unexpectedly.
               </p>
