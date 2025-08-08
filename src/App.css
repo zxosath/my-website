@@ -5660,6 +5660,7 @@ html {
   transition: all 0.3s ease;
   min-height: 20px;
   z-index: 5;
+  display: block;
 }
 
 .missed-savings {
@@ -5683,7 +5684,7 @@ html {
 
 .usage-line {
   position: absolute;
-  top: 0;
+  bottom: 60px;
   left: 0;
   right: 0;
   height: 3px;
@@ -5711,44 +5712,11 @@ html {
   );
 }
 
-.missed-savings-area {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  background: rgba(107, 114, 128, 0.2);
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 5;
-}
 
-.wasted-spend-area {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  background: rgba(239, 68, 68, 0.2);
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 5;
-}
-
-.area-label {
-  color: white;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-align: center;
-}
 
 .usage-line-label {
   position: absolute;
-  top: 10px;
+  bottom: 80px;
   right: 10px;
   color: #3b82f6;
   font-size: 0.75rem;
@@ -5875,4 +5843,29 @@ html {
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
   border-color: rgba(0, 0, 0, 0.2);
   transform: translateY(-3px);
+}
+
+.comparison-chart .bar {
+  width: 100%;
+  max-width: 30px;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  transition: all 0.3s ease;
+  min-height: 20px;
+  z-index: 5;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.comparison-chart .missed-savings {
+  background: linear-gradient(180deg, #6b7280 0%, #4b5563 100%);
+}
+
+.comparison-chart .wasted-spend {
+  background: linear-gradient(180deg, #ef4444 0%, #dc2626 100%);
+}
+
+.comparison-chart .optimal {
+  background: linear-gradient(180deg, #10b981 0%, #059669 100%);
 }
