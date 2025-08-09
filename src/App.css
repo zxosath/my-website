@@ -3792,6 +3792,7 @@ html {
   .stats-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 0.75rem !important;
+    max-width: 100% !important;
   }
 
   .challenges-grid {
