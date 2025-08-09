@@ -310,30 +310,7 @@ function HomePage() {
                 </div>
               </div>
               <div className="showcase-visual">
-                <div className="insights-dashboard">
-                  <div className="dashboard-chart">
-                    <div className="pie-chart">
-                      <div className="pie-segment segment-1"></div>
-                      <div className="pie-segment segment-2"></div>
-                      <div className="pie-segment segment-3"></div>
-                      <div className="pie-center"></div>
-                    </div>
-                  </div>
-                  <div className="dashboard-metrics">
-                    <div className="insight-bar"></div>
-                    <div className="insight-bar"></div>
-                    <div className="insight-bar"></div>
-                    <div className="trend-line"></div>
-                    <div className="metric-grid">
-                      <div className="metric-box"></div>
-                      <div className="metric-box"></div>
-                      <div className="metric-box"></div>
-                      <div className="metric-box"></div>
-                      <div className="metric-box"></div>
-                      <div className="metric-box"></div>
-                    </div>
-                  </div>
-                </div>
+                <img src="/ChatGPT Image Aug 9, 2025 at 06_50_00 PM.png" alt="Gain insights, avoid analysis paralysis" className="showcase-image" />
               </div>
             </div>
 
