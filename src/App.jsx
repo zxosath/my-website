@@ -584,41 +584,62 @@ function HomePage() {
       {/* CTA Section */}
       <section id="cta" className="cta">
         <div className="container">
-          <h2 className="animate-on-scroll">Request a Free AWS Cost Analysis</h2>
-          <p className="animate-on-scroll">3 out of 4 customers see at least a 40% reduction in AWS costs.</p>
-          <p className="animate-on-scroll">Get a deeper understanding of your current AWS spend and savings, and find out how much more you can save with VIRIDITY!</p>
-          
-          <div className="cta-benefits">
-            <div className="benefit animate-on-scroll">
-              <CheckCircle size={20} />
-              <span>Visualize your AWS savings potential</span>
+          <div className="cta-header">
+            <h2 className="animate-on-scroll">Request a Free AWS Cost Analysis</h2>
+            <div className="cta-highlight animate-on-scroll">
+              <div className="highlight-stat">
+                <span className="stat-number">3 out of 4</span>
+                <span className="stat-text">customers see at least</span>
+                <span className="stat-percentage">40% reduction</span>
+                <span className="stat-text">in AWS costs</span>
+              </div>
             </div>
-            <div className="benefit animate-on-scroll">
-              <CheckCircle size={20} />
-              <span>Benchmark AWS performance vs. peers</span>
-            </div>
-            <div className="benefit animate-on-scroll">
-              <CheckCircle size={20} />
-              <span>10-minute setup, no strings attached</span>
-            </div>
+            <p className="cta-description animate-on-scroll">
+              Get a deeper understanding of your current AWS spend and savings, and find out how much more you can save with VIRIDITY!
+            </p>
           </div>
           
-          <div className="cta-form animate-on-scroll">
-            <p>Submit the form to request your free AWS cost analysis.</p>
-            <div className="form-placeholder">
-              <div className="form-field">
-                <input type="text" placeholder="First Name" />
+          <div className="cta-content">
+            <div className="cta-benefits">
+              <h3>What you'll get:</h3>
+              <div className="benefits-list">
+                <div className="benefit animate-on-scroll">
+                  <CheckCircle size={24} />
+                  <span>Visualize your AWS savings potential</span>
+                </div>
+                <div className="benefit animate-on-scroll">
+                  <CheckCircle size={24} />
+                  <span>Benchmark AWS performance vs. peers</span>
+                </div>
+                <div className="benefit animate-on-scroll">
+                  <CheckCircle size={24} />
+                  <span>10-minute setup, no strings attached</span>
+                </div>
               </div>
-              <div className="form-field">
-                <input type="text" placeholder="Last Name" />
+            </div>
+            
+            <div className="cta-form animate-on-scroll">
+              <div className="form-header">
+                <h3>Get Started Now</h3>
+                <p>Submit the form to request your free AWS cost analysis</p>
               </div>
-              <div className="form-field">
-                <input type="email" placeholder="Work Email" />
+              <div className="form-placeholder">
+                <div className="form-row">
+                  <div className="form-field">
+                    <input type="text" placeholder="First Name" />
+                  </div>
+                  <div className="form-field">
+                    <input type="text" placeholder="Last Name" />
+                  </div>
+                </div>
+                <div className="form-field">
+                  <input type="email" placeholder="Work Email" />
+                </div>
+                <div className="form-field">
+                  <input type="text" placeholder="Company" />
+                </div>
+                <button className="btn-primary btn-cta">Request Analysis</button>
               </div>
-              <div className="form-field">
-                <input type="text" placeholder="Company" />
-              </div>
-              <button className="btn-primary">Request Analysis</button>
             </div>
           </div>
         </div>
