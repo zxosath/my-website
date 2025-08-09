@@ -265,58 +265,55 @@ function HomePage() {
       {/* Why VIRIDITY Section */}
       <section className="why-prosperops">
         <div className="container">
-          <div className="why-viridity-content animate-on-scroll">
-            <div className="why-viridity-text">
-              <h2>Reduce costs, mitigate risk</h2>
-              <p>
-                Continuously optimize a portfolio of commitments while adapting them to changes in usage in real time to safely increase coverage while avoiding lock-in risk. Generate long-term, higher Effective Savings Rates (ESR) than industry peers with algorithmic management.
-              </p>
-              <div className="why-viridity-actions">
-                <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Started</button>
-                <button className="btn-secondary" onClick={() => scrollToSection('cta')}>Request a Demo</button>
+          <h2 className="animate-on-scroll">Why VIRIDITY</h2>
+          <div className="benefits-grid">
+            <div className="benefit-card animate-on-scroll">
+              <div className="benefit-icon">
+                <TrendingUp size={32} />
               </div>
+              <h3>Reduce AWS costs, mitigate risk</h3>
+              <p>Optimize AWS spending in real-time while avoiding lock-in risk.</p>
+
             </div>
-            
-            <div className="why-viridity-metrics">
-              <div className="metric-item">
-                <div className="metric-header">
-                  <span className="metric-label">Commitment Coverage</span>
-                  <span className="metric-value">95%+</span>
-                </div>
-                <div className="metric-bar">
-                  <div className="metric-fill purple" style={{width: '95%'}}></div>
-                </div>
+            <div className="benefit-card animate-on-scroll">
+              <div className="benefit-icon">
+                <Settings size={32} />
               </div>
-              
-              <div className="metric-item">
-                <div className="metric-header">
-                  <span className="metric-label">Commitment Utilization</span>
-                  <span className="metric-value">99%+</span>
-                </div>
-                <div className="metric-bar">
-                  <div className="metric-fill purple" style={{width: '99%'}}></div>
-                </div>
+              <h3>Offload work, scale FinOps</h3>
+              <p>Let VIRIDITY experts handle AWS cost management while you focus on strategic initiatives.</p>
+
+            </div>
+            <div className="benefit-card animate-on-scroll">
+              <div className="benefit-icon">
+                <BarChart3 size={32} />
               </div>
-              
-              <div className="metric-item">
-                <div className="metric-header">
-                  <span className="metric-label">Blended Discount</span>
-                  <span className="metric-value">50%+</span>
-                </div>
-                <div className="metric-bar">
-                  <div className="metric-fill purple" style={{width: '50%'}}></div>
-                </div>
+              <h3>Gain insights, avoid analysis paralysis</h3>
+              <p>Get immediate results and track core optimization KPIs without data overload.</p>
+
+            </div>
+            <div className="benefit-card animate-on-scroll">
+              <div className="benefit-icon">
+                <DollarSign size={32} />
               </div>
-              
-              <div className="metric-item">
-                <div className="metric-header">
-                  <span className="metric-label">Effective Savings Rate (ESR)</span>
-                  <span className="metric-value">40%+</span>
-                </div>
-                <div className="metric-bar">
-                  <div className="metric-fill green" style={{width: '40%'}}></div>
-                </div>
+              <h3>Increase ROI, decrease wasted spend</h3>
+              <p>Generate incremental savings that exceed our fees and maximize AWS ROI.</p>
+
+            </div>
+            <div className="benefit-card animate-on-scroll">
+              <div className="benefit-icon">
+                <Activity size={32} />
               </div>
+              <h3>Real-time optimization, continuous savings</h3>
+              <p>Expert team monitors usage patterns and adjusts strategies in real-time for maximum savings.</p>
+
+            </div>
+            <div className="benefit-card animate-on-scroll">
+              <div className="benefit-icon">
+                <Globe size={32} />
+              </div>
+              <h3>Global AWS expertise, local results</h3>
+              <p>Leverage deep AWS expertise across all regions while maintaining performance and compliance.</p>
+
             </div>
           </div>
         </div>
@@ -325,37 +322,28 @@ function HomePage() {
       {/* Challenges Section */}
       <section className="challenges">
         <div className="container">
-          <h2 className="animate-on-scroll">The Modern FinOps Paradox</h2>
+          <h2 className="animate-on-scroll">Why AWS Bills Keep Growing</h2>
           
           <div className="challenges-content animate-on-scroll">
             <div className="challenge-text">
               <p className="lead-text">
-                While cloud spending continues to accelerate, organizations face a fundamental challenge: <strong>the very agility that makes AWS powerful creates a moving target for cost optimization.</strong> Industry research consistently shows that 20-30% of cloud spend delivers no business value.
+                Your engineering team ships fast. Your AWS bill grows faster. <strong>The same agility that powers your product is quietly burning through your budget.</strong> Here's why optimization feels impossible:
               </p>
               
               <div className="challenge-points">
                 <div className="challenge-point">
-                  <div className="point-header">
-                    <span className="point-number">01</span>
-                    <h3>The Velocity Problem</h3>
-                  </div>
-                  <p>Modern development teams deploy <span className="highlight">hundreds of changes weekly</span>. Each deployment shifts resource patterns, making yesterday's optimization obsolete. Quarterly reviews? They're like bringing a map to a rocket ship.</p>
+                  <h3>Your infrastructure changes faster than you can optimize it</h3>
+                  <p>Every deployment reshuffles your resource needs. By the time you've analyzed last month's usage, your infrastructure has already evolved. It's like trying to optimize a moving car while driving it.</p>
                 </div>
                 
                 <div className="challenge-point">
-                  <div className="point-header">
-                    <span className="point-number">02</span>
-                    <h3>The Optimization Trilemma</h3>
-                  </div>
-                  <p>Pick two: <span className="highlight">cost, performance, or speed</span>. Most teams sacrifice cost optimization to keep apps running fast and features shipping. It's the "expensive peace of mind" tax.</p>
+                  <h3>AWS pricing is deliberately complex</h3>
+                  <p>Over 200 services. Thousands of pricing tiers. Reserved Instances, Savings Plans, Spot pricing—each with different rules. AWS makes money when you don't have time to figure it all out.</p>
                 </div>
                 
                 <div className="challenge-point">
-                  <div className="point-header">
-                    <span className="point-number">03</span>
-                    <h3>The Expertise Gap</h3>
-                  </div>
-                  <p>AWS has <span className="highlight">200+ services</span> with pricing models that change quarterly. It's like trying to memorize a phone book that rewrites itself every three months.</p>
+                  <h3>Your team has better things to do</h3>
+                  <p>Your engineers should be building features, not parsing billing reports. But every hour spent on cost optimization is an hour not spent on your core business.</p>
                 </div>
               </div>
             </div>
