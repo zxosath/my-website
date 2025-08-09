@@ -323,18 +323,32 @@ function HomePage() {
       <section className="challenges">
         <div className="container">
           <h2 className="animate-on-scroll">AWS cost optimization and achieving consistent savings is an ongoing struggle for FinOps teams</h2>
-          <div className="challenges-grid">
-            <div className="challenge-card animate-on-scroll">
-              <h3>Roughly 30% of AWS spend is estimated to be waste</h3>
-              <p>The dynamic nature of AWS workloads makes ongoing cost optimization challenging for both FinOps and engineering teams.</p>
-            </div>
-            <div className="challenge-card animate-on-scroll">
-              <h3>Managing AWS costs without compromise is hard</h3>
-              <p>Cost optimization must not compromise application performance, infrastructure, or compliance with business rules.</p>
-            </div>
-            <div className="challenge-card animate-on-scroll">
-              <h3>AWS commitments are effective, but require expertise</h3>
-              <p>Optimizing AWS Savings Plans and Reserved Instances may offer the best savings; expert management delivers greater outcomes with lower risk.</p>
+          
+          <div className="challenges-content animate-on-scroll">
+            <div className="challenge-stats">
+              <div className="stat-highlight">
+                <span className="stat-number">30%</span>
+                <p>of AWS spend is estimated to be waste</p>
+              </div>
+              <div className="challenge-flow">
+                <div className="flow-step">
+                  <div className="step-icon">⚡</div>
+                  <h3>Dynamic Workloads</h3>
+                  <p>AWS environments change constantly, making manual optimization nearly impossible</p>
+                </div>
+                <div className="flow-arrow">→</div>
+                <div className="flow-step">
+                  <div className="step-icon">⚖️</div>
+                  <h3>Performance vs Cost</h3>
+                  <p>Balancing cost savings without compromising application performance or compliance</p>
+                </div>
+                <div className="flow-arrow">→</div>
+                <div className="flow-step">
+                  <div className="step-icon">🎯</div>
+                  <h3>Expert Management</h3>
+                  <p>Savings Plans and Reserved Instances require specialized expertise for optimal results</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
