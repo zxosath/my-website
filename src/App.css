@@ -763,8 +763,8 @@ html {
 }
 
 .stats-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   justify-content: center;
   align-items: flex-start;
@@ -978,7 +978,7 @@ html {
 
 /* Challenges Section */
 .challenges {
-  padding: 6rem 0;
+  padding: 3rem 0 6rem 0;
   background: white;
   position: relative;
 }
@@ -1126,8 +1126,8 @@ html {
 
 .showcase-actions .btn-primary,
 .showcase-actions .btn-secondary {
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.75rem;
   border-radius: 0 !important;
 }
 
@@ -3561,7 +3561,7 @@ html {
   }
 
   .stats-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-columns: repeat(2, 1fr) !important;
     gap: 0.75rem !important;
   }
 
