@@ -340,9 +340,20 @@ function HomePage() {
           <div className="challenges-content animate-on-scroll">
             <div className="challenge-text">
               <p className="lead-text">
-                Your engineering team ships fast. Your AWS bill grows faster. <strong>The same agility that powers your product is quietly burning through your budget.</strong> Here's why optimization feels impossible:
+                Your engineering team ships fast. Your AWS bill grows faster. <strong>The same agility that powers your product is quietly burning through your budget.</strong>
               </p>
-              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Analytics Section */}
+      <section className="analytics">
+        <div className="container">
+          <h2 className="animate-on-scroll">Manual vs Expert AWS Optimization</h2>
+          
+          <div className="analytics-content animate-on-scroll">
+            <div className="analytics-text">
               <div className="challenge-points">
                 <div className="challenge-point">
                   <h3>Your infrastructure changes faster than you can optimize it</h3>
@@ -359,27 +370,18 @@ function HomePage() {
                   <p>Your engineers should be building features, not parsing billing reports. But every hour spent on cost optimization is an hour not spent on your core business.</p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Analytics Section */}
-      <section className="analytics">
-        <div className="container">
-          <h2 className="animate-on-scroll">Manual vs Expert AWS Optimization</h2>
-          
-          <div className="analytics-content animate-on-scroll">
-            <div className="analytics-text">
-              <p>
-                AWS commitment optimization presents a critical dilemma: commit conservatively and miss savings, or commit aggressively and risk waste when usage changes.
-              </p>
-              <p>
-                Manual management consumes time that could be spent on strategic FinOps initiatives where human expertise delivers maximum value.
-              </p>
-              <p>
-                VIRIDITY eliminates this trade-off through expert analysis and strategic planning, delivering precise alignment between commitments and usage patterns.
-              </p>
+              
+              <div className="analytics-solution">
+                <p>
+                  AWS commitment optimization presents a critical dilemma: commit conservatively and miss savings, or commit aggressively and risk waste when usage changes.
+                </p>
+                <p>
+                  Manual management consumes time that could be spent on strategic FinOps initiatives where human expertise delivers maximum value.
+                </p>
+                <p>
+                  VIRIDITY eliminates this trade-off through expert analysis and strategic planning, delivering precise alignment between commitments and usage patterns.
+                </p>
+              </div>
             </div>
             
             <div className="analytics-visual">
