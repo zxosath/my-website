@@ -350,7 +350,10 @@ function HomePage() {
       {/* Analytics Section */}
       <section className="analytics">
         <div className="container">
-          <h2 className="animate-on-scroll">Manual vs Expert AWS Optimization</h2>
+          <h2 className="animate-on-scroll">Why AWS Bills Keep Growing</h2>
+          <p className="analytics-intro animate-on-scroll">
+            Your engineering team ships fast. Your AWS bill grows faster. <strong>The same agility that powers your product is quietly burning through your budget.</strong>
+          </p>
           
           <div className="analytics-content animate-on-scroll">
             <div className="analytics-text">

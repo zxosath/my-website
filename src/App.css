@@ -1960,9 +1960,7 @@ html {
   will-change: transform;
 }
 
-.testimonials-track:hover {
-  animation-play-state: paused;
-}
+
 
 @keyframes scroll-left {
   0% {
