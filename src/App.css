@@ -734,11 +734,15 @@ html {
   margin-bottom: 0.75rem;
 }
 
-.metric-value {
+.metric-card .metric-value {
+  position: static;
   color: white;
   font-size: 1.75rem;
   font-weight: 700;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+  transform: none;
+  right: auto;
+  top: auto;
 }
 
 /* Stats Section */
