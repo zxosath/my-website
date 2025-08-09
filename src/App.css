@@ -834,7 +834,7 @@ html {
 
 .stat-item h3 {
   color: #1f2937;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
   margin-bottom: 1rem;
@@ -3243,7 +3243,7 @@ html {
 }
 
 .stat-item h3 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
   background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
   -webkit-background-clip: text;
