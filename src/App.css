@@ -7719,6 +7719,14 @@ html {
   }
 }
 
+/* Tablet responsive */
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+  }
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .analytics-content {
