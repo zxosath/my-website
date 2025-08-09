@@ -1080,7 +1080,7 @@ html {
 .benefits-showcase {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0.75rem;
 }
 
 .showcase-item {
@@ -2103,64 +2103,214 @@ html {
 /* CTA Section */
 .cta {
   padding: 6rem 0;
-  background: white;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: white;
   position: relative;
 }
 
-.cta h2 {
+.cta-header {
+  max-width: 800px;
+  margin: 0 auto 4rem;
   text-align: center;
-  font-size: 2.75rem;
-  font-weight: 700;
-  color: #1f2937;
-  margin-bottom: 1.5rem;
 }
 
-.cta > .container > p {
-  text-align: center;
-  color: #6b7280;
-  margin-bottom: 1rem;
+.cta h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.cta-highlight {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(59, 130, 246, 0.2));
+  border: 2px solid rgba(139, 92, 246, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 500px;
+  backdrop-filter: blur(10px);
+}
+
+.highlight-stat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-percentage {
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-text {
+  color: #e5e7eb;
+  font-weight: 500;
+}
+
+.cta-description {
+  font-size: 1.25rem;
+  color: #d1d5db;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.cta-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
 }
 
 .cta-benefits {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cta-benefits h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.benefits-list {
   display: flex;
-  justify-content: center;
-  gap: 3rem;
-  margin: 3rem 0;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 .cta-benefits .benefit {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  color: #6b7280;
+  gap: 1rem;
+  color: #e5e7eb;
   font-weight: 500;
   font-size: 1.125rem;
   transition: all 0.3s ease;
+  text-align: left;
 }
 
 .cta-benefits .benefit:hover {
-  color: #6366f1;
-  transform: translateY(-2px);
+  color: white;
+  transform: translateX(5px);
+}
+
+.cta-benefits .benefit svg {
+  color: #10b981;
+  flex-shrink: 0;
 }
 
 .cta-form {
-  max-width: 600px;
-  margin: 3rem auto 0;
-  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.cta-form > p {
-  color: #6b7280;
+.form-header {
+  text-align: left;
   margin-bottom: 2rem;
-  font-size: 1.125rem;
+}
+
+.form-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.form-header p {
+  color: #d1d5db;
+  font-size: 1rem;
 }
 
 .form-placeholder {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-field input:focus {
+  border-color: #8b5cf6;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+}
+
+.form-field input::placeholder {
+  color: #9ca3af;
+}
+
+.btn-cta {
+  width: 100%;
+  padding: 1.25rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .cta-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .highlight-stat {
+    font-size: 1rem;
+  }
+  
+  .stat-number,
+  .stat-percentage {
+    font-size: 1.5rem;
+  }
+  
+  .cta h2 {
+    font-size: 2.25rem;
+  }
+}
   margin-bottom: 1.5rem;
 }
 
