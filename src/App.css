@@ -705,14 +705,14 @@ html {
 }
 
 .dashboard-content {
-  padding: 2rem;
+  padding: 1.5rem;
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .metric-card {
   background: rgba(255, 255, 255, 0.05);
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
@@ -736,7 +736,7 @@ html {
 
 .metric-value {
   color: white;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 700;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
 }
