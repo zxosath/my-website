@@ -690,9 +690,8 @@ html {
 }
 
 .tab:hover:not(.active) {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  border-color: rgba(255, 255, 255, 0.2);
+  background: #e2e8f0;
+  color: #475569;
 }
 
 .dashboard-content {
