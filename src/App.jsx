@@ -326,28 +326,103 @@ function HomePage() {
               </p>
               
               <div className="challenge-points">
-                <div className="challenge-point">
-                  <div className="point-header">
-                    <span className="point-number">01</span>
-                    <h3>The Velocity Problem</h3>
+                <div className="challenge-point-layout">
+                  <div className="challenge-content">
+                    <div className="point-header">
+                      <span className="point-number">01</span>
+                      <h3>The Velocity Problem</h3>
+                    </div>
+                    <p>Modern development teams deploy <span className="highlight">hundreds of changes weekly</span>. Each deployment shifts resource patterns, making yesterday's optimization obsolete. Quarterly reviews? They're like bringing a map to a rocket ship.</p>
                   </div>
-                  <p>Modern development teams deploy <span className="highlight">hundreds of changes weekly</span>. Each deployment shifts resource patterns, making yesterday's optimization obsolete. Quarterly reviews? They're like bringing a map to a rocket ship.</p>
+                  <div className="challenge-metrics">
+                    <div className="metric-bar">
+                      <div className="metric-label">Weekly Deployments</div>
+                      <div className="metric-value">500+</div>
+                      <div className="progress-bar">
+                        <div className="progress-fill red" style={{width: '85%'}}></div>
+                      </div>
+                    </div>
+                    <div className="metric-bar">
+                      <div className="metric-label">Resource Pattern Changes</div>
+                      <div className="metric-value">Daily</div>
+                      <div className="progress-bar">
+                        <div className="progress-fill red" style={{width: '90%'}}></div>
+                      </div>
+                    </div>
+                    <div className="metric-bar">
+                      <div className="metric-label">Manual Review Frequency</div>
+                      <div className="metric-value">Quarterly</div>
+                      <div className="progress-bar">
+                        <div className="progress-fill red" style={{width: '25%'}}></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 
-                <div className="challenge-point">
-                  <div className="point-header">
-                    <span className="point-number">02</span>
-                    <h3>The Optimization Trilemma</h3>
+                <div className="challenge-point-layout">
+                  <div className="challenge-content">
+                    <div className="point-header">
+                      <span className="point-number">02</span>
+                      <h3>The Optimization Trilemma</h3>
+                    </div>
+                    <p>Pick two: <span className="highlight">cost, performance, or speed</span>. Most teams sacrifice cost optimization to keep apps running fast and features shipping. It's the "expensive peace of mind" tax.</p>
                   </div>
-                  <p>Pick two: <span className="highlight">cost, performance, or speed</span>. Most teams sacrifice cost optimization to keep apps running fast and features shipping. It's the "expensive peace of mind" tax.</p>
+                  <div className="challenge-metrics">
+                    <div className="metric-bar">
+                      <div className="metric-label">Performance Priority</div>
+                      <div className="metric-value">High</div>
+                      <div className="progress-bar">
+                        <div className="progress-fill orange" style={{width: '95%'}}></div>
+                      </div>
+                    </div>
+                    <div className="metric-bar">
+                      <div className="metric-label">Development Speed</div>
+                      <div className="metric-value">High</div>
+                      <div className="progress-bar">
+                        <div className="progress-fill orange" style={{width: '90%'}}></div>
+                      </div>
+                    </div>
+                    <div className="metric-bar">
+                      <div className="metric-label">Cost Optimization</div>
+                      <div className="metric-value">Low</div>
+                      <div className="progress-bar">
+                        <div className="progress-fill orange" style={{width: '30%'}}></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 
-                <div className="challenge-point">
-                  <div className="point-header">
-                    <span className="point-number">03</span>
-                    <h3>The Expertise Gap</h3>
+                <div className="challenge-point-layout">
+                  <div className="challenge-content">
+                    <div className="point-header">
+                      <span className="point-number">03</span>
+                      <h3>The Expertise Gap</h3>
+                    </div>
+                    <p>AWS has <span className="highlight">200+ services</span> with pricing models that change quarterly. It's like trying to memorize a phone book that rewrites itself every three months.</p>
                   </div>
-                  <p>AWS has <span className="highlight">200+ services</span> with pricing models that change quarterly. It's like trying to memorize a phone book that rewrites itself every three months.</p>
+                  <div className="challenge-metrics">
+                    <div className="metric-bar">
+                      <div className="metric-label">AWS Services</div>
+                      <div className="metric-value">200+</div>
+                      <div className="progress-bar">
+                        <div className="progress-fill blue" style={{width: '100%'}}></div>
+                      </div>
+                    </div>
+                    <div className="metric-bar">
+                      <div className="metric-label">Pricing Model Changes</div>
+                      <div className="metric-value">Quarterly</div>
+                      <div className="progress-bar">
+                        <div className="progress-fill blue" style={{width: '75%'}}></div>
+                      </div>
+                    </div>
+                    <div className="metric-bar">
+                      <div className="metric-label">Internal Expertise</div>
+                      <div className="metric-value">Limited</div>
+                      <div className="progress-bar">
+                        <div className="progress-fill blue" style={{width: '20%'}}></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

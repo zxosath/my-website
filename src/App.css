@@ -1016,31 +1016,35 @@ html {
 }
 
 .challenge-points {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
   text-align: left;
 }
 
-.challenge-point {
+.challenge-point-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
   padding: 2rem 0;
   border-bottom: 1px solid #e5e7eb;
-  transition: all 0.3s ease;
-  position: relative;
 }
 
-.challenge-point:hover {
-  transform: translateX(8px);
-  background: rgba(99, 102, 241, 0.02);
-  border-radius: 8px;
-  padding-left: 1rem;
-  margin-left: -1rem;
-  padding-right: 1rem;
-  margin-right: -1rem;
-}
-
-.challenge-point:last-child {
+.challenge-point-layout:last-child {
   border-bottom: none;
+}
+
+.challenge-content {
+  padding-right: 1rem;
+}
+
+.challenge-metrics {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 .point-header {
@@ -1098,8 +1102,17 @@ html {
     font-size: 1.125rem;
   }
   
-  .challenge-point {
-    padding: 1rem 0;
+  .challenge-point-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .challenge-content {
+    padding-right: 0;
+  }
+  
+  .challenge-metrics {
+    padding: 1.5rem;
   }
 }
 
@@ -1209,6 +1222,18 @@ html {
 
 .progress-fill.green {
   background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+}
+
+.progress-fill.red {
+  background: linear-gradient(90deg, #ef4444 0%, #dc2626 100%);
+}
+
+.progress-fill.orange {
+  background: linear-gradient(90deg, #f97316 0%, #ea580c 100%);
+}
+
+.progress-fill.blue {
+  background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
 }
 
 @media (max-width: 768px) {
