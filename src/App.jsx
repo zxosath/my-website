@@ -521,111 +521,123 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Savings as a Service Section */}
-      <section className="savings-service">
-        <div className="container">
-          <h2 className="animate-on-scroll">Reduce your overall AWS costs and see the benefits across your company</h2>
-          <h3 className="animate-on-scroll">AWS Cost Optimization For All Cloud Practitioners</h3>
-          <p className="animate-on-scroll">We put money back into your AWS budget and generate more savings than our charge.</p>
-          <button className="btn-primary animate-on-scroll" onClick={() => scrollToSection('cta')}>Free Analysis</button>
-          
-          <div className="practitioner-tabs animate-on-scroll">
-            <div className="tab-buttons">
-              <button 
-                className={`tab-btn ${activeTab === 'FinOps' ? 'active' : ''}`}
-                onClick={() => handleTabChange('FinOps')}
-              >
-                FinOps
-              </button>
-              <button 
-                className={`tab-btn ${activeTab === 'DevOps' ? 'active' : ''}`}
-                onClick={() => handleTabChange('DevOps')}
-              >
-                DevOps
-              </button>
-              <button 
-                className={`tab-btn ${activeTab === 'Resellers' ? 'active' : ''}`}
-                onClick={() => handleTabChange('Resellers')}
-              >
-                Enterprise
-              </button>
-            </div>
-            
-            <div className="tab-content">
-              {activeTab === 'FinOps' && (
-                <div className="practitioner-card">
-                  <h3>Higher margins without the work</h3>
-                  <p>VIRIDITY expertly manages and optimizes AWS discount instruments.</p>
-                  <ul>
-                    <li>Save more money with less waste than on-demand AWS pricing</li>
-                    <li>Maximize AWS Savings Plans and Reserved Instance flexibility</li>
-                    <li>Eliminate repetitive AWS cost optimization tasks</li>
-                  </ul>
-                  <p>FinOps teams can focus on higher-value tasks.</p>
-                  <button className="btn-primary" onClick={() => scrollToSection('cta')}>Request a Demo</button>
-                </div>
-              )}
-              {activeTab === 'DevOps' && (
-                <div className="practitioner-card">
-                  <h3>Zero impact on engineering</h3>
-                  <p>Engineers retain control over changes to the AWS resources they manage.</p>
-                  <ul>
-                    <li>Optimize AWS costs while you build</li>
-                    <li>Zero dependencies on AWS infrastructure and resources</li>
-                    <li>AWS financial commitments won't dictate architecture</li>
-                  </ul>
-                  <p>VIRIDITY expertly manages AWS discounts, so engineers can focus on building.</p>
-                  <button className="btn-primary" onClick={() => scrollToSection('cta')}>Request a Demo</button>
-                </div>
-              )}
-              {activeTab === 'Resellers' && (
-                <div className="practitioner-card">
-                  <h3>Enterprise-scale AWS optimization</h3>
-                  <p>Our expert team provides comprehensive AWS cost optimization for large-scale enterprise environments with complex multi-account setups.</p>
-                  <ul>
-                    <li>Multi-account AWS cost optimization</li>
-                    <li>Enterprise-grade reporting and analytics</li>
-                    <li>Strategic AWS commitment management</li>
-                  </ul>
-                  <p>VIRIDITY delivers enterprise-scale savings through expert manual optimization.</p>
-                  <button className="btn-primary" onClick={() => scrollToSection('cta')}>Request a Demo</button>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Testimonials */}
       <section className="testimonials">
         <div className="container">
-          <h2 className="animate-on-scroll">What customers say about VIRIDITY</h2>
-          <div className="testimonials-grid">
-            <div className="testimonial-card animate-on-scroll">
-              <div className="testimonial-content">
-                <p>"VIRIDITY saves us a considerable amount of money through expert AWS cost optimization. The pricing model based on savings makes it essentially free."</p>
+          <h2 className="animate-on-scroll">What Our Partners say about VIRIDITY</h2>
+          <div className="testimonials-carousel">
+            <div className="testimonials-track">
+              <div className="testimonial-card">
+                <div className="testimonial-content">
+                  <p>"VIRIDITY saves us a considerable amount of money through expert AWS cost optimization. The pricing model based on savings makes it essentially free."</p>
+                </div>
+                <div className="testimonial-author">
+                  <h4>Sarah Johnson</h4>
+                  <p>CTO, TechCorp</p>
+                </div>
               </div>
-              <div className="testimonial-author">
-                <h4>Sarah Johnson</h4>
-                <p>CTO, TechCorp</p>
+              <div className="testimonial-card">
+                <div className="testimonial-content">
+                  <p>"Action-oriented AWS cost management—we set parameters for coverage and risk, and VIRIDITY takes actions with the best AWS financial instruments to meet our goals."</p>
+                </div>
+                <div className="testimonial-author">
+                  <h4>Enterprise Customer</h4>
+                  <p>FinOps Lead</p>
+                </div>
               </div>
-            </div>
-            <div className="testimonial-card animate-on-scroll">
-              <div className="testimonial-content">
-                <p>"Action-oriented AWS cost management—we set parameters for coverage and risk, and VIRIDITY takes actions with the best AWS financial instruments to meet our goals."</p>
+              <div className="testimonial-card">
+                <div className="testimonial-content">
+                  <p>"Truly a set-and-save solution. Not only did our AWS cost reduction increase significantly, but the amount of time we spend managing AWS costs has been reduced substantially."</p>
+                </div>
+                <div className="testimonial-author">
+                  <h4>Mike Chen</h4>
+                  <p>FinOps Lead, DataFlow</p>
+                </div>
               </div>
-              <div className="testimonial-author">
-                <h4>Enterprise Customer</h4>
-                <p>FinOps Lead</p>
+              <div className="testimonial-card">
+                <div className="testimonial-content">
+                  <p>"The ROI on VIRIDITY has exceeded our expectations. We're saving 40% more on our AWS costs with zero operational overhead."</p>
+                </div>
+                <div className="testimonial-author">
+                  <h4>Alex Rodriguez</h4>
+                  <p>CFO, CloudScale</p>
+                </div>
               </div>
-            </div>
-            <div className="testimonial-card animate-on-scroll">
-              <div className="testimonial-content">
-                <p>"Truly a set-and-save solution. Not only did our AWS cost reduction increase significantly, but the amount of time we spend managing AWS costs has been reduced substantially."</p>
+              <div className="testimonial-card">
+                <div className="testimonial-content">
+                  <p>"VIRIDITY's expert team delivered results within the first month. Our AWS optimization is now completely hands-off."</p>
+                </div>
+                <div className="testimonial-author">
+                  <h4>Jennifer Park</h4>
+                  <p>VP Engineering, StreamTech</p>
+                </div>
               </div>
-              <div className="testimonial-author">
-                <h4>Mike Chen</h4>
-                <p>FinOps Lead, DataFlow</p>
+              <div className="testimonial-card">
+                <div className="testimonial-content">
+                  <p>"Best investment we've made in our cloud infrastructure. VIRIDITY pays for itself and then some."</p>
+                </div>
+                <div className="testimonial-author">
+                  <h4>David Kim</h4>
+                  <p>CTO, FinanceFlow</p>
+                </div>
+              </div>
+              
+              {/* Duplicate set for seamless loop */}
+              <div className="testimonial-card">
+                <div className="testimonial-content">
+                  <p>"VIRIDITY saves us a considerable amount of money through expert AWS cost optimization. The pricing model based on savings makes it essentially free."</p>
+                </div>
+                <div className="testimonial-author">
+                  <h4>Sarah Johnson</h4>
+                  <p>CTO, TechCorp</p>
+                </div>
+              </div>
+              <div className="testimonial-card">
+                <div className="testimonial-content">
+                  <p>"Action-oriented AWS cost management—we set parameters for coverage and risk, and VIRIDITY takes actions with the best AWS financial instruments to meet our goals."</p>
+                </div>
+                <div className="testimonial-author">
+                  <h4>Enterprise Customer</h4>
+                  <p>FinOps Lead</p>
+                </div>
+              </div>
+              <div className="testimonial-card">
+                <div className="testimonial-content">
+                  <p>"Truly a set-and-save solution. Not only did our AWS cost reduction increase significantly, but the amount of time we spend managing AWS costs has been reduced substantially."</p>
+                </div>
+                <div className="testimonial-author">
+                  <h4>Mike Chen</h4>
+                  <p>FinOps Lead, DataFlow</p>
+                </div>
+              </div>
+              <div className="testimonial-card">
+                <div className="testimonial-content">
+                  <p>"The ROI on VIRIDITY has exceeded our expectations. We're saving 40% more on our AWS costs with zero operational overhead."</p>
+                </div>
+                <div className="testimonial-author">
+                  <h4>Alex Rodriguez</h4>
+                  <p>CFO, CloudScale</p>
+                </div>
+              </div>
+              <div className="testimonial-card">
+                <div className="testimonial-content">
+                  <p>"VIRIDITY's expert team delivered results within the first month. Our AWS optimization is now completely hands-off."</p>
+                </div>
+                <div className="testimonial-author">
+                  <h4>Jennifer Park</h4>
+                  <p>VP Engineering, StreamTech</p>
+                </div>
+              </div>
+              <div className="testimonial-card">
+                <div className="testimonial-content">
+                  <p>"Best investment we've made in our cloud infrastructure. VIRIDITY pays for itself and then some."</p>
+                </div>
+                <div className="testimonial-author">
+                  <h4>David Kim</h4>
+                  <p>CTO, FinanceFlow</p>
+                </div>
               </div>
             </div>
           </div>
