@@ -442,6 +442,7 @@ function HomePage() {
           <h2 className="animate-on-scroll">What Our Partners say about VIRIDITY</h2>
           <div className="testimonials-carousel">
             <div className="testimonials-track">
+              {/* First set of testimonials */}
               <div className="testimonial-card">
                 <div className="testimonial-rating">
                   <div className="stars">
@@ -462,6 +463,16 @@ function HomePage() {
                 </div>
               </div>
               <div className="testimonial-card">
+                <div className="testimonial-rating">
+                  <div className="stars">
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                  </div>
+                  <span className="rating-text">5.0</span>
+                </div>
                 <div className="testimonial-content">
                   <p>"Action-oriented AWS cost management—we set parameters for coverage and risk, and VIRIDITY takes actions with the best AWS financial instruments to meet our goals."</p>
                 </div>
@@ -471,6 +482,16 @@ function HomePage() {
                 </div>
               </div>
               <div className="testimonial-card">
+                <div className="testimonial-rating">
+                  <div className="stars">
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="none" color="#fbbf24" />
+                  </div>
+                  <span className="rating-text">4.0</span>
+                </div>
                 <div className="testimonial-content">
                   <p>"Truly a set-and-save solution. Not only did our AWS cost reduction increase significantly, but the amount of time we spend managing AWS costs has been reduced substantially."</p>
                 </div>
@@ -480,6 +501,16 @@ function HomePage() {
                 </div>
               </div>
               <div className="testimonial-card">
+                <div className="testimonial-rating">
+                  <div className="stars">
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                  </div>
+                  <span className="rating-text">5.0</span>
+                </div>
                 <div className="testimonial-content">
                   <p>"The ROI on VIRIDITY has exceeded our expectations. We're saving 40% more on our AWS costs with zero operational overhead."</p>
                 </div>
@@ -489,6 +520,16 @@ function HomePage() {
                 </div>
               </div>
               <div className="testimonial-card">
+                <div className="testimonial-rating">
+                  <div className="stars">
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                  </div>
+                  <span className="rating-text">4.5</span>
+                </div>
                 <div className="testimonial-content">
                   <p>"VIRIDITY's expert team delivered results within the first month. Our AWS optimization is now completely hands-off."</p>
                 </div>
@@ -498,6 +539,16 @@ function HomePage() {
                 </div>
               </div>
               <div className="testimonial-card">
+                <div className="testimonial-rating">
+                  <div className="stars">
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="none" color="#fbbf24" />
+                  </div>
+                  <span className="rating-text">4.0</span>
+                </div>
                 <div className="testimonial-content">
                   <p>"Best investment we've made in our cloud infrastructure. VIRIDITY pays for itself and then some."</p>
                 </div>
@@ -528,6 +579,16 @@ function HomePage() {
                 </div>
               </div>
               <div className="testimonial-card">
+                <div className="testimonial-rating">
+                  <div className="stars">
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                  </div>
+                  <span className="rating-text">5.0</span>
+                </div>
                 <div className="testimonial-content">
                   <p>"Action-oriented AWS cost management—we set parameters for coverage and risk, and VIRIDITY takes actions with the best AWS financial instruments to meet our goals."</p>
                 </div>
@@ -537,6 +598,16 @@ function HomePage() {
                 </div>
               </div>
               <div className="testimonial-card">
+                <div className="testimonial-rating">
+                  <div className="stars">
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="none" color="#fbbf24" />
+                  </div>
+                  <span className="rating-text">4.0</span>
+                </div>
                 <div className="testimonial-content">
                   <p>"Truly a set-and-save solution. Not only did our AWS cost reduction increase significantly, but the amount of time we spend managing AWS costs has been reduced substantially."</p>
                 </div>
@@ -546,6 +617,16 @@ function HomePage() {
                 </div>
               </div>
               <div className="testimonial-card">
+                <div className="testimonial-rating">
+                  <div className="stars">
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                  </div>
+                  <span className="rating-text">5.0</span>
+                </div>
                 <div className="testimonial-content">
                   <p>"The ROI on VIRIDITY has exceeded our expectations. We're saving 40% more on our AWS costs with zero operational overhead."</p>
                 </div>
@@ -555,6 +636,16 @@ function HomePage() {
                 </div>
               </div>
               <div className="testimonial-card">
+                <div className="testimonial-rating">
+                  <div className="stars">
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                  </div>
+                  <span className="rating-text">4.5</span>
+                </div>
                 <div className="testimonial-content">
                   <p>"VIRIDITY's expert team delivered results within the first month. Our AWS optimization is now completely hands-off."</p>
                 </div>
@@ -564,6 +655,16 @@ function HomePage() {
                 </div>
               </div>
               <div className="testimonial-card">
+                <div className="testimonial-rating">
+                  <div className="stars">
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="none" color="#fbbf24" />
+                  </div>
+                  <span className="rating-text">4.0</span>
+                </div>
                 <div className="testimonial-content">
                   <p>"Best investment we've made in our cloud infrastructure. VIRIDITY pays for itself and then some."</p>
                 </div>
