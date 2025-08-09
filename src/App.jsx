@@ -282,7 +282,7 @@ function HomePage() {
                 </div>
               </div>
                                       <div className="showcase-visual">
-                          <img src="/dfghbnhgfdsdfgbgfds.png" alt="Reduce costs, mitigate risk" className="showcase-image" />
+                          <img src="/sdfghjnmjhgfds.png" alt="Reduce costs, mitigate risk" className="showcase-image" />
                         </div>
             </div>
 
@@ -316,7 +316,7 @@ function HomePage() {
 
             <div className="showcase-item animate-on-scroll">
               <div className="showcase-visual">
-                <img src="/5c6e9e04-aa69-48fe-b3c6-04c5a5081cb6.png" alt="Increase ROI, decrease wasted spend" className="showcase-image" />
+                <img src="/werghgrewedrfgbhng.png" alt="Increase ROI, decrease wasted spend" className="showcase-image" />
               </div>
               <div className="showcase-content">
                 <h3>Increase ROI, decrease wasted spend</h3>
