@@ -525,6 +525,16 @@ function HomePage() {
               
               {/* Duplicate set for seamless loop */}
               <div className="testimonial-card">
+                <div className="testimonial-rating">
+                  <div className="stars">
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                    <Star size={16} fill="#fbbf24" color="#fbbf24" />
+                  </div>
+                  <span className="rating-text">5.0</span>
+                </div>
                 <div className="testimonial-content">
                   <p>"VIRIDITY saves us a considerable amount of money through expert AWS cost optimization. The pricing model based on savings makes it essentially free."</p>
                 </div>
