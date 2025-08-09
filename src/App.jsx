@@ -624,7 +624,7 @@ function HomePage() {
                 </div>
                 <div className="stat-divider"></div>
                 <div className="stat-item">
-                  <div className="stat-number">< 10 min</div>
+                                      <div className="stat-number">&lt; 10 min</div>
                   <div className="stat-label">Setup Time</div>
                 </div>
                 <div className="stat-divider"></div>
