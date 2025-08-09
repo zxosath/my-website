@@ -401,6 +401,52 @@ function HomePage() {
               </div>
             </div>
 
+            <div className="showcase-item animate-on-scroll">
+              <div className="showcase-visual">
+                <div className="roi-dashboard">
+                  <div className="roi-header">
+                    <h4>ROI Performance</h4>
+                    <div className="time-period">
+                      <span className="period active">12 months</span>
+                    </div>
+                  </div>
+                  <div className="roi-metrics">
+                    <div className="roi-stat">
+                      <span className="roi-label">Total Savings</span>
+                      <div className="roi-value">$2.4M</div>
+                      <div className="roi-change positive">+47% vs last year</div>
+                    </div>
+                    <div className="roi-stat">
+                      <span className="roi-label">VIRIDITY Fees</span>
+                      <div className="roi-value">$240K</div>
+                      <div className="roi-change neutral">10% of savings</div>
+                    </div>
+                    <div className="roi-stat highlight">
+                      <span className="roi-label">Net ROI</span>
+                      <div className="roi-value">900%</div>
+                      <div className="roi-change positive">Pure profit</div>
+                    </div>
+                  </div>
+                  <div className="savings-chart">
+                    <div className="chart-bar savings" style={{height: '90%'}}></div>
+                    <div className="chart-bar fees" style={{height: '9%'}}></div>
+                    <div className="chart-labels">
+                      <span>Your Savings</span>
+                      <span>Our Fees</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="showcase-content">
+                <h3>Increase ROI, decrease wasted spend</h3>
+                <p>Generate incremental savings that exceed our fees and maximize AWS ROI. Our performance-based pricing ensures you always come out ahead, with transparent reporting on every dollar saved.</p>
+                <div className="showcase-actions">
+                  <button className="btn-primary">Get Started</button>
+                  <button className="btn-secondary">Request a Demo</button>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

@@ -1770,6 +1770,8 @@ html {
   width: 100%;
   position: relative;
   margin-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .testimonials-track {
