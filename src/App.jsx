@@ -281,38 +281,9 @@ function HomePage() {
                   <button className="btn-secondary">Request a Demo</button>
                 </div>
               </div>
-              <div className="showcase-visual">
-                <div className="metric-dashboard">
-                  <div className="metric-item">
-                    <span className="metric-label">Commitment Coverage</span>
-                    <div className="metric-bar">
-                      <div className="bar-fill" style={{width: '95%', backgroundColor: '#8b5cf6'}}></div>
-                      <span className="metric-value">95%</span>
-                    </div>
-                  </div>
-                  <div className="metric-item">
-                    <span className="metric-label">Commitment Utilization</span>
-                    <div className="metric-bar">
-                      <div className="bar-fill" style={{width: '99%', backgroundColor: '#8b5cf6'}}></div>
-                      <span className="metric-value">99%</span>
-                    </div>
-                  </div>
-                  <div className="metric-item">
-                    <span className="metric-label">Blended Discount</span>
-                    <div className="metric-bar">
-                      <div className="bar-fill" style={{width: '50%', backgroundColor: '#8b5cf6'}}></div>
-                      <span className="metric-value">50%</span>
-                    </div>
-                  </div>
-                  <div className="metric-item">
-                    <span className="metric-label">Effective Savings Rate (ESR)</span>
-                    <div className="metric-bar">
-                      <div className="bar-fill" style={{width: '40%', backgroundColor: '#10b981'}}></div>
-                      <span className="metric-value">40%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                                      <div className="showcase-visual">
+                          <img src="/dfghbnhgfdsdfgbgfds.png" alt="Reduce costs, mitigate risk" className="showcase-image" />
+                        </div>
             </div>
 
             <div className="showcase-item animate-on-scroll">

@@ -1062,17 +1062,19 @@ html {
 
 /* Why ProsperOps Section */
 .why-prosperops {
-  padding: 6rem 0;
+  padding: 4rem 0;
   background: white;
   position: relative;
 }
 
 .why-prosperops h2 {
   text-align: center;
-  font-size: 2.75rem;
-  font-weight: 700;
+  font-size: 2.25rem;
+  font-weight: 600;
   color: #1f2937;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
 }
 
 .benefits-showcase {
@@ -1166,6 +1168,20 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.showcase-image {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.showcase-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* Metric Dashboard Styles */
