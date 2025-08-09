@@ -3,6 +3,10 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { ChevronDown, Menu, X, ArrowRight, Play, Calendar, BookOpen, Headphones, Users, HelpCircle, FileText, Building, Star, CheckCircle, TrendingUp, DollarSign, Activity, BarChart3, Settings, Globe, Shield, Zap } from 'lucide-react';
 import './App.css';
 import Pricing from './Pricing';
+import HelpCenter from './HelpCenter';
+import Legal from './Legal';
+import About from './About';
+import Contact from './Contact';
 
 function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -132,10 +136,10 @@ function HomePage() {
                 <div className="dropdown-menu">
                   <div className="dropdown-section">
                     <div className="resource-links">
-                      <a href="#"><HelpCircle size={16} /> Help Center</a>
-                      <a href="#"><FileText size={16} /> Legal</a>
-                      <a href="#"><Building size={16} /> About</a>
-                      <a href="#"><Users size={16} /> Contact</a>
+                      <a href="#/help-center"><HelpCircle size={16} /> Help Center</a>
+                      <a href="#/legal"><FileText size={16} /> Legal</a>
+                      <a href="#/about"><Users size={16} /> About</a>
+                      <a href="#/contact"><Users size={16} /> Contact</a>
                     </div>
                   </div>
                 </div>
@@ -790,6 +794,10 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/help-center" element={<HelpCenter />} />
+        <Route path="/legal" element={<Legal />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
