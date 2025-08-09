@@ -1174,14 +1174,15 @@ html {
   width: 100%;
   max-width: 450px;
   height: auto;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
 }
 
 .showcase-image:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transform: none;
+  box-shadow: none;
 }
 
 /* Metric Dashboard Styles */
