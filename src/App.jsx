@@ -325,28 +325,25 @@ function HomePage() {
           <h2 className="animate-on-scroll">AWS cost optimization and achieving consistent savings is an ongoing struggle for FinOps teams</h2>
           
           <div className="challenges-content animate-on-scroll">
-            <div className="challenge-stats">
-              <div className="stat-highlight">
-                <span className="stat-number">30%</span>
-                <p>of AWS spend is estimated to be waste</p>
-              </div>
-              <div className="challenge-flow">
-                <div className="flow-step">
-                  <div className="step-icon">⚡</div>
+            <div className="challenge-text">
+              <p className="lead-text">
+                The dynamic nature of AWS workloads makes ongoing cost optimization challenging for both FinOps and engineering teams. <strong>Roughly 30% of AWS spend is estimated to be waste.</strong>
+              </p>
+              
+              <div className="challenge-points">
+                <div className="challenge-point">
                   <h3>Dynamic Workloads</h3>
-                  <p>AWS environments change constantly, making manual optimization nearly impossible</p>
+                  <p>AWS environments change constantly, making manual optimization nearly impossible to maintain effectively.</p>
                 </div>
-                <div className="flow-arrow">→</div>
-                <div className="flow-step">
-                  <div className="step-icon">⚖️</div>
-                  <h3>Performance vs Cost</h3>
-                  <p>Balancing cost savings without compromising application performance or compliance</p>
+                
+                <div className="challenge-point">
+                  <h3>Performance vs Cost Balance</h3>
+                  <p>Cost optimization must not compromise application performance, infrastructure reliability, or compliance with business rules.</p>
                 </div>
-                <div className="flow-arrow">→</div>
-                <div className="flow-step">
-                  <div className="step-icon">🎯</div>
-                  <h3>Expert Management</h3>
-                  <p>Savings Plans and Reserved Instances require specialized expertise for optimal results</p>
+                
+                <div className="challenge-point">
+                  <h3>Expertise Required</h3>
+                  <p>Optimizing AWS Savings Plans and Reserved Instances requires specialized knowledge to deliver greater outcomes with lower risk.</p>
                 </div>
               </div>
             </div>
