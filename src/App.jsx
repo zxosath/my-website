@@ -288,46 +288,7 @@ function HomePage() {
 
             <div className="showcase-item animate-on-scroll">
               <div className="showcase-visual">
-                <div className="analytics-chart">
-                  <div className="chart-header">
-                    <div className="chart-controls">
-                      <button className="chart-btn active">Settings</button>
-                    </div>
-                    <h4>Spend Coverage Trend</h4>
-                    <div className="chart-legend">
-                      <span className="legend-item">
-                        <span className="legend-dot green"></span>VIRIDITY Managed
-                      </span>
-                      <span className="legend-item">
-                        <span className="legend-dot red"></span>On-Demand
-                      </span>
-                    </div>
-                  </div>
-                  <div className="chart-area">
-                    <div className="coverage-chart">
-                      <div className="chart-layer managed"></div>
-                      <div className="chart-layer on-demand"></div>
-                    </div>
-                    <div className="chart-settings">
-                      <div className="setting-item">
-                        <span>Smart Mode</span>
-                        <div className="toggle on">ON</div>
-                      </div>
-                      <div className="setting-item">
-                        <span>Min Coverage</span>
-                        <div className="toggle on">ON</div>
-                      </div>
-                      <div className="setting-item">
-                        <span>Discount Split</span>
-                        <div className="toggle on">ON</div>
-                      </div>
-                      <div className="setting-item">
-                        <span>Max Flexibility</span>
-                        <div className="toggle on">ON</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <img src="/ChatGPT Image Aug 9, 2025 at 05_59_03 PM.png" alt="Real-time optimization, continuous savings" className="showcase-image" />
               </div>
               <div className="showcase-content">
                 <h3>Real-time optimization, continuous savings</h3>
