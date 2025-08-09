@@ -322,28 +322,28 @@ function HomePage() {
       {/* Challenges Section */}
       <section className="challenges">
         <div className="container">
-          <h2 className="animate-on-scroll">AWS cost optimization and achieving consistent savings is an ongoing struggle for FinOps teams</h2>
+          <h2 className="animate-on-scroll">The Modern FinOps Paradox</h2>
           
           <div className="challenges-content animate-on-scroll">
             <div className="challenge-text">
               <p className="lead-text">
-                The dynamic nature of AWS workloads makes ongoing cost optimization challenging for both FinOps and engineering teams. <strong>Roughly 30% of AWS spend is estimated to be waste.</strong>
+                While cloud spending continues to accelerate, organizations face a fundamental challenge: <strong>the very agility that makes AWS powerful creates a moving target for cost optimization.</strong> Industry research consistently shows that 20-30% of cloud spend delivers no business value.
               </p>
               
               <div className="challenge-points">
                 <div className="challenge-point">
-                  <h3>Dynamic Workloads</h3>
-                  <p>AWS environments change constantly, making manual optimization nearly impossible to maintain effectively.</p>
+                  <h3>The Velocity Problem</h3>
+                  <p>Modern development teams deploy hundreds of changes weekly. Each deployment shifts resource utilization patterns, rendering yesterday's optimization decisions obsolete. Traditional quarterly reviews simply cannot keep pace with cloud-native development velocity.</p>
                 </div>
                 
                 <div className="challenge-point">
-                  <h3>Performance vs Cost Balance</h3>
-                  <p>Cost optimization must not compromise application performance, infrastructure reliability, or compliance with business rules.</p>
+                  <h3>The Optimization Trilemma</h3>
+                  <p>Engineering teams face an impossible choice: optimize for cost, performance, or development speed—but rarely all three. Most organizations sacrifice cost optimization to avoid impacting application performance or slowing feature delivery.</p>
                 </div>
                 
                 <div className="challenge-point">
-                  <h3>Expertise Required</h3>
-                  <p>Optimizing AWS Savings Plans and Reserved Instances requires specialized knowledge to deliver greater outcomes with lower risk.</p>
+                  <h3>The Expertise Gap</h3>
+                  <p>AWS offers 200+ services with complex pricing models that change quarterly. Mastering Reserved Instances, Savings Plans, and Spot pricing requires dedicated expertise that most organizations cannot justify hiring internally.</p>
                 </div>
               </div>
             </div>
