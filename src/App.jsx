@@ -595,62 +595,119 @@ function HomePage() {
 
       {/* CTA Section */}
       <section id="cta" className="cta">
+        <div className="cta-background">
+          <div className="cta-pattern"></div>
+          <div className="cta-glow"></div>
+        </div>
+        
         <div className="container">
-          <div className="cta-header">
-            <h2 className="animate-on-scroll">Request a Free AWS Cost Analysis</h2>
-            <div className="cta-highlight animate-on-scroll">
-              <div className="highlight-stat">
-                <span className="stat-number">3 out of 4</span>
-                <span className="stat-text">customers see at least</span>
-                <span className="stat-percentage">40% reduction</span>
-                <span className="stat-text">in AWS costs</span>
+          <div className="cta-wrapper">
+            <div className="cta-content-left animate-on-scroll">
+              <div className="cta-badge">
+                <span className="badge-icon">⚡</span>
+                <span>Free AWS Cost Analysis</span>
               </div>
-            </div>
-            <p className="cta-description animate-on-scroll">
-              Get a deeper understanding of your current AWS spend and savings, and find out how much more you can save with VIRIDITY!
-            </p>
-          </div>
-          
-          <div className="cta-content">
-            <div className="cta-benefits">
-              <h3>What you'll get:</h3>
-              <div className="benefits-list">
-                <div className="benefit animate-on-scroll">
-                  <CheckCircle size={24} />
-                  <span>Visualize your AWS savings potential</span>
+              
+              <h2 className="cta-headline">
+                Unlock Your Hidden
+                <span className="highlight-gradient"> AWS Savings</span>
+              </h2>
+              
+              <p className="cta-subtext">
+                Get a comprehensive analysis of your AWS infrastructure and discover optimization opportunities worth thousands of dollars per month.
+              </p>
+              
+              <div className="cta-stats">
+                <div className="stat-item">
+                  <div className="stat-number">40-60%</div>
+                  <div className="stat-label">Average Cost Reduction</div>
                 </div>
-                <div className="benefit animate-on-scroll">
-                  <CheckCircle size={24} />
-                  <span>Benchmark AWS performance vs. peers</span>
+                <div className="stat-divider"></div>
+                <div className="stat-item">
+                  <div className="stat-number">< 10 min</div>
+                  <div className="stat-label">Setup Time</div>
                 </div>
-                <div className="benefit animate-on-scroll">
-                  <CheckCircle size={24} />
-                  <span>10-minute setup, no strings attached</span>
+                <div className="stat-divider"></div>
+                <div className="stat-item">
+                  <div className="stat-number">$0</div>
+                  <div className="stat-label">Upfront Cost</div>
+                </div>
+              </div>
+              
+              <div className="cta-features">
+                <div className="feature-item">
+                  <div className="feature-icon">
+                    <CheckCircle size={20} />
+                  </div>
+                  <span>Detailed savings breakdown by service</span>
+                </div>
+                <div className="feature-item">
+                  <div className="feature-icon">
+                    <CheckCircle size={20} />
+                  </div>
+                  <span>Benchmark against industry peers</span>
+                </div>
+                <div className="feature-item">
+                  <div className="feature-icon">
+                    <CheckCircle size={20} />
+                  </div>
+                  <span>No commitment required</span>
                 </div>
               </div>
             </div>
             
-            <div className="cta-form animate-on-scroll">
-              <div className="form-header">
-                <h3>Get Started Now</h3>
-                <p>Submit the form to request your free AWS cost analysis</p>
-              </div>
-              <div className="form-placeholder">
-                <div className="form-row">
-                  <div className="form-field">
-                    <input type="text" placeholder="First Name" />
+            <div className="cta-form-container animate-on-scroll">
+              <div className="form-card">
+                <div className="form-header">
+                  <h3>Get Your Analysis</h3>
+                  <p>Start saving on AWS costs today</p>
+                </div>
+                
+                <form className="cta-form">
+                  <div className="form-group">
+                    <div className="form-row">
+                      <div className="input-group">
+                        <label>First Name</label>
+                        <input type="text" required />
+                      </div>
+                      <div className="input-group">
+                        <label>Last Name</label>
+                        <input type="text" required />
+                      </div>
+                    </div>
                   </div>
-                  <div className="form-field">
-                    <input type="text" placeholder="Last Name" />
+                  
+                  <div className="input-group">
+                    <label>Work Email</label>
+                    <input type="email" required />
                   </div>
-                </div>
-                <div className="form-field">
-                  <input type="email" placeholder="Work Email" />
-                </div>
-                <div className="form-field">
-                  <input type="text" placeholder="Company" />
-                </div>
-                <button className="btn-primary btn-cta">Request Analysis</button>
+                  
+                  <div className="input-group">
+                    <label>Company</label>
+                    <input type="text" required />
+                  </div>
+                  
+                  <div className="input-group">
+                    <label>Monthly AWS Spend (Optional)</label>
+                    <select>
+                      <option value="">Select range</option>
+                      <option value="under-1k">Under $1,000</option>
+                      <option value="1k-10k">$1,000 - $10,000</option>
+                      <option value="10k-50k">$10,000 - $50,000</option>
+                      <option value="50k-100k">$50,000 - $100,000</option>
+                      <option value="over-100k">Over $100,000</option>
+                    </select>
+                  </div>
+                  
+                  <button type="submit" className="btn-submit">
+                    <span>Get Free Analysis</span>
+                    <ArrowRight size={20} />
+                  </button>
+                  
+                  <p className="form-disclaimer">
+                    Your information is secure and will never be shared. Analysis typically completed within 24 hours.
+                  </p>
+                </form>
               </div>
             </div>
           </div>
