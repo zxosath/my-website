@@ -1124,6 +1124,13 @@ html {
   gap: 1rem;
 }
 
+.showcase-actions .btn-primary,
+.showcase-actions .btn-secondary {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border-radius: 0;
+}
+
 .showcase-actions .btn-secondary {
   background: transparent;
   color: #6366f1;
