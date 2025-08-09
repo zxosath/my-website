@@ -265,55 +265,50 @@ function HomePage() {
       {/* Why VIRIDITY Section */}
       <section className="why-prosperops">
         <div className="container">
-          <h2 className="animate-on-scroll">Why VIRIDITY</h2>
-          <div className="benefits-grid">
-            <div className="benefit-card animate-on-scroll">
-              <div className="benefit-icon">
-                <TrendingUp size={32} />
+          <div className="why-viridity-layout">
+            <div className="why-viridity-content">
+              <h2 className="animate-on-scroll">Reduce costs, mitigate risk</h2>
+              <p className="animate-on-scroll">
+                Continuously optimize a portfolio of commitments while adapting them to changes in usage in real time to safely increase coverage while avoiding lock-in risk. Generate long-term, higher Effective Savings Rates (ESR) than industry peers with algorithmic management.
+              </p>
+              <div className="action-buttons animate-on-scroll">
+                <button className="btn-primary">Get Started</button>
+                <button className="btn-secondary">Request a Demo</button>
               </div>
-              <h3>Reduce AWS costs, mitigate risk</h3>
-              <p>Optimize AWS spending in real-time while avoiding lock-in risk.</p>
-
             </div>
-            <div className="benefit-card animate-on-scroll">
-              <div className="benefit-icon">
-                <Settings size={32} />
+            
+            <div className="metrics-panel animate-on-scroll">
+              <div className="metric-bar">
+                <div className="metric-label">Commitment Coverage</div>
+                <div className="metric-value">95%+</div>
+                <div className="progress-bar">
+                  <div className="progress-fill purple" style={{width: '95%'}}></div>
+                </div>
               </div>
-              <h3>Offload work, scale FinOps</h3>
-              <p>Let VIRIDITY experts handle AWS cost management while you focus on strategic initiatives.</p>
-
-            </div>
-            <div className="benefit-card animate-on-scroll">
-              <div className="benefit-icon">
-                <BarChart3 size={32} />
+              
+              <div className="metric-bar">
+                <div className="metric-label">Commitment Utilization</div>
+                <div className="metric-value">99%+</div>
+                <div className="progress-bar">
+                  <div className="progress-fill purple" style={{width: '99%'}}></div>
+                </div>
               </div>
-              <h3>Gain insights, avoid analysis paralysis</h3>
-              <p>Get immediate results and track core optimization KPIs without data overload.</p>
-
-            </div>
-            <div className="benefit-card animate-on-scroll">
-              <div className="benefit-icon">
-                <DollarSign size={32} />
+              
+              <div className="metric-bar">
+                <div className="metric-label">Blended Discount</div>
+                <div className="metric-value">50%+</div>
+                <div className="progress-bar">
+                  <div className="progress-fill purple" style={{width: '50%'}}></div>
+                </div>
               </div>
-              <h3>Increase ROI, decrease wasted spend</h3>
-              <p>Generate incremental savings that exceed our fees and maximize AWS ROI.</p>
-
-            </div>
-            <div className="benefit-card animate-on-scroll">
-              <div className="benefit-icon">
-                <Activity size={32} />
+              
+              <div className="metric-bar">
+                <div className="metric-label">Effective Savings Rate (ESR)</div>
+                <div className="metric-value">40%+</div>
+                <div className="progress-bar">
+                  <div className="progress-fill green" style={{width: '40%'}}></div>
+                </div>
               </div>
-              <h3>Real-time optimization, continuous savings</h3>
-              <p>Expert team monitors usage patterns and adjusts strategies in real-time for maximum savings.</p>
-
-            </div>
-            <div className="benefit-card animate-on-scroll">
-              <div className="benefit-icon">
-                <Globe size={32} />
-              </div>
-              <h3>Global AWS expertise, local results</h3>
-              <p>Leverage deep AWS expertise across all regions while maintaining performance and compliance.</p>
-
             </div>
           </div>
         </div>
@@ -332,18 +327,27 @@ function HomePage() {
               
               <div className="challenge-points">
                 <div className="challenge-point">
-                  <h3>The Velocity Problem</h3>
-                  <p>Modern development teams deploy hundreds of changes weekly. Each deployment shifts resource utilization patterns, rendering yesterday's optimization decisions obsolete. Traditional quarterly reviews simply cannot keep pace with cloud-native development velocity.</p>
+                  <div className="point-header">
+                    <span className="point-number">01</span>
+                    <h3>The Velocity Problem</h3>
+                  </div>
+                  <p>Modern development teams deploy <span className="highlight">hundreds of changes weekly</span>. Each deployment shifts resource patterns, making yesterday's optimization obsolete. Quarterly reviews? They're like bringing a map to a rocket ship.</p>
                 </div>
                 
                 <div className="challenge-point">
-                  <h3>The Optimization Trilemma</h3>
-                  <p>Engineering teams face an impossible choice: optimize for cost, performance, or development speed—but rarely all three. Most organizations sacrifice cost optimization to avoid impacting application performance or slowing feature delivery.</p>
+                  <div className="point-header">
+                    <span className="point-number">02</span>
+                    <h3>The Optimization Trilemma</h3>
+                  </div>
+                  <p>Pick two: <span className="highlight">cost, performance, or speed</span>. Most teams sacrifice cost optimization to keep apps running fast and features shipping. It's the "expensive peace of mind" tax.</p>
                 </div>
                 
                 <div className="challenge-point">
-                  <h3>The Expertise Gap</h3>
-                  <p>AWS offers 200+ services with complex pricing models that change quarterly. Mastering Reserved Instances, Savings Plans, and Spot pricing requires dedicated expertise that most organizations cannot justify hiring internally.</p>
+                  <div className="point-header">
+                    <span className="point-number">03</span>
+                    <h3>The Expertise Gap</h3>
+                  </div>
+                  <p>AWS has <span className="highlight">200+ services</span> with pricing models that change quarterly. It's like trying to memorize a phone book that rewrites itself every three months.</p>
                 </div>
               </div>
             </div>
