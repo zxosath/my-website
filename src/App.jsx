@@ -269,7 +269,7 @@ function HomePage() {
       {/* Why VIRIDITY Section */}
       <section className="why-prosperops">
         <div className="container">
-          <h2 className="animate-on-scroll">Why VIRIDITY</h2>
+                          <h2 className="animate-on-scroll">Why Viridity</h2>
           <div className="benefits-showcase">
             
             <div className="showcase-item animate-on-scroll">
