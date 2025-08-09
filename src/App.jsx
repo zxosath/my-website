@@ -266,55 +266,141 @@ function HomePage() {
       <section className="why-prosperops">
         <div className="container">
           <h2 className="animate-on-scroll">Why VIRIDITY</h2>
-          <div className="benefits-grid">
-            <div className="benefit-card animate-on-scroll">
-              <div className="benefit-icon">
-                <TrendingUp size={32} />
+          <div className="benefits-showcase">
+            
+            <div className="showcase-item animate-on-scroll">
+              <div className="showcase-content">
+                <h3>Reduce costs, mitigate risk</h3>
+                <p>Optimize AWS spending in real-time while avoiding lock-in risk. Our expert team continuously adjusts your commitment strategy to maximize savings without compromising flexibility.</p>
+                <div className="showcase-actions">
+                  <button className="btn-primary">Get Started</button>
+                  <button className="btn-secondary">Request a Demo</button>
+                </div>
               </div>
-              <h3>Reduce AWS costs, mitigate risk</h3>
-              <p>Optimize AWS spending in real-time while avoiding lock-in risk.</p>
-
-            </div>
-            <div className="benefit-card animate-on-scroll">
-              <div className="benefit-icon">
-                <Settings size={32} />
+              <div className="showcase-visual">
+                <div className="metric-dashboard">
+                  <div className="metric-item">
+                    <span className="metric-label">Commitment Coverage</span>
+                    <div className="metric-bar">
+                      <div className="bar-fill" style={{width: '95%', backgroundColor: '#8b5cf6'}}></div>
+                      <span className="metric-value">95%</span>
+                    </div>
+                  </div>
+                  <div className="metric-item">
+                    <span className="metric-label">Commitment Utilization</span>
+                    <div className="metric-bar">
+                      <div className="bar-fill" style={{width: '99%', backgroundColor: '#8b5cf6'}}></div>
+                      <span className="metric-value">99%</span>
+                    </div>
+                  </div>
+                  <div className="metric-item">
+                    <span className="metric-label">Blended Discount</span>
+                    <div className="metric-bar">
+                      <div className="bar-fill" style={{width: '50%', backgroundColor: '#8b5cf6'}}></div>
+                      <span className="metric-value">50%</span>
+                    </div>
+                  </div>
+                  <div className="metric-item">
+                    <span className="metric-label">Effective Savings Rate (ESR)</span>
+                    <div className="metric-bar">
+                      <div className="bar-fill" style={{width: '40%', backgroundColor: '#10b981'}}></div>
+                      <span className="metric-value">40%</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3>Offload work, scale FinOps</h3>
-              <p>Let VIRIDITY experts handle AWS cost management while you focus on strategic initiatives.</p>
-
             </div>
-            <div className="benefit-card animate-on-scroll">
-              <div className="benefit-icon">
-                <BarChart3 size={32} />
+
+            <div className="showcase-item animate-on-scroll">
+              <div className="showcase-visual">
+                <div className="analytics-chart">
+                  <div className="chart-header">
+                    <div className="chart-controls">
+                      <button className="chart-btn active">Settings</button>
+                    </div>
+                    <h4>Spend Coverage Trend</h4>
+                    <div className="chart-legend">
+                      <span className="legend-item">
+                        <span className="legend-dot green"></span>VIRIDITY Managed
+                      </span>
+                      <span className="legend-item">
+                        <span className="legend-dot red"></span>On-Demand
+                      </span>
+                    </div>
+                  </div>
+                  <div className="chart-area">
+                    <div className="coverage-chart">
+                      <div className="chart-layer managed"></div>
+                      <div className="chart-layer on-demand"></div>
+                    </div>
+                    <div className="chart-settings">
+                      <div className="setting-item">
+                        <span>Smart Mode</span>
+                        <div className="toggle on">ON</div>
+                      </div>
+                      <div className="setting-item">
+                        <span>Min Coverage</span>
+                        <div className="toggle on">ON</div>
+                      </div>
+                      <div className="setting-item">
+                        <span>Discount Split</span>
+                        <div className="toggle on">ON</div>
+                      </div>
+                      <div className="setting-item">
+                        <span>Max Flexibility</span>
+                        <div className="toggle on">ON</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3>Gain insights, avoid analysis paralysis</h3>
-              <p>Get immediate results and track core optimization KPIs without data overload.</p>
-
-            </div>
-            <div className="benefit-card animate-on-scroll">
-              <div className="benefit-icon">
-                <DollarSign size={32} />
+              <div className="showcase-content">
+                <h3>Real-time optimization, continuous savings</h3>
+                <p>Expert team monitors usage patterns and adjusts strategies in real-time for maximum savings. Our autonomous system eliminates human involvement so you can tackle higher-order FinOps priorities.</p>
+                <div className="showcase-actions">
+                  <button className="btn-primary">Get Started</button>
+                  <button className="btn-secondary">Request a Demo</button>
+                </div>
               </div>
-              <h3>Increase ROI, decrease wasted spend</h3>
-              <p>Generate incremental savings that exceed our fees and maximize AWS ROI.</p>
-
             </div>
-            <div className="benefit-card animate-on-scroll">
-              <div className="benefit-icon">
-                <Activity size={32} />
+
+            <div className="showcase-item animate-on-scroll">
+              <div className="showcase-content">
+                <h3>Gain insights, avoid analysis paralysis</h3>
+                <p>Get immediate results and track core optimization KPIs without data overload. Unlike traditional tools that overwhelm practitioners with excess data, VIRIDITY provides actionable insights that drive results.</p>
+                <div className="showcase-actions">
+                  <button className="btn-primary">Get Started</button>
+                  <button className="btn-secondary">Request a Demo</button>
+                </div>
               </div>
-              <h3>Real-time optimization, continuous savings</h3>
-              <p>Expert team monitors usage patterns and adjusts strategies in real-time for maximum savings.</p>
-
-            </div>
-            <div className="benefit-card animate-on-scroll">
-              <div className="benefit-icon">
-                <Globe size={32} />
+              <div className="showcase-visual">
+                <div className="insights-dashboard">
+                  <div className="dashboard-chart">
+                    <div className="pie-chart">
+                      <div className="pie-segment segment-1"></div>
+                      <div className="pie-segment segment-2"></div>
+                      <div className="pie-segment segment-3"></div>
+                      <div className="pie-center"></div>
+                    </div>
+                  </div>
+                  <div className="dashboard-metrics">
+                    <div className="insight-bar"></div>
+                    <div className="insight-bar"></div>
+                    <div className="insight-bar"></div>
+                    <div className="trend-line"></div>
+                    <div className="metric-grid">
+                      <div className="metric-box"></div>
+                      <div className="metric-box"></div>
+                      <div className="metric-box"></div>
+                      <div className="metric-box"></div>
+                      <div className="metric-box"></div>
+                      <div className="metric-box"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3>Global AWS expertise, local results</h3>
-              <p>Leverage deep AWS expertise across all regions while maintaining performance and compliance.</p>
-
             </div>
+
           </div>
         </div>
       </section>
