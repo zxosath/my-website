@@ -717,7 +717,7 @@ html {
 }
 
 .metric-card h3 {
-  color: white;
+  color: #374151;
   font-size: 0.875rem;
   font-weight: 600;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
@@ -725,7 +725,7 @@ html {
 }
 
 .metric-value {
-  color: white;
+  color: #1f2937;
   font-size: 1.75rem;
   font-weight: 700;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
