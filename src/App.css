@@ -528,14 +528,13 @@ html {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #000000 0%, #000000 30%, #000000 35%, #1a1a2e 45%, #16213e 55%, #3b82f6 65%, #6366f1 75%, #8b5cf6 85%, #a855f7 95%, #c084fc 100%);
-  background-size: 150% 150%;
-  animation: gradientShift 30s ease-in-out infinite;
+  background: linear-gradient(135deg, #000000 0%, #000000 60%, #0a0a0a 70%, #1a1a2e 80%, #16213e 90%, #1e293b 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 45s ease-in-out infinite;
   color: white;
   padding: 7.5rem 0; /* Restored desktop padding */
   position: relative;
   overflow: hidden;
-  box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.05);
 }
 
 .hero::before {
