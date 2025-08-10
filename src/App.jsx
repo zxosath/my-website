@@ -709,7 +709,7 @@ function HomePage() {
                   <label>How much is your total monthly cloud spend?*</label>
                   <select required>
                     <option value="">Please Select</option>
-                    <option value="under-10k">&lt;$10,000</option>
+                    <option value="under-10k">Less than $10,000 spend</option>
                     <option value="10k-50k">$10,000 to $50,000</option>
                     <option value="50k-100k">$50,000 to $100,000</option>
                     <option value="100k-500k">$100,000 to $500,000</option>
@@ -717,7 +717,7 @@ function HomePage() {
                     <option value="1m-2m">$1,000,000 to $2,000,000</option>
                     <option value="2m-5m">$2,000,000 to $5,000,000</option>
                     <option value="5m-10m">$5,000,000 to $10,000,000</option>
-                    <option value="over-10m">$10,000,000&gt;</option>
+                    <option value="over-10m">More than $10,000,000 spend</option>
                   </select>
                 </div>
 
