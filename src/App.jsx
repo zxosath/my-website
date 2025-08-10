@@ -8,30 +8,52 @@ import Legal from './Legal';
 import About from './About';
 import Contact from './Contact';
 
+// Success Page Component
 function SuccessPage() {
   return (
     <div className="success-page">
       <div className="success-container">
         <div className="success-content">
-          <div className="success-icon">✓</div>
+          <div className="success-icon">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22,4 12,14.01 9,11.01"/>
+            </svg>
+          </div>
           <h1>Thank You!</h1>
           <h2>Your AWS Cost Analysis Request Has Been Submitted</h2>
-          <p>We've received your request and will begin analyzing your AWS infrastructure immediately. You can expect your comprehensive cost optimization report within 24 hours.</p>
+          <p>We've received your request and our team will begin analyzing your AWS infrastructure within the next 24 hours.</p>
+          
           <div className="success-details">
             <div className="detail-item">
-              <span className="detail-icon">📧</span>
-              <span>Check your email for confirmation</span>
+              <h4>What happens next?</h4>
+              <ul>
+                <li>Our experts will review your AWS usage patterns</li>
+                <li>Identify optimization opportunities worth thousands</li>
+                <li>Prepare a detailed savings report</li>
+                <li>Contact you with actionable recommendations</li>
+              </ul>
             </div>
+            
             <div className="detail-item">
-              <span className="detail-icon">⏱️</span>
-              <span>Analysis completed within 24 hours</span>
-            </div>
-            <div className="detail-item">
-              <span className="detail-icon">💰</span>
-              <span>Potential savings identified in your report</span>
+              <h4>What you'll receive:</h4>
+              <ul>
+                <li>Comprehensive cost analysis report</li>
+                <li>Specific savings recommendations</li>
+                <li>Implementation roadmap</li>
+                <li>ROI projections</li>
+              </ul>
             </div>
           </div>
-          <a href="#/" className="btn-back-home">Return to Home</a>
+          
+          <div className="success-actions">
+            <a href="#/" className="btn-primary">Return to Home</a>
+            <a href="#/pricing" className="btn-secondary">View Pricing</a>
+          </div>
+          
+          <div className="success-footer">
+            <p>Questions? Contact us at <a href="mailto:support@viridity.com">support@viridity.com</a></p>
+          </div>
         </div>
       </div>
     </div>
@@ -722,9 +744,7 @@ function HomePage() {
 
                 <form action="https://api.web3forms.com/submit" method="POST">
                   <input type="hidden" name="access_key" value="9a066d3d-5907-438e-b186-f389e3dd4b4d" />
-                  <input type="hidden" name="redirect" value="https://your-website.vercel.app/#/success" />
-                  <input type="hidden" name="subject" value="New AWS Cost Analysis Request - VIRIDITY" />
-                  <input type="text" name="honeypot" style="display:none" />
+                  <input type="hidden" name="redirect" value="https://your-domain.com/success" />
                   
                   <div className="form-group">
                     <div className="form-row">
