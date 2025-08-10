@@ -748,11 +748,9 @@ html {
 /* Stats Section */
 .stats {
   background: #000D1F !important;
-  padding: 0 0 6rem 0;
+  padding: 2rem 0 6rem 0;
   position: relative;
   overflow: hidden;
-  border: none;
-  margin: 0;
 }
 
 .stats::before {
@@ -4135,19 +4133,18 @@ html {
 
 .analytics {
   background: #000D1E !important;
-  padding: 6rem 0 0 0;
+  padding: 6rem 0 2rem 0;
   position: relative;
   overflow: hidden;
-  border: none;
-  margin: 0;
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
 }
 
-.analytics .container,
-.stats .container {
-  border: none;
-  background: transparent;
-  margin: 0;
-  padding: 0 2rem;
+.analytics .container {
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
 }
 
 
