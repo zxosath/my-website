@@ -670,7 +670,7 @@ function HomePage() {
           <div className="cta-pattern"></div>
           <div className="cta-glow"></div>
         </div>
-        
+
         <div className="container">
           <div className="cta-wrapper">
             <div className="cta-content-left animate-on-scroll">
@@ -678,39 +678,40 @@ function HomePage() {
                 Unlock Your Hidden
                 <span className="highlight-gradient"> AWS Savings</span>
               </h2>
-              
+
               <p className="cta-subtext">
                 Get a comprehensive analysis of your AWS infrastructure and discover optimization opportunities worth thousands of dollars per month.
               </p>
-              
-              <form className="cta-form">
+            </div>
+            
+            <div className="cta-form-container animate-on-scroll">
+              <div className="cta-form">
+                <div className="form-header">
+                  <h3>Submit the form to request your free AWS savings analysis.</h3>
+                </div>
+
                 <div className="form-group">
                   <div className="form-row">
                     <div className="input-group">
-                      <label>First Name</label>
+                      <label>First Name*</label>
                       <input type="text" required />
                     </div>
                     <div className="input-group">
-                      <label>Last Name</label>
+                      <label>Last Name*</label>
                       <input type="text" required />
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="input-group">
-                  <label>Work Email</label>
+                  <label>Work Email*</label>
                   <input type="email" required />
                 </div>
-                
+
                 <div className="input-group">
-                  <label>Company</label>
-                  <input type="text" required />
-                </div>
-                
-                <div className="input-group">
-                  <label>Monthly AWS Spend</label>
-                  <select>
-                    <option value="">Select range</option>
+                  <label>How much is your total monthly cloud spend?*</label>
+                  <select required>
+                    <option value="">Please Select</option>
                     <option value="under-1k">Under $1,000</option>
                     <option value="1k-10k">$1,000 - $10,000</option>
                     <option value="10k-50k">$10,000 - $50,000</option>
@@ -718,16 +719,16 @@ function HomePage() {
                     <option value="over-100k">Over $100,000</option>
                   </select>
                 </div>
-                
+
                 <button type="submit" className="btn-submit">
-                  <span>Get Free Analysis</span>
+                  <span>Get Started</span>
                   <ArrowRight size={20} />
                 </button>
-                
+
                 <p className="form-disclaimer">
                   Your information is secure and will never be shared. Analysis typically completed within 24 hours.
                 </p>
-              </form>
+              </div>
             </div>
           </div>
         </div>
