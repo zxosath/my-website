@@ -748,7 +748,7 @@ html {
 /* Stats Section */
 .stats {
   padding: 6rem 0;
-  background: #f9fafb;
+  background: #000d1f !important;
   position: relative;
 }
 
@@ -771,14 +771,14 @@ html {
 }
 
 .stat-item {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 250, 252, 0.9)) !important;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)) !important;
   padding: 3rem 3rem 6rem 3rem;
   border-radius: 20px;
   border: 2px solid transparent;
   background-clip: padding-box;
   position: relative;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), 0 4px 16px rgba(107, 114, 128, 0.05);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(107, 114, 128, 0.1);
   overflow: hidden;
   cursor: pointer;
   opacity: 1 !important;
@@ -833,7 +833,7 @@ html {
 }
 
 .stat-item h3 {
-  color: #1f2937;
+  color: white;
   font-size: 2rem;
   font-weight: 600;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
@@ -845,7 +845,6 @@ html {
   text-align: center;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .stat-item:hover h3 {
@@ -861,7 +860,7 @@ html {
 }
 
 .stat-item p {
-  color: #374151;
+  color: #e5e7eb;
   font-size: 1rem;
   line-height: 1.6;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
@@ -896,7 +895,7 @@ html {
 .expand-icon {
   font-size: 1.8rem;
   font-weight: 400;
-  color: #6b7280;
+  color: #9ca3af;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1;
   position: absolute;
@@ -906,7 +905,7 @@ html {
   z-index: 3;
   pointer-events: none;
   opacity: 0.8;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .stat-item:hover .expand-icon {
@@ -6961,8 +6960,8 @@ html {
   color: #94a3b8;
   font-size: 1.125rem;
   margin-bottom: 3rem;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
