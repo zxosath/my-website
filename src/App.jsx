@@ -140,6 +140,7 @@ function HomePage() {
   // Form submission handler
   const handleFormSubmit = async (e) => {
     e.preventDefault();
+    console.log('Form submitted!');
     
     const formData = new FormData(e.target);
     
@@ -149,7 +150,10 @@ function HomePage() {
         body: formData
       });
       
+      console.log('Response status:', response.status);
+      
       if (response.ok) {
+        console.log('Form submitted successfully, showing modal');
         // Show success message
         setShowSuccessModal(true);
         
@@ -157,8 +161,9 @@ function HomePage() {
         e.target.reset();
         
         // Optionally redirect to success page
-        window.location.hash = '#/success';
+        // window.location.hash = '#/success';
       } else {
+        console.log('Form submission failed');
         alert('There was an error submitting your form. Please try again.');
       }
     } catch (error) {
@@ -765,6 +770,14 @@ function HomePage() {
               <p className="cta-subtext">
                 Get a comprehensive analysis of your AWS infrastructure and discover optimization opportunities worth thousands of dollars per month.
               </p>
+              
+              {/* Test button - remove this after testing */}
+              <button 
+                onClick={() => setShowSuccessModal(true)}
+                style={{ marginBottom: '1rem', padding: '0.5rem 1rem', background: '#667eea', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
+              >
+                Test Modal
+              </button>
             </div>
             
             <div className="cta-form-container animate-on-scroll">
