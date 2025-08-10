@@ -772,7 +772,7 @@ function HomePage() {
                   <h3>Submit the form to request your free AWS savings analysis.</h3>
                 </div>
 
-                <form action="https://api.web3forms.com/submit" method="POST" onSubmit={handleFormSubmit}>
+                <form onSubmit={handleFormSubmit}>
                   <input type="hidden" name="access_key" value="9a066d3d-5907-438e-b186-f389e3dd4b4d" />
                   
                   <div className="form-group">
