@@ -3518,19 +3518,22 @@ html {
 
 .form-group label {
   display: block;
+  font-size: 0.9rem;
   font-weight: 600;
+  color: #374151;
   margin-bottom: 0.5rem;
-  color: #1f2937;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
   width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
+  padding: 1rem 1.25rem;
   font-size: 1rem;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  color: #1f2937;
   transition: border-color 0.3s ease;
 }
 
