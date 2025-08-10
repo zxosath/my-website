@@ -2091,9 +2091,9 @@ html {
 
 /* CTA Section */
 .cta {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #8b5cf6 100%);
   color: white;
-  padding: 4rem 0 6rem 0;
+  padding: 6rem 0 8rem 0;
   position: relative;
   overflow: hidden;
 }
@@ -2104,7 +2104,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #8b5cf6 100%);
   z-index: -1;
 }
 
@@ -2115,8 +2115,8 @@ html {
   right: 0;
   bottom: 0;
   background-image: 
-    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 40%);
   z-index: -1;
 }
 
@@ -2127,14 +2127,14 @@ html {
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 60%);
   z-index: -1;
 }
 
 .cta-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 4rem;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -2146,11 +2146,12 @@ html {
 }
 
 .cta-headline {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 3.5rem;
+  font-weight: 800;
   color: white;
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
 .highlight-gradient {
@@ -2161,32 +2162,32 @@ html {
 }
 
 .cta-subtext {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 2rem;
-  max-width: 500px;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 0;
+  max-width: 550px;
 }
 
 .cta-form {
-  max-width: 100%;
-  margin: 0;
-  padding: 2.5rem;
-  background: white;
-  border-radius: 16px;
-  border: none;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .form-header {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .form-header h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.75rem;
+  font-weight: 700;
   color: #1f2937;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
+  line-height: 1.3;
 }
 
 .form-header p {
@@ -2206,35 +2207,35 @@ html {
 }
 
 .form-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .input-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .input-group label {
   display: block;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: #374151;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .input-group input,
 .input-group select {
   width: 100%;
-  padding: 0.75rem 1rem;
-  font-size: 0.875rem;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
   background: white;
   border: 2px solid #e5e7eb;
-  border-radius: 8px;
+  border-radius: 12px;
   color: #1f2937;
   transition: all 0.2s ease;
   box-sizing: border-box;
@@ -2255,9 +2256,9 @@ html {
   appearance: none;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: right 0.75rem center;
+  background-position: right 1rem center;
   background-size: 1.5em 1.5em;
-  padding-right: 2.5rem;
+  padding-right: 3rem;
 }
 
 .btn-submit {
