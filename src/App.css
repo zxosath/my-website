@@ -2210,7 +2210,7 @@ html {
 }
 
 .form-group {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .form-row {
@@ -2220,15 +2220,7 @@ html {
 }
 
 .input-group {
-  margin-bottom: 2rem;
-}
-
-.input-group label {
-  display: block;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #374151;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .input-group input,
@@ -2246,6 +2238,7 @@ html {
 
 .input-group input::placeholder {
   color: #9ca3af;
+  font-weight: 500;
 }
 
 .input-group input:focus,

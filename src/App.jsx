@@ -690,28 +690,24 @@ function HomePage() {
                   <h3>Submit the form to request your free AWS savings analysis.</h3>
                 </div>
 
+                <div className="input-group">
+                  <input type="email" placeholder="Work Email*" required />
+                </div>
+
                 <div className="form-group">
                   <div className="form-row">
                     <div className="input-group">
-                      <label>First Name*</label>
-                      <input type="text" required />
+                      <input type="text" placeholder="First Name*" required />
                     </div>
                     <div className="input-group">
-                      <label>Last Name*</label>
-                      <input type="text" required />
+                      <input type="text" placeholder="Last Name*" required />
                     </div>
                   </div>
                 </div>
 
                 <div className="input-group">
-                  <label>Work Email*</label>
-                  <input type="email" required />
-                </div>
-
-                <div className="input-group">
-                  <label>How much is your total monthly cloud spend?*</label>
                   <select required>
-                    <option value="">Please Select</option>
+                    <option value="">How much is your total monthly cloud spend?*</option>
                     <option value="under-1k">Under $1,000</option>
                     <option value="1k-10k">$1,000 - $10,000</option>
                     <option value="10k-50k">$10,000 - $50,000</option>
@@ -801,4 +797,5 @@ function App() {
 }
 
 export default App;
+
 
