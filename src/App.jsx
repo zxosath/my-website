@@ -770,14 +770,6 @@ function HomePage() {
               <p className="cta-subtext">
                 Get a comprehensive analysis of your AWS infrastructure and discover optimization opportunities worth thousands of dollars per month.
               </p>
-              
-              {/* Test button - remove this after testing */}
-              <button 
-                onClick={() => setShowSuccessModal(true)}
-                style={{ marginBottom: '1rem', padding: '0.5rem 1rem', background: '#667eea', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
-              >
-                Test Modal
-              </button>
             </div>
             
             <div className="cta-form-container animate-on-scroll">
