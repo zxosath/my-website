@@ -814,10 +814,11 @@ function HomePage() {
 
 function App() {
   return (
-    <div style={{ padding: '20px', color: 'white', background: '#000D1E', minHeight: '100vh' }}>
-      <h1>VIRIDITY Test</h1>
-      <p>If you can see this, React is working!</p>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Router>
   );
 }
 
