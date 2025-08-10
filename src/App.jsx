@@ -713,7 +713,7 @@ function HomePage() {
                 </div>
                 
                 <div className="input-group">
-                  <label>Monthly AWS Spend (Optional)</label>
+                  <label>Monthly AWS Spend</label>
                   <select>
                     <option value="">Select range</option>
                     <option value="under-1k">Under $1,000</option>
