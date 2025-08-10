@@ -9,7 +9,6 @@ html {
   scroll-behavior: smooth;
   overscroll-behavior: none;
   -webkit-overflow-scrolling: touch;
-  background: #000000; /* True black background */
 }
 
 body {
@@ -19,7 +18,6 @@ body {
   overflow-x: hidden;
   overscroll-behavior: none;
   -webkit-overflow-scrolling: touch;
-  background: #000000; /* True black background */
 }
 
 .app {
