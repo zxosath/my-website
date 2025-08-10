@@ -1128,7 +1128,7 @@ html {
 .showcase-actions .btn-secondary {
   padding: 0.375rem 0.75rem;
   font-size: 0.75rem;
-  border-radius: 0 !important;
+  border-radius: 4px !important;
 }
 
 .showcase-actions .btn-secondary {
