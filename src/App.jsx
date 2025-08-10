@@ -366,7 +366,7 @@ function HomePage() {
                 <p>Optimize AWS spending in real-time while avoiding lock-in risk. Our expert team continuously adjusts your commitment strategy to maximize savings without compromising flexibility.</p>
                 <div className="showcase-actions">
                   <button className="btn-primary">Get Started</button>
-                  <button className="btn-secondary">Request a Demo</button>
+                  <button className="btn-secondary">Request a Savings Analysis</button>
                 </div>
               </div>
                                       <div className="showcase-visual">
@@ -383,7 +383,7 @@ function HomePage() {
                 <p>Expert team monitors usage patterns and adjusts strategies in real-time for maximum savings. Our autonomous system eliminates human involvement so you can tackle higher-order FinOps priorities.</p>
                 <div className="showcase-actions">
                   <button className="btn-primary">Get Started</button>
-                  <button className="btn-secondary">Request a Demo</button>
+                  <button className="btn-secondary">Request a Savings Analysis</button>
                 </div>
               </div>
             </div>
@@ -394,7 +394,7 @@ function HomePage() {
                 <p>Get immediate results and track core optimization KPIs without data overload. Unlike traditional tools that overwhelm practitioners with excess data, VIRIDITY provides actionable insights that drive results.</p>
                 <div className="showcase-actions">
                   <button className="btn-primary">Get Started</button>
-                  <button className="btn-secondary">Request a Demo</button>
+                  <button className="btn-secondary">Request a Savings Analysis</button>
                 </div>
               </div>
               <div className="showcase-visual">
@@ -411,7 +411,7 @@ function HomePage() {
                 <p>Generate incremental savings that exceed our fees and maximize AWS ROI. Our performance-based pricing ensures you always come out ahead, with transparent reporting on every dollar saved.</p>
                 <div className="showcase-actions">
                   <button className="btn-primary">Get Started</button>
-                  <button className="btn-secondary">Request a Demo</button>
+                  <button className="btn-secondary">Request a Savings Analysis</button>
                 </div>
               </div>
             </div>
