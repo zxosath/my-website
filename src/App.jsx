@@ -727,6 +727,7 @@ function HomePage() {
                     <span>Get Started</span>
                   </button>
                 </form>
+              </div>
             </div>
           </div>
         </div>
@@ -779,7 +780,7 @@ function HomePage() {
           </div>
         </div>
       </footer>
-      </div>
+    </div>
   );
 }
 
