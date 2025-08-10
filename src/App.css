@@ -20,7 +20,6 @@ body {
   overscroll-behavior: none;
   -webkit-overflow-scrolling: touch;
   background: #000000; /* True black background */
-  background: #8b5cf6 !important; /* TEMPORARY: Purple background for deployment test */
 }
 
 .app {
