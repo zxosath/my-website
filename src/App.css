@@ -3761,18 +3761,29 @@ html {
 }
 
 .stat-item.expanded {
-  background: rgba(255, 255, 255, 0.9) !important;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)) !important;
   opacity: 1 !important;
   visibility: visible !important;
   z-index: 10;
   height: 350px;
   padding-bottom: 6rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.stat-item:hover {
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
-  border-color: rgba(0, 0, 0, 0.2);
-  transform: translateY(-3px);
+.stat-item.expanded h3 {
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+  text-shadow: 0 0 10px rgba(139, 92, 246, 0.4), 0 0 20px rgba(139, 92, 246, 0.2);
+}
+
+.stat-item.expanded p {
+  color: #e5e7eb !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .comparison-chart .bar {
