@@ -688,21 +688,9 @@ function HomePage() {
                 Get a comprehensive analysis of your AWS infrastructure and discover optimization opportunities worth thousands of dollars per month.
               </p>
               
-              <div className="cta-stats">
-                <div className="stat-item">
-                  <div className="stat-number">40-60%</div>
-                  <div className="stat-label">Average Cost Reduction</div>
-                </div>
-                <div className="stat-divider"></div>
-                <div className="stat-item">
-                                      <div className="stat-number">&lt; 10 min</div>
-                  <div className="stat-label">Setup Time</div>
-                </div>
-                <div className="stat-divider"></div>
-                <div className="stat-item">
-                  <div className="stat-number">$0</div>
-                  <div className="stat-label">Upfront Cost</div>
-                </div>
+              <div className="cta-form-header">
+                <h3>Get Your Analysis</h3>
+                <p>Start saving on AWS costs today</p>
               </div>
               
               <div className="cta-features">
@@ -729,11 +717,6 @@ function HomePage() {
             
             <div className="cta-form-container animate-on-scroll">
               <div className="form-card">
-                <div className="form-header">
-                  <h3>Get Your Analysis</h3>
-                  <p>Start saving on AWS costs today</p>
-                </div>
-                
                 <form className="cta-form">
                   <div className="form-group">
                     <div className="form-row">
