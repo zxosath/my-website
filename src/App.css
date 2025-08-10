@@ -4147,5 +4147,26 @@ html {
   border-bottom: none !important;
 }
 
+.analytics::before,
+.analytics::after {
+  display: none !important;
+  border: none !important;
+}
+
+.analytics .container::before,
+.analytics .container::after {
+  display: none !important;
+  border: none !important;
+}
+
+/* Remove any potential separator between analytics and stats */
+.analytics + .stats {
+  border-top: none !important;
+}
+
+.analytics + .stats::before {
+  display: none !important;
+}
+
 
 
