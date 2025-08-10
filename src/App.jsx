@@ -723,7 +723,6 @@ function HomePage() {
 
                 <button type="submit" className="btn-submit">
                   <span>Get Started</span>
-                  <ArrowRight size={20} />
                 </button>
               </div>
             </div>
