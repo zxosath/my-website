@@ -8,6 +8,31 @@ import Legal from './Legal';
 import About from './About';
 import Contact from './Contact';
 
+// Success Page Component
+function Success() {
+  return (
+    <div className="success-page">
+      <div className="success-container">
+        <div className="success-content">
+          <div className="success-icon">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22,4 12,14.01 9,11.01"/>
+            </svg>
+          </div>
+          <h1>Thank You!</h1>
+          <h2>Your AWS Cost Analysis Request Has Been Submitted</h2>
+          <p>We've received your request and will begin analyzing your AWS infrastructure. You can expect your comprehensive cost optimization report within 24 hours.</p>
+          <div className="success-actions">
+            <a href="#/" className="btn-primary">Return to Home</a>
+            <a href="#/pricing" className="btn-secondary">View Pricing</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [productDropdownOpen, setProductDropdownOpen] = useState(false);
@@ -692,6 +717,9 @@ function HomePage() {
 
                 <form action="https://api.web3forms.com/submit" method="POST">
                   <input type="hidden" name="access_key" value="9a066d3d-5907-438e-b186-f389e3dd4b4d" />
+                  <input type="hidden" name="redirect" value="https://your-website.vercel.app/#/success" />
+                  <input type="hidden" name="subject" value="New AWS Cost Analysis Request - VIRIDITY" />
+                  <input type="text" name="honeypot" style="display:none" />
                   
                   <div className="form-group">
                     <div className="form-row">
@@ -794,6 +822,7 @@ function App() {
         <Route path="/legal" element={<Legal />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/success" element={<Success />} />
       </Routes>
     </Router>
   );
