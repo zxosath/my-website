@@ -136,6 +136,36 @@ function HomePage() {
     }
   }
 
+  // Form submission handler
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    
+    const formData = new FormData(e.target);
+    
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      });
+      
+      if (response.ok) {
+        // Show success message
+        alert('Thank you! Your AWS cost analysis request has been submitted successfully. We\'ll contact you within 24 hours.');
+        
+        // Reset form
+        e.target.reset();
+        
+        // Optionally redirect to success page
+        window.location.hash = '#/success';
+      } else {
+        alert('There was an error submitting your form. Please try again.');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      alert('There was an error submitting your form. Please try again.');
+    }
+  };
+
   return (
     <div className="app">
       {/* Header */}
@@ -742,9 +772,8 @@ function HomePage() {
                   <h3>Submit the form to request your free AWS savings analysis.</h3>
                 </div>
 
-                <form action="https://api.web3forms.com/submit" method="POST">
+                <form action="https://api.web3forms.com/submit" method="POST" onSubmit={handleFormSubmit}>
                   <input type="hidden" name="access_key" value="9a066d3d-5907-438e-b186-f389e3dd4b4d" />
-                  <input type="hidden" name="redirect" value="https://your-domain.com/success" />
                   
                   <div className="form-group">
                     <div className="form-row">
