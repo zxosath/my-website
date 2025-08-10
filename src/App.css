@@ -832,19 +832,21 @@ html {
   text-shadow: 0 0 20px rgba(147, 51, 234, 0.4);
 }
 
-.stat-item h3 {
+.stat-item h3,
+.stats .stat-item h3,
+.stats-grid .stat-item h3 {
   color: #ffffff !important;
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
   text-align: center;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  text-shadow: 0 0 8px rgba(139, 92, 246, 0.3), 0 0 15px rgba(139, 92, 246, 0.1);
 }
 
-.stat-item:hover h3 {
-  color: #7c3aed;
-  text-shadow: 0 4px 8px rgba(147, 51, 234, 0.3);
+.stat-item:hover h3,
+.stats .stat-item:hover h3,
+.stats-grid .stat-item:hover h3 {
+  color: #ffffff !important;
   transform: scale(1.05);
 }
 
