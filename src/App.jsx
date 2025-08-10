@@ -882,13 +882,6 @@ function HomePage() {
         <div className="success-modal-overlay" onClick={() => setShowSuccessModal(false)}>
           <div className="success-modal" onClick={(e) => e.stopPropagation()}>
             <div className="success-modal-content">
-              <div className="success-modal-icon">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                  <polyline points="22,4 12,14.01 9,11.01"/>
-                </svg>
-              </div>
-              
               <h2>Application Submitted</h2>
               <p>Thank you for your interest in VIRIDITY. Our team will be in touch shortly.</p>
               
