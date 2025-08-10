@@ -836,6 +836,7 @@ html {
 .stats .stat-item h3,
 .stats-grid .stat-item h3 {
   color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -847,6 +848,7 @@ html {
 .stats .stat-item:hover h3,
 .stats-grid .stat-item:hover h3 {
   color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
   transform: scale(1.05);
 }
 
