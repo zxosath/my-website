@@ -832,26 +832,30 @@ function HomePage() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-section">
-              <div className="footer-logo">
-                <img src="/IMG_3102.PNG" alt="VIRIDITY Logo" className="footer-logo-icon" />
-                <h3>VIRIDITY</h3>
-              </div>
+              <h4>Company</h4>
               <div className="footer-links">
                 <a href="#/pricing">Pricing</a>
                 <a href="#">About Us</a>
                 <a href="#">News</a>
+                <a href="#">Careers</a>
+              </div>
+            </div>
+            <div className="footer-section">
+              <h4>Resources</h4>
+              <div className="footer-links">
                 <a href="#">AWS Cost Optimization Blog</a>
+                <a href="#">Resource Center</a>
+                <a href="#">Help Center</a>
+                <a href="#">Status</a>
               </div>
             </div>
             <div className="footer-section">
               <h4>Support</h4>
               <div className="footer-links">
                 <a href="#">Contact Us</a>
-                <a href="#">Careers</a>
                 <a href="#">Legal</a>
-                <a href="#">Status</a>
-                <a href="#">Help Center</a>
                 <a href="#">Trust Center</a>
+                <a href="#" onClick={() => scrollToSection('cta')}>Free Analysis</a>
               </div>
             </div>
           </div>
