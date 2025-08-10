@@ -747,9 +747,10 @@ html {
 
 /* Stats Section */
 .stats {
-  padding: 6rem 0;
-  background: #000d1f !important;
+  background: #000D1F !important;
+  padding: 2rem 0 6rem 0;
   position: relative;
+  overflow: hidden;
 }
 
 .stats::before {
