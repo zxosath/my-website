@@ -1123,6 +1123,7 @@ html {
 .showcase-actions {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 
 .showcase-actions .btn-primary,
