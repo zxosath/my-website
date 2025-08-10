@@ -8,29 +8,34 @@ import Legal from './Legal';
 import About from './About';
 import Contact from './Contact';
 
-// Success Page Component
-function Success() {
+function SuccessPage() {
   return (
     <div className="success-page">
       <div className="success-container">
         <div className="success-content">
-          <div className="success-icon">
-            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-              <polyline points="22,4 12,14.01 9,11.01"/>
-            </svg>
-          </div>
+          <div className="success-icon">✓</div>
           <h1>Thank You!</h1>
           <h2>Your AWS Cost Analysis Request Has Been Submitted</h2>
-          <p>We've received your request and will begin analyzing your AWS infrastructure. You can expect your comprehensive cost optimization report within 24 hours.</p>
-          <div className="success-actions">
-            <a href="#/" className="btn-primary">Return to Home</a>
-            <a href="#/pricing" className="btn-secondary">View Pricing</a>
+          <p>We've received your request and will begin analyzing your AWS infrastructure immediately. You can expect your comprehensive cost optimization report within 24 hours.</p>
+          <div className="success-details">
+            <div className="detail-item">
+              <span className="detail-icon">📧</span>
+              <span>Check your email for confirmation</span>
+            </div>
+            <div className="detail-item">
+              <span className="detail-icon">⏱️</span>
+              <span>Analysis completed within 24 hours</span>
+            </div>
+            <div className="detail-item">
+              <span className="detail-icon">💰</span>
+              <span>Potential savings identified in your report</span>
+            </div>
           </div>
+          <a href="#/" className="btn-back-home">Return to Home</a>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 function HomePage() {
@@ -376,8 +381,8 @@ function HomePage() {
               </p>
               <p>
                 VIRIDITY eliminates this trade-off through expert analysis and strategic planning, delivering precise alignment between commitments and usage patterns.
-              </p>
-            </div>
+        </p>
+      </div>
             
             <div className="analytics-visual">
               <img 
@@ -822,7 +827,7 @@ function App() {
         <Route path="/legal" element={<Legal />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/success" element={<Success />} />
+        <Route path="/success" element={<SuccessPage />} />
       </Routes>
     </Router>
   );
