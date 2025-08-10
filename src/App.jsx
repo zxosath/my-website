@@ -725,10 +725,6 @@ function HomePage() {
                   <span>Get Started</span>
                   <ArrowRight size={20} />
                 </button>
-
-                <p className="form-disclaimer">
-                  Your information is secure and will never be shared. Analysis typically completed within 24 hours.
-                </p>
               </div>
             </div>
           </div>

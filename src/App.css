@@ -3518,12 +3518,12 @@ html {
 
 .form-group label {
   display: block;
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 0.75rem;
+  font-weight: 500;
   color: #374151;
   margin-bottom: 0.5rem;
   text-align: left;
-  margin-bottom: 0;
+  line-height: 1.2;
 }
 
 .analytics-solution p {
