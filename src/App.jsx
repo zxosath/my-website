@@ -687,32 +687,6 @@ function HomePage() {
               <p className="cta-subtext">
                 Get a comprehensive analysis of your AWS infrastructure and discover optimization opportunities worth thousands of dollars per month.
               </p>
-              
-              <div className="cta-form-header">
-                <h3>Get Your Analysis</h3>
-                <p>Start saving on AWS costs today</p>
-              </div>
-              
-              <div className="cta-features">
-                <div className="feature-item">
-                  <div className="feature-icon">
-                    <CheckCircle size={20} />
-                  </div>
-                  <span>Detailed savings breakdown by service</span>
-                </div>
-                <div className="feature-item">
-                  <div className="feature-icon">
-                    <CheckCircle size={20} />
-                  </div>
-                  <span>Benchmark against industry peers</span>
-                </div>
-                <div className="feature-item">
-                  <div className="feature-icon">
-                    <CheckCircle size={20} />
-                  </div>
-                  <span>No commitment required</span>
-                </div>
-              </div>
             </div>
             
             <div className="cta-form-container animate-on-scroll">
