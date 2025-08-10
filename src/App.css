@@ -4051,15 +4051,14 @@ html {
 }
 
 .analytics-intro {
-  text-align: center;
-  color: #94a3b8;
   font-size: 1.125rem;
-  margin-bottom: 3rem;
-  padding-left: 10%;
-  padding-right: 10%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  line-height: 1.6;
+  color: white;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+  font-weight: 400;
+  padding: 0 1rem;
 }
 
 .cta-form-header {
@@ -4117,6 +4116,13 @@ html {
 .analytics-intro strong {
   color: white;
   font-weight: 600;
+}
+
+.analytics {
+  background: #000D1E !important;
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
 }
 
 
