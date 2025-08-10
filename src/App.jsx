@@ -674,11 +674,6 @@ function HomePage() {
         <div className="container">
           <div className="cta-wrapper">
             <div className="cta-content-left animate-on-scroll">
-              <div className="cta-badge">
-                <span className="badge-icon">⚡</span>
-                <span>Free AWS Cost Analysis</span>
-              </div>
-              
               <h2 className="cta-headline">
                 Unlock Your Hidden
                 <span className="highlight-gradient"> AWS Savings</span>
