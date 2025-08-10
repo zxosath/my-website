@@ -844,16 +844,6 @@ function HomePage() {
               </div>
             </div>
             <div className="footer-section">
-              <h4>Actions</h4>
-              <div className="footer-links">
-                <a href="#" onClick={() => scrollToSection('cta')}>Free Analysis</a>
-                <a href="#">Start for Free</a>
-                <a href="#" onClick={() => scrollToSection('cta')}>AWS Cost Analysis</a>
-                <a href="#">Resource Center</a>
-                <a href="#">AWS Cost Optimization</a>
-              </div>
-            </div>
-            <div className="footer-section">
               <h4>Support</h4>
               <div className="footer-links">
                 <a href="#">Contact Us</a>
