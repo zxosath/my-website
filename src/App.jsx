@@ -870,55 +870,27 @@ function HomePage() {
           <div className="success-modal" onClick={(e) => e.stopPropagation()}>
             <div className="success-modal-content">
               <div className="success-modal-icon">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                   <polyline points="22,4 12,14.01 9,11.01"/>
                 </svg>
               </div>
               
-              <h2>Thank You!</h2>
-              <h3>Your AWS Cost Analysis Request Has Been Submitted</h3>
+              <h2>Application Submitted</h2>
+              <p>Thank you for your interest in VIRIDITY. Our team will be in touch shortly.</p>
               
-              <p>We've received your request and our expert team will begin analyzing your AWS infrastructure within the next 24 hours.</p>
-              
-              <div className="success-modal-details">
-                <div className="detail-row">
-                  <span className="detail-icon">📊</span>
-                  <span>Comprehensive cost analysis</span>
-                </div>
-                <div className="detail-row">
-                  <span className="detail-icon">💰</span>
-                  <span>Specific savings recommendations</span>
-                </div>
-                <div className="detail-row">
-                  <span className="detail-icon">📈</span>
-                  <span>ROI projections & implementation roadmap</span>
-                </div>
-              </div>
-              
-              <div className="success-modal-actions">
-                <button 
-                  className="btn-primary" 
-                  onClick={() => setShowSuccessModal(false)}
-                >
-                  Continue Browsing
-                </button>
-                <button 
-                  className="btn-secondary" 
-                  onClick={() => {
-                    setShowSuccessModal(false);
-                    window.location.hash = '#/success';
-                  }}
-                >
-                  View Success Page
-                </button>
-              </div>
+              <button 
+                className="btn-primary" 
+                onClick={() => setShowSuccessModal(false)}
+              >
+                Close
+              </button>
               
               <button 
                 className="success-modal-close" 
                 onClick={() => setShowSuccessModal(false)}
               >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <line x1="18" y1="6" x2="6" y2="18"></line>
                   <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
