@@ -4396,14 +4396,14 @@ html {
 }
 
 .success-modal {
-  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
   border-radius: 16px;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
   max-width: 400px;
   width: 90%;
   position: relative;
   animation: modalSlideIn 0.4s ease-out;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 @keyframes modalSlideIn {
@@ -4435,15 +4435,33 @@ html {
 }
 
 .success-modal h2 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: white;
+  font-size: 2rem;
+  font-weight: 700;
   margin-bottom: 1rem;
+  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 50%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  letter-spacing: -0.025em;
+  position: relative;
+}
+
+.success-modal h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
 }
 
 .success-modal p {
   font-size: 1rem;
-  color: #cbd5e1;
+  color: #94a3b8;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
