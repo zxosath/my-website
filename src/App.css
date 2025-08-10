@@ -6893,7 +6893,7 @@ html {
 /* Analytics Section - Comparison Chart */
 .analytics {
   padding: 5rem 0;
-  background: linear-gradient(135deg, #000d1e 0%, #001a3a 25%, #002a5a 50%, #003a7a 75%, #004a9a 100%);
+  background: linear-gradient(135deg, #000d1e 0%, #001a3a 25%, #002a5a 50%, #003a7a 75%, #004a9a 100%) !important;
 }
 
 .analytics h2 {
