@@ -8,6 +8,7 @@ function Pricing() {
   const [productDropdownOpen, setProductDropdownOpen] = useState(false);
   const [resourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
   const navigate = useNavigate();
 
   // Scroll to top on component mount
@@ -55,6 +56,15 @@ function Pricing() {
       element.scrollIntoView({ behavior: 'smooth' })
     }
   }
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // In a real application, you would send the form data to your backend
+    // For demonstration, we'll just show a success modal
+    setShowSuccessModal(true);
+    console.log('Form submitted successfully!');
+    // Optionally, you could redirect or show a thank you message
+  };
 
   return (
     <div className="app">
