@@ -2483,24 +2483,14 @@ html {
 /* Pricing Section */
 .pricing {
   padding: 200px 0 80px;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  background: #0f172a;
   position: relative;
   overflow: hidden;
   color: white;
 }
 
 .pricing::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
-  pointer-events: none;
+  display: none;
 }
 
 .pricing-header {
@@ -2532,7 +2522,7 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   position: relative;
   z-index: 1;
 }
