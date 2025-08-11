@@ -287,63 +287,65 @@ function Pricing() {
       </section>
 
       {/* CTA Section */}
-      <section id="cta" className="cta">
+      <section className="pricing-cta-section">
         <div className="container">
-          <div className="cta-wrapper">
-            <div className="cta-content-left animate-on-scroll">
-              <h2 className="cta-headline">
-                Unlock Your Hidden
-                <span className="highlight-gradient"> AWS Savings</span>
-              </h2>
+          <div id="cta" className="cta">
+            <div className="cta-wrapper">
+              <div className="cta-content-left animate-on-scroll">
+                <h2 className="cta-headline">
+                  Unlock Your Hidden
+                  <span className="highlight-gradient"> AWS Savings</span>
+                </h2>
 
-              <p className="cta-subtext">
-                Get a comprehensive analysis of your AWS infrastructure and discover optimization opportunities worth thousands of dollars per month.
-              </p>
-            </div>
-            
-            <div className="cta-form-container animate-on-scroll">
-              <div className="cta-form">
-                <div className="form-header">
-                  <h3>Submit the form to request your free AWS savings analysis.</h3>
-                </div>
+                <p className="cta-subtext">
+                  Get a comprehensive analysis of your AWS infrastructure and discover optimization opportunities worth thousands of dollars per month.
+                </p>
+              </div>
+              
+              <div className="cta-form-container animate-on-scroll">
+                <div className="cta-form">
+                  <div className="form-header">
+                    <h3>Submit the form to request your free AWS savings analysis.</h3>
+                  </div>
 
-                <form onSubmit={handleFormSubmit}>
-                  <input type="hidden" name="access_key" value="9a066d3d-5907-438e-b186-f389e3dd4b4d" />
-                  
-                  <div className="form-group">
-                    <div className="form-row">
-                      <div className="input-group">
-                        <input type="text" name="First Name" placeholder="First Name*" required />
-                      </div>
-                      <div className="input-group">
-                        <input type="text" name="Last Name" placeholder="Last Name*" required />
+                  <form onSubmit={handleFormSubmit}>
+                    <input type="hidden" name="access_key" value="9a066d3d-5907-438e-b186-f389e3dd4b4d" />
+                    
+                    <div className="form-group">
+                      <div className="form-row">
+                        <div className="input-group">
+                          <input type="text" name="First Name" placeholder="First Name*" required />
+                        </div>
+                        <div className="input-group">
+                          <input type="text" name="Last Name" placeholder="Last Name*" required />
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="input-group">
-                    <input type="email" name="Email" placeholder="Work Email*" required />
-                  </div>
+                    <div className="input-group">
+                      <input type="email" name="Email" placeholder="Work Email*" required />
+                    </div>
 
-                  <div className="input-group">
-                    <select name="Monthly Cloud Spend" required>
-                      <option value="">Please Select</option>
-                      <option value="Less than $10,000 spend">Less than $10,000 spend</option>
-                      <option value="$10,000 to $50,000">$10,000 to $50,000</option>
-                      <option value="$50,000 to $100,000">$50,000 to $100,000</option>
-                      <option value="$100,000 to $500,000">$100,000 to $500,000</option>
-                      <option value="$500,000 to $1,000,000">$500,000 to $1,000,000</option>
-                      <option value="$1,000,000 to $2,000,000">$1,000,000 to $2,000,000</option>
-                      <option value="$2,000,000 to $5,000,000">$2,000,000 to $5,000,000</option>
-                      <option value="$5,000,000 to $10,000,000">$5,000,000 to $10,000,000</option>
-                      <option value="More than $10,000,000 spend">More than $10,000,000 spend</option>
-                    </select>
-                  </div>
+                    <div className="input-group">
+                      <select name="Monthly Cloud Spend" required>
+                        <option value="">Please Select</option>
+                        <option value="Less than $10,000 spend">Less than $10,000 spend</option>
+                        <option value="$10,000 to $50,000">$10,000 to $50,000</option>
+                        <option value="$50,000 to $100,000">$50,000 to $100,000</option>
+                        <option value="$100,000 to $500,000">$100,000 to $500,000</option>
+                        <option value="$500,000 to $1,000,000">$500,000 to $1,000,000</option>
+                        <option value="$1,000,000 to $2,000,000">$1,000,000 to $2,000,000</option>
+                        <option value="$2,000,000 to $5,000,000">$2,000,000 to $5,000,000</option>
+                        <option value="$5,000,000 to $10,000,000">$5,000,000 to $10,000,000</option>
+                        <option value="More than $10,000,000 spend">More than $10,000,000 spend</option>
+                      </select>
+                    </div>
 
-                  <button type="submit" className="btn-submit">
-                    <span>Get Started</span>
-                  </button>
-                </form>
+                    <button type="submit" className="btn-submit">
+                      <span>Get Started</span>
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
