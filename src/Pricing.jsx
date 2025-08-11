@@ -57,13 +57,35 @@ function Pricing() {
     }
   }
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-    // In a real application, you would send the form data to your backend
-    // For demonstration, we'll just show a success modal
-    setShowSuccessModal(true);
-    console.log('Form submitted successfully!');
-    // Optionally, you could redirect or show a thank you message
+    console.log('Form submitted!');
+    
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData);
+    
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: '9a066d3d-5907-438e-b186-f389e3dd4b4d',
+          ...data
+        })
+      });
+      
+      if (response.ok) {
+        setShowSuccessModal(true);
+        e.target.reset();
+      } else {
+        alert('There was an error submitting the form. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was an error submitting the form. Please try again.');
+    }
   };
 
   return (
