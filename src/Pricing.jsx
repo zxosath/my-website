@@ -161,9 +161,8 @@ function Pricing() {
                 <ul>
                   <li>Deep-dive AWS spending analysis</li>
                   <li>Compare against industry benchmarks</li>
-                  <li>See your exact savings potential</li>
+                  <li>see potential savings potential</li>
                   <li>Read-only access - we never touch your infrastructure</li>
-                  <li>10-minute setup, instant insights</li>
                 </ul>
                 <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Your Free Analysis</button>
               </div>
@@ -178,7 +177,7 @@ function Pricing() {
                 <h4>Expert AWS Cost Optimization</h4>
                 <p>Our expert team manually optimizes your AWS spend through strategic analysis and hands-on optimization, delivering consistent savings while you focus on building your business.</p>
                 <ul>
-                  <li>Pay only for the savings we generate</li>
+                  <li>We only take a percentage of your savings, no overhead costs</li>
                   <li>Expert manual optimization by certified professionals</li>
                   <li>Real-time savings tracking and reporting</li>
                   <li>Zero infrastructure access needed</li>
@@ -253,10 +252,6 @@ function Pricing() {
             <div className="benefit animate-on-scroll">
               <CheckCircle size={20} />
               <span>Compare against industry benchmarks</span>
-            </div>
-            <div className="benefit animate-on-scroll">
-              <CheckCircle size={20} />
-              <span>10-minute setup, instant insights</span>
             </div>
             <div className="benefit animate-on-scroll">
               <CheckCircle size={20} />
