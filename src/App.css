@@ -2542,10 +2542,11 @@ html {
   margin: 6rem 0;
   position: relative;
   z-index: 1;
+}
+
+.pricing-benefits-section {
   background: #0f172a;
   padding: 4rem 0;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .pricing-stats {
@@ -2553,10 +2554,11 @@ html {
   margin: 6rem 0;
   position: relative;
   z-index: 1;
-  background: #0f172a;
+}
+
+.pricing-stats-section {
+  background: #1e293b;
   padding: 4rem 0;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .pricing-cta {
@@ -2564,10 +2566,11 @@ html {
   margin: 6rem 0;
   position: relative;
   z-index: 1;
-  background: #0f172a;
+}
+
+.pricing-cta-section {
+  background: #334155;
   padding: 4rem 0;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .pricing-card {

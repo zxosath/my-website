@@ -187,7 +187,12 @@ function Pricing() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
+      {/* Why VIRIDITY is Different Section */}
+      <section className="pricing-benefits-section">
+        <div className="container">
           <div className="pricing-benefits animate-on-scroll">
             <h3>Why VIRIDITY is Different</h3>
             <div className="benefits-grid">
@@ -214,7 +219,12 @@ function Pricing() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
+      {/* Your Savings Compound Daily Section */}
+      <section className="pricing-stats-section">
+        <div className="container">
           <div className="pricing-stats animate-on-scroll">
             <h3>Your Savings Compound Daily</h3>
             <p>VIRIDITY doesn't just find savings—we capture them through expert analysis and strategic optimization. Our team continuously monitors your AWS spend, ensuring you never overpay again.</p>
@@ -225,7 +235,12 @@ function Pricing() {
               <p>We only charge a percentage of the actual savings we deliver. If we don't save you money, you don't pay us anything.</p>
             </div>
           </div>
+        </div>
+      </section>
 
+      {/* Ready to Stop Overpaying AWS Section */}
+      <section className="pricing-cta-section">
+        <div className="container">
           <div className="pricing-cta animate-on-scroll">
             <h3>Ready to Stop Overpaying AWS?</h3>
             <p>Join hundreds of companies already saving on their AWS bills. Get your free analysis and see your savings potential in minutes.</p>
