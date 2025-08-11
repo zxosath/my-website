@@ -398,6 +398,35 @@ function Pricing() {
           </div>
         </div>
       </footer>
+
+      {/* Success Modal */}
+      {showSuccessModal && (
+        <div className="success-modal-overlay" onClick={() => setShowSuccessModal(false)}>
+          <div className="success-modal" onClick={(e) => e.stopPropagation()}>
+            <div className="success-modal-content">
+              <h2>Application Submitted</h2>
+              <p>Thank you for your interest in VIRIDITY. Our team will be in touch shortly.</p>
+              
+              <button 
+                className="btn-primary" 
+                onClick={() => setShowSuccessModal(false)}
+              >
+                Close
+              </button>
+              
+              <button 
+                className="success-modal-close" 
+                onClick={() => setShowSuccessModal(false)}
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
