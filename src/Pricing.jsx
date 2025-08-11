@@ -62,7 +62,7 @@ function Pricing() {
       <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <div className="header-container">
           <div className="logo">
-            <a href="#/" className="logo-container">
+            <a href="#" onClick={(e) => { e.preventDefault(); navigate('/'); }} className="logo-container">
               <img src="/IMG_3102.PNG" alt="VIRIDITY Logo" className="logo-icon" />
               <h2>VIRIDITY</h2>
             </a>
@@ -108,16 +108,16 @@ function Pricing() {
                 <div className="dropdown-menu">
                   <div className="dropdown-section">
                     <div className="resource-links">
-                      <a href="#"><HelpCircle size={16} /> Help Center</a>
-                      <a href="#"><FileText size={16} /> Legal</a>
-                      <a href="#"><Building size={16} /> About</a>
-                      <a href="#"><Users size={16} /> Contact</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/help-center'); setResourcesDropdownOpen(false); }}><HelpCircle size={16} /> Help Center</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/legal'); setResourcesDropdownOpen(false); }}><FileText size={16} /> Legal</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/about'); setResourcesDropdownOpen(false); }}><Building size={16} /> About</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/contact'); setResourcesDropdownOpen(false); }}><Users size={16} /> Contact</a>
                     </div>
                   </div>
                 </div>
               )}
             </div>
-            <a href="#/pricing" className="nav-item active">Pricing</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pricing'); }} className="nav-item active">Pricing</a>
           </nav>
 
           <div className="header-actions">
@@ -134,7 +134,7 @@ function Pricing() {
             <div className="mobile-menu-links">
               <a href="#" onClick={() => setMobileMenuOpen(false)}>Product</a>
               <a href="#" onClick={() => setMobileMenuOpen(false)}>Resources</a>
-              <a href="#/pricing" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
+              <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pricing'); setMobileMenuOpen(false); }}>Pricing</a>
             </div>
             <div className="mobile-menu-actions">
               <button className="btn-primary" onClick={() => { scrollToSection('cta'); setMobileMenuOpen(false); }}>Free Analysis</button>
