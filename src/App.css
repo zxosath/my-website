@@ -2556,6 +2556,11 @@ html {
   z-index: 1;
 }
 
+.pricing-stats-section {
+  background: #0f172a;
+  padding: 4rem 0;
+}
+
 .pricing-stats h3 {
   font-size: 2.5rem;
   font-weight: 700;
