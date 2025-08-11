@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { CheckCircle, ChevronDown, Menu, X, DollarSign, Activity, BarChart3, TrendingUp, HelpCircle, FileText, Building, Users } from 'lucide-react';
 import './App.css';
 
@@ -7,6 +8,7 @@ function Pricing() {
   const [productDropdownOpen, setProductDropdownOpen] = useState(false);
   const [resourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
 
   // Scroll to top on component mount
   useEffect(() => {

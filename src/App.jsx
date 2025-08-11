@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import { ChevronDown, Menu, X, ArrowRight, Play, Calendar, BookOpen, Headphones, Users, HelpCircle, FileText, Building, Star, CheckCircle, TrendingUp, DollarSign, Activity, BarChart3, Settings, Globe, Shield, Zap } from 'lucide-react';
 import './App.css';
 import Pricing from './Pricing';
@@ -70,6 +70,7 @@ function HomePage() {
   const [dashboardTab, setDashboardTab] = useState('results');
   const [expandedTiles, setExpandedTiles] = useState({});
   const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const navigate = useNavigate();
 
   // Scroll to top on component mount
   useEffect(() => {
@@ -230,17 +231,17 @@ function HomePage() {
                 <div className="dropdown-menu">
                   <div className="dropdown-section">
                     <div className="resource-links">
-                      <a href="#/help-center"><HelpCircle size={16} /> Help Center</a>
-                      <a href="#/legal"><FileText size={16} /> Legal</a>
-                      <a href="#/about"><Users size={16} /> About</a>
-                      <a href="#/contact"><Users size={16} /> Contact</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/help-center'); setResourcesDropdownOpen(false); }}><HelpCircle size={16} /> Help Center</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/legal'); setResourcesDropdownOpen(false); }}><FileText size={16} /> Legal</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/about'); setResourcesDropdownOpen(false); }}><Users size={16} /> About</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/contact'); setResourcesDropdownOpen(false); }}><Users size={16} /> Contact</a>
                     </div>
                   </div>
                 </div>
               )}
             </div>
             
-            <a href="#/pricing" className="nav-item">Pricing</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pricing'); }} className="nav-item">Pricing</a>
           </nav>
 
           <div className="header-actions">
@@ -257,7 +258,7 @@ function HomePage() {
             <div className="mobile-menu-links">
               <a href="#" onClick={() => setMobileMenuOpen(false)}>Product</a>
               <a href="#" onClick={() => setMobileMenuOpen(false)}>Resources</a>
-              <a href="#/pricing" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
+              <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pricing'); setMobileMenuOpen(false); }}>Pricing</a>
             </div>
             <div className="mobile-menu-actions">
               <button className="btn-primary" onClick={() => { scrollToSection('cta'); setMobileMenuOpen(false); }}>Free Analysis</button>
@@ -834,7 +835,7 @@ function HomePage() {
             <div className="footer-section">
               <h4>Company</h4>
               <div className="footer-links">
-                <a href="#/pricing">Pricing</a>
+                <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pricing'); }}>Pricing</a>
                 <a href="#">About Us</a>
                 <a href="#">News</a>
                 <a href="#">Careers</a>
@@ -845,15 +846,15 @@ function HomePage() {
               <div className="footer-links">
                 <a href="#">AWS Cost Optimization Blog</a>
                 <a href="#">Resource Center</a>
-                <a href="#">Help Center</a>
+                <a href="#" onClick={(e) => { e.preventDefault(); navigate('/help-center'); }}>Help Center</a>
                 <a href="#">Status</a>
               </div>
             </div>
             <div className="footer-section">
               <h4>Support</h4>
               <div className="footer-links">
-                <a href="#">Contact Us</a>
-                <a href="#">Legal</a>
+                <a href="#" onClick={(e) => { e.preventDefault(); navigate('/contact'); }}>Contact Us</a>
+                <a href="#" onClick={(e) => { e.preventDefault(); navigate('/legal'); }}>Legal</a>
                 <a href="#">Trust Center</a>
                 <a href="#" onClick={() => scrollToSection('cta')}>Free Analysis</a>
               </div>
