@@ -2612,7 +2612,7 @@ html {
 
 .pricing-cta {
   text-align: center;
-  margin: 1rem 0 1rem 0;
+  margin: 1rem 0 0.5rem 0;
   position: relative;
   z-index: 1;
 }
@@ -2651,7 +2651,7 @@ html {
 
 .pricing-cta-section {
   background: #0f172a;
-  padding: 1rem 0 4rem 0;
+  padding: 0.5rem 0 4rem 0;
 }
 
 .pricing-card {
