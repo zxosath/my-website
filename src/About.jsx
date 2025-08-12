@@ -28,7 +28,7 @@ function About() {
   return (
     <div className="app">
       {/* Header */}
-      <header className="header scrolled">
+      <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <div className="header-container">
           <div className="logo">
             <a href="#" onClick={(e) => { e.preventDefault(); navigate('/'); }} className="logo-container">
