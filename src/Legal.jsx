@@ -123,7 +123,6 @@ function Legal() {
         <div className="container">
           <div className="hero-content">
             <h1>Legal</h1>
-            <p>Transparency and trust in our AWS cost optimization services</p>
           </div>
         </div>
       </section>
