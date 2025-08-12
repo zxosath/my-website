@@ -3697,7 +3697,7 @@ html {
 /* About Page Styles */
 /* About Hero Section */
 .about-hero {
-  padding: 4rem 0 2rem 0;
+  padding: 6rem 0 2rem 0;
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #16a34a 100%);
   background-size: 400% 400%;
   animation: gradientShift 30s ease infinite;
@@ -4181,7 +4181,7 @@ html {
 
 /* About Hero Section */
 .about-hero {
-  padding: 4rem 0 2rem 0;
+  padding: 6rem 0 2rem 0;
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #16a34a 100%);
   background-size: 400% 400%;
   animation: gradientShift 30s ease infinite;
