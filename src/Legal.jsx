@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Menu, X, FileText, Shield, Eye, Lock, Users, AlertCircle, CheckCircle, HelpCircle, DollarSign, BarChart3, MessageCircle } from 'lucide-react';
+import { ChevronDown, Menu, X, FileText, Shield, Eye, Lock, Users, HelpCircle, DollarSign, BarChart3 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 function Legal() {
@@ -33,20 +33,13 @@ function Legal() {
     { id: 'data', title: 'Data Processing', icon: Lock }
   ];
 
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className="app">
       {/* Header */}
       <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <div className="header-container">
           <div className="logo">
-            <a href="#/" className="logo-container">
+            <a href="#" onClick={(e) => { e.preventDefault(); navigate('/'); }} className="logo-container">
               <img src="/IMG_3102.PNG" alt="VIRIDITY Logo" className="logo-icon" />
               <h2>VIRIDITY</h2>
             </a>
@@ -92,10 +85,9 @@ function Legal() {
                 <div className="dropdown-menu">
                   <div className="dropdown-section">
                     <div className="resource-links">
-                      <a href="#/help-center"><HelpCircle size={16} /> Help Center</a>
-                      <a href="#/legal" className="active"><FileText size={16} /> Legal</a>
-                      <a href="#/about"><Users size={16} /> About</a>
-                      <a href="#/contact"><MessageCircle size={16} /> Contact</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/help-center'); setResourcesDropdownOpen(false); }}><HelpCircle size={16} /> Help Center</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/legal'); setResourcesDropdownOpen(false); }} className="active"><FileText size={16} /> Legal</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/about'); setResourcesDropdownOpen(false); }}><Users size={16} /> About</a>
                     </div>
                   </div>
                 </div>
@@ -132,8 +124,8 @@ function Legal() {
       <section className="hero legal-hero">
         <div className="container">
           <div className="hero-content">
-            <h1>Legal Information</h1>
-            <p>Our commitment to transparency, security, and compliance in AWS cost optimization</p>
+            <h1>Legal & Compliance</h1>
+            <p>Transparency, security, and trust in every aspect of our AWS cost optimization services</p>
           </div>
         </div>
       </section>
@@ -149,7 +141,7 @@ function Legal() {
                 onClick={() => setActiveSection(section.id)}
               >
                 <section.icon size={20} />
-                {section.title}
+                <span>{section.title}</span>
               </button>
             ))}
           </div>
@@ -161,281 +153,172 @@ function Legal() {
         <div className="container">
           {activeSection === 'terms' && (
             <div className="legal-section">
-              <h2>Terms of Service</h2>
+              <div className="legal-header">
+                <h2>Terms of Service</h2>
+                <p>Last updated: December 2024</p>
+              </div>
               <div className="legal-text">
-                <h3>1. Agreement to Terms</h3>
-                <p>By accessing and using VIRIDITY's AWS cost optimization services ("Services"), you agree to be bound by these Terms of Service ("Terms"). These Terms apply to all users of our Services.</p>
+                <div className="legal-item">
+                  <h3>1. Agreement to Terms</h3>
+                  <p>By accessing and using VIRIDITY's AWS cost optimization services ("Services"), you agree to be bound by these Terms of Service ("Terms"). These Terms apply to all users of our Services.</p>
+                </div>
 
-                <h3>2. Description of Services</h3>
-                <p>VIRIDITY provides expert AWS cost optimization services including:</p>
-                <ul>
-                  <li>Manual analysis and optimization of AWS resources</li>
-                  <li>Reserved Instance and Savings Plans management</li>
-                  <li>Cost monitoring and reporting</li>
-                  <li>Strategic consultation on AWS spending</li>
-                </ul>
+                <div className="legal-item">
+                  <h3>2. Description of Services</h3>
+                  <p>VIRIDITY provides expert AWS cost optimization services including:</p>
+                  <ul>
+                    <li>Manual analysis and optimization of AWS resources</li>
+                    <li>Reserved Instance and Savings Plans management</li>
+                    <li>Cost monitoring and reporting</li>
+                    <li>Strategic consultation on AWS spending</li>
+                  </ul>
+                </div>
 
-                <h3>3. Performance-Based Pricing</h3>
-                <p>Our pricing model is based on a percentage of verified cost savings achieved. You only pay when we deliver measurable results. Detailed billing information will be provided monthly with transparent reporting of all optimizations implemented.</p>
+                <div className="legal-item">
+                  <h3>3. Performance-Based Pricing</h3>
+                  <p>Our pricing model is based on a percentage of verified cost savings achieved. You only pay when we deliver measurable results. Detailed billing information will be provided monthly with transparent reporting of all optimizations implemented.</p>
+                </div>
 
-                <h3>4. Access and Permissions</h3>
-                <p>To provide our Services, you grant VIRIDITY limited, read-only access to your AWS billing and usage data. We require only the minimum permissions necessary to analyze and optimize your costs. You retain full control over your AWS infrastructure at all times.</p>
+                <div className="legal-item">
+                  <h3>4. Access and Permissions</h3>
+                  <p>To provide our Services, you grant VIRIDITY limited, read-only access to your AWS billing and usage data. We require only the minimum permissions necessary to analyze and optimize your costs. You retain full control over your AWS infrastructure at all times.</p>
+                </div>
 
-                <h3>5. Intellectual Property</h3>
-                <p>All optimization strategies, methodologies, and proprietary techniques developed by VIRIDITY remain our intellectual property. Any insights or recommendations provided are licensed for your use in connection with your AWS infrastructure.</p>
+                <div className="legal-item">
+                  <h3>5. Intellectual Property</h3>
+                  <p>All optimization strategies, methodologies, and proprietary techniques developed by VIRIDITY remain our intellectual property. Any insights or recommendations provided are licensed for your use in connection with your AWS infrastructure.</p>
+                </div>
 
-                <h3>6. Limitation of Liability</h3>
-                <p>VIRIDITY's liability is limited to the fees paid for our Services in the preceding 12 months. We are not liable for any indirect, consequential, or punitive damages arising from the use of our Services.</p>
+                <div className="legal-item">
+                  <h3>6. Limitation of Liability</h3>
+                  <p>VIRIDITY's liability is limited to the fees paid for our Services in the preceding 12 months. We are not liable for any indirect, consequential, or punitive damages arising from the use of our Services.</p>
+                </div>
 
-                <h3>7. Termination</h3>
-                <p>Either party may terminate this agreement with 30 days written notice. Upon termination, you retain all cost savings and optimizations implemented during our engagement.</p>
+                <div className="legal-item">
+                  <h3>7. Termination</h3>
+                  <p>Either party may terminate this agreement with 30 days written notice. Upon termination, you retain all cost savings and optimizations implemented during our engagement.</p>
+                </div>
 
-                <h3>8. Governing Law</h3>
-                <p>These Terms are governed by the laws of Delaware, United States. Any disputes will be resolved through binding arbitration.</p>
-
-                <p className="last-updated">Last updated: December 2024</p>
+                <div className="legal-item">
+                  <h3>8. Governing Law</h3>
+                  <p>These Terms are governed by the laws of Delaware, United States. Any disputes will be resolved through binding arbitration.</p>
+                </div>
               </div>
             </div>
           )}
 
           {activeSection === 'privacy' && (
             <div className="legal-section">
-              <h2>Privacy Policy</h2>
+              <div className="legal-header">
+                <h2>Privacy Policy</h2>
+                <p>Last updated: December 2024</p>
+              </div>
               <div className="legal-text">
-                <h3>Information We Collect</h3>
-                <p>VIRIDITY collects only the information necessary to provide AWS cost optimization services:</p>
-                <ul>
-                  <li><strong>AWS Usage Data:</strong> Billing information, resource utilization metrics, and service configurations</li>
-                  <li><strong>Account Information:</strong> Contact details, company information, and user preferences</li>
-                  <li><strong>Communication Data:</strong> Support tickets, consultation notes, and service communications</li>
-                </ul>
+                <div className="legal-item">
+                  <h3>1. Information We Collect</h3>
+                  <p>We collect only the information necessary to provide our AWS cost optimization services, including AWS billing data, usage metrics, and account information required for analysis and optimization.</p>
+                </div>
 
-                <h3>How We Use Your Information</h3>
-                <p>Your information is used exclusively for:</p>
-                <ul>
-                  <li>Analyzing AWS usage patterns and identifying optimization opportunities</li>
-                  <li>Implementing cost-saving strategies and monitoring results</li>
-                  <li>Providing reports, insights, and recommendations</li>
-                  <li>Delivering customer support and consultation services</li>
-                </ul>
+                <div className="legal-item">
+                  <h3>2. How We Use Your Information</h3>
+                  <p>Your information is used exclusively for:</p>
+                  <ul>
+                    <li>Analyzing AWS cost optimization opportunities</li>
+                    <li>Implementing and monitoring cost-saving strategies</li>
+                    <li>Providing detailed reports and recommendations</li>
+                    <li>Improving our optimization methodologies</li>
+                  </ul>
+                </div>
 
-                <h3>Data Security</h3>
-                <p>We implement enterprise-grade security measures including:</p>
-                <ul>
-                  <li>End-to-end encryption for all data transmission</li>
-                  <li>SOC 2 Type II compliance</li>
-                  <li>Regular security audits and penetration testing</li>
-                  <li>Multi-factor authentication and access controls</li>
-                </ul>
+                <div className="legal-item">
+                  <h3>3. Data Security</h3>
+                  <p>We implement industry-standard security measures to protect your data, including encryption, access controls, and regular security audits. Your AWS data is never shared with third parties.</p>
+                </div>
 
-                <h3>Data Sharing</h3>
-                <p>VIRIDITY does not sell, rent, or share your data with third parties except:</p>
-                <ul>
-                  <li>With your explicit consent</li>
-                  <li>As required by law or legal process</li>
-                  <li>With trusted service providers under strict confidentiality agreements</li>
-                </ul>
+                <div className="legal-item">
+                  <h3>4. Data Retention</h3>
+                  <p>We retain your data only for as long as necessary to provide our services and comply with legal obligations. You may request deletion of your data at any time.</p>
+                </div>
 
-                <h3>Data Retention</h3>
-                <p>We retain your data only as long as necessary to provide our Services and comply with legal obligations. You may request data deletion at any time, subject to legal retention requirements.</p>
-
-                <h3>Your Rights</h3>
-                <p>You have the right to:</p>
-                <ul>
-                  <li>Access and review your personal data</li>
-                  <li>Request corrections to inaccurate information</li>
-                  <li>Delete your personal data (subject to legal requirements)</li>
-                  <li>Export your data in a portable format</li>
-                </ul>
-
-                <p className="last-updated">Last updated: December 2024</p>
+                <div className="legal-item">
+                  <h3>5. Your Rights</h3>
+                  <p>You have the right to access, correct, or delete your personal information. You may also request a copy of the data we hold about you.</p>
+                </div>
               </div>
             </div>
           )}
 
           {activeSection === 'security' && (
             <div className="legal-section">
-              <h2>Security & Compliance</h2>
+              <div className="legal-header">
+                <h2>Security & Compliance</h2>
+                <p>Last updated: December 2024</p>
+              </div>
               <div className="legal-text">
-                <h3>Security Framework</h3>
-                <p>VIRIDITY maintains comprehensive security controls designed to protect your sensitive AWS data:</p>
-                
-                <div className="compliance-grid">
-                  <div className="compliance-item">
-                    <CheckCircle size={24} />
-                    <h4>SOC 2 Type II</h4>
-                    <p>Audited annually for security, availability, and confidentiality controls</p>
-                  </div>
-                  <div className="compliance-item">
-                    <CheckCircle size={24} />
-                    <h4>ISO 27001</h4>
-                    <p>International standard for information security management systems</p>
-                  </div>
-                  <div className="compliance-item">
-                    <CheckCircle size={24} />
-                    <h4>GDPR Compliant</h4>
-                    <p>Full compliance with European data protection regulations</p>
-                  </div>
-                  <div className="compliance-item">
-                    <CheckCircle size={24} />
-                    <h4>AWS Security Best Practices</h4>
-                    <p>Following AWS Well-Architected Security Pillar guidelines</p>
-                  </div>
+                <div className="legal-item">
+                  <h3>1. Security Standards</h3>
+                  <p>VIRIDITY maintains the highest security standards to protect your AWS infrastructure and data. Our security practices are designed to meet enterprise requirements and industry best practices.</p>
                 </div>
 
-                <h3>Access Controls</h3>
-                <p>We implement the principle of least privilege:</p>
-                <ul>
-                  <li><strong>Read-Only Access:</strong> VIRIDITY only requires read access to billing and usage data</li>
-                  <li><strong>Role-Based Permissions:</strong> Access limited to specific AWS services needed for optimization</li>
-                  <li><strong>Time-Limited Sessions:</strong> All access sessions are automatically expired</li>
-                  <li><strong>Audit Logging:</strong> Complete audit trail of all access and activities</li>
-                </ul>
+                <div className="legal-item">
+                  <h3>2. Access Controls</h3>
+                  <p>We implement strict access controls and authentication mechanisms. All team members undergo background checks and sign confidentiality agreements. Access to client data is limited to authorized personnel only.</p>
+                </div>
 
-                <h3>Data Encryption</h3>
-                <ul>
-                  <li><strong>In Transit:</strong> TLS 1.3 encryption for all data transmission</li>
-                  <li><strong>At Rest:</strong> AES-256 encryption for stored data</li>
-                  <li><strong>Key Management:</strong> HSM-backed key management with regular rotation</li>
-                </ul>
+                <div className="legal-item">
+                  <h3>3. Data Encryption</h3>
+                  <p>All data is encrypted in transit and at rest using industry-standard encryption protocols. We use secure connections and encrypted storage for all client information.</p>
+                </div>
 
-                <h3>Incident Response</h3>
-                <p>Our security incident response process includes:</p>
-                <ul>
-                  <li>24/7 security monitoring and alerting</li>
-                  <li>Rapid incident containment and remediation</li>
-                  <li>Immediate customer notification for any data-related incidents</li>
-                  <li>Post-incident analysis and improvement implementation</li>
-                </ul>
+                <div className="legal-item">
+                  <h3>4. Compliance</h3>
+                  <p>Our practices align with major compliance frameworks including SOC 2, GDPR, and AWS security best practices. We regularly undergo security audits and assessments.</p>
+                </div>
 
-                <h3>Compliance Certifications</h3>
-                <p>VIRIDITY undergoes regular third-party security assessments and maintains current certifications. Compliance reports are available upon request for enterprise customers.</p>
-
-                <p className="last-updated">Last updated: December 2024</p>
+                <div className="legal-item">
+                  <h3>5. Incident Response</h3>
+                  <p>We maintain comprehensive incident response procedures and will notify you immediately of any security incidents that may affect your data or services.</p>
+                </div>
               </div>
             </div>
           )}
 
           {activeSection === 'data' && (
             <div className="legal-section">
-              <h2>Data Processing Agreement</h2>
+              <div className="legal-header">
+                <h2>Data Processing</h2>
+                <p>Last updated: December 2024</p>
+              </div>
               <div className="legal-text">
-                <h3>Purpose and Scope</h3>
-                <p>This Data Processing Agreement ("DPA") governs VIRIDITY's processing of personal data in connection with our AWS cost optimization services.</p>
-
-                <h3>Roles and Responsibilities</h3>
-                <ul>
-                  <li><strong>You (Data Controller):</strong> Determine the purposes and means of processing personal data</li>
-                  <li><strong>VIRIDITY (Data Processor):</strong> Process personal data on your behalf according to your instructions</li>
-                </ul>
-
-                <h3>Data Processing Details</h3>
-                <div className="data-table">
-                  <div className="data-row">
-                    <strong>Subject Matter:</strong>
-                    <span>AWS cost optimization services</span>
-                  </div>
-                  <div className="data-row">
-                    <strong>Duration:</strong>
-                    <span>Term of the service agreement plus retention period</span>
-                  </div>
-                  <div className="data-row">
-                    <strong>Purpose:</strong>
-                    <span>Cost analysis, optimization recommendations, and savings monitoring</span>
-                  </div>
-                  <div className="data-row">
-                    <strong>Categories of Data:</strong>
-                    <span>AWS usage data, billing information, contact details</span>
-                  </div>
-                  <div className="data-row">
-                    <strong>Data Subjects:</strong>
-                    <span>Your employees and authorized users</span>
-                  </div>
+                <div className="legal-item">
+                  <h3>1. Data Processing Purpose</h3>
+                  <p>We process your AWS data solely for the purpose of providing cost optimization services. This includes analyzing usage patterns, identifying optimization opportunities, and implementing cost-saving strategies.</p>
                 </div>
 
-                <h3>Security Measures</h3>
-                <p>VIRIDITY implements appropriate technical and organizational measures to ensure data security, including:</p>
-                <ul>
-                  <li>Encryption of personal data</li>
-                  <li>Regular security assessments</li>
-                  <li>Access controls and authentication</li>
-                  <li>Staff training on data protection</li>
-                </ul>
+                <div className="legal-item">
+                  <h3>2. Data Minimization</h3>
+                  <p>We collect and process only the minimum data necessary to provide our services. We do not access or process any application data, user data, or sensitive business information beyond what's required for cost optimization.</p>
+                </div>
 
-                <h3>Sub-processors</h3>
-                <p>VIRIDITY may engage sub-processors to assist in providing services. All sub-processors are contractually bound to the same data protection obligations.</p>
+                <div className="legal-item">
+                  <h3>3. Data Processing Methods</h3>
+                  <p>Our data processing involves automated analysis tools and manual expert review. All processing is conducted securely and in accordance with AWS security best practices.</p>
+                </div>
 
-                <h3>Data Subject Rights</h3>
-                <p>VIRIDITY will assist you in responding to data subject requests including rights to access, rectification, erasure, and data portability.</p>
+                <div className="legal-item">
+                  <h3>4. Data Sharing</h3>
+                  <p>We do not share your data with third parties except as required by law or with your explicit consent. All data sharing is conducted under strict confidentiality agreements.</p>
+                </div>
 
-                <h3>Data Breach Notification</h3>
-                <p>VIRIDITY will notify you without undue delay upon becoming aware of any personal data breach, providing all relevant information about the incident.</p>
-
-                <h3>International Transfers</h3>
-                <p>Any international data transfers are conducted using appropriate safeguards such as Standard Contractual Clauses or adequacy decisions.</p>
-
-                <p className="last-updated">Last updated: December 2024</p>
+                <div className="legal-item">
+                  <h3>5. Data Subject Rights</h3>
+                  <p>You have the right to request information about our data processing activities, request corrections to your data, and request deletion of your data in accordance with applicable privacy laws.</p>
+                </div>
               </div>
             </div>
           )}
         </div>
       </section>
-
-      {/* Contact Section */}
-      <section className="legal-contact">
-        <div className="container">
-          <div className="contact-content">
-            <h2>Questions about our legal terms?</h2>
-            <p>Our legal and compliance team is available to answer any questions about our terms, privacy practices, or security measures.</p>
-            <div className="contact-actions">
-              <button className="btn-primary">Contact Legal Team</button>
-              <button className="btn-secondary">Request Compliance Documentation</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="footer">
-        <div className="container">
-          <div className="footer-content">
-            <div className="footer-section">
-              <h4>Company</h4>
-              <div className="footer-links">
-                <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pricing'); }}>Pricing</a>
-                <a href="#">About Us</a>
-                <a href="#">News</a>
-                <a href="#">Careers</a>
-              </div>
-            </div>
-            <div className="footer-section">
-              <h4>Resources</h4>
-              <div className="footer-links">
-                <a href="#">AWS Cost Optimization Blog</a>
-                <a href="#">Resource Center</a>
-                <a href="#" onClick={(e) => { e.preventDefault(); navigate('/help-center'); }}>Help Center</a>
-                <a href="#">Status</a>
-              </div>
-            </div>
-            <div className="footer-section">
-              <h4>Support</h4>
-              <div className="footer-links">
-                <a href="#" onClick={(e) => { e.preventDefault(); navigate('/contact'); }}>Contact Us</a>
-                <a href="#" onClick={(e) => { e.preventDefault(); navigate('/legal'); }}>Legal</a>
-                <a href="#">Trust Center</a>
-                <a href="#" onClick={() => scrollToSection('cta')}>Free Analysis</a>
-              </div>
-            </div>
-          </div>
-          <div className="footer-bottom">
-            <p>© 2025 VIRIDITY, Inc. All rights reserved.</p>
-            <div className="footer-legal">
-              <a href="#">Website Terms</a>
-              <a href="#">Privacy Policy</a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
