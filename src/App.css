@@ -3335,5 +3335,38 @@ html {
   text-decoration: underline;
 }
 
+/* Category Questions */
+.category-questions {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.category-questions .faq-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.category-questions .faq-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.category-questions .faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 
 

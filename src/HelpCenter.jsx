@@ -112,7 +112,7 @@ function HelpCenter() {
       id: 2,
       category: 'security',
       question: 'Is my data secure with VIRIDITY?',
-      answer: 'Absolutely. We only access the minimum data required for cost optimization analysis and never store sensitive application data. All communications are encrypted using TLS 1.3, and we maintain strict data handling protocols. We don\'t access your application logs, user data, or any business-critical information. Our analysis focuses solely on billing, usage patterns, and resource configurations for optimization purposes.'
+      answer: 'Absolutely. We only access the minimum data required for cost optimization analysis and never store sensitive application data. All communications are encrypted using TLS 1.3, and we maintain strict data handling protocols. We don\'t access your application logs, user data, or any business-critical information. Our analysis focuses solely on billing, usage patterns, and resource configurations for optimization purposes. We sign NDAs and confidentiality agreements to ensure your data and business information remain protected.'
     },
     {
       id: 3,
@@ -316,38 +316,139 @@ function HelpCenter() {
       <section className="faq-section">
         <div className="container">
           <div className="faq-content">
-            <div className="faq-header">
-              <h2>{mainCategories.find(cat => cat.id === selectedCategory)?.name || 'Frequently Asked Questions'}</h2>
-              {searchQuery && (
-                <p className="search-results">
-                  Showing {filteredFAQs.length} result{filteredFAQs.length !== 1 ? 's' : ''} for "{searchQuery}"
-                </p>
-              )}
-            </div>
-
-            {filteredFAQs.length > 0 ? (
-              <div className="faq-list">
-                {filteredFAQs.map((faq) => (
-                  <div key={faq.id} className="faq-item">
-                    <button
-                      className="faq-question"
-                      onClick={() => setExpandedFAQ(expandedFAQ === faq.id ? null : faq.id)}
-                    >
-                      <span>{faq.question}</span>
-                      <ChevronDown 
-                        size={20} 
-                        className={`faq-chevron ${expandedFAQ === faq.id ? 'expanded' : ''}`}
-                      />
-                    </button>
-                    {expandedFAQ === faq.id && (
-                      <div className="faq-answer">
-                        <p>{faq.answer}</p>
-                      </div>
-                    )}
-                  </div>
-                ))}
+            {selectedCategory === 'faq' && (
+              <div className="category-questions">
+                <div className="faq-header">
+                  <h2>Frequently Asked Questions</h2>
+                  {searchQuery && (
+                    <p className="search-results">
+                      Showing {faqs.filter(faq => 
+                        faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                        faq.answer.toLowerCase().includes(searchQuery.toLowerCase())
+                      ).length} result{faqs.filter(faq => 
+                        faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                        faq.answer.toLowerCase().includes(searchQuery.toLowerCase())
+                      ).length !== 1 ? 's' : ''} for "{searchQuery}"
+                    </p>
+                  )}
+                </div>
+                <div className="faq-list">
+                  {faqs.filter(faq => 
+                    !searchQuery || 
+                    faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                    faq.answer.toLowerCase().includes(searchQuery.toLowerCase())
+                  ).map((faq) => (
+                    <div key={faq.id} className="faq-item">
+                      <button
+                        className="faq-question"
+                        onClick={() => setExpandedFAQ(expandedFAQ === faq.id ? null : faq.id)}
+                      >
+                        <span>{faq.question}</span>
+                        <ChevronDown 
+                          size={20} 
+                          className={`faq-chevron ${expandedFAQ === faq.id ? 'expanded' : ''}`}
+                        />
+                      </button>
+                      {expandedFAQ === faq.id && (
+                        <div className="faq-answer">
+                          <p>{faq.answer}</p>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
-            ) : (
+            )}
+
+            {selectedCategory === 'security' && (
+              <div className="category-questions">
+                <div className="faq-header">
+                  <h2>Security & Access Management</h2>
+                  {searchQuery && (
+                    <p className="search-results">
+                      Showing {securityFaqs.filter(faq => 
+                        faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                        faq.answer.toLowerCase().includes(searchQuery.toLowerCase())
+                      ).length} result{securityFaqs.filter(faq => 
+                        faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                        faq.answer.toLowerCase().includes(searchQuery.toLowerCase())
+                      ).length !== 1 ? 's' : ''} for "{searchQuery}"
+                    </p>
+                  )}
+                </div>
+                <div className="faq-list">
+                  {securityFaqs.filter(faq => 
+                    !searchQuery || 
+                    faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                    faq.answer.toLowerCase().includes(searchQuery.toLowerCase())
+                  ).map((faq) => (
+                    <div key={faq.id} className="faq-item">
+                      <button
+                        className="faq-question"
+                        onClick={() => setExpandedFAQ(expandedFAQ === faq.id ? null : faq.id)}
+                      >
+                        <span>{faq.question}</span>
+                        <ChevronDown 
+                          size={20} 
+                          className={`faq-chevron ${expandedFAQ === faq.id ? 'expanded' : ''}`}
+                        />
+                      </button>
+                      {expandedFAQ === faq.id && (
+                        <div className="faq-answer">
+                          <p>{faq.answer}</p>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {selectedCategory === 'billing' && (
+              <div className="category-questions">
+                <div className="faq-header">
+                  <h2>Billing</h2>
+                  {searchQuery && (
+                    <p className="search-results">
+                      Showing {billingFaqs.filter(faq => 
+                        faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                        faq.answer.toLowerCase().includes(searchQuery.toLowerCase())
+                      ).length} result{billingFaqs.filter(faq => 
+                        faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                        faq.answer.toLowerCase().includes(searchQuery.toLowerCase())
+                      ).length !== 1 ? 's' : ''} for "{searchQuery}"
+                    </p>
+                  )}
+                </div>
+                <div className="faq-list">
+                  {billingFaqs.filter(faq => 
+                    !searchQuery || 
+                    faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                    faq.answer.toLowerCase().includes(searchQuery.toLowerCase())
+                  ).map((faq) => (
+                    <div key={faq.id} className="faq-item">
+                      <button
+                        className="faq-question"
+                        onClick={() => setExpandedFAQ(expandedFAQ === faq.id ? null : faq.id)}
+                      >
+                        <span>{faq.question}</span>
+                        <ChevronDown 
+                          size={20} 
+                          className={`faq-chevron ${expandedFAQ === faq.id ? 'expanded' : ''}`}
+                        />
+                      </button>
+                      {expandedFAQ === faq.id && (
+                        <div className="faq-answer">
+                          <p>{faq.answer}</p>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {searchQuery && filteredFAQs.length === 0 && (
               <div className="no-results">
                 <p>No results found for your search. Try different keywords or browse our categories above.</p>
               </div>
