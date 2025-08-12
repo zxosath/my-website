@@ -117,7 +117,9 @@ function About() {
       <section className="about-hero">
         <div className="container">
           <div className="hero-content">
-            <h1>About</h1>
+            <h1>Our mission</h1>
+            <p className="mission-lead">The cloud is incredibly powerful, but operating it cost effectively is complicated and time-consuming.</p>
+            <p className="mission-statement">Our mission is to remove complexity and deliver savings outcomes so every business can prosper in the cloud.</p>
           </div>
         </div>
       </section>
