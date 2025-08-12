@@ -191,17 +191,17 @@ function About() {
                 <div className="dropdown-menu">
                   <div className="dropdown-section">
                     <div className="resource-links">
-                      <a href="#/help-center"><HelpCircle size={16} /> Help Center</a>
-                      <a href="#/legal"><FileText size={16} /> Legal</a>
-                      <a href="#/about" className="active"><Users size={16} /> About</a>
-                      <a href="#/contact"><MessageCircle size={16} /> Contact</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/help-center'); setResourcesDropdownOpen(false); }}><HelpCircle size={16} /> Help Center</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/legal'); setResourcesDropdownOpen(false); }}><FileText size={16} /> Legal</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/about'); setResourcesDropdownOpen(false); }} className="active"><Users size={16} /> About</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/contact'); setResourcesDropdownOpen(false); }}><MessageCircle size={16} /> Contact</a>
                     </div>
                   </div>
                 </div>
               )}
             </div>
             
-            <a href="#/pricing" className="nav-item">Pricing</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pricing'); }} className="nav-item">Pricing</a>
           </nav>
 
           <div className="header-actions">
@@ -218,7 +218,7 @@ function About() {
             <div className="mobile-menu-links">
               <a href="#" onClick={() => setMobileMenuOpen(false)}>Product</a>
               <a href="#" onClick={() => setMobileMenuOpen(false)}>Resources</a>
-              <a href="#/pricing" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
+              <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pricing'); setMobileMenuOpen(false); }}>Pricing</a>
             </div>
             <div className="mobile-menu-actions">
               <button className="btn-primary">Free Analysis</button>

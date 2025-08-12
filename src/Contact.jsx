@@ -43,11 +43,38 @@ function Contact() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Form submission logic would go here
-    console.log('Form submitted:', formData);
-    setFormSubmitted(true);
+    
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: '9a066d3d-5907-438e-b186-f389e3dd4b4d',
+          ...formData
+        })
+      });
+      
+      if (response.ok) {
+        setFormSubmitted(true);
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          phone: '',
+          message: '',
+          monthlySpend: ''
+        });
+      } else {
+        alert('There was an error submitting the form. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was an error submitting the form. Please try again.');
+    }
   };
 
   const contactMethods = [
@@ -130,7 +157,7 @@ function Contact() {
       <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <div className="header-container">
           <div className="logo">
-            <a href="#/" className="logo-container">
+            <a href="#" onClick={(e) => { e.preventDefault(); navigate('/'); }} className="logo-container">
               <img src="/IMG_3102.PNG" alt="VIRIDITY Logo" className="logo-icon" />
               <h2>VIRIDITY</h2>
             </a>
@@ -176,17 +203,17 @@ function Contact() {
                 <div className="dropdown-menu">
                   <div className="dropdown-section">
                     <div className="resource-links">
-                      <a href="#/help-center"><HelpCircle size={16} /> Help Center</a>
-                      <a href="#/legal"><FileText size={16} /> Legal</a>
-                      <a href="#/about"><Users size={16} /> About</a>
-                      <a href="#/contact" className="active"><MessageCircle size={16} /> Contact</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/help-center'); setResourcesDropdownOpen(false); }}><HelpCircle size={16} /> Help Center</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/legal'); setResourcesDropdownOpen(false); }}><FileText size={16} /> Legal</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/about'); setResourcesDropdownOpen(false); }}><Users size={16} /> About</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/contact'); setResourcesDropdownOpen(false); }} className="active"><MessageCircle size={16} /> Contact</a>
                     </div>
                   </div>
                 </div>
               )}
             </div>
             
-            <a href="#/pricing" className="nav-item">Pricing</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pricing'); }} className="nav-item">Pricing</a>
           </nav>
 
           <div className="header-actions">
@@ -203,7 +230,7 @@ function Contact() {
             <div className="mobile-menu-links">
               <a href="#" onClick={() => setMobileMenuOpen(false)}>Product</a>
               <a href="#" onClick={() => setMobileMenuOpen(false)}>Resources</a>
-              <a href="#/pricing" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
+              <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pricing'); setMobileMenuOpen(false); }}>Pricing</a>
             </div>
             <div className="mobile-menu-actions">
               <button className="btn-primary">Free Analysis</button>

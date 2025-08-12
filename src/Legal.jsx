@@ -102,7 +102,7 @@ function Legal() {
               )}
             </div>
             
-            <a href="#/pricing" className="nav-item">Pricing</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pricing'); }} className="nav-item">Pricing</a>
           </nav>
 
           <div className="header-actions">
@@ -119,7 +119,7 @@ function Legal() {
             <div className="mobile-menu-links">
               <a href="#" onClick={() => setMobileMenuOpen(false)}>Product</a>
               <a href="#" onClick={() => setMobileMenuOpen(false)}>Resources</a>
-              <a href="#/pricing" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
+              <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pricing'); setMobileMenuOpen(false); }}>Pricing</a>
             </div>
             <div className="mobile-menu-actions">
               <button className="btn-primary">Free Analysis</button>
