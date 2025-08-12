@@ -4647,12 +4647,21 @@ html {
   line-height: 1.6;
 }
 
+.pricing .cta-form-container {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
 .pricing .cta-form {
   background: rgba(255, 255, 255, 0.05) !important;
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
   border-radius: 16px;
   padding: 2rem;
   backdrop-filter: blur(10px);
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
 }
 
 .pricing .form-header h3 {
@@ -4661,6 +4670,12 @@ html {
   font-weight: 600;
   margin-bottom: 1.5rem;
   line-height: 1.4;
+}
+
+.pricing .form-header p {
+  color: #e2e8f0 !important;
+  font-size: 1rem;
+  margin: 0;
 }
 
 .pricing .input-group input,
@@ -4684,6 +4699,21 @@ html {
   outline: none;
   border-color: #8b5cf6 !important;
   box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+}
+
+.pricing .input-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.5em 1.5em;
+  padding-right: 3rem;
+  color: white !important;
+}
+
+.pricing .input-group select option {
+  color: #1f2937;
+  background: white;
 }
 
 .pricing .btn-submit {
