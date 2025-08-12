@@ -174,13 +174,6 @@ function HelpCenter() {
 
   const allFaqs = [...faqs, ...securityFaqs, ...billingFaqs];
 
-  const filteredFAQs = allFaqs.filter(faq => {
-    const matchesCategory = selectedCategory === 'all' || faq.category === selectedCategory;
-    const matchesSearch = faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                         faq.answer.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesCategory && matchesSearch;
-  });
-
   return (
     <div className="app">
       {/* Header */}
