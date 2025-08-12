@@ -179,7 +179,7 @@ function Pricing() {
       <section className="pricing">
         <div className="container">
           <div className="pricing-header">
-            <h2 className="animate-on-scroll">Stop Overpaying AWS. Start Saving Today.</h2>
+            <h2 className="animate-on-scroll">Stop Overpaying AWS.<br />Start Saving Today.</h2>
             <p className="animate-on-scroll">While others charge you to manage your cloud costs, we only get paid when we actually save you money. No risk. No upfront fees. Just guaranteed AWS savings.</p>
           </div>
 
@@ -211,7 +211,7 @@ function Pricing() {
                 <h4>Expert AWS Cost Optimization</h4>
                 <p>Our expert team manually optimizes your AWS spend through strategic analysis and hands-on optimization, delivering consistent savings while you focus on building your business.</p>
                 <ul>
-                  <li>We only take a percentage of your savings, no overhead costs</li>
+                  <li>No overhead costs, only a percentage of your savings</li>
                   <li>Expert manual optimization by certified professionals</li>
                   <li>Real-time savings tracking and reporting</li>
                   <li>Zero infrastructure access needed</li>
