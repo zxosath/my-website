@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ChevronDown, Menu, X, HelpCircle, Shield, DollarSign, BarChart3, Users, FileText, MessageCircle } from 'lucide-react';
+import { ChevronDown, Menu, X, HelpCircle, Shield, DollarSign, BarChart3, Users, FileText } from 'lucide-react';
 import './App.css';
 
 function HelpCenter() {
@@ -229,7 +229,6 @@ function HelpCenter() {
                       <a href="#" onClick={(e) => { e.preventDefault(); navigate('/help-center'); setResourcesDropdownOpen(false); }} className="active"><HelpCircle size={16} /> Help Center</a>
                       <a href="#" onClick={(e) => { e.preventDefault(); navigate('/legal'); setResourcesDropdownOpen(false); }}><FileText size={16} /> Legal</a>
                       <a href="#" onClick={(e) => { e.preventDefault(); navigate('/about'); setResourcesDropdownOpen(false); }}><Users size={16} /> About</a>
-                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/contact'); setResourcesDropdownOpen(false); }}><MessageCircle size={16} /> Contact</a>
                     </div>
                   </div>
                 </div>
