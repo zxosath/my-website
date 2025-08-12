@@ -162,26 +162,13 @@ function Legal() {
                 </div>
 
                 <div className="legal-item">
-                  <h3>Types of Data We Process</h3>
-                  <p>Our data processing encompasses several categories of information:</p>
-                  <ul>
-                    <li><strong>AWS Billing Data:</strong> Detailed billing information, cost breakdowns, service usage patterns, and payment history</li>
-                    <li><strong>Resource Utilization:</strong> CPU, memory, storage, and network usage metrics for optimization analysis</li>
-                    <li><strong>Service Configurations:</strong> Instance types, storage classes, networking setup, and security group configurations</li>
-                    <li><strong>Account Information:</strong> Contact details, company information, user preferences, and communication history</li>
-                    <li><strong>Optimization Data:</strong> Recommendations implemented, savings achieved, and performance metrics</li>
-                    <li><strong>Communication Records:</strong> Support tickets, consultation notes, and service-related communications</li>
-                  </ul>
-                </div>
-
-                <div className="legal-item">
                   <h3>How We Use Your Information</h3>
                   <p>Your information is used exclusively for providing and improving our AWS cost optimization services. This includes analyzing usage patterns to identify optimization opportunities, implementing cost-saving strategies, monitoring the effectiveness of optimizations, providing detailed reports and recommendations, delivering customer support and consultation services, improving our optimization methodologies and algorithms, and ensuring compliance with our legal obligations. We do not use your data for marketing purposes without explicit consent, and we never sell or rent your information to third parties.</p>
                 </div>
 
                 <div className="legal-item">
                   <h3>Data Security and Protection</h3>
-                  <p>We implement comprehensive security measures to protect your data throughout its lifecycle. All data transmission is encrypted using TLS 1.3, and data at rest is encrypted using AES-256 encryption. We maintain SOC 2 Type II compliance and undergo regular security audits and penetration testing. Our security framework includes multi-factor authentication, role-based access controls, regular security training for staff, comprehensive audit logging, and incident response procedures. We maintain strict access controls and limit data access to authorized personnel only.</p>
+                  <p>We implement comprehensive security measures to protect your data throughout its lifecycle. All data transmission is encrypted using industry-standard encryption protocols, and data at rest is encrypted using strong encryption methods. We maintain strict access controls and limit data access to authorized personnel only. We regularly review and update our security practices to ensure the protection of your information.</p>
                 </div>
 
                 <div className="legal-item">
@@ -201,7 +188,7 @@ function Legal() {
 
                 <div className="legal-item">
                   <h3>International Data Transfers</h3>
-                  <p>Your data may be processed in countries other than your own, including the United States. We ensure that all international data transfers comply with applicable data protection laws through appropriate safeguards such as Standard Contractual Clauses, adequacy decisions, or other approved transfer mechanisms. We maintain the same high standards of data protection regardless of where your data is processed, and we regularly review and update our transfer mechanisms to ensure continued compliance.</p>
+                  <p>Your data may be processed in countries other than your own, including the United States. We ensure that all international data transfers comply with applicable data protection laws through appropriate safeguards and transfer mechanisms. We maintain the same high standards of data protection regardless of where your data is processed, and we regularly review and update our transfer practices to ensure continued compliance with legal requirements.</p>
                 </div>
 
                 <div className="legal-item">
