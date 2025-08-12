@@ -3802,6 +3802,7 @@ html {
   margin-bottom: 1.5rem;
   line-height: 1.4;
   color: #4a5568;
+  text-align: center;
 }
 
 .about-story .story-text .mission-statement {
@@ -3810,6 +3811,7 @@ html {
   line-height: 1.5;
   color: #1a202c;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .about-story .story-text h2 {
