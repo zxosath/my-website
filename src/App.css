@@ -4183,8 +4183,7 @@ html {
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #16a34a 100%);
   background-size: 400% 400%;
   animation: gradientShift 30s ease infinite;
-  text-align: left;
-  border-bottom: 1px solid #374151;
+  text-align: center;
 }
 
 .about-hero .hero-content {
