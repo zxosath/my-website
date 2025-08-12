@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Menu, X, Users, Target, Award, Globe, TrendingUp, DollarSign, BarChart3, Shield, Zap, CheckCircle, Star, HelpCircle, FileText, MessageCircle, Linkedin, Twitter, Mail, Calendar, BookOpen, Mic, Play } from 'lucide-react';
+import { ChevronDown, Menu, X, Users, MessageCircle, FileText, HelpCircle, BarChart3 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 function About() {
@@ -24,84 +24,6 @@ function About() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const timeline = [
-    {
-      date: 'December, 2024',
-      title: 'VIRIDITY Launches Expert AWS Optimization Service',
-      description: 'VIRIDITY officially launches its manual AWS cost optimization service, bringing enterprise-grade expertise to organizations of all sizes.'
-    },
-    {
-      date: 'November, 2024',
-      title: 'First $1M in Client Savings Achieved',
-      description: 'VIRIDITY reaches its first major milestone, delivering over $1 million in verified cost savings to our initial client base.'
-    },
-    {
-      date: 'October, 2024',
-      title: 'AWS Advanced Consulting Partner Status',
-      description: 'VIRIDITY achieves AWS Advanced Consulting Partner status, recognizing our expertise in cloud cost optimization and commitment management.'
-    },
-    {
-      date: 'September, 2024',
-      title: 'Enterprise Security Framework Established',
-      description: 'Implementation of comprehensive security protocols and access management systems to ensure client data protection and compliance.'
-    },
-    {
-      date: 'August, 2024',
-      title: 'Performance-Based Pricing Model Launched',
-      description: 'Introduction of our innovative pricing model where clients only pay a percentage of verified savings, ensuring complete alignment of interests.'
-    },
-    {
-      date: 'July, 2024',
-      title: 'VIRIDITY Founded',
-      description: 'VIRIDITY is established with the mission to democratize AWS cost optimization expertise and deliver measurable savings outcomes.'
-    }
-  ];
-
-  const leadership = [
-    {
-      name: 'Sarah Chen',
-      role: 'CHIEF EXECUTIVE OFFICER',
-      bio: 'Former AWS Solutions Architect with 12+ years optimizing enterprise cloud costs. Led cost optimization initiatives saving over $100M at Fortune 500 companies.',
-      image: '/api/placeholder/200/200'
-    },
-    {
-      name: 'Marcus Rodriguez',
-      role: 'CHIEF PRODUCT OFFICER',
-      bio: 'Ex-Amazon engineer specializing in Reserved Instances and Savings Plans optimization. Built automated systems managing $1B+ in AWS commitments.',
-      image: '/api/placeholder/200/200'
-    },
-    {
-      name: 'Emily Watson',
-      role: 'CHIEF TECHNOLOGY OFFICER',
-      bio: 'FinOps expert with deep experience in enterprise cost management. Previously led cloud financial operations at multiple unicorn startups.',
-      image: '/api/placeholder/200/200'
-    },
-    {
-      name: 'David Kim',
-      role: 'CHIEF SALES OFFICER',
-      bio: 'AWS Hero and certified solutions architect. Specializes in complex enterprise architectures and commitment strategy optimization.',
-      image: '/api/placeholder/200/200'
-    }
-  ];
-
-  const blogPosts = [
-    {
-      title: 'Investing in the Future of Cloud FinOps Automation',
-      category: 'Company',
-      link: '#'
-    },
-    {
-      title: 'VIRIDITY Achieves AWS Advanced Consulting Partner Status',
-      category: 'Company',
-      link: '#'
-    },
-    {
-      title: 'VIRIDITY partners with leading FinOps platforms, combining cost intelligence and manual optimization for AWS customers',
-      category: 'Company',
-      link: '#'
-    }
-  ];
 
   return (
     <div className="app">
@@ -134,7 +56,7 @@ function About() {
                   <div className="dropdown-section">
                     <h4>Billing Optimization</h4>
                     <div className="resource-links">
-                      <a href="#"><DollarSign size={16} /> Expert AWS Cost Management</a>
+                      <a href="#"><BarChart3 size={16} /> Expert AWS Cost Management</a>
                       <a href="#"><BarChart3 size={16} /> Strategic Resource Optimization</a>
                     </div>
                   </div>
@@ -191,22 +113,15 @@ function About() {
         )}
       </header>
 
-      {/* Mission Section */}
-      <section className="about-mission">
-        <div className="container">
-          <div className="mission-content">
-            <h1>Our mission</h1>
-            <p className="mission-lead">The cloud is incredibly powerful, but operating it cost effectively is complicated and time-consuming.</p>
-            <p className="mission-statement">Our mission is to remove complexity and deliver savings outcomes so every business can prosper in the cloud.</p>
-          </div>
-        </div>
-      </section>
-
       {/* Our Story Section */}
       <section className="about-story">
         <div className="container">
           <div className="story-content">
             <div className="story-text">
+              <h1>Our mission</h1>
+              <p className="mission-lead">The cloud is incredibly powerful, but operating it cost effectively is complicated and time-consuming.</p>
+              <p className="mission-statement">Our mission is to remove complexity and deliver savings outcomes so every business can prosper in the cloud.</p>
+              
               <h2>Our Story</h2>
               <p>We're a group of technologists and economics geeks who love solving problems and serving customers. Before founding VIRIDITY, we worked at some of the world's largest AWS Premier Consulting Partners and led cloud cost optimization initiatives for Fortune 500 companies.</p>
               <p>From serving thousands of customers at consulting firms to running our own optimization service, we saw firsthand the importance of cost optimization, but also how hard it was to master. Doing it well requires a rare blend of finance and engineering expertise. Over the years, we've developed extensive experience with virtually every cost optimization solution, most of which overload users with recommendations and lack context to see the complete picture. DevOps and FinOps teams are smart—but busy—and in a world of increasingly complex and dynamic cloud environments, ongoing cloud economic optimization requires an approach that unifies the technical and financial worlds.</p>
@@ -217,61 +132,6 @@ function About() {
                 <Users size={64} />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Timeline Section */}
-      <section className="about-timeline">
-        <div className="container">
-          <div className="timeline-grid">
-            {timeline.map((item, index) => (
-              <div key={index} className="timeline-item">
-                <div className="timeline-date">{item.date}</div>
-                <div className="timeline-content">
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Leadership Section */}
-      <section className="about-leadership">
-        <div className="container">
-          <h2>Leadership</h2>
-          <div className="leadership-grid">
-            {leadership.map((leader, index) => (
-              <div key={index} className="leader-card">
-                <div className="leader-image">
-                  <div className="placeholder-avatar">
-                    <Users size={48} />
-                  </div>
-                </div>
-                <div className="leader-info">
-                  <h3>{leader.name}</h3>
-                  <p className="leader-role">{leader.role}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Blog Section */}
-      <section className="about-blog">
-        <div className="container">
-          <h2>From our blog</h2>
-          <div className="blog-grid">
-            {blogPosts.map((post, index) => (
-              <div key={index} className="blog-card">
-                <div className="blog-category">{post.category}</div>
-                <h3>{post.title}</h3>
-                <a href={post.link} className="blog-link">Read More</a>
-              </div>
-            ))}
           </div>
         </div>
       </section>
