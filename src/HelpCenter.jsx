@@ -106,7 +106,7 @@ function HelpCenter() {
       id: 1,
       category: 'security',
       question: 'How does VIRIDITY access my AWS account?',
-      answer: 'VIRIDITY uses secure, read-only access with minimal permissions to analyze your AWS usage. We require only the minimum permissions necessary to view billing data, resource configurations, and usage metrics. Our access is limited to Cost and Usage Reports, CloudWatch metrics, and resource inventory data. We never require administrative access that could compromise your infrastructure or application data.'
+      answer: 'VIRIDITY uses a secure two-role approach to minimize risk. First, we use a read-only role to analyze your costs, usage patterns, and identify optimization opportunities. This role can only view data - no changes can be made. Once we have your approval for specific optimizations, we use a separate apply role with limited permissions to implement only the approved changes. This approach ensures we can do thorough analysis without any risk, and only make changes when you\'re ready. We work with your team to set up these roles with appropriate safeguards like MFA and spending limits.'
     },
     {
       id: 2,
