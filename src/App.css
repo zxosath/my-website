@@ -4192,8 +4192,8 @@ html {
   align-items: flex-start;
   justify-content: center;
   text-align: left;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 600px;
+  margin: 0;
 }
 
 .about-hero h1 {
