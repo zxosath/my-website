@@ -132,9 +132,9 @@ html {
 
 /* Header */
 .header {
-  background: rgba(15, 23, 42, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  backdrop-filter: blur(0px);
+  border-bottom: 1px solid transparent;
   position: fixed;
   top: 0;
   left: 0;
