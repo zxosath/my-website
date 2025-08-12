@@ -113,6 +113,15 @@ function About() {
         )}
       </header>
 
+      {/* Hero Section */}
+      <section className="about-hero">
+        <div className="container">
+          <div className="hero-content">
+            <h1>About</h1>
+          </div>
+        </div>
+      </section>
+
       {/* Our Story Section */}
       <section className="about-story">
         <div className="container">
