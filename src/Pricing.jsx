@@ -287,25 +287,25 @@ function Pricing() {
       </section>
 
       {/* CTA Section */}
-      <section className="pricing-cta-section">
+      <section className="pricing-cta-section" style={{ background: '#0f172a', color: 'white' }}>
         <div className="container">
-          <div id="cta" className="cta">
+          <div id="cta" className="cta" style={{ background: 'transparent', color: 'white' }}>
             <div className="cta-wrapper">
               <div className="cta-content-left animate-on-scroll">
-                <h2 className="cta-headline">
+                <h2 className="cta-headline" style={{ color: 'white' }}>
                   Unlock Your Hidden
                   <span className="highlight-gradient"> AWS Savings</span>
                 </h2>
 
-                <p className="cta-subtext">
+                <p className="cta-subtext" style={{ color: '#e2e8f0' }}>
                   Get a comprehensive analysis of your AWS infrastructure and discover optimization opportunities worth thousands of dollars per month.
                 </p>
               </div>
               
               <div className="cta-form-container animate-on-scroll">
-                <div className="cta-form">
+                <div className="cta-form" style={{ background: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.1)' }}>
                   <div className="form-header">
-                    <h3>Submit the form to request your free AWS savings analysis.</h3>
+                    <h3 style={{ color: 'white' }}>Submit the form to request your free AWS savings analysis.</h3>
                   </div>
 
                   <form onSubmit={handleFormSubmit}>
@@ -314,20 +314,20 @@ function Pricing() {
                     <div className="form-group">
                       <div className="form-row">
                         <div className="input-group">
-                          <input type="text" name="First Name" placeholder="First Name*" required />
+                          <input type="text" name="First Name" placeholder="First Name*" required style={{ background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', color: 'white' }} />
                         </div>
                         <div className="input-group">
-                          <input type="text" name="Last Name" placeholder="Last Name*" required />
+                          <input type="text" name="Last Name" placeholder="Last Name*" required style={{ background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', color: 'white' }} />
                         </div>
                       </div>
                     </div>
 
                     <div className="input-group">
-                      <input type="email" name="Email" placeholder="Work Email*" required />
+                      <input type="email" name="Email" placeholder="Work Email*" required style={{ background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', color: 'white' }} />
                     </div>
 
                     <div className="input-group">
-                      <select name="Monthly Cloud Spend" required>
+                      <select name="Monthly Cloud Spend" required style={{ background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', color: 'white' }}>
                         <option value="">Please Select</option>
                         <option value="Less than $10,000 spend">Less than $10,000 spend</option>
                         <option value="$10,000 to $50,000">$10,000 to $50,000</option>
@@ -341,7 +341,7 @@ function Pricing() {
                       </select>
                     </div>
 
-                    <button type="submit" className="btn-submit">
+                    <button type="submit" className="btn-submit" style={{ background: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)', color: 'white' }}>
                       <span>Get Started</span>
                     </button>
                   </form>
