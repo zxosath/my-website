@@ -273,16 +273,16 @@ function Pricing() {
       </section>
 
       {/* Ready to Stop Overpaying AWS Section */}
-      <section className="pricing-cta-section">
+      <section className="pricing-cta-section" style={{ padding: '0.1rem 0' }}>
         <div className="container">
-          <div className="pricing-cta animate-on-scroll">
+          <div className="pricing-cta animate-on-scroll" style={{ margin: '1rem 0 0.1rem 0' }}>
             <h3>Ready to Stop Overpaying AWS?</h3>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="pricing-cta-section" style={{ background: '#0f172a', color: 'white' }}>
+      <section className="pricing-cta-section" style={{ background: '#0f172a', color: 'white', padding: '0.1rem 0 4rem 0' }}>
         <div className="container">
           <div id="cta" className="cta" style={{ background: 'transparent', color: 'white' }}>
             <div className="cta-wrapper">
