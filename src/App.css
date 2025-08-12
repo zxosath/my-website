@@ -2966,6 +2966,10 @@ html {
   background: white;
 }
 
+.main-categories .category-detail {
+  padding-top: 2rem;
+}
+
 .categories-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
