@@ -272,20 +272,6 @@ function Pricing() {
         </div>
       </section>
 
-      {/* Ready to Stop Overpaying AWS Section */}
-      <section className="pricing-cta-section">
-        <div className="container">
-          <div className="pricing-cta animate-on-scroll">
-            <h3>Ready to Stop Overpaying AWS?</h3>
-            <p>Join hundreds of companies already saving on their AWS bills. Get your free analysis and see your savings potential in minutes.</p>
-            <div className="cta-buttons">
-              <button className="btn-primary" onClick={() => scrollToSection('cta')}>Get Free Analysis</button>
-              <button className="btn-secondary" onClick={() => scrollToSection('cta')}>See Demo</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="pricing-cta-section" style={{ background: '#0f172a', color: 'white' }}>
         <div className="container">
@@ -303,7 +289,7 @@ function Pricing() {
               </div>
               
               <div className="cta-form-container animate-on-scroll">
-                <div className="cta-form" style={{ background: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.1)' }}>
+                <div className="cta-form" style={{ background: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.1)', padding: '3rem' }}>
                   <div className="form-header">
                     <h3 style={{ color: 'white' }}>Submit the form to request your free AWS savings analysis.</h3>
                   </div>
