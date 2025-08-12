@@ -2917,6 +2917,16 @@ html {
   text-align: center;
 }
 
+.help-center-hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .help-center-hero h1 {
   font-size: 3rem;
   font-weight: 700;
