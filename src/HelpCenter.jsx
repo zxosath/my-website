@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ChevronDown, Menu, X, Search, BookOpen, MessageCircle, Phone, Mail, FileText, HelpCircle, CheckCircle, AlertCircle, Info, Zap, DollarSign, BarChart3, Shield, Globe, Users, Calendar } from 'lucide-react';
+import { ChevronDown, Menu, X, Search, HelpCircle, Shield, DollarSign, BarChart3, Users, FileText, MessageCircle, Phone, Mail, Calendar, Zap, CheckCircle, AlertCircle, Info } from 'lucide-react';
 import './App.css';
 
 function HelpCenter() {
@@ -9,7 +9,7 @@ function HelpCenter() {
   const [resourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedCategory, setSelectedCategory] = useState('faq');
   const [expandedFAQ, setExpandedFAQ] = useState(null);
   const navigate = useNavigate();
 
@@ -29,78 +29,152 @@ function HelpCenter() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const faqCategories = [
-    { id: 'all', name: 'All Categories', icon: HelpCircle },
-    { id: 'getting-started', name: 'Getting Started', icon: Zap },
-    { id: 'pricing', name: 'Pricing & Billing', icon: DollarSign },
-    { id: 'optimization', name: 'AWS Optimization', icon: BarChart3 },
-    { id: 'security', name: 'Security & Compliance', icon: Shield },
-    { id: 'integrations', name: 'Integrations', icon: Globe },
-    { id: 'account', name: 'Account Management', icon: Users }
+  const mainCategories = [
+    { 
+      id: 'faq', 
+      name: 'Frequently Asked Questions', 
+      icon: HelpCircle,
+      description: 'Common questions about VIRIDITY services and AWS optimization'
+    },
+    { 
+      id: 'security', 
+      name: 'Security & Access Management', 
+      icon: Shield,
+      description: 'Security protocols and access management for AWS optimization'
+    },
+    { 
+      id: 'billing', 
+      name: 'Billing', 
+      icon: DollarSign,
+      description: 'Billing information and payment structure'
+    }
   ];
 
   const faqs = [
     {
       id: 1,
-      category: 'getting-started',
-      question: 'How does VIRIDITY optimize my AWS costs?',
-      answer: 'VIRIDITY uses expert manual optimization strategies to analyze your AWS usage patterns and implement the most effective cost-saving measures. Our team of AWS specialists continuously monitors your infrastructure and adjusts Reserved Instances, Savings Plans, and resource configurations to maximize your savings while maintaining performance and flexibility.'
+      category: 'faq',
+      question: 'What is VIRIDITY and how does it work?',
+      answer: 'VIRIDITY is a manual AWS cost optimization service that uses expert human analysis to reduce your AWS spending. Unlike automated tools, our certified AWS specialists manually analyze your infrastructure, identify optimization opportunities, and implement strategic changes to maximize your savings while maintaining performance and reliability.'
     },
     {
       id: 2,
-      category: 'getting-started',
-      question: 'How long does it take to see results?',
-      answer: 'Most clients start seeing cost reductions within the first month of implementation. Our expert team conducts an initial analysis within 48 hours and begins implementing optimization strategies immediately. Significant savings typically become apparent in your first AWS bill after onboarding.'
+      category: 'faq',
+      question: 'How much can I save with VIRIDITY?',
+      answer: 'Most VIRIDITY clients achieve 20-40% cost reductions on their AWS spending. Savings vary based on your current optimization level, but our expert team typically identifies significant opportunities in Reserved Instance management, Savings Plans optimization, and resource right-sizing.'
     },
     {
       id: 3,
-      category: 'pricing',
-      question: 'How does VIRIDITY pricing work?',
-      answer: 'VIRIDITY operates on a performance-based pricing model where you only pay a percentage of the savings we generate. This ensures our interests are aligned with yours – we only succeed when you save money. Our free analysis phase allows you to see potential savings before making any commitment.'
+      category: 'faq',
+      question: 'How long does it take to see results?',
+      answer: 'You can expect to see initial cost reductions within 30-60 days of onboarding. Our team conducts a comprehensive analysis within the first week and begins implementing optimizations immediately. Most clients see measurable savings on their next AWS bill.'
     },
     {
       id: 4,
-      category: 'pricing',
-      question: 'Are there any upfront costs or minimum commitments?',
-      answer: 'No, there are no upfront costs or minimum commitments. We offer a completely free AWS cost analysis to demonstrate potential savings. You only pay based on actual savings achieved, making it a completely risk-free investment for your organization.'
+      category: 'faq',
+      question: 'What AWS services does VIRIDITY optimize?',
+      answer: 'VIRIDITY optimizes all major AWS services including EC2, RDS, ElastiCache, Redshift, OpenSearch, Lambda, S3, and more. We specialize in Reserved Instance and Savings Plans management across all eligible services to maximize your discount coverage.'
     },
     {
       id: 5,
-      category: 'optimization',
-      question: 'What AWS services does VIRIDITY optimize?',
-      answer: 'VIRIDITY optimizes all major AWS services including EC2 instances, RDS databases, Lambda functions, S3 storage, Fargate containers, ElastiCache, Redshift, OpenSearch, and more. We also specialize in managing Reserved Instances and Savings Plans across all eligible services to maximize your discount coverage.'
+      category: 'faq',
+      question: 'Will optimization affect my application performance?',
+      answer: 'No, our optimization strategies are designed to maintain or improve performance while reducing costs. Our expert team carefully analyzes your workloads and only implements changes that preserve reliability and performance.'
     },
     {
       id: 6,
-      category: 'optimization',
-      question: 'Will optimization affect my application performance?',
-      answer: 'No, our optimization strategies are designed to maintain or improve performance while reducing costs. Our expert team carefully analyzes your workloads and only implements changes that preserve reliability and performance. We focus on right-sizing resources, optimizing commitment strategies, and eliminating waste without compromising functionality.'
+      category: 'faq',
+      question: 'How does VIRIDITY pricing work?',
+      answer: 'VIRIDITY operates on a performance-based pricing model. You only pay a percentage of the actual savings we generate, ensuring our interests are aligned with yours. There are no upfront costs or minimum commitments - we only succeed when you save money.'
     },
     {
       id: 7,
-      category: 'security',
-      question: 'How does VIRIDITY access my AWS account?',
-      answer: 'VIRIDITY uses secure, read-only access with minimal permissions to analyze your AWS usage. We follow AWS security best practices and can work within your existing security frameworks. All access is logged and auditable, and we never require administrative privileges that could compromise your infrastructure.'
+      category: 'faq',
+      question: 'What is the minimum AWS spend requirement?',
+      answer: 'VIRIDITY works with organizations spending $10,000+ monthly on AWS. Our manual optimization approach is most effective for companies with significant cloud infrastructure and complex usage patterns.'
     },
     {
       id: 8,
-      category: 'security',
-      question: 'Is my data secure with VIRIDITY?',
-      answer: 'Absolutely. VIRIDITY is SOC 2 Type II compliant and follows enterprise-grade security practices. We only access the minimum data required for cost optimization analysis and never store sensitive application data. All communications are encrypted and we maintain strict data handling protocols.'
-    },
-    {
-      id: 9,
-      category: 'integrations',
-      question: 'Does VIRIDITY integrate with existing tools?',
-      answer: 'Yes, VIRIDITY can integrate with popular FinOps and monitoring tools including CloudHealth, Datadog, New Relic, and custom dashboards. We provide APIs and webhooks for seamless integration into your existing workflows and can export data in various formats.'
-    },
-    {
-      id: 10,
-      category: 'account',
-      question: 'Can I pause or cancel VIRIDITY services?',
-      answer: 'Yes, you can pause or cancel VIRIDITY services at any time with 30 days notice. There are no long-term contracts or cancellation fees. Even after cancellation, you retain all the optimizations and savings that have been implemented during our partnership.'
+      category: 'faq',
+      question: 'Can I cancel VIRIDITY services?',
+      answer: 'Yes, you can cancel VIRIDITY services at any time with 30 days notice. There are no long-term contracts or cancellation fees. You retain all optimizations and savings implemented during our partnership.'
     }
   ];
+
+  const securityFaqs = [
+    {
+      id: 1,
+      category: 'security',
+      question: 'How does VIRIDITY access my AWS account?',
+      answer: 'VIRIDITY uses secure, read-only access with minimal permissions to analyze your AWS usage. We require only the minimum permissions necessary to view billing data and resource configurations. We never require administrative access that could compromise your infrastructure.'
+    },
+    {
+      id: 2,
+      category: 'security',
+      question: 'What security certifications does VIRIDITY have?',
+      answer: 'VIRIDITY maintains SOC 2 Type II compliance and follows enterprise-grade security practices. We implement end-to-end encryption, multi-factor authentication, and regular security audits to protect your data.'
+    },
+    {
+      id: 3,
+      category: 'security',
+      question: 'Is my data secure with VIRIDITY?',
+      answer: 'Absolutely. We only access the minimum data required for cost optimization analysis and never store sensitive application data. All communications are encrypted and we maintain strict data handling protocols.'
+    },
+    {
+      id: 4,
+      category: 'security',
+      question: 'Can VIRIDITY work with my existing security policies?',
+      answer: 'Yes, VIRIDITY can work within your existing security frameworks and compliance requirements. We can adapt our access methods to meet your specific security policies and can work with your security team to ensure proper oversight.'
+    },
+    {
+      id: 5,
+      category: 'security',
+      question: 'What happens to my data after I cancel?',
+      answer: 'Upon cancellation, VIRIDITY immediately revokes all access to your AWS account and deletes any cached data from our systems. We retain only the minimum information required for legal and billing purposes.'
+    }
+  ];
+
+  const billingFaqs = [
+    {
+      id: 1,
+      category: 'billing',
+      question: 'How is VIRIDITY billing calculated?',
+      answer: 'VIRIDITY billing is calculated as a percentage of the verified cost savings we generate for you. We provide transparent monthly reports showing exactly how much we saved you and our fee is based on those actual savings.'
+    },
+    {
+      id: 2,
+      category: 'billing',
+      question: 'Are there any upfront costs?',
+      answer: 'No, there are no upfront costs or minimum commitments. We offer a completely free AWS cost analysis to demonstrate potential savings. You only pay based on actual savings achieved.'
+    },
+    {
+      id: 3,
+      category: 'billing',
+      question: 'How often do you bill?',
+      answer: 'VIRIDITY bills monthly based on the savings achieved in the previous month. We provide detailed reports showing your savings and our fee calculation before each billing cycle.'
+    },
+    {
+      id: 4,
+      category: 'billing',
+      question: 'What if VIRIDITY doesn\'t save me money?',
+      answer: 'If we don\'t generate savings for you, you don\'t pay anything. Our performance-based model ensures you only pay when we deliver measurable results. We\'re confident in our ability to find savings opportunities.'
+    },
+    {
+      id: 5,
+      category: 'billing',
+      question: 'Can I see my billing history?',
+      answer: 'Yes, you have full access to your billing history and detailed reports showing all optimizations implemented and savings achieved. We provide transparent reporting on all cost reductions.'
+    }
+  ];
+
+  const allFaqs = [...faqs, ...securityFaqs, ...billingFaqs];
+
+  const filteredFAQs = allFaqs.filter(faq => {
+    const matchesCategory = selectedCategory === 'all' || faq.category === selectedCategory;
+    const matchesSearch = faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                         faq.answer.toLowerCase().includes(searchQuery.toLowerCase());
+    return matchesCategory && matchesSearch;
+  });
 
   const supportChannels = [
     {
@@ -153,13 +227,6 @@ function HelpCenter() {
       action: 'View Samples'
     }
   ];
-
-  const filteredFAQs = faqs.filter(faq => {
-    const matchesCategory = selectedCategory === 'all' || faq.category === selectedCategory;
-    const matchesSearch = faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                         faq.answer.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesCategory && matchesSearch;
-  });
 
   return (
     <div className="app">
@@ -253,8 +320,8 @@ function HelpCenter() {
       <section className="hero help-center-hero">
         <div className="container">
           <div className="hero-content">
-            <h1>Help Center</h1>
-            <p>Find answers, get support, and learn how to maximize your AWS cost savings with VIRIDITY</p>
+            <h1>VIRIDITY Help Center</h1>
+            <p>Hello. How can we help you?</p>
             
             {/* Search Bar */}
             <div className="help-search">
@@ -270,19 +337,67 @@ function HelpCenter() {
         </div>
       </section>
 
-      {/* Quick Actions */}
-      <section className="quick-actions">
+      {/* Main Categories */}
+      <section className="main-categories">
         <div className="container">
-          <h2>Quick Actions</h2>
-          <div className="actions-grid">
-            {quickActions.map((action, index) => (
-              <div key={index} className="action-card">
-                <action.icon size={32} />
-                <h3>{action.title}</h3>
-                <p>{action.description}</p>
-                <button className="btn-secondary">{action.action}</button>
+          <div className="categories-grid">
+            {mainCategories.map((category) => (
+              <div 
+                key={category.id} 
+                className={`category-box ${selectedCategory === category.id ? 'active' : ''}`}
+                onClick={() => setSelectedCategory(category.id)}
+              >
+                <div className="category-icon">
+                  <category.icon size={32} />
+                </div>
+                <h3>{category.name}</h3>
+                <p>{category.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="faq-section">
+        <div className="container">
+          <div className="faq-content">
+            <div className="faq-header">
+              <h2>{mainCategories.find(cat => cat.id === selectedCategory)?.name || 'Frequently Asked Questions'}</h2>
+              {searchQuery && (
+                <p className="search-results">
+                  Showing {filteredFAQs.length} result{filteredFAQs.length !== 1 ? 's' : ''} for "{searchQuery}"
+                </p>
+              )}
+            </div>
+
+            {filteredFAQs.length > 0 ? (
+              <div className="faq-list">
+                {filteredFAQs.map((faq) => (
+                  <div key={faq.id} className="faq-item">
+                    <button
+                      className="faq-question"
+                      onClick={() => setExpandedFAQ(expandedFAQ === faq.id ? null : faq.id)}
+                    >
+                      <span>{faq.question}</span>
+                      <ChevronDown 
+                        size={20} 
+                        className={`faq-chevron ${expandedFAQ === faq.id ? 'expanded' : ''}`}
+                      />
+                    </button>
+                    {expandedFAQ === faq.id && (
+                      <div className="faq-answer">
+                        <p>{faq.answer}</p>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="no-results">
+                <p>No results found for your search. Try different keywords or browse our categories above.</p>
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -306,58 +421,6 @@ function HelpCenter() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="faq-section">
-        <div className="container">
-          <h2>Frequently Asked Questions</h2>
-          
-          {/* FAQ Categories */}
-          <div className="faq-categories">
-            {faqCategories.map((category) => (
-              <button
-                key={category.id}
-                className={`category-btn ${selectedCategory === category.id ? 'active' : ''}`}
-                onClick={() => setSelectedCategory(category.id)}
-              >
-                <category.icon size={16} />
-                {category.name}
-              </button>
-            ))}
-          </div>
-
-          {/* FAQ Items */}
-          <div className="faq-list">
-            {filteredFAQs.map((faq) => (
-              <div key={faq.id} className="faq-item">
-                <button
-                  className="faq-question"
-                  onClick={() => setExpandedFAQ(expandedFAQ === faq.id ? null : faq.id)}
-                >
-                  <span>{faq.question}</span>
-                  <ChevronDown 
-                    size={20} 
-                    className={`faq-chevron ${expandedFAQ === faq.id ? 'expanded' : ''}`}
-                  />
-                </button>
-                {expandedFAQ === faq.id && (
-                  <div className="faq-answer">
-                    <p>{faq.answer}</p>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-
-          {filteredFAQs.length === 0 && (
-            <div className="no-results">
-              <Info size={48} />
-              <h3>No results found</h3>
-              <p>Try adjusting your search terms or browse a different category</p>
-            </div>
-          )}
         </div>
       </section>
 
