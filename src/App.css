@@ -4756,5 +4756,217 @@ html {
   }
 }
 
+/* Help Center Mobile Responsiveness */
+@media (max-width: 768px) {
+  .help-center-hero {
+    padding: 4rem 0 2rem 0;
+  }
+  
+  .help-search {
+    max-width: 100%;
+    margin: 1.5rem 1rem 0;
+  }
+  
+  .help-search input {
+    padding: 0.875rem 1rem 0.875rem 2.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .help-search svg {
+    left: 0.75rem;
+  }
+  
+  .quick-actions, .support-channels {
+    padding: 2rem 0;
+  }
+  
+  .actions-grid, .channels-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .action-card, .channel-card {
+    padding: 1.5rem;
+  }
+  
+  .channel-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .channel-icon {
+    align-self: center;
+  }
+  
+  .faq-categories {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+  
+  .category-btn {
+    justify-content: center;
+    padding: 0.875rem 1rem;
+  }
+  
+  .faq-question {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  
+  .faq-answer {
+    padding: 0 1rem 1rem;
+  }
+  
+  .cta-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-actions .btn-primary,
+  .cta-actions .btn-secondary {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Legal Page Mobile Responsiveness */
+@media (max-width: 768px) {
+  .legal-hero {
+    padding: 4rem 0 2rem 0;
+  }
+  
+  .legal-tabs {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .legal-tab {
+    padding: 0.875rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .legal-content {
+    padding: 2rem 1rem;
+  }
+  
+  .legal-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .legal-content h3 {
+    font-size: 1.25rem;
+  }
+  
+  .legal-contact {
+    padding: 2rem 0;
+  }
+  
+  .contact-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-actions .btn-primary,
+  .contact-actions .btn-secondary {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* About Page Mobile Responsiveness */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 4rem 0 2rem 0;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .stat-item {
+    padding: 1.5rem;
+  }
+  
+  .stat-item h3 {
+    font-size: 1.5rem;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .timeline {
+    padding: 2rem 0;
+  }
+  
+  .timeline-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .timeline-marker {
+    align-self: center;
+  }
+  
+  .certifications {
+    padding: 2rem 0;
+  }
+  
+  .cert-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Contact Page Mobile Responsiveness */
+@media (max-width: 768px) {
+  .contact-hero {
+    padding: 4rem 0 2rem 0;
+  }
+  
+  .contact-methods {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .contact-form {
+    padding: 1.5rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .office-locations {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .location-card {
+    padding: 1.5rem;
+  }
+  
+  .business-hours {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .emergency-contact {
+    padding: 2rem 1rem;
+  }
+}
+
 
 

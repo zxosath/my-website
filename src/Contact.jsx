@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Menu, X, Phone, Mail, MapPin, Clock, Send, Calendar, MessageCircle, HelpCircle, FileText, Users, DollarSign, BarChart3, Globe, Shield, Zap, Star } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 function Contact() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -16,6 +17,7 @@ function Contact() {
     contactReason: 'general'
   });
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const navigate = useNavigate();
 
   // Scroll to top on component mount
   useEffect(() => {
@@ -114,6 +116,13 @@ function Contact() {
       answer: 'We work with organizations spending $10,000+ monthly on AWS. Our optimization strategies scale effectively for enterprise workloads.'
     }
   ];
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className="app">
@@ -438,44 +447,39 @@ function Contact() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-section">
-              <div className="footer-logo">
-                <img src="/IMG_3102.PNG" alt="VIRIDITY Logo" className="logo-icon" />
-                <h3>VIRIDITY</h3>
+              <h4>Company</h4>
+              <div className="footer-links">
+                <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pricing'); }}>Pricing</a>
+                <a href="#">About Us</a>
+                <a href="#">News</a>
+                <a href="#">Careers</a>
               </div>
-              <p>Expert AWS cost optimization that delivers measurable results.</p>
             </div>
-            
-            <div className="footer-section">
-              <h4>Product</h4>
-              <ul>
-                <li><a href="#">AWS Cost Optimization</a></li>
-                <li><a href="#">Reserved Instance Management</a></li>
-                <li><a href="#">Savings Plans Optimization</a></li>
-              </ul>
-            </div>
-            
             <div className="footer-section">
               <h4>Resources</h4>
-              <ul>
-                <li><a href="#/help-center">Help Center</a></li>
-                <li><a href="#/legal">Legal</a></li>
-                <li><a href="#/about">About</a></li>
-                <li><a href="#/contact">Contact</a></li>
-              </ul>
+              <div className="footer-links">
+                <a href="#">AWS Cost Optimization Blog</a>
+                <a href="#">Resource Center</a>
+                <a href="#" onClick={(e) => { e.preventDefault(); navigate('/help-center'); }}>Help Center</a>
+                <a href="#">Status</a>
+              </div>
             </div>
-            
             <div className="footer-section">
-              <h4>Company</h4>
-              <ul>
-                <li><a href="#/about">About Us</a></li>
-                <li><a href="#/contact">Contact</a></li>
-                <li><a href="#/legal">Privacy Policy</a></li>
-              </ul>
+              <h4>Support</h4>
+              <div className="footer-links">
+                <a href="#" onClick={(e) => { e.preventDefault(); navigate('/contact'); }}>Contact Us</a>
+                <a href="#" onClick={(e) => { e.preventDefault(); navigate('/legal'); }}>Legal</a>
+                <a href="#">Trust Center</a>
+                <a href="#" onClick={() => scrollToSection('cta')}>Free Analysis</a>
+              </div>
             </div>
           </div>
-          
           <div className="footer-bottom">
-            <p>&copy; 2024 VIRIDITY. All rights reserved.</p>
+            <p>© 2025 VIRIDITY, Inc. All rights reserved.</p>
+            <div className="footer-legal">
+              <a href="#">Website Terms</a>
+              <a href="#">Privacy Policy</a>
+            </div>
           </div>
         </div>
       </footer>
