@@ -4000,9 +4000,12 @@ html {
 
 /* Contact Page Styles */
 .contact-page {
-  background: #f8fafc;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #16a34a 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 30s ease infinite;
   min-height: 80vh;
   padding: 4rem 0;
+  color: white;
 }
 
 .contact-content {
@@ -4015,7 +4018,7 @@ html {
 .contact-content h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #1a202c;
+  color: white;
   margin-bottom: 3rem;
   letter-spacing: -0.01em;
 }
