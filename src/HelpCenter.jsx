@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ChevronDown, Menu, X, Search, HelpCircle, Shield, DollarSign, BarChart3, Users, FileText, MessageCircle } from 'lucide-react';
+import { ChevronDown, Menu, X, HelpCircle, Shield, DollarSign, BarChart3, Users, FileText, MessageCircle } from 'lucide-react';
 import './App.css';
 
 function HelpCenter() {
@@ -8,8 +8,7 @@ function HelpCenter() {
   const [productDropdownOpen, setProductDropdownOpen] = useState(false);
   const [resourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('faq');
+  const [selectedCategory, setSelectedCategory] = useState('');
   const [expandedFAQ, setExpandedFAQ] = useState(null);
   const navigate = useNavigate();
 
@@ -274,19 +273,8 @@ function HelpCenter() {
       <section className="hero help-center-hero">
         <div className="container">
           <div className="hero-content">
-            <h1>VIRIDITY Help Center</h1>
-            <p>Hello. How can we help you?</p>
-            
-            {/* Search Bar */}
-            <div className="help-search">
-              <Search size={20} />
-              <input
-                type="text"
-                placeholder="Search for help articles, FAQs, or topics..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
-            </div>
+            <h1>Help Center</h1>
+            <p>Find answers to common questions about VIRIDITY's AWS cost optimization services</p>
           </div>
         </div>
       </section>
@@ -294,7 +282,7 @@ function HelpCenter() {
       {/* Main Categories */}
       <section className="main-categories">
         <div className="container">
-          {selectedCategory === 'faq' || selectedCategory === 'security' || selectedCategory === 'billing' ? (
+          {selectedCategory && selectedCategory !== '' ? (
             <div className="category-detail">
               <div className="category-header">
                 <button 
@@ -311,11 +299,7 @@ function HelpCenter() {
               <div className="category-content">
                 {selectedCategory === 'faq' && (
                   <div className="questions-list">
-                    {faqs.filter(faq => 
-                      !searchQuery || 
-                      faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                      faq.answer.toLowerCase().includes(searchQuery.toLowerCase())
-                    ).map((faq) => (
+                    {faqs.map((faq) => (
                       <div key={faq.id} className="faq-item">
                         <button
                           className="faq-question"
@@ -339,11 +323,7 @@ function HelpCenter() {
 
                 {selectedCategory === 'security' && (
                   <div className="questions-list">
-                    {securityFaqs.filter(faq => 
-                      !searchQuery || 
-                      faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                      faq.answer.toLowerCase().includes(searchQuery.toLowerCase())
-                    ).map((faq) => (
+                    {securityFaqs.map((faq) => (
                       <div key={faq.id} className="faq-item">
                         <button
                           className="faq-question"
@@ -367,11 +347,7 @@ function HelpCenter() {
 
                 {selectedCategory === 'billing' && (
                   <div className="questions-list">
-                    {billingFaqs.filter(faq => 
-                      !searchQuery || 
-                      faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                      faq.answer.toLowerCase().includes(searchQuery.toLowerCase())
-                    ).map((faq) => (
+                    {billingFaqs.map((faq) => (
                       <div key={faq.id} className="faq-item">
                         <button
                           className="faq-question"
@@ -393,11 +369,6 @@ function HelpCenter() {
                   </div>
                 )}
 
-                {searchQuery && (
-                  <div className="search-results">
-                    <p>Showing results for "{searchQuery}"</p>
-                  </div>
-                )}
               </div>
             </div>
           ) : (
@@ -419,20 +390,6 @@ function HelpCenter() {
           )}
         </div>
       </section>
-
-      {/* FAQ Section - Only show when no category is selected */}
-      {selectedCategory !== 'faq' && selectedCategory !== 'security' && selectedCategory !== 'billing' && (
-        <section className="faq-section">
-          <div className="container">
-            <div className="faq-content">
-              <div className="faq-header">
-                <h2>Browse by Category</h2>
-                <p>Click on a category above to view specific questions and answers</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* Contact Section */}
       <section className="contact-section">
@@ -463,11 +420,6 @@ function HelpCenter() {
                   <a href="tel:+1-555-123-4567">(555) 123-4567 x2</a>
                 </div>
               </div>
-            </div>
-            
-            <div className="general-contact">
-              <h3>General</h3>
-              <p>For general inquiries, please email <a href="mailto:info@viridity.com">info@viridity.com</a></p>
             </div>
           </div>
         </div>

@@ -3390,13 +3390,13 @@ html {
   text-align: center;
   margin-bottom: 3rem;
   position: relative;
+  padding-top: 3rem;
 }
 
 .back-button {
   position: absolute;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
   background: none;
   border: none;
   color: #6b7280;
@@ -3421,12 +3421,14 @@ html {
   font-weight: 700;
   color: #1f2937;
   margin-bottom: 1rem;
+  margin-top: 0;
 }
 
 .category-header p {
   color: #6b7280;
   font-size: 1.1rem;
   line-height: 1.6;
+  margin: 0;
 }
 
 .category-content {
