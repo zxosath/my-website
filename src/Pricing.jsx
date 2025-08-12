@@ -228,7 +228,6 @@ function Pricing() {
       <section className="pricing-benefits-section">
         <div className="container">
           <div className="pricing-benefits animate-on-scroll">
-            <h3>Why VIRIDITY is Different</h3>
             <div className="benefits-grid">
               <div className="benefit-item">
                 <CheckCircle size={24} />
