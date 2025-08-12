@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ChevronDown, Menu, X, Search, HelpCircle, Shield, DollarSign, BarChart3, Users, FileText, MessageCircle, Phone, Mail, Calendar, Zap, CheckCircle, AlertCircle, Info } from 'lucide-react';
+import { ChevronDown, Menu, X, Search, HelpCircle, Shield, DollarSign, BarChart3, Users, FileText, MessageCircle } from 'lucide-react';
 import './App.css';
 
 function HelpCenter() {
@@ -55,49 +55,61 @@ function HelpCenter() {
       id: 1,
       category: 'faq',
       question: 'What is VIRIDITY and how does it work?',
-      answer: 'VIRIDITY is a manual AWS cost optimization service that uses expert human analysis to reduce your AWS spending. Unlike automated tools, our certified AWS specialists manually analyze your infrastructure, identify optimization opportunities, and implement strategic changes to maximize your savings while maintaining performance and reliability.'
+      answer: 'VIRIDITY is a manual AWS cost optimization service that uses expert human analysis to reduce your AWS spending. Unlike automated tools, our certified AWS specialists manually analyze your infrastructure, identify optimization opportunities, and implement strategic changes to maximize your savings while maintaining performance and reliability. We focus on Reserved Instance and Savings Plan optimization, resource rightsizing, and eliminating waste through hands-on expertise.'
     },
     {
       id: 2,
       category: 'faq',
       question: 'How much can I save with VIRIDITY?',
-      answer: 'Most VIRIDITY clients achieve 20-40% cost reductions on their AWS spending. Savings vary based on your current optimization level, but our expert team typically identifies significant opportunities in Reserved Instance management, Savings Plans optimization, and resource right-sizing.'
+      answer: 'Most VIRIDITY clients achieve 20-40% cost reductions on their AWS spending. Our expert team typically identifies significant opportunities in Reserved Instance management (saving 30-60% on compute costs), Savings Plans optimization (reducing costs by 20-40%), and resource rightsizing (eliminating 15-30% of wasted spend). Savings vary based on your current optimization level and infrastructure complexity.'
     },
     {
       id: 3,
       category: 'faq',
-      question: 'How long does it take to see results?',
-      answer: 'You can expect to see initial cost reductions within 30-60 days of onboarding. Our team conducts a comprehensive analysis within the first week and begins implementing optimizations immediately. Most clients see measurable savings on their next AWS bill.'
+      question: 'How does VIRIDITY optimize Reserved Instances and Savings Plans?',
+      answer: 'Our AWS specialists analyze your usage patterns to identify the optimal mix of Reserved Instances and Savings Plans. We evaluate instance types, regions, and usage patterns to recommend the right commitment strategy. For Reserved Instances, we help you choose between Standard, Convertible, and Scheduled RIs based on your flexibility needs. For Savings Plans, we optimize the commitment amount and term length to maximize discounts while minimizing lock-in risk. We continuously monitor and adjust these commitments as your usage evolves.'
     },
     {
       id: 4,
       category: 'faq',
-      question: 'What AWS services does VIRIDITY optimize?',
-      answer: 'VIRIDITY optimizes all major AWS services including EC2, RDS, ElastiCache, Redshift, OpenSearch, Lambda, S3, and more. We specialize in Reserved Instance and Savings Plans management across all eligible services to maximize your discount coverage.'
+      question: 'What is rightsizing and how does VIRIDITY approach it?',
+      answer: 'Rightsizing involves matching your AWS resources to your actual usage patterns. Our experts analyze CPU, memory, storage, and network utilization to identify over-provisioned resources. We look for instances that are consistently underutilized and recommend downsizing to smaller instance types or switching to more cost-effective options like Spot Instances where appropriate. We also identify opportunities to upgrade instances that are consistently maxed out to improve performance. Our manual analysis ensures we don\'t compromise application performance while maximizing cost savings.'
     },
     {
       id: 5,
       category: 'faq',
-      question: 'Will optimization affect my application performance?',
-      answer: 'No, our optimization strategies are designed to maintain or improve performance while reducing costs. Our expert team carefully analyzes your workloads and only implements changes that preserve reliability and performance.'
+      question: 'What AWS services does VIRIDITY optimize?',
+      answer: 'VIRIDITY optimizes all major AWS services including EC2 instances, RDS databases, ElastiCache, Redshift, OpenSearch, Lambda, S3, and more. We specialize in Reserved Instance and Savings Plans management across all eligible services to maximize your discount coverage. Our experts also optimize storage classes, data transfer costs, and identify opportunities to use more cost-effective services like Fargate for container workloads or Aurora Serverless for databases with variable usage patterns.'
     },
     {
       id: 6,
       category: 'faq',
-      question: 'How does VIRIDITY pricing work?',
-      answer: 'VIRIDITY operates on a performance-based pricing model. You only pay a percentage of the actual savings we generate, ensuring our interests are aligned with yours. There are no upfront costs or minimum commitments - we only succeed when you save money.'
+      question: 'Will optimization affect my application performance?',
+      answer: 'No, our optimization strategies are designed to maintain or improve performance while reducing costs. Our expert team carefully analyzes your workloads and only implements changes that preserve reliability and performance. We focus on right-sizing resources, optimizing commitment strategies, and eliminating waste without compromising functionality. Before making any changes, we thoroughly test recommendations and implement them gradually to ensure no impact on your applications.'
     },
     {
       id: 7,
       category: 'faq',
-      question: 'What is the minimum AWS spend requirement?',
-      answer: 'VIRIDITY works with organizations spending $10,000+ monthly on AWS. Our manual optimization approach is most effective for companies with significant cloud infrastructure and complex usage patterns.'
+      question: 'How does VIRIDITY pricing work?',
+      answer: 'VIRIDITY operates on a performance-based pricing model. You only pay a percentage of the actual savings we generate, ensuring our interests are aligned with yours. There are no upfront costs or minimum commitments - we only succeed when you save money. Our fee is calculated based on verified cost reductions, and we provide transparent monthly reports showing exactly how much we saved you and our fee calculation.'
     },
     {
       id: 8,
       category: 'faq',
+      question: 'What is the minimum AWS spend requirement?',
+      answer: 'VIRIDITY works with organizations spending $10,000+ monthly on AWS. Our manual optimization approach is most effective for companies with significant cloud infrastructure and complex usage patterns. The more complex your infrastructure, the more optimization opportunities our experts can identify and implement.'
+    },
+    {
+      id: 9,
+      category: 'faq',
+      question: 'How do you handle Spot Instances and other cost optimization strategies?',
+      answer: 'Our experts evaluate whether Spot Instances are appropriate for your workloads based on fault tolerance requirements and availability needs. We also identify opportunities to use Savings Plans for Spot Instances, which can provide additional discounts. Additionally, we optimize storage classes, implement lifecycle policies, and identify opportunities to use more cost-effective services like Fargate, Aurora Serverless, or Lambda for appropriate workloads.'
+    },
+    {
+      id: 10,
+      category: 'faq',
       question: 'Can I cancel VIRIDITY services?',
-      answer: 'Yes, you can cancel VIRIDITY services at any time with 30 days notice. There are no long-term contracts or cancellation fees. You retain all optimizations and savings implemented during our partnership.'
+      answer: 'Yes, you can cancel VIRIDITY services at any time with 30 days notice. There are no long-term contracts or cancellation fees. You retain all optimizations and savings implemented during our partnership, including any Reserved Instances or Savings Plans we helped you purchase.'
     }
   ];
 
@@ -175,58 +187,6 @@ function HelpCenter() {
                          faq.answer.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesSearch;
   });
-
-  const supportChannels = [
-    {
-      icon: MessageCircle,
-      title: 'Live Chat',
-      description: 'Get instant help from our support team',
-      action: 'Start Chat',
-      availability: '24/7 Support'
-    },
-    {
-      icon: Mail,
-      title: 'Email Support',
-      description: 'Send us detailed questions and get comprehensive answers',
-      action: 'Send Email',
-      availability: 'Response within 4 hours'
-    },
-    {
-      icon: Phone,
-      title: 'Phone Support',
-      description: 'Speak directly with our AWS experts',
-      action: 'Schedule Call',
-      availability: 'Business hours: 9AM-6PM EST'
-    },
-    {
-      icon: Calendar,
-      title: 'Expert Consultation',
-      description: 'Book a dedicated session with our optimization specialists',
-      action: 'Book Session',
-      availability: 'Custom scheduling available'
-    }
-  ];
-
-  const quickActions = [
-    {
-      icon: Zap,
-      title: 'Request Free Analysis',
-      description: 'Get a comprehensive AWS cost analysis',
-      action: 'Get Started'
-    },
-    {
-      icon: FileText,
-      title: 'Download Resources',
-      description: 'Access guides, whitepapers, and best practices',
-      action: 'Browse Library'
-    },
-    {
-      icon: BarChart3,
-      title: 'View Sample Reports',
-      description: 'See examples of optimization insights',
-      action: 'View Samples'
-    }
-  ];
 
   return (
     <div className="app">
@@ -402,37 +362,40 @@ function HelpCenter() {
         </div>
       </section>
 
-      {/* Support Channels */}
-      <section className="support-channels">
+      {/* Contact Section */}
+      <section className="contact-section">
         <div className="container">
-          <h2>Get Support</h2>
-          <div className="channels-grid">
-            {supportChannels.map((channel, index) => (
-              <div key={index} className="channel-card">
-                <div className="channel-icon">
-                  <channel.icon size={24} />
+          <div className="contact-content">
+            <h2>Contact Us</h2>
+            <div className="contact-grid">
+              <div className="contact-card">
+                <div className="contact-icon">
+                  <DollarSign size={32} />
                 </div>
-                <div className="channel-content">
-                  <h3>{channel.title}</h3>
-                  <p>{channel.description}</p>
-                  <span className="availability">{channel.availability}</span>
+                <h3>Sales</h3>
+                <p>We'd love to discuss how we can save you money on AWS</p>
+                <div className="contact-info">
+                  <a href="mailto:sales@viridity.com">sales@viridity.com</a>
+                  <a href="tel:+1-555-123-4567">(555) 123-4567 x1</a>
                 </div>
-                <button className="btn-primary">{channel.action}</button>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Contact CTA */}
-      <section className="help-cta">
-        <div className="container">
-          <div className="cta-content">
-            <h2>Still need help?</h2>
-            <p>Our AWS optimization experts are here to help you maximize your cost savings</p>
-            <div className="cta-actions">
-              <button className="btn-primary">Contact Support</button>
-              <button className="btn-secondary">Schedule Consultation</button>
+              
+              <div className="contact-card">
+                <div className="contact-icon">
+                  <HelpCircle size={32} />
+                </div>
+                <h3>Help & Support</h3>
+                <p>We're here to help with any questions or issues</p>
+                <div className="contact-info">
+                  <a href="mailto:support@viridity.com">support@viridity.com</a>
+                  <a href="tel:+1-555-123-4567">(555) 123-4567 x2</a>
+                </div>
+              </div>
+            </div>
+            
+            <div className="general-contact">
+              <h3>General</h3>
+              <p>For general inquiries, please email <a href="mailto:info@viridity.com">info@viridity.com</a></p>
             </div>
           </div>
         </div>
