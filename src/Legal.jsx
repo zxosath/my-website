@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Menu, X, FileText, Shield, Eye, Lock, Users, HelpCircle, DollarSign, BarChart3 } from 'lucide-react';
+import { ChevronDown, Menu, X, FileText, Shield, Eye, Lock, Users, HelpCircle, DollarSign, BarChart3, MessageCircle } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 function Legal() {
@@ -86,6 +86,7 @@ function Legal() {
                       <a href="#" onClick={(e) => { e.preventDefault(); navigate('/help-center'); setResourcesDropdownOpen(false); }}><HelpCircle size={16} /> Help Center</a>
                       <a href="#" onClick={(e) => { e.preventDefault(); navigate('/legal'); setResourcesDropdownOpen(false); }} className="active"><FileText size={16} /> Legal</a>
                       <a href="#" onClick={(e) => { e.preventDefault(); navigate('/about'); setResourcesDropdownOpen(false); }}><Users size={16} /> About</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/contact'); setResourcesDropdownOpen(false); }}><MessageCircle size={16} /> Contact</a>
                     </div>
                   </div>
                 </div>
@@ -152,7 +153,6 @@ function Legal() {
             <div className="legal-section">
               <div className="legal-header">
                 <h2>Privacy Policy</h2>
-                <p>Last updated: December 2024</p>
               </div>
               <div className="legal-text">
                 <div className="legal-item">
@@ -207,7 +207,6 @@ function Legal() {
             <div className="legal-section">
               <div className="legal-header">
                 <h2>Service Terms</h2>
-                <p>Last updated: December 2024</p>
               </div>
               <div className="legal-text">
                 <div className="legal-item">

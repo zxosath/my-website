@@ -3692,5 +3692,307 @@ html {
   }
 }
 
+/* About Page Styles */
+.about-mission {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6rem 0 4rem 0;
+  text-align: center;
+}
+
+.about-mission .mission-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.about-mission h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.about-mission .mission-lead {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+.about-mission .mission-statement {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+.about-story {
+  background: white;
+  padding: 5rem 0;
+}
+
+.about-story .story-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.about-story .story-text h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 2rem;
+  letter-spacing: -0.01em;
+}
+
+.about-story .story-text p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+}
+
+.about-story .story-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-story .placeholder-image {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a0aec0;
+}
+
+.about-timeline {
+  background: #f7fafc;
+  padding: 5rem 0;
+}
+
+.about-timeline .timeline-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.about-timeline .timeline-item {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 3rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.about-timeline .timeline-item:last-child {
+  border-bottom: none;
+}
+
+.about-timeline .timeline-date {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4a5568;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.about-timeline .timeline-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 0.75rem;
+}
+
+.about-timeline .timeline-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+.about-leadership {
+  background: white;
+  padding: 5rem 0;
+}
+
+.about-leadership h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 3rem;
+  letter-spacing: -0.01em;
+}
+
+.about-leadership .leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.about-leadership .leader-card {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 12px;
+  background: #f7fafc;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-leadership .leader-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-leadership .leader-image {
+  margin-bottom: 1.5rem;
+}
+
+.about-leadership .placeholder-avatar {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: white;
+}
+
+.about-leadership .leader-info h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+}
+
+.about-leadership .leader-role {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4a5568;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.about-blog {
+  background: #f7fafc;
+  padding: 5rem 0;
+}
+
+.about-blog h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 3rem;
+  letter-spacing: -0.01em;
+}
+
+.about-blog .blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.about-blog .blog-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-blog .blog-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-blog .blog-category {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #667eea;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.about-blog .blog-card h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.about-blog .blog-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease;
+}
+
+.about-blog .blog-link:hover {
+  color: #5a67d8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .about-mission h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-mission .mission-lead {
+    font-size: 1.25rem;
+  }
+  
+  .about-mission .mission-statement {
+    font-size: 1.125rem;
+  }
+  
+  .about-story .story-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-story .story-text h2 {
+    font-size: 2rem;
+  }
+  
+  .about-timeline .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .about-timeline .timeline-date {
+    font-size: 0.875rem;
+  }
+  
+  .about-leadership .leadership-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .about-blog .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
