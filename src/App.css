@@ -3286,7 +3286,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 1.5rem auto;
 }
 
 .contact-card h3 {
@@ -3778,11 +3778,11 @@ html {
 }
 
 .about-story .story-content {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 4rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  max-width: 1200px;
+  text-align: center;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 2rem;
 }
