@@ -79,7 +79,7 @@ function HelpCenter() {
       id: 5,
       category: 'faq',
       question: 'What AWS services does VIRIDITY optimize?',
-      answer: 'VIRIDITY optimizes all major AWS services including EC2 instances, RDS databases, ElastiCache, Redshift, OpenSearch, Lambda, S3, and more. We specialize in Reserved Instance and Savings Plans management across all eligible services to maximize your discount coverage. Our experts also optimize storage classes, data transfer costs, and identify opportunities to use more cost-effective services like Fargate for container workloads or Aurora Serverless for databases with variable usage patterns.'
+      answer: 'VIRIDITY optimizes major AWS compute and storage services including EC2 instances, Lambda functions, S3 storage, and Fargate containers. We specialize in Reserved Instance and Savings Plans management across all eligible services to maximize your discount coverage. Our experts also optimize storage classes, data transfer costs, and identify opportunities to use more cost-effective services like Spot Instances for appropriate workloads.'
     },
     {
       id: 6,
@@ -96,20 +96,8 @@ function HelpCenter() {
     {
       id: 8,
       category: 'faq',
-      question: 'What is the minimum AWS spend requirement?',
-      answer: 'VIRIDITY works with organizations spending $10,000+ monthly on AWS. Our manual optimization approach is most effective for companies with significant cloud infrastructure and complex usage patterns. The more complex your infrastructure, the more optimization opportunities our experts can identify and implement.'
-    },
-    {
-      id: 9,
-      category: 'faq',
       question: 'How do you handle Spot Instances and other cost optimization strategies?',
-      answer: 'Our experts evaluate whether Spot Instances are appropriate for your workloads based on fault tolerance requirements and availability needs. We also identify opportunities to use Savings Plans for Spot Instances, which can provide additional discounts. Additionally, we optimize storage classes, implement lifecycle policies, and identify opportunities to use more cost-effective services like Fargate, Aurora Serverless, or Lambda for appropriate workloads.'
-    },
-    {
-      id: 10,
-      category: 'faq',
-      question: 'Can I cancel VIRIDITY services?',
-      answer: 'Yes, you can cancel VIRIDITY services at any time with 30 days notice. There are no long-term contracts or cancellation fees. You retain all optimizations and savings implemented during our partnership, including any Reserved Instances or Savings Plans we helped you purchase.'
+      answer: 'Our experts evaluate whether Spot Instances are appropriate for your workloads based on fault tolerance requirements and availability needs. We also identify opportunities to use Savings Plans for Spot Instances, which can provide additional discounts. Additionally, we optimize storage classes, implement lifecycle policies, and identify opportunities to use more cost-effective services like Fargate or Lambda for appropriate workloads.'
     }
   ];
 
@@ -118,31 +106,37 @@ function HelpCenter() {
       id: 1,
       category: 'security',
       question: 'How does VIRIDITY access my AWS account?',
-      answer: 'VIRIDITY uses secure, read-only access with minimal permissions to analyze your AWS usage. We require only the minimum permissions necessary to view billing data and resource configurations. We never require administrative access that could compromise your infrastructure.'
+      answer: 'VIRIDITY uses secure, read-only access with minimal permissions to analyze your AWS usage. We require only the minimum permissions necessary to view billing data, resource configurations, and usage metrics. Our access is limited to Cost and Usage Reports, CloudWatch metrics, and resource inventory data. We never require administrative access that could compromise your infrastructure or application data.'
     },
     {
       id: 2,
       category: 'security',
       question: 'What security certifications does VIRIDITY have?',
-      answer: 'VIRIDITY maintains SOC 2 Type II compliance and follows enterprise-grade security practices. We implement end-to-end encryption, multi-factor authentication, and regular security audits to protect your data.'
+      answer: 'VIRIDITY maintains SOC 2 Type II compliance and follows enterprise-grade security practices. We implement end-to-end encryption for all data transmission, multi-factor authentication for all access points, and regular security audits. Our team follows AWS Well-Architected security best practices and maintains AWS certifications including AWS Solutions Architect, AWS Security Specialty, and AWS Cloud Practitioner.'
     },
     {
       id: 3,
       category: 'security',
       question: 'Is my data secure with VIRIDITY?',
-      answer: 'Absolutely. We only access the minimum data required for cost optimization analysis and never store sensitive application data. All communications are encrypted and we maintain strict data handling protocols.'
+      answer: 'Absolutely. We only access the minimum data required for cost optimization analysis and never store sensitive application data. All communications are encrypted using TLS 1.3, and we maintain strict data handling protocols. We don\'t access your application logs, user data, or any business-critical information. Our analysis focuses solely on billing, usage patterns, and resource configurations for optimization purposes.'
     },
     {
       id: 4,
       category: 'security',
       question: 'Can VIRIDITY work with my existing security policies?',
-      answer: 'Yes, VIRIDITY can work within your existing security frameworks and compliance requirements. We can adapt our access methods to meet your specific security policies and can work with your security team to ensure proper oversight.'
+      answer: 'Yes, VIRIDITY can work within your existing security frameworks and compliance requirements. We can adapt our access methods to meet your specific security policies, including working through your existing IAM roles, using cross-account access, or implementing custom security controls. We can work with your security team to ensure proper oversight and can provide detailed audit logs of all our activities.'
     },
     {
       id: 5,
       category: 'security',
       question: 'What happens to my data after I cancel?',
-      answer: 'Upon cancellation, VIRIDITY immediately revokes all access to your AWS account and deletes any cached data from our systems. We retain only the minimum information required for legal and billing purposes.'
+      answer: 'Upon cancellation, VIRIDITY immediately revokes all access to your AWS account and deletes any cached data from our systems. We retain only the minimum information required for legal and billing purposes. All analysis reports, usage data, and optimization recommendations are permanently deleted from our systems within 30 days of cancellation.'
+    },
+    {
+      id: 6,
+      category: 'security',
+      question: 'Do you support AWS Organizations and multi-account setups?',
+      answer: 'Yes, VIRIDITY fully supports AWS Organizations and can work with complex multi-account setups. We can analyze costs across all accounts in your organization, identify optimization opportunities at the organizational level, and implement strategies that benefit your entire AWS estate. We can work with your existing organizational structure and access policies.'
     }
   ];
 
@@ -151,31 +145,37 @@ function HelpCenter() {
       id: 1,
       category: 'billing',
       question: 'How is VIRIDITY billing calculated?',
-      answer: 'VIRIDITY billing is calculated as a percentage of the verified cost savings we generate for you. We provide transparent monthly reports showing exactly how much we saved you and our fee is based on those actual savings.'
+      answer: 'VIRIDITY billing is calculated as a percentage of the verified cost savings we generate for you. We provide transparent monthly reports showing exactly how much we saved you and our fee is based on those actual savings. Our fee structure is tiered based on savings achieved - the more we save you, the better value you get. We only charge on net savings after accounting for any costs associated with implementing optimizations.'
     },
     {
       id: 2,
       category: 'billing',
       question: 'Are there any upfront costs?',
-      answer: 'No, there are no upfront costs or minimum commitments. We offer a completely free AWS cost analysis to demonstrate potential savings. You only pay based on actual savings achieved.'
+      answer: 'No, there are no upfront costs or minimum commitments. We offer a completely free AWS cost analysis to demonstrate potential savings. You only pay based on actual savings achieved. This includes our initial analysis, optimization recommendations, and implementation support - all at no upfront cost. We\'re confident in our ability to find savings opportunities and only get paid when we deliver results.'
     },
     {
       id: 3,
       category: 'billing',
       question: 'How often do you bill?',
-      answer: 'VIRIDITY bills monthly based on the savings achieved in the previous month. We provide detailed reports showing your savings and our fee calculation before each billing cycle.'
+      answer: 'VIRIDITY bills monthly based on the savings achieved in the previous month. We provide detailed reports showing your savings and our fee calculation before each billing cycle. Our reports include a breakdown of all optimizations implemented, the cost savings achieved, and our fee calculation. You have full visibility into what you\'re paying for and why.'
     },
     {
       id: 4,
       category: 'billing',
       question: 'What if VIRIDITY doesn\'t save me money?',
-      answer: 'If we don\'t generate savings for you, you don\'t pay anything. Our performance-based model ensures you only pay when we deliver measurable results. We\'re confident in our ability to find savings opportunities.'
+      answer: 'If we don\'t generate savings for you, you don\'t pay anything. Our performance-based model ensures you only pay when we deliver measurable results. We\'re confident in our ability to find savings opportunities, but if we can\'t identify cost reductions, you owe us nothing. This aligns our interests with yours and ensures we\'re motivated to find every possible optimization opportunity.'
     },
     {
       id: 5,
       category: 'billing',
       question: 'Can I see my billing history?',
-      answer: 'Yes, you have full access to your billing history and detailed reports showing all optimizations implemented and savings achieved. We provide transparent reporting on all cost reductions.'
+      answer: 'Yes, you have full access to your billing history and detailed reports showing all optimizations implemented and savings achieved. We provide transparent reporting on all cost reductions, including monthly summaries, quarterly reviews, and annual optimization reports. All billing information is available through our client portal with detailed breakdowns of savings and fees.'
+    },
+    {
+      id: 6,
+      category: 'billing',
+      question: 'How do you measure and verify savings?',
+      answer: 'We use AWS Cost and Usage Reports, CloudWatch metrics, and our own analysis tools to measure and verify savings. We establish a baseline of your costs before implementing optimizations and track the impact of each change. Our reports show both the direct savings from optimizations and the avoided costs from preventing waste. We provide detailed attribution of savings to specific optimization actions.'
     }
   ];
 
