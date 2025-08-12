@@ -4618,9 +4618,9 @@ html {
 
 /* Pricing page CTA section - dark theme */
 .pricing .cta {
-  background: #0f172a !important;
+  background: transparent !important;
   color: white !important;
-  padding: 6rem 0;
+  padding: 0;
 }
 
 .pricing .cta-headline {
