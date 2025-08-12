@@ -111,29 +111,23 @@ function HelpCenter() {
     {
       id: 2,
       category: 'security',
-      question: 'What security certifications does VIRIDITY have?',
-      answer: 'VIRIDITY maintains SOC 2 Type II compliance and follows enterprise-grade security practices. We implement end-to-end encryption for all data transmission, multi-factor authentication for all access points, and regular security audits. Our team follows AWS Well-Architected security best practices and maintains AWS certifications including AWS Solutions Architect, AWS Security Specialty, and AWS Cloud Practitioner.'
-    },
-    {
-      id: 3,
-      category: 'security',
       question: 'Is my data secure with VIRIDITY?',
       answer: 'Absolutely. We only access the minimum data required for cost optimization analysis and never store sensitive application data. All communications are encrypted using TLS 1.3, and we maintain strict data handling protocols. We don\'t access your application logs, user data, or any business-critical information. Our analysis focuses solely on billing, usage patterns, and resource configurations for optimization purposes.'
     },
     {
-      id: 4,
+      id: 3,
       category: 'security',
       question: 'Can VIRIDITY work with my existing security policies?',
       answer: 'Yes, VIRIDITY can work within your existing security frameworks and compliance requirements. We can adapt our access methods to meet your specific security policies, including working through your existing IAM roles, using cross-account access, or implementing custom security controls. We can work with your security team to ensure proper oversight and can provide detailed audit logs of all our activities.'
     },
     {
-      id: 5,
+      id: 4,
       category: 'security',
       question: 'What happens to my data after I cancel?',
       answer: 'Upon cancellation, VIRIDITY immediately revokes all access to your AWS account and deletes any cached data from our systems. We retain only the minimum information required for legal and billing purposes. All analysis reports, usage data, and optimization recommendations are permanently deleted from our systems within 30 days of cancellation.'
     },
     {
-      id: 6,
+      id: 5,
       category: 'security',
       question: 'Do you support AWS Organizations and multi-account setups?',
       answer: 'Yes, VIRIDITY fully supports AWS Organizations and can work with complex multi-account setups. We can analyze costs across all accounts in your organization, identify optimization opportunities at the organizational level, and implement strategies that benefit your entire AWS estate. We can work with your existing organizational structure and access policies.'
