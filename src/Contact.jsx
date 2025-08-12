@@ -113,12 +113,19 @@ function Contact() {
         )}
       </header>
 
+      {/* Hero Section */}
+      <section className="contact-hero">
+        <div className="container">
+          <div className="hero-content">
+            <h1>Contact</h1>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section className="contact-page">
         <div className="container">
           <div className="contact-content">
-            <h1>Contact Us</h1>
-            
             <div className="contact-cards">
               {/* Sales Card */}
               <div className="contact-card">
