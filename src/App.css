@@ -4003,27 +4003,24 @@ html {
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #16a34a 100%);
   background-size: 400% 400%;
   animation: gradientShift 30s ease infinite;
+  min-height: 80vh;
   padding: 6rem 0 4rem 0;
   color: white;
 }
 
 .contact-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  text-align: left;
-  max-width: 600px;
-  margin: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
   padding: 0 2rem;
 }
 
 .contact-content h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: white;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
+  margin-bottom: 3rem;
+  letter-spacing: -0.01em;
 }
 
 .contact-cards {
