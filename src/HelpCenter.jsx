@@ -299,7 +299,7 @@ function HelpCenter() {
               <div className="category-header">
                 <button 
                   className="back-button"
-                  onClick={() => setSelectedCategory('faq')}
+                  onClick={() => setSelectedCategory('')}
                 >
                   <ChevronDown size={20} style={{ transform: 'rotate(90deg)' }} />
                   Back to Categories
