@@ -3517,36 +3517,38 @@ html {
 .legal-tabs {
   display: flex;
   justify-content: center;
-  gap: 0;
+  gap: 1rem;
   max-width: 600px;
   margin: 0 auto;
+  padding: 1rem 0;
 }
 
 .legal-tab {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 1rem 2rem;
-  background: none;
-  border: none;
-  color: #64748b;
-  font-size: 0.95rem;
+  padding: 0.75rem 1.5rem;
+  background: white;
+  border: 1px solid #d1d5db;
+  color: #6b7280;
+  font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
-  border-bottom: 2px solid transparent;
-  position: relative;
+  border-radius: 6px;
+  text-decoration: none;
 }
 
 .legal-tab:hover {
-  color: #1e293b;
-  background: #f1f5f9;
+  color: #374151;
+  background: #f9fafb;
+  border-color: #9ca3af;
 }
 
 .legal-tab.active {
-  color: #1e293b;
-  border-bottom-color: #1e293b;
-  background: white;
+  color: white;
+  background: #1e293b;
+  border-color: #1e293b;
   font-weight: 600;
 }
 
@@ -3621,7 +3623,6 @@ html {
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.025em;
-  font-family: 'Times New Roman', serif;
 }
 
 .legal-item p {
@@ -3630,7 +3631,6 @@ html {
   color: #374151;
   margin-bottom: 0.75rem;
   text-align: justify;
-  font-family: 'Times New Roman', serif;
 }
 
 .legal-item ul {
@@ -3643,7 +3643,6 @@ html {
   line-height: 1.7;
   color: #374151;
   margin-bottom: 0.5rem;
-  font-family: 'Times New Roman', serif;
 }
 
 .legal-item li::marker {
@@ -3662,7 +3661,8 @@ html {
   
   .legal-tabs {
     flex-direction: column;
-    gap: 0;
+    gap: 0.5rem;
+    padding: 1rem;
   }
   
   .legal-tab {
