@@ -2920,15 +2920,15 @@ html {
 .help-center-hero .hero-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .help-center-hero h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   color: white;
   margin-bottom: 1rem;
