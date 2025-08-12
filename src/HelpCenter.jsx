@@ -263,14 +263,15 @@ function HelpCenter() {
       </header>
 
       {/* Hero Section */}
-      <section className="hero help-center-hero">
-        <div className="container">
-          <div className="hero-content">
-            <h1>Help Center</h1>
-            <p>Find answers to common questions about VIRIDITY's AWS cost optimization services</p>
+      {!selectedCategory && (
+        <section className="hero help-center-hero">
+          <div className="container">
+            <div className="hero-content">
+              <h1>Help Center</h1>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Main Categories */}
       <section className="main-categories">
