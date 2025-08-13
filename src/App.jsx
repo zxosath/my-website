@@ -1270,7 +1270,7 @@ function HowWeSave() {
           <div className="article">
             <h2>Overview</h2>
             <p className="lead">A focused, expert‑led approach to reduce AWS costs while keeping performance steady and engineering unblocked. Readable in two minutes, designed for decision‑makers.</p>
-            <h3>Onboarding & foundations</h3>
+            <h3>Access & visibility</h3>
             <p>We start by getting just enough access and telemetry to do the work — non‑disruptively — and establish clean tagging so savings can be tracked by team and project.</p>
             <ul>
               <li>Read‑only billing access and monthly spend context</li>
@@ -1279,7 +1279,7 @@ function HowWeSave() {
             </ul>
             <hr className="section-divider" />
 
-            <h3>Under £30k/month: remove waste and stabilize costs</h3>
+            <h3>Remove waste and stabilize costs</h3>
             <p>For early‑stage teams, savings come from eliminating low‑value spend and introducing simple guardrails.</p>
             <ul>
               <li>Reduce EC2 waste: stop idle dev/test, align instance hours with working patterns</li>
@@ -1297,7 +1297,7 @@ function HowWeSave() {
             </ul>
             <hr className="section-divider" />
 
-            <h3>£30k–£100k/month: commitments and right‑sizing at scale</h3>
+            <h3>Commitments and right‑sizing at scale</h3>
             <ul>
               <li>Introduce Savings Plans with sensible risk posture (1–3 year, partial/no upfront)</li>
               <li>Right‑size with Compute Optimizer signals, not guesswork</li>
@@ -1307,7 +1307,7 @@ function HowWeSave() {
             </ul>
             <hr className="section-divider" />
 
-            <h3>£100k+/month: governance and enterprise economics</h3>
+            <h3>Governance and enterprise economics</h3>
             <ul>
               <li>Consolidation with AWS Organizations for consistent policy and tagging</li>
               <li>Guardrails: AWS Config rules and SCPs to prevent expensive mistakes</li>
@@ -1435,6 +1435,97 @@ function Reporting() {
             <hr className="section-divider" />
             <h3>Forward plan</h3>
             <p>What we’ll target next month, along with projected savings and any approvals we’ll need. No surprises, just a predictable roadmap.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Example Report Preview */}
+      <section className="report-preview-section">
+        <div className="container">
+          <div className="report-preview" role="region" aria-label="Example monthly report">
+            <div className="report-header">
+              <div>
+                <h3>Viridity Monthly Optimization Report</h3>
+                <p className="muted">Billing month: Aug 2025 • Account: prod-org</p>
+              </div>
+              <div className="report-badges">
+                <span className="badge badge-positive">Example</span>
+                <span className="badge">Finance-ready</span>
+              </div>
+            </div>
+
+            <div className="report-metrics">
+              <div className="metric">
+                <div className="metric-label">Savings this month</div>
+                <div className="metric-value">$128,400</div>
+                <div className="metric-sub">20–40% effective reduction</div>
+              </div>
+              <div className="metric">
+                <div className="metric-label">Top contributors</div>
+                <div className="metric-list">Commitment optimization, rightsizing, S3 lifecycle</div>
+                <div className="metric-sub">See changes applied</div>
+              </div>
+              <div className="metric">
+                <div className="metric-label">Projected next month</div>
+                <div className="metric-value">+$38,000</div>
+                <div className="metric-sub">Pending approvals + planned work</div>
+              </div>
+            </div>
+
+            <div className="report-table-wrap">
+              <table className="report-table">
+                <thead>
+                  <tr>
+                    <th>Change</th>
+                    <th>Service</th>
+                    <th>Impact</th>
+                    <th>Recurring?</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Purchased Savings Plans (partial upfront)</td>
+                    <td>Compute</td>
+                    <td>$72,900/month</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Rightsized instance families</td>
+                    <td>EC2/EKS</td>
+                    <td>$24,300/month</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>S3 lifecycle + log retention</td>
+                    <td>S3/CloudWatch</td>
+                    <td>$12,600/month</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Removed unused volumes & ELBs</td>
+                    <td>EBS/Networking</td>
+                    <td>$6,900/month</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Spot adoption for CI jobs</td>
+                    <td>Compute</td>
+                    <td>$11,700/month</td>
+                    <td>Variable</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="report-next">
+              <h4>Next month plan</h4>
+              <ul>
+                <li>Extend commitment coverage to predictable analytics workloads</li>
+                <li>Evaluate Graviton migration for API tier</li>
+                <li>Tighten cross‑region data transfer on nightly jobs</li>
+              </ul>
+              <p className="muted">This example is illustrative. Actual reports reflect your environment and finance structure.</p>
+            </div>
           </div>
         </div>
       </section>
