@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
-import { ChevronDown, Menu, X, ArrowRight, Play, Calendar, BookOpen, Headphones, Users, HelpCircle, FileText, Building, Star, CheckCircle, TrendingUp, DollarSign, Activity, BarChart3, Settings, Globe, Shield, Zap } from 'lucide-react';
+import { ChevronDown, Menu, X, ArrowRight, Play, Calendar, BookOpen, Headphones, Users, HelpCircle, FileText, Building, Star, CheckCircle, TrendingUp, DollarSign, Activity, BarChart3, Settings, Globe, Shield, Zap, Target } from 'lucide-react';
 import './App.css';
 import Pricing from './Pricing';
 import HelpCenter from './HelpCenter';
@@ -197,28 +197,29 @@ function HomePage() {
               {productDropdownOpen && (
                 <div className="dropdown-menu">
                   <div className="dropdown-section">
-                    <h4>AWS Cost Optimization</h4>
-                    <div className="cloud-providers">
-                      <div className="provider">
-                        <h5>Amazon Web Services</h5>
-                        <p>EC2, Lambda, Fargate Cost Optimization</p>
-                        <p>RDS, ElastiCache, MemoryDB, Redshift, OpenSearch</p>
-                        <p>Savings Plans & Reserved Instances Management</p>
-                      </div>
+                    <h4>AWS (Amazon Web Services)</h4>
+                    <div className="resource-links">
+                      <a href="#"><DollarSign size={16} /> How we save</a>
+                      <a href="#"><BarChart3 size={16} /> Reporting</a>
                     </div>
                   </div>
                   <div className="dropdown-section">
-                    <h4>Billing Optimization</h4>
+                    <h4>Google Cloud</h4>
                     <div className="resource-links">
-                      <a href="#"><DollarSign size={16} /> Expert AWS Cost Management</a>
-                      <a href="#"><Activity size={16} /> Strategic Resource Optimization</a>
+                      <a href="#"><span style={{opacity: 0.5}}>Coming soon</span></a>
                     </div>
                   </div>
                   <div className="dropdown-section">
-                    <h4>Reporting & Insights</h4>
+                    <h4>Microsoft Azure</h4>
                     <div className="resource-links">
-                      <a href="#"><BarChart3 size={16} /> Cost Allocation & Showback</a>
-                      <a href="#"><TrendingUp size={16} /> Savings Analytics & Forecasting</a>
+                      <a href="#"><span style={{opacity: 0.5}}>Coming soon</span></a>
+                    </div>
+                  </div>
+                  <div className="dropdown-section">
+                    <h4>Our Process</h4>
+                    <div className="resource-links">
+                      <a href="#"><Activity size={16} /> Expert Analysis</a>
+                      <a href="#"><Target size={16} /> Strategic Planning</a>
                     </div>
                   </div>
                 </div>
