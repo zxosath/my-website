@@ -1177,6 +1177,198 @@ function OurProcess() {
   );
 }
 
+// How We Save Page
+function HowWeSave() {
+  const navigate = useNavigate();
+  const goToHomeCTA = () => {
+    navigate('/');
+    setTimeout(() => {
+      const el = document.getElementById('cta');
+      if (el) {
+        const y = window.pageYOffset + el.getBoundingClientRect().top - 100;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    }, 60);
+  };
+
+  return (
+    <div className="process-page">
+      <header className="header scrolled">
+        <div className="header-container">
+          <div className="logo">
+            <a href="#/" className="logo-container">
+              <img src="/IMG_3102.PNG" alt="VIRIDITY Logo" className="logo-icon" />
+              <h2>VIRIDITY</h2>
+            </a>
+          </div>
+          <div className="header-actions">
+            <button className="btn-primary desktop-only" onClick={goToHomeCTA}>Free Analysis</button>
+          </div>
+        </div>
+      </header>
+
+      <div className="process-hero">
+        <div className="container">
+          <h1>How We Save</h1>
+          <p>Trusted, expert-driven AWS cost optimization without giving away the playbook. Here’s what we actually do for you.</p>
+        </div>
+      </div>
+
+      <section className="process-timeline">
+        <div className="container">
+          <div className="timeline">
+            <div className="timeline-item">
+              <div className="timeline-icon"><div className="icon-circle">💡</div></div>
+              <div className="timeline-content">
+                <h3>Commitment Strategy That Fits Reality</h3>
+                <p>We architect Reserved Instances and Savings Plans to match your actual usage patterns and risk profile — conservative where volatility exists, aggressive where workloads are predictable.</p>
+                <div className="timeline-details">
+                  <div className="detail-item"><span className="detail-label">Focus:</span><span className="detail-value">RI/SP mix, term, and size</span></div>
+                  <div className="detail-item"><span className="detail-label">Outcome:</span><span className="detail-value">Lower effective rates, minimal waste</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-icon"><div className="icon-circle">🧭</div></div>
+              <div className="timeline-content">
+                <h3>Rightsizing Without The Guesswork</h3>
+                <p>We evaluate utilization over meaningful windows and align instance families, sizes, and storage with what’s actually needed — not just what looks underutilized for a day.</p>
+                <div className="timeline-details">
+                  <div className="detail-item"><span className="detail-label">Areas:</span><span className="detail-value">EC2/ECS/EKS, storage classes, databases</span></div>
+                  <div className="detail-item"><span className="detail-label">Outcome:</span><span className="detail-value">Spend trimmed without performance hits</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-icon"><div className="icon-circle">♻️</div></div>
+              <div className="timeline-content">
+                <h3>Eliminate Silent Waste</h3>
+                <p>We target orphaned resources, low-value data retention, misconfigured networking, and underused services that quietly add up month after month.</p>
+                <div className="timeline-details">
+                  <div className="detail-item"><span className="detail-label">Examples:</span><span className="detail-value">Idle EIPs, unattached volumes, stale snapshots</span></div>
+                  <div className="detail-item"><span className="detail-label">Outcome:</span><span className="detail-value">Immediate, compounding savings</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-icon"><div className="icon-circle">🔁</div></div>
+              <div className="timeline-content">
+                <h3>Continuous Adjustments</h3>
+                <p>As your usage shifts, we adapt commitments and configuration so savings don’t decay over time. Your environment evolves — your optimization should too.</p>
+                <div className="timeline-details">
+                  <div className="detail-item"><span className="detail-label">Cadence:</span><span className="detail-value">Weekly checks, monthly review</span></div>
+                  <div className="detail-item"><span className="detail-label">Outcome:</span><span className="detail-value">Savings that stick</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="process-cta">
+        <div className="container">
+          <h2>Want a tailored savings plan?</h2>
+          <p>We’ll review your AWS environment and show where meaningful savings can come from — without extra work for your team.</p>
+          <button className="btn-primary" onClick={goToHomeCTA}>Get Started</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Reporting Page
+function Reporting() {
+  const navigate = useNavigate();
+  const goToHomeCTA = () => {
+    navigate('/');
+    setTimeout(() => {
+      const el = document.getElementById('cta');
+      if (el) {
+        const y = window.pageYOffset + el.getBoundingClientRect().top - 100;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    }, 60);
+  };
+
+  return (
+    <div className="process-page">
+      <header className="header scrolled">
+        <div className="header-container">
+          <div className="logo">
+            <a href="#/" className="logo-container">
+              <img src="/IMG_3102.PNG" alt="VIRIDITY Logo" className="logo-icon" />
+              <h2>VIRIDITY</h2>
+            </a>
+          </div>
+          <div className="header-actions">
+            <button className="btn-primary desktop-only" onClick={goToHomeCTA}>Free Analysis</button>
+          </div>
+        </div>
+      </header>
+
+      <div className="process-hero">
+        <div className="container">
+          <h1>Reporting</h1>
+          <p>Clear monthly reporting that shows what changed, what saved, and what comes next — decision-ready for finance and engineering.</p>
+        </div>
+      </div>
+
+      <section className="process-timeline">
+        <div className="container">
+          <div className="timeline">
+            <div className="timeline-item">
+              <div className="timeline-icon"><div className="icon-circle">📊</div></div>
+              <div className="timeline-content">
+                <h3>Monthly Savings Summary</h3>
+                <p>Exact dollar and percentage savings achieved, broken out by service and initiative. No fluff — just the results.</p>
+                <div className="timeline-details">
+                  <div className="detail-item"><span className="detail-label">Highlights:</span><span className="detail-value">New savings, cumulative impact</span></div>
+                  <div className="detail-item"><span className="detail-label">View:</span><span className="detail-value">Service, account, tag</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-icon"><div className="icon-circle">🛠️</div></div>
+              <div className="timeline-content">
+                <h3>Changes Implemented</h3>
+                <p>Transparent record of what we adjusted — commitments, rightsizing, cleanup — and the expected ongoing effect.</p>
+                <div className="timeline-details">
+                  <div className="detail-item"><span className="detail-label">Scope:</span><span className="detail-value">Commitments, config, cleanups</span></div>
+                  <div className="detail-item"><span className="detail-label">Impact:</span><span className="detail-value">One-time vs recurring</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-icon"><div className="icon-circle">🔮</div></div>
+              <div className="timeline-content">
+                <h3>Forward Plan</h3>
+                <p>What we’ll do next month: adjustments, target areas, and projected savings so stakeholders know what to expect.</p>
+                <div className="timeline-details">
+                  <div className="detail-item"><span className="detail-label">Focus:</span><span className="detail-value">Upcoming optimizations</span></div>
+                  <div className="detail-item"><span className="detail-label">Value:</span><span className="detail-value">Predictable savings roadmap</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="process-cta">
+        <div className="container">
+          <h2>Want this report in your inbox?</h2>
+          <p>We’ll run a free analysis and show you what your first month could look like — then keep you updated with clear monthly reporting.</p>
+          <button className="btn-primary" onClick={goToHomeCTA}>Get Started</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function App() {
   return (
     <Router>
@@ -1189,8 +1381,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/success" element={<SuccessPage />} />
         <Route path="/our-process" element={<OurProcess />} />
-        <Route path="/how-we-save" element={<div className="page-placeholder">How We Save Page - Coming Soon</div>} />
-        <Route path="/reporting" element={<div className="page-placeholder">Reporting Page - Coming Soon</div>} />
+        <Route path="/how-we-save" element={<HowWeSave />} />
+        <Route path="/reporting" element={<Reporting />} />
       </Routes>
     </Router>
   );
