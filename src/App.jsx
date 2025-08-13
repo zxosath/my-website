@@ -1392,12 +1392,14 @@ function Reporting() {
       <section className="article-section">
         <div className="container">
           <div className="article">
-            <h2>Reporting</h2>
-            <p className="muted">Clear, decision‑ready reporting designed for finance and engineering leaders.</p>
+            <h2>Overview</h2>
+            <p className="lead">A monthly report you can share directly with finance and engineering. Objective results, changes made, and what’s next — all in one page.</p>
             <h3>Monthly savings summary</h3>
             <p>Exact dollar and percentage savings achieved, broken out by service, account, and initiative. Easy to reconcile and simple to present.</p>
+            <hr className="section-divider" />
             <h3>Changes implemented</h3>
             <p>What we changed and why — commitments, rightsizing, and cleanup — with the expected ongoing impact.</p>
+            <hr className="section-divider" />
             <h3>Forward plan</h3>
             <p>What we’ll target next month, along with projected savings and any approvals we’ll need. No surprises, just a predictable roadmap.</p>
           </div>
