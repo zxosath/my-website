@@ -1431,29 +1431,14 @@ function Reporting() {
         </div>
       </section>
 
-      {/* Example Report Preview */}
+      {/* Report image only */}
       <section className="report-preview-section">
-        <div className="container">
-          <div className="report-preview" role="region" aria-label="Example monthly report">
-
-            <div className="report-table-wrap" style={{textAlign:'center'}}>
-              <img
-                src="/Screenshot 2025-08-13 at 19.36.45.png"
-                alt="Monthly changes and impact table"
-                style={{width:'100%', maxWidth:'1000px', height:'auto', borderRadius:'8px', border:'1px solid rgba(255,255,255,0.12)'}}
-              />
-            </div>
-
-            <div className="report-next">
-              <h4>Next month plan</h4>
-              <ul>
-                <li>Extend commitment coverage to predictable analytics workloads</li>
-                <li>Evaluate Graviton migration for API tier</li>
-                <li>Tighten cross‑region data transfer on nightly jobs</li>
-              </ul>
-              <p className="muted">Illustrative example. Your report reflects your environment and finance structure.</p>
-            </div>
-          </div>
+        <div className="container" style={{ textAlign: 'center' }}>
+          <img
+            src="/Screenshot 2025-08-13 at 19.36.45.png"
+            alt="Monthly changes and impact table"
+            style={{ width: '100%', maxWidth: '1000px', height: 'auto' }}
+          />
         </div>
       </section>
 
