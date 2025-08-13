@@ -988,7 +988,7 @@ function OurProcess() {
                 <div className="timeline-arrow right">
                   <span className="timeline-label">Day 1</span>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
                   </svg>
                 </div>
               </div>
@@ -1015,10 +1015,10 @@ function OurProcess() {
             <div className="timeline-item">
               <div className="timeline-icon">
                 <div className="timeline-arrow left">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M19 12H5M12 19l-7-7 7-7"/>
-                  </svg>
                   <span className="timeline-label">Up to 7 days</span>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
                 </div>
                 <div className="icon-circle">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -1060,7 +1060,7 @@ function OurProcess() {
                 <div className="timeline-arrow right">
                   <span className="timeline-label">Day 7</span>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
                   </svg>
                 </div>
               </div>
