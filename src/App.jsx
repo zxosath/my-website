@@ -1214,29 +1214,24 @@ function HowWeSave() {
         </div>
       </div>
 
-      <section className="process-benefits">
+      <section className="article-section">
         <div className="container">
-          <div className="benefits-grid">
-            <div className="benefit-card">
-              <div className="benefit-icon">💡</div>
-              <h3>Smart Commitments</h3>
-              <p>We align Reserved Instances and Savings Plans with real usage and risk tolerance — lowering effective rates while minimizing waste.</p>
-            </div>
-            <div className="benefit-card">
-              <div className="benefit-icon">🧭</div>
-              <h3>Practical Rightsizing</h3>
-              <p>We rightsize compute, storage, and databases based on meaningful utilization trends so performance stays steady while spend drops.</p>
-            </div>
-            <div className="benefit-card">
-              <div className="benefit-icon">♻️</div>
-              <h3>Waste Elimination</h3>
-              <p>We remove idle and orphaned resources and fix small leaks that quietly grow — delivering immediate, compounding savings.</p>
-            </div>
-            <div className="benefit-card">
-              <div className="benefit-icon">🔁</div>
-              <h3>Continuous Tuning</h3>
-              <p>As your environment changes, we adjust commitments and configuration so savings continue month after month.</p>
-            </div>
+          <div className="article">
+            <h2>How We Save</h2>
+            <p className="muted">A focused, expert-led approach that reduces AWS costs without adding operational burden to your teams.</p>
+            <h3>Commitment strategy that fits reality</h3>
+            <p>We design the right mix of Savings Plans and Reserved Instances to align with your actual usage patterns and risk tolerance. Predictable workloads get aggressive coverage; variable ones get flexibility.</p>
+            <h3>Rightsizing without the guesswork</h3>
+            <p>We evaluate utilization over meaningful windows and adjust compute, storage, and databases to match needs — keeping performance steady while spend drops.</p>
+            <h3>Eliminating silent waste</h3>
+            <p>We remove orphaned resources and correct low‑value configurations that quietly accumulate cost over time.</p>
+            <ul>
+              <li>Idle IPs and unattached volumes</li>
+              <li>Stale snapshots and inefficient storage classes</li>
+              <li>Misconfigured networking that drives unnecessary transfer</li>
+            </ul>
+            <h3>Continuous adjustments</h3>
+            <p>As your environment changes, we adapt commitments and configuration so savings don’t decay — optimization becomes ongoing, not one‑time.</p>
           </div>
         </div>
       </section>
@@ -1289,24 +1284,17 @@ function Reporting() {
         </div>
       </div>
 
-      <section className="process-benefits">
+      <section className="article-section">
         <div className="container">
-          <div className="benefits-grid">
-            <div className="benefit-card">
-              <div className="benefit-icon">📊</div>
-              <h3>Monthly Savings Summary</h3>
-              <p>Exact dollar and percentage savings achieved by service and initiative — no fluff, just results.</p>
-            </div>
-            <div className="benefit-card">
-              <div className="benefit-icon">🛠️</div>
-              <h3>Changes Implemented</h3>
-              <p>Transparent record of what changed — commitments, rightsizing, and cleanup work — and the expected ongoing effect.</p>
-            </div>
-            <div className="benefit-card">
-              <div className="benefit-icon">🔮</div>
-              <h3>Forward Plan</h3>
-              <p>What’s next: target areas, upcoming adjustments, and projected savings so stakeholders know what to expect.</p>
-            </div>
+          <div className="article">
+            <h2>Reporting</h2>
+            <p className="muted">Clear, decision‑ready reporting designed for finance and engineering leaders.</p>
+            <h3>Monthly savings summary</h3>
+            <p>Exact dollar and percentage savings achieved, broken out by service, account, and initiative. Easy to reconcile and simple to present.</p>
+            <h3>Changes implemented</h3>
+            <p>What we changed and why — commitments, rightsizing, and cleanup — with the expected ongoing impact.</p>
+            <h3>Forward plan</h3>
+            <p>What we’ll target next month, along with projected savings and any approvals we’ll need. No surprises, just a predictable roadmap.</p>
           </div>
         </div>
       </section>
