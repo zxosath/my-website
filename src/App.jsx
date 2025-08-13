@@ -1258,7 +1258,7 @@ function HowWeSave() {
         </div>
       </header>
 
-      <div className="process-hero">
+      <div className="process-hero how-we-save-hero">
         <div className="container">
           <h1>How We Save</h1>
           <p>Trusted, expert-driven AWS cost optimization without giving away the playbook. Here’s what we actually do for you.</p>

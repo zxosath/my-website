@@ -4769,7 +4769,7 @@ html {
   font-size: 1.75rem;
   font-weight: 700;
   color: #ffffff;
-  margin: 2.5rem 0 0.75rem 0;
+  margin: 1.5rem 0 0.5rem 0;
 }
 
 .article h3 {
@@ -4810,13 +4810,13 @@ html {
 .article .lead {
   font-size: 1.0625rem;
   color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 
 .section-divider {
   border: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
-  margin: 1.75rem 0;
+  margin: 1.25rem 0;
 }
 
 /* Report preview styles */
