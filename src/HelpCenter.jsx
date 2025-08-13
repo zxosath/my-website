@@ -32,20 +32,17 @@ function HelpCenter() {
     { 
       id: 'faq', 
       name: 'Frequently Asked Questions', 
-      icon: HelpCircle,
-      description: 'See how much you could save - risk free'
+      icon: HelpCircle
     },
     { 
       id: 'security', 
       name: 'Security & Access Management', 
-      icon: Shield,
-      description: 'Questions, troubleshooting, or advice - we\'re here to help'
+      icon: Shield
     },
     { 
       id: 'billing', 
       name: 'Billing Information & Payment Structure', 
-      icon: DollarSign,
-      description: 'Billing information and payment structure'
+      icon: DollarSign
     }
   ];
 
@@ -377,7 +374,6 @@ function HelpCenter() {
                     <category.icon size={32} />
                   </div>
                   <h3>{category.name}</h3>
-                  <p>{category.description}</p>
                 </div>
               ))}
             </div>
