@@ -4729,17 +4729,18 @@ html {
 }
 
 .article {
-  max-width: 920px;
+  max-width: 72ch;
   margin: 0 auto;
   color: rgba(255, 255, 255, 0.92);
   line-height: 1.8;
+  text-align: left;
 }
 
 .article h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: #ffffff;
-  margin: 2rem 0 0.75rem 0;
+  margin: 2.5rem 0 0.75rem 0;
 }
 
 .article h3 {
@@ -4750,21 +4751,43 @@ html {
 }
 
 .article p {
-  margin: 0.5rem 0 1rem 0;
+  margin: 0.25rem 0 1rem 0;
+  font-size: 1rem;
 }
 
 .article ul {
-  list-style: disc;
-  padding-left: 1.25rem;
+  list-style: none;
+  padding-left: 0;
   margin: 0.25rem 0 1.25rem 0;
 }
 
 .article li {
   margin: 0.4rem 0;
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.article li::before {
+  content: '\2013';
+  position: absolute;
+  left: 0;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .article .muted {
   color: rgba(255, 255, 255, 0.75);
+}
+
+.article .lead {
+  font-size: 1.0625rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.25rem;
+}
+
+.section-divider {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin: 1.75rem 0;
 }
 
 
