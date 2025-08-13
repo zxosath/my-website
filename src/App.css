@@ -2599,6 +2599,35 @@ html {
   backdrop-filter: blur(10px);
 }
 
+/* Gradient tile variant for Risk-Free block */
+.gradient-tile {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.gradient-tile .tile-border {
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #8b5cf6, #10b981, #3b82f6);
+  background-size: 200% 200%;
+  animation: gradientShift 18s ease infinite;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
+}
+
+.gradient-tile .tile-content {
+  position: relative;
+  border-radius: 19px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 2rem;
+}
+
 .stats-highlight h4 {
   color: white !important;
   font-size: 1.25rem;
