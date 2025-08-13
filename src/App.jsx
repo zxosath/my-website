@@ -199,9 +199,9 @@ function HomePage() {
                   <div className="dropdown-section">
                     <h4>Amazon Web Services</h4>
                     <div className="resource-links">
-                      <a href="#" onClick={(e) => { e.preventDefault(); setProductDropdownOpen(false); }}><Activity size={16} /> Our Process</a>
-                      <a href="#" onClick={(e) => { e.preventDefault(); setProductDropdownOpen(false); }}><DollarSign size={16} /> How we save</a>
-                      <a href="#" onClick={(e) => { e.preventDefault(); setProductDropdownOpen(false); }}><BarChart3 size={16} /> Reporting</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/our-process'); setProductDropdownOpen(false); }}><Activity size={16} /> Our Process</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/how-we-save'); setProductDropdownOpen(false); }}><DollarSign size={16} /> How we save</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/reporting'); setProductDropdownOpen(false); }}><BarChart3 size={16} /> Reporting</a>
                     </div>
                   </div>
                   <div className="dropdown-section">
@@ -902,6 +902,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/success" element={<SuccessPage />} />
+        <Route path="/our-process" element={<div className="page-placeholder">Our Process Page - Coming Soon</div>} />
+        <Route path="/how-we-save" element={<div className="page-placeholder">How We Save Page - Coming Soon</div>} />
+        <Route path="/reporting" element={<div className="page-placeholder">Reporting Page - Coming Soon</div>} />
       </Routes>
     </Router>
   );
