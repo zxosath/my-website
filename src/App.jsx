@@ -897,6 +897,20 @@ function OurProcess() {
   const [resourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
+  
+  const goToHomeCTA = () => {
+    navigate('/');
+    const attemptScroll = () => {
+      const el = document.getElementById('cta');
+      if (el) {
+        const y = window.pageYOffset + el.getBoundingClientRect().top - 100;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      } else {
+        setTimeout(attemptScroll, 60);
+      }
+    };
+    setTimeout(attemptScroll, 60);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -963,7 +977,7 @@ function OurProcess() {
           </nav>
 
           <div className="header-actions">
-            <button className="btn-primary desktop-only" onClick={() => navigate('/')}>Free Analysis</button>
+            <button className="btn-primary desktop-only" onClick={goToHomeCTA}>Free Analysis</button>
           </div>
         </div>
       </header>
@@ -1136,7 +1150,7 @@ function OurProcess() {
                 </svg>
               </div>
               <h3>Significant Savings</h3>
-              <p>Our expert analysis and strategic implementation deliver substantial cost reductions, typically 40-60% savings on AWS spending.</p>
+              <p>Our expert analysis and strategic implementation deliver substantial cost reductions, typically 20-40% savings on AWS spending.</p>
             </div>
             <div className="benefit-card">
               <div className="benefit-icon">
@@ -1156,7 +1170,7 @@ function OurProcess() {
         <div className="container">
           <h2>Ready to Start Saving?</h2>
           <p>Join hundreds of companies already saving thousands on their AWS costs with our proven process.</p>
-          <button className="btn-primary" onClick={() => navigate('/')}>Get Started</button>
+          <button className="btn-primary" onClick={goToHomeCTA}>Get Started</button>
         </div>
       </div>
     </div>
