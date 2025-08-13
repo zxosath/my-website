@@ -262,10 +262,13 @@ function Pricing() {
             <h3>Your Savings Compound Daily</h3>
             <p>VIRIDITY doesn't just find savings—we capture them through expert analysis and strategic optimization. Our team continuously monitors your AWS spend, ensuring you never overpay again.</p>
             <p>Every day, our experts analyze your usage patterns to identify new savings opportunities, applying the right optimizations at the right time through hands-on management.</p>
-            <div className="stats-highlight">
-              <h4>Risk-Free Guarantee</h4>
-              <div className="highlight-amount">Pay Only for Results</div>
-              <p>We only charge a percentage of the actual savings we deliver. If we don't save you money, you don't pay us anything.</p>
+            <div className="stats-highlight gradient-tile">
+              <div className="tile-border"></div>
+              <div className="tile-content">
+                <h4>Risk-Free Guarantee</h4>
+                <div className="highlight-amount">Pay Only for Results</div>
+                <p>We only charge a percentage of the actual savings we deliver. If we don't save you money, you don't pay us anything.</p>
+              </div>
             </div>
           </div>
         </div>
