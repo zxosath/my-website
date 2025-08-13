@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Menu, X, DollarSign, HelpCircle, MessageCircle, FileText, Users, BarChart3 } from 'lucide-react';
+import { ChevronDown, Menu, X, DollarSign, HelpCircle, MessageCircle, FileText, Users, BarChart3, Activity } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 function Contact() {

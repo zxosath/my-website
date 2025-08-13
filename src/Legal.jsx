@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Menu, X, FileText, Shield, Eye, Lock, Users, HelpCircle, DollarSign, BarChart3, MessageCircle } from 'lucide-react';
+import { ChevronDown, Menu, X, FileText, Shield, Eye, Lock, Users, HelpCircle, DollarSign, BarChart3, MessageCircle, Activity } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 function Legal() {

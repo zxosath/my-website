@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ChevronDown, Menu, X, HelpCircle, Shield, DollarSign, BarChart3, Users, FileText, MessageCircle } from 'lucide-react';
+import { ChevronDown, Menu, X, HelpCircle, Shield, DollarSign, BarChart3, Users, FileText, MessageCircle, Activity } from 'lucide-react';
 import './App.css';
 
 function HelpCenter() {
