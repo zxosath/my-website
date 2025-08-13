@@ -1270,22 +1270,55 @@ function HowWeSave() {
           <div className="article">
             <h2>Overview</h2>
             <p className="lead">A focused, expert‑led approach to reduce AWS costs while keeping performance steady and engineering unblocked. Readable in two minutes, designed for decision‑makers.</p>
-            <h3>Commitment strategy that fits reality</h3>
-            <p>We design the right mix of Savings Plans and Reserved Instances to align with your actual usage patterns and risk tolerance. Predictable workloads get aggressive coverage; variable ones get flexibility.</p>
-            <hr className="section-divider" />
-            <h3>Rightsizing without the guesswork</h3>
-            <p>We evaluate utilization over meaningful windows and adjust compute, storage, and databases to match needs — keeping performance steady while spend drops.</p>
-            <hr className="section-divider" />
-            <h3>Eliminating silent waste</h3>
-            <p>We remove orphaned resources and correct low‑value configurations that quietly accumulate cost over time.</p>
+            <h3>Onboarding & foundations</h3>
+            <p>We start by getting just enough access and telemetry to do the work — non‑disruptively — and establish clean tagging so savings can be tracked by team and project.</p>
             <ul>
-              <li>Idle IPs and unattached volumes</li>
-              <li>Stale snapshots and inefficient storage classes</li>
-              <li>Misconfigured networking that drives unnecessary transfer</li>
+              <li>Read‑only billing access and monthly spend context</li>
+              <li>Enable Cost Explorer, AWS Budgets (80% alerts), CUR, and Compute Optimizer</li>
+              <li>Establish consistent tags (e.g., owner, project, environment) for allocation</li>
             </ul>
             <hr className="section-divider" />
-            <h3>Continuous adjustments</h3>
-            <p>As your environment changes, we adapt commitments and configuration so savings don’t decay — optimization becomes ongoing, not one‑time.</p>
+
+            <h3>Under £30k/month: remove waste and stabilize costs</h3>
+            <p>For early‑stage teams, savings come from eliminating low‑value spend and introducing simple guardrails.</p>
+            <ul>
+              <li>Reduce EC2 waste: stop idle dev/test, align instance hours with working patterns</li>
+              <li>Remove unused resources: unattached volumes, old AMIs, stale snapshots</li>
+              <li>Volume efficiency: migrate gp2 → gp3 where applicable</li>
+              <li>Cheaper compute: move compatible workloads to Graviton</li>
+              <li>Use Spot for batch/CI where interruption is acceptable</li>
+              <li>S3 lifecycle tiering: Intelligent‑Tiering now, deep archive for rarely accessed data</li>
+              <li>Log efficiency: compress and right‑size retention by environment</li>
+              <li>S3 external traffic controls (e.g., requester pays) when appropriate</li>
+              <li>Database hygiene: auto‑pause dev/test, remove unused replicas, DynamoDB on‑demand for idle tables</li>
+              <li>Networking cleanup: retire unused EIPs, ALBs/NLBs, and target groups</li>
+              <li>Off‑hours automation via tags/schedules for non‑prod</li>
+              <li>Tag‑based budgeting to alert owners before overruns</li>
+            </ul>
+            <hr className="section-divider" />
+
+            <h3>£30k–£100k/month: commitments and right‑sizing at scale</h3>
+            <ul>
+              <li>Introduce Savings Plans with sensible risk posture (1–3 year, partial/no upfront)</li>
+              <li>Right‑size with Compute Optimizer signals, not guesswork</li>
+              <li>Broaden ARM adoption where compatible</li>
+              <li>Strategic Spot usage for non‑critical compute</li>
+              <li>Database scaling: prune replicas, purchase RDS RIs, calibrate IOPS</li>
+            </ul>
+            <hr className="section-divider" />
+
+            <h3>£100k+/month: governance and enterprise economics</h3>
+            <ul>
+              <li>Consolidation with AWS Organizations for consistent policy and tagging</li>
+              <li>Guardrails: AWS Config rules and SCPs to prevent expensive mistakes</li>
+              <li>IaC governance: enforce tagging and lifecycle in Terraform/CDK pipelines</li>
+              <li>Granular reporting: amortized/cost‑per team, project, container</li>
+              <li>Commercial levers: EDP negotiations combined with Savings Plans; leverage BYOL where allowed</li>
+            </ul>
+            <hr className="section-divider" />
+
+            <h3>Reporting & cadence</h3>
+            <p>Each month you receive a concise report: before/after, changes made, estimated monthly savings, and the next set of actions. Engagement can continue on retainer or via quarterly re‑audits.</p>
           </div>
         </div>
       </section>
