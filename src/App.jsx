@@ -1315,13 +1315,7 @@ function HowWeSave() {
         </div>
       </section>
 
-      <div className="process-cta">
-        <div className="container">
-          <h2>Want a tailored savings plan?</h2>
-          <p>We’ll review your AWS environment and show where meaningful savings can come from — without extra work for your team.</p>
-          <button className="btn-primary" onClick={goToHomeCTA}>Get Started</button>
-        </div>
-      </div>
+      {/* CTA removed per request */}
     </div>
   );
 }
