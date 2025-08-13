@@ -4722,5 +4722,50 @@ html {
   }
 }
 
+/* Article-style content (tile-less) */
+.article-section {
+  padding: 4rem 0;
+  background: transparent;
+}
+
+.article {
+  max-width: 920px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.8;
+}
+
+.article h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 2rem 0 0.75rem 0;
+}
+
+.article h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.article p {
+  margin: 0.5rem 0 1rem 0;
+}
+
+.article ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0.25rem 0 1.25rem 0;
+}
+
+.article li {
+  margin: 0.4rem 0;
+}
+
+.article .muted {
+  color: rgba(255, 255, 255, 0.75);
+}
+
 
 
