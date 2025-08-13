@@ -1307,15 +1307,7 @@ function HowWeSave() {
             </ul>
             <hr className="section-divider" />
 
-            <h3>Governance and enterprise economics</h3>
-            <ul>
-              <li>Consolidation with AWS Organizations for consistent policy and tagging</li>
-              <li>Guardrails: AWS Config rules and SCPs to prevent expensive mistakes</li>
-              <li>IaC governance: enforce tagging and lifecycle in Terraform/CDK pipelines</li>
-              <li>Granular reporting: amortized/cost‑per team, project, container</li>
-              <li>Commercial levers: EDP negotiations combined with Savings Plans; leverage BYOL where allowed</li>
-            </ul>
-            <hr className="section-divider" />
+            
 
             <h3>Reporting & cadence</h3>
             <p>Each month you receive a concise report: before/after, changes made, estimated monthly savings, and the next set of actions. Engagement can continue on retainer or via quarterly re‑audits.</p>

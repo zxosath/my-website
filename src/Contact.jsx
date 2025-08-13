@@ -43,28 +43,17 @@ function Contact() {
               {productDropdownOpen && (
                 <div className="dropdown-menu">
                   <div className="dropdown-section">
-                    <h4>AWS Cost Optimization</h4>
-                    <div className="cloud-providers">
-                      <div className="provider">
-                        <h5>Amazon Web Services</h5>
-                        <p>EC2, Lambda, Fargate Cost Optimization</p>
-                        <p>RDS, ElastiCache, MemoryDB, Redshift, OpenSearch</p>
-                        <p>Savings Plans & Reserved Instances Management</p>
-                      </div>
+                    <h4>Amazon Web Services</h4>
+                    <div className="resource-links">
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/our-process'); setProductDropdownOpen(false); }}>Our Process</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/how-we-save'); setProductDropdownOpen(false); }}>How we save</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/reporting'); setProductDropdownOpen(false); }}>Reporting</a>
                     </div>
                   </div>
                   <div className="dropdown-section">
-                    <h4>Billing Optimization</h4>
                     <div className="resource-links">
-                      <a href="#"><BarChart3 size={16} /> Expert AWS Cost Management</a>
-                      <a href="#"><BarChart3 size={16} /> Strategic Resource Optimization</a>
-                    </div>
-                  </div>
-                  <div className="dropdown-section">
-                    <h4>Reporting & Insights</h4>
-                    <div className="resource-links">
-                      <a href="#"><BarChart3 size={16} /> Cost Allocation & Showback</a>
-                      <a href="#"><BarChart3 size={16} /> Savings Analytics & Forecasting</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); setProductDropdownOpen(false); }}><span style={{opacity: 0.5}}>Google Cloud - Coming soon</span></a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); setProductDropdownOpen(false); }}><span style={{opacity: 0.5}}>Microsoft Azure - Coming soon</span></a>
                     </div>
                   </div>
                 </div>
