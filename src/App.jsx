@@ -1464,49 +1464,12 @@ function Reporting() {
               </div>
             </div>
 
-            <div className="report-table-wrap">
-              <table className="report-table">
-                <thead>
-                  <tr>
-                    <th>Change</th>
-                    <th>Service</th>
-                    <th>Impact</th>
-                    <th>Recurring?</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Purchased Savings Plans (partial upfront)</td>
-                    <td>Compute</td>
-                    <td>$72,900/month</td>
-                    <td>Yes</td>
-                  </tr>
-                  <tr>
-                    <td>Rightsized instance families</td>
-                    <td>EC2/EKS</td>
-                    <td>$24,300/month</td>
-                    <td>Yes</td>
-                  </tr>
-                  <tr>
-                    <td>S3 lifecycle + log retention</td>
-                    <td>S3/CloudWatch</td>
-                    <td>$12,600/month</td>
-                    <td>Yes</td>
-                  </tr>
-                  <tr>
-                    <td>Removed unused volumes & ELBs</td>
-                    <td>EBS/Networking</td>
-                    <td>$6,900/month</td>
-                    <td>Yes</td>
-                  </tr>
-                  <tr>
-                    <td>Spot adoption for CI jobs</td>
-                    <td>Compute</td>
-                    <td>$11,700/month</td>
-                    <td>Variable</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="report-table-wrap" style={{textAlign:'center'}}>
+              <img
+                src="/Screenshot 2025-08-13 at 19.36.45.png"
+                alt="Monthly changes and impact table"
+                style={{width:'100%', maxWidth:'1000px', height:'auto', borderRadius:'8px', border:'1px solid rgba(255,255,255,0.12)'}}
+              />
             </div>
 
             <div className="report-next">
