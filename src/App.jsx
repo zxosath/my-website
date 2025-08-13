@@ -197,13 +197,17 @@ function HomePage() {
               {productDropdownOpen && (
                 <div className="dropdown-menu">
                   <div className="dropdown-section">
+                    <h4>Amazon Web Services</h4>
                     <div className="resource-links">
-                      <a href="#"><Activity size={16} /> Our Process</a>
-                      <a href="#"><Globe size={16} /> Amazon Web Services</a>
-                      <a href="#"><DollarSign size={16} /> How we save</a>
-                      <a href="#"><BarChart3 size={16} /> Reporting</a>
-                      <a href="#"><span style={{opacity: 0.5}}>Google Cloud - Coming soon</span></a>
-                      <a href="#"><span style={{opacity: 0.5}}>Microsoft Azure - Coming soon</span></a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); setProductDropdownOpen(false); }}><Activity size={16} /> Our Process</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); setProductDropdownOpen(false); }}><DollarSign size={16} /> How we save</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); setProductDropdownOpen(false); }}><BarChart3 size={16} /> Reporting</a>
+                    </div>
+                  </div>
+                  <div className="dropdown-section">
+                    <div className="resource-links">
+                      <a href="#" onClick={(e) => { e.preventDefault(); setProductDropdownOpen(false); }}><span style={{opacity: 0.5}}>Google Cloud - Coming soon</span></a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); setProductDropdownOpen(false); }}><span style={{opacity: 0.5}}>Microsoft Azure - Coming soon</span></a>
                     </div>
                   </div>
                 </div>
