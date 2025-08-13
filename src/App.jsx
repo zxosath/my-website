@@ -1435,34 +1435,6 @@ function Reporting() {
       <section className="report-preview-section">
         <div className="container">
           <div className="report-preview" role="region" aria-label="Example monthly report">
-            <div className="report-header">
-              <div>
-                <h3>Viridity Monthly Optimization Report</h3>
-                <p className="muted">Billing month: Aug 2025 • Account: prod-org</p>
-              </div>
-              <div className="report-badges">
-                <span className="badge badge-positive">Example</span>
-                <span className="badge">Finance-ready</span>
-              </div>
-            </div>
-
-            <div className="report-metrics">
-              <div className="metric">
-                <div className="metric-label">Savings this month</div>
-                <div className="metric-value">$128,400</div>
-                <div className="metric-sub">20–40% effective reduction</div>
-              </div>
-              <div className="metric">
-                <div className="metric-label">Top contributors</div>
-                <div className="metric-list">Commitment optimization, rightsizing, S3 lifecycle</div>
-                <div className="metric-sub">See changes applied</div>
-              </div>
-              <div className="metric">
-                <div className="metric-label">Projected next month</div>
-                <div className="metric-value">+$38,000</div>
-                <div className="metric-sub">Pending approvals + planned work</div>
-              </div>
-            </div>
 
             <div className="report-table-wrap" style={{textAlign:'center'}}>
               <img
