@@ -4623,5 +4623,61 @@ html {
   }
 }
 
+/* Timeline arrows and labels */
+.timeline-arrow {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #8B5CF6;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.timeline-arrow.right {
+  right: -120px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline-arrow.left {
+  left: -120px;
+  top: 50%;
+  transform: translateY(-50%);
+  flex-direction: row-reverse;
+}
+
+.timeline-label {
+  white-space: nowrap;
+  background: rgba(139, 92, 246, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.timeline-arrow svg {
+  color: #8B5CF6;
+}
+
+/* Adjust timeline item positioning for arrows */
+.timeline-item {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.timeline-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .timeline-arrow {
+    display: none;
+  }
+}
+
 
 

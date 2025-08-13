@@ -895,12 +895,23 @@ function HomePage() {
 function OurProcess() {
   const [productDropdownOpen, setProductDropdownOpen] = useState(false);
   const [resourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 50;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <div className="process-page">
       {/* Header */}
-      <header className="header scrolled">
+      <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <div className="header-container">
           <div className="logo">
             <a href="#/" className="logo-container">
@@ -974,6 +985,12 @@ function OurProcess() {
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                   </svg>
                 </div>
+                <div className="timeline-arrow right">
+                  <span className="timeline-label">Day 1</span>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </div>
               </div>
               <div className="timeline-content">
                 <h3>Discovery Call</h3>
@@ -997,6 +1014,12 @@ function OurProcess() {
 
             <div className="timeline-item">
               <div className="timeline-icon">
+                <div className="timeline-arrow left">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                  </svg>
+                  <span className="timeline-label">Up to 7 days</span>
+                </div>
                 <div className="icon-circle">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
@@ -1032,6 +1055,12 @@ function OurProcess() {
                 <div className="icon-circle">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                </div>
+                <div className="timeline-arrow right">
+                  <span className="timeline-label">Day 7</span>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </div>
               </div>
