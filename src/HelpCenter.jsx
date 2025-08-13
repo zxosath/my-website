@@ -392,7 +392,7 @@ function HelpCenter() {
                   <DollarSign size={32} />
                 </div>
                 <h3>Sales</h3>
-                <p>See how much you could save — risk free</p>
+                <p>See how much you could save - risk free</p>
                 <div className="contact-info">
                   <a href="mailto:sales@viridity.com">sales@viridity.com</a>
                   <a href="tel:+1-555-123-4567">(555) 123-4567 x1</a>
@@ -404,7 +404,7 @@ function HelpCenter() {
                   <HelpCircle size={32} />
                 </div>
                 <h3>Help & Support</h3>
-                <p>Questions, troubleshooting, or advice — we're here to help</p>
+                <p>Questions, troubleshooting, or advice - we're here to help</p>
                 <div className="contact-info">
                   <a href="mailto:support@viridity.com">support@viridity.com</a>
                   <a href="tel:+1-555-123-4567">(555) 123-4567 x2</a>
