@@ -902,7 +902,183 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/success" element={<SuccessPage />} />
-        <Route path="/our-process" element={<div className="page-placeholder">Our Process Page - Coming Soon</div>} />
+        <Route path="/our-process" element={
+          <div className="process-page">
+            <div className="process-hero">
+              <div className="container">
+                <h1>Our Process</h1>
+                <p>From initial discovery to ongoing optimization - see how we deliver significant AWS savings with minimal touchpoints</p>
+              </div>
+            </div>
+            
+            <div className="process-timeline">
+              <div className="container">
+                <div className="timeline">
+                  <div className="timeline-item">
+                    <div className="timeline-icon">
+                      <div className="icon-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="timeline-content">
+                      <h3>Discovery Call</h3>
+                      <p>We start with a comprehensive discussion about your AWS infrastructure, business goals, and cost optimization objectives. We'll set up read-only access to analyze your current setup.</p>
+                      <div className="timeline-details">
+                        <div className="detail-item">
+                          <span className="detail-label">Duration:</span>
+                          <span className="detail-value">30-45 minutes</span>
+                        </div>
+                        <div className="detail-item">
+                          <span className="detail-label">Access:</span>
+                          <span className="detail-value">Read-only role setup</span>
+                        </div>
+                        <div className="detail-item">
+                          <span className="detail-label">Outcome:</span>
+                          <span className="detail-value">Goals alignment & access granted</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="timeline-item">
+                    <div className="timeline-icon">
+                      <div className="icon-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                          <polyline points="14,2 14,8 20,8"/>
+                          <line x1="16" y1="13" x2="8" y2="13"/>
+                          <line x1="16" y1="17" x2="8" y2="17"/>
+                          <polyline points="10,9 9,9 8,9"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="timeline-content">
+                      <h3>Initial Audit</h3>
+                      <p>Our certified AWS specialists conduct a thorough analysis of your infrastructure, identifying optimization opportunities across Reserved Instances, Savings Plans, resource rightsizing, and waste elimination.</p>
+                      <div className="timeline-details">
+                        <div className="detail-item">
+                          <span className="detail-label">Analysis:</span>
+                          <span className="detail-value">Comprehensive infrastructure review</span>
+                        </div>
+                        <div className="detail-item">
+                          <span className="detail-label">Focus Areas:</span>
+                          <span className="detail-value">RI/SP, rightsizing, waste elimination</span>
+                        </div>
+                        <div className="detail-item">
+                          <span className="detail-label">Deliverable:</span>
+                          <span className="detail-value">Detailed optimization report</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="timeline-item">
+                    <div className="timeline-icon">
+                      <div className="icon-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="timeline-content">
+                      <h3>Secondary Call</h3>
+                      <p>We present our findings and optimization recommendations, discussing the potential savings and implementation strategy. Upon approval, we set up actionable access to begin implementing changes.</p>
+                      <div className="timeline-details">
+                        <div className="detail-item">
+                          <span className="detail-label">Presentation:</span>
+                          <span className="detail-value">Detailed findings & recommendations</span>
+                        </div>
+                        <div className="detail-item">
+                          <span className="detail-label">Access:</span>
+                          <span className="detail-value">Actionable role setup</span>
+                        </div>
+                        <div className="detail-item">
+                          <span className="detail-label">Approval:</span>
+                          <span className="detail-value">Implementation green light</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="timeline-item">
+                    <div className="timeline-icon">
+                      <div className="icon-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M9 12l2 2 4-4"/>
+                          <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="timeline-content">
+                      <h3>Monthly Report</h3>
+                      <p>At the end of each billing cycle, we provide a comprehensive report detailing the savings achieved, optimizations implemented, and ongoing recommendations for continued cost reduction.</p>
+                      <div className="timeline-details">
+                        <div className="detail-item">
+                          <span className="detail-label">Frequency:</span>
+                          <span className="detail-value">End of billing month</span>
+                        </div>
+                        <div className="detail-item">
+                          <span className="detail-label">Content:</span>
+                          <span className="detail-value">Savings achieved & optimizations</span>
+                        </div>
+                        <div className="detail-item">
+                          <span className="detail-label">Focus:</span>
+                          <span className="detail-value">Ongoing recommendations</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="process-benefits">
+              <div className="container">
+                <h2>Why Our Process Works</h2>
+                <div className="benefits-grid">
+                  <div className="benefit-card">
+                    <div className="benefit-icon">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                      </svg>
+                    </div>
+                    <h3>Minimal Touchpoints</h3>
+                    <p>Focus on building your company while we handle the backend optimization. Our streamlined process requires minimal involvement from your team.</p>
+                  </div>
+                  <div className="benefit-card">
+                    <div className="benefit-icon">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                      </svg>
+                    </div>
+                    <h3>Significant Savings</h3>
+                    <p>Our expert analysis and strategic implementation deliver substantial cost reductions, typically 40-60% savings on AWS spending.</p>
+                  </div>
+                  <div className="benefit-card">
+                    <div className="benefit-icon">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M9 12l2 2 4-4"/>
+                        <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/>
+                      </svg>
+                    </div>
+                    <h3>Risk-Free Guarantee</h3>
+                    <p>We only get paid for the savings we generate. No upfront costs, no risk - just guaranteed AWS cost optimization results.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="process-cta">
+              <div className="container">
+                <h2>Ready to Start Saving?</h2>
+                <p>Join hundreds of companies already saving thousands on their AWS costs with our proven process.</p>
+                <button className="btn-primary" onClick={() => window.location.hash = '#/'}>Get Started</button>
+              </div>
+            </div>
+          </div>
+        } />
         <Route path="/how-we-save" element={<div className="page-placeholder">How We Save Page - Coming Soon</div>} />
         <Route path="/reporting" element={<div className="page-placeholder">Reporting Page - Coming Soon</div>} />
       </Routes>
