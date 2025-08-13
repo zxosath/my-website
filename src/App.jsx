@@ -197,25 +197,12 @@ function HomePage() {
               {productDropdownOpen && (
                 <div className="dropdown-menu">
                   <div className="dropdown-section">
-                    <h4>Our Process</h4>
-                  </div>
-                  <div className="dropdown-section">
-                    <h4>AWS (Amazon Web Services)</h4>
                     <div className="resource-links">
+                      <a href="#"><Activity size={16} /> Our Process</a>
                       <a href="#"><DollarSign size={16} /> How we save</a>
                       <a href="#"><BarChart3 size={16} /> Reporting</a>
-                    </div>
-                  </div>
-                  <div className="dropdown-section">
-                    <h4>Google Cloud</h4>
-                    <div className="resource-links">
-                      <a href="#"><span style={{opacity: 0.5}}>Coming soon</span></a>
-                    </div>
-                  </div>
-                  <div className="dropdown-section">
-                    <h4>Microsoft Azure</h4>
-                    <div className="resource-links">
-                      <a href="#"><span style={{opacity: 0.5}}>Coming soon</span></a>
+                      <a href="#"><span style={{opacity: 0.5}}>Google Cloud - Coming soon</span></a>
+                      <a href="#"><span style={{opacity: 0.5}}>Microsoft Azure - Coming soon</span></a>
                     </div>
                   </div>
                 </div>
