@@ -1268,12 +1268,14 @@ function HowWeSave() {
       <section className="article-section">
         <div className="container">
           <div className="article">
-            <h2>How We Save</h2>
-            <p className="muted">A focused, expert-led approach that reduces AWS costs without adding operational burden to your teams.</p>
+            <h2>Overview</h2>
+            <p className="lead">A focused, expert‑led approach to reduce AWS costs while keeping performance steady and engineering unblocked. Readable in two minutes, designed for decision‑makers.</p>
             <h3>Commitment strategy that fits reality</h3>
             <p>We design the right mix of Savings Plans and Reserved Instances to align with your actual usage patterns and risk tolerance. Predictable workloads get aggressive coverage; variable ones get flexibility.</p>
+            <hr className="section-divider" />
             <h3>Rightsizing without the guesswork</h3>
             <p>We evaluate utilization over meaningful windows and adjust compute, storage, and databases to match needs — keeping performance steady while spend drops.</p>
+            <hr className="section-divider" />
             <h3>Eliminating silent waste</h3>
             <p>We remove orphaned resources and correct low‑value configurations that quietly accumulate cost over time.</p>
             <ul>
@@ -1281,6 +1283,7 @@ function HowWeSave() {
               <li>Stale snapshots and inefficient storage classes</li>
               <li>Misconfigured networking that drives unnecessary transfer</li>
             </ul>
+            <hr className="section-divider" />
             <h3>Continuous adjustments</h3>
             <p>As your environment changes, we adapt commitments and configuration so savings don’t decay — optimization becomes ongoing, not one‑time.</p>
           </div>
