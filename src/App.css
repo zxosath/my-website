@@ -4831,7 +4831,7 @@ html {
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
   backdrop-filter: blur(8px);
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
 }
 
 .report-header {
@@ -4870,21 +4870,28 @@ html {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  padding: 1rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
-.metric-label {
+.report-metrics .metric-label {
   font-size: 0.8rem;
   color: rgba(255,255,255,0.7);
 }
 
-.metric-value {
-  font-size: 1.5rem;
+.report-metrics .metric-value {
+  position: static;
+  right: auto;
+  top: auto;
+  transform: none;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #fff;
 }
 
-.metric-sub {
+.report-metrics .metric-sub {
   font-size: 0.85rem;
   color: rgba(255,255,255,0.7);
 }
@@ -4903,13 +4910,26 @@ html {
 .report-table th,
 .report-table td {
   text-align: left;
-  padding: 0.75rem 0.75rem;
+  padding: 1rem 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  vertical-align: middle;
 }
 
 .report-table th {
   color: rgba(255,255,255,0.8);
   font-weight: 600;
+}
+
+/* Column sizing and alignment for better readability */
+.report-table th:nth-child(1) { width: 48%; }
+.report-table th:nth-child(2) { width: 18%; }
+.report-table th:nth-child(3) { width: 22%; text-align: right; }
+.report-table th:nth-child(4) { width: 12%; text-align: right; }
+
+.report-table td:nth-child(3),
+.report-table td:nth-child(4) {
+  text-align: right;
+  white-space: nowrap;
 }
 
 .report-next {
