@@ -1180,6 +1180,14 @@ function OurProcess() {
 // How We Save Page
 function HowWeSave() {
   const navigate = useNavigate();
+  const [productDropdownOpen, setProductDropdownOpen] = useState(false);
+  const [resourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   const goToHomeCTA = () => {
     navigate('/');
     setTimeout(() => {
@@ -1193,7 +1201,7 @@ function HowWeSave() {
 
   return (
     <div className="process-page">
-      <header className="header scrolled">
+      <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <div className="header-container">
           <div className="logo">
             <a href="#/" className="logo-container">
@@ -1201,6 +1209,49 @@ function HowWeSave() {
               <h2>VIRIDITY</h2>
             </a>
           </div>
+          
+          <nav className="nav-desktop">
+            <div className="nav-item dropdown" onMouseEnter={() => setProductDropdownOpen(true)} onMouseLeave={() => setProductDropdownOpen(false)}>
+              <span>Product <ChevronDown size={16} /></span>
+              {productDropdownOpen && (
+                <div className="dropdown-menu">
+                  <div className="dropdown-section">
+                    <h4>Amazon Web Services</h4>
+                    <div className="resource-links">
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/our-process'); setProductDropdownOpen(false); }}><Activity size={16} /> Our Process</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/how-we-save'); setProductDropdownOpen(false); }}><DollarSign size={16} /> How we save</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/reporting'); setProductDropdownOpen(false); }}><BarChart3 size={16} /> Reporting</a>
+                    </div>
+                  </div>
+                  <div className="dropdown-section">
+                    <div className="resource-links">
+                      <a href="#" onClick={(e) => { e.preventDefault(); setProductDropdownOpen(false); }}><span style={{opacity: 0.5}}>Google Cloud - Coming soon</span></a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); setProductDropdownOpen(false); }}><span style={{opacity: 0.5}}>Microsoft Azure - Coming soon</span></a>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+            
+            <div className="nav-item dropdown" onMouseEnter={() => setResourcesDropdownOpen(true)} onMouseLeave={() => setResourcesDropdownOpen(false)}>
+              <span>Resources <ChevronDown size={16} /></span>
+              {resourcesDropdownOpen && (
+                <div className="dropdown-menu">
+                  <div className="dropdown-section">
+                    <div className="resource-links">
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/help-center'); setResourcesDropdownOpen(false); }}><HelpCircle size={16} /> Help Center</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/legal'); setResourcesDropdownOpen(false); }}><FileText size={16} /> Legal</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/about'); setResourcesDropdownOpen(false); }}><Users size={16} /> About</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/contact'); setResourcesDropdownOpen(false); }}><Users size={16} /> Contact</a>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+            
+            <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pricing'); }} className="nav-item">Pricing</a>
+          </nav>
+
           <div className="header-actions">
             <button className="btn-primary desktop-only" onClick={goToHomeCTA}>Free Analysis</button>
           </div>
@@ -1250,6 +1301,14 @@ function HowWeSave() {
 // Reporting Page
 function Reporting() {
   const navigate = useNavigate();
+  const [productDropdownOpen, setProductDropdownOpen] = useState(false);
+  const [resourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   const goToHomeCTA = () => {
     navigate('/');
     setTimeout(() => {
@@ -1263,7 +1322,7 @@ function Reporting() {
 
   return (
     <div className="process-page">
-      <header className="header scrolled">
+      <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <div className="header-container">
           <div className="logo">
             <a href="#/" className="logo-container">
@@ -1271,6 +1330,49 @@ function Reporting() {
               <h2>VIRIDITY</h2>
             </a>
           </div>
+          
+          <nav className="nav-desktop">
+            <div className="nav-item dropdown" onMouseEnter={() => setProductDropdownOpen(true)} onMouseLeave={() => setProductDropdownOpen(false)}>
+              <span>Product <ChevronDown size={16} /></span>
+              {productDropdownOpen && (
+                <div className="dropdown-menu">
+                  <div className="dropdown-section">
+                    <h4>Amazon Web Services</h4>
+                    <div className="resource-links">
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/our-process'); setProductDropdownOpen(false); }}><Activity size={16} /> Our Process</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/how-we-save'); setProductDropdownOpen(false); }}><DollarSign size={16} /> How we save</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/reporting'); setProductDropdownOpen(false); }}><BarChart3 size={16} /> Reporting</a>
+                    </div>
+                  </div>
+                  <div className="dropdown-section">
+                    <div className="resource-links">
+                      <a href="#" onClick={(e) => { e.preventDefault(); setProductDropdownOpen(false); }}><span style={{opacity: 0.5}}>Google Cloud - Coming soon</span></a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); setProductDropdownOpen(false); }}><span style={{opacity: 0.5}}>Microsoft Azure - Coming soon</span></a>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+            
+            <div className="nav-item dropdown" onMouseEnter={() => setResourcesDropdownOpen(true)} onMouseLeave={() => setResourcesDropdownOpen(false)}>
+              <span>Resources <ChevronDown size={16} /></span>
+              {resourcesDropdownOpen && (
+                <div className="dropdown-menu">
+                  <div className="dropdown-section">
+                    <div className="resource-links">
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/help-center'); setResourcesDropdownOpen(false); }}><HelpCircle size={16} /> Help Center</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/legal'); setResourcesDropdownOpen(false); }}><FileText size={16} /> Legal</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/about'); setResourcesDropdownOpen(false); }}><Users size={16} /> About</a>
+                      <a href="#" onClick={(e) => { e.preventDefault(); navigate('/contact'); setResourcesDropdownOpen(false); }}><Users size={16} /> Contact</a>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+            
+            <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pricing'); }} className="nav-item">Pricing</a>
+          </nav>
+
           <div className="header-actions">
             <button className="btn-primary desktop-only" onClick={goToHomeCTA}>Free Analysis</button>
           </div>
