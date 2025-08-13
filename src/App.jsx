@@ -1516,19 +1516,13 @@ function Reporting() {
                 <li>Evaluate Graviton migration for API tier</li>
                 <li>Tighten cross‑region data transfer on nightly jobs</li>
               </ul>
-              <p className="muted">This example is illustrative. Actual reports reflect your environment and finance structure.</p>
+              <p className="muted">Illustrative example. Your report reflects your environment and finance structure.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <div className="process-cta">
-        <div className="container">
-          <h2>Want this report in your inbox?</h2>
-          <p>We’ll run a free analysis and show you what your first month could look like — then keep you updated with clear monthly reporting.</p>
-          <button className="btn-primary" onClick={goToHomeCTA}>Get Started</button>
-        </div>
-      </div>
+      {/* Removed CTA per request */}
     </div>
   );
 }

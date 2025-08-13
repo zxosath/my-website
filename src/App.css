@@ -4933,7 +4933,51 @@ html {
 }
 
 .report-next {
-  margin-top: 1rem;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.report-next h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.75rem 0;
+}
+
+.report-next ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 0.75rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem 1.5rem;
+}
+
+.report-next li {
+  position: relative;
+  padding-left: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.report-next li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  color: #22c55e;
+  font-weight: 700;
+}
+
+.report-next .muted {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 900px) {
+  .report-next ul {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 900px) {
