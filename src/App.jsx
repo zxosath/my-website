@@ -904,6 +904,34 @@ function App() {
         <Route path="/success" element={<SuccessPage />} />
         <Route path="/our-process" element={
           <div className="process-page">
+            {/* Header */}
+            <header className="header scrolled">
+              <div className="header-container">
+                <div className="logo">
+                  <a href="#/" className="logo-container">
+                    <img src="/IMG_3102.PNG" alt="VIRIDITY Logo" className="logo-icon" />
+                    <h2>VIRIDITY</h2>
+                  </a>
+                </div>
+                
+                <nav className="nav-desktop">
+                  <div className="nav-item dropdown">
+                    <span>Product <ChevronDown size={16} /></span>
+                  </div>
+                  
+                  <div className="nav-item dropdown">
+                    <span>Resources <ChevronDown size={16} /></span>
+                  </div>
+                  
+                  <a href="#" onClick={(e) => { e.preventDefault(); window.location.hash = '#/pricing'; }} className="nav-item">Pricing</a>
+                </nav>
+
+                <div className="header-actions">
+                  <button className="btn-primary desktop-only" onClick={() => window.location.hash = '#/'}>Free Analysis</button>
+                </div>
+              </div>
+            </header>
+
             <div className="process-hero">
               <div className="container">
                 <h1>Our Process</h1>
