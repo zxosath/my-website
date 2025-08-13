@@ -197,6 +197,9 @@ function HomePage() {
               {productDropdownOpen && (
                 <div className="dropdown-menu">
                   <div className="dropdown-section">
+                    <h4>Our Process</h4>
+                  </div>
+                  <div className="dropdown-section">
                     <h4>AWS (Amazon Web Services)</h4>
                     <div className="resource-links">
                       <a href="#"><DollarSign size={16} /> How we save</a>
@@ -213,13 +216,6 @@ function HomePage() {
                     <h4>Microsoft Azure</h4>
                     <div className="resource-links">
                       <a href="#"><span style={{opacity: 0.5}}>Coming soon</span></a>
-                    </div>
-                  </div>
-                  <div className="dropdown-section">
-                    <h4>Our Process</h4>
-                    <div className="resource-links">
-                      <a href="#"><Activity size={16} /> Expert Analysis</a>
-                      <a href="#"><Target size={16} /> Strategic Planning</a>
                     </div>
                   </div>
                 </div>
