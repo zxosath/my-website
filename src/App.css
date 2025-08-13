@@ -4325,5 +4325,21 @@ html {
   }
 }
 
+/* Page Placeholder Styles */
+.page-placeholder {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #16a34a 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 30s ease infinite;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 2rem;
+}
+
 
 
