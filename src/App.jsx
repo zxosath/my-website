@@ -1214,55 +1214,28 @@ function HowWeSave() {
         </div>
       </div>
 
-      <section className="process-timeline">
+      <section className="process-benefits">
         <div className="container">
-          <div className="timeline">
-            <div className="timeline-item">
-              <div className="timeline-icon"><div className="icon-circle">💡</div></div>
-              <div className="timeline-content">
-                <h3>Commitment Strategy That Fits Reality</h3>
-                <p>We architect Reserved Instances and Savings Plans to match your actual usage patterns and risk profile — conservative where volatility exists, aggressive where workloads are predictable.</p>
-                <div className="timeline-details">
-                  <div className="detail-item"><span className="detail-label">Focus:</span><span className="detail-value">RI/SP mix, term, and size</span></div>
-                  <div className="detail-item"><span className="detail-label">Outcome:</span><span className="detail-value">Lower effective rates, minimal waste</span></div>
-                </div>
-              </div>
+          <div className="benefits-grid">
+            <div className="benefit-card">
+              <div className="benefit-icon">💡</div>
+              <h3>Smart Commitments</h3>
+              <p>We align Reserved Instances and Savings Plans with real usage and risk tolerance — lowering effective rates while minimizing waste.</p>
             </div>
-
-            <div className="timeline-item">
-              <div className="timeline-icon"><div className="icon-circle">🧭</div></div>
-              <div className="timeline-content">
-                <h3>Rightsizing Without The Guesswork</h3>
-                <p>We evaluate utilization over meaningful windows and align instance families, sizes, and storage with what’s actually needed — not just what looks underutilized for a day.</p>
-                <div className="timeline-details">
-                  <div className="detail-item"><span className="detail-label">Areas:</span><span className="detail-value">EC2/ECS/EKS, storage classes, databases</span></div>
-                  <div className="detail-item"><span className="detail-label">Outcome:</span><span className="detail-value">Spend trimmed without performance hits</span></div>
-                </div>
-              </div>
+            <div className="benefit-card">
+              <div className="benefit-icon">🧭</div>
+              <h3>Practical Rightsizing</h3>
+              <p>We rightsize compute, storage, and databases based on meaningful utilization trends so performance stays steady while spend drops.</p>
             </div>
-
-            <div className="timeline-item">
-              <div className="timeline-icon"><div className="icon-circle">♻️</div></div>
-              <div className="timeline-content">
-                <h3>Eliminate Silent Waste</h3>
-                <p>We target orphaned resources, low-value data retention, misconfigured networking, and underused services that quietly add up month after month.</p>
-                <div className="timeline-details">
-                  <div className="detail-item"><span className="detail-label">Examples:</span><span className="detail-value">Idle EIPs, unattached volumes, stale snapshots</span></div>
-                  <div className="detail-item"><span className="detail-label">Outcome:</span><span className="detail-value">Immediate, compounding savings</span></div>
-                </div>
-              </div>
+            <div className="benefit-card">
+              <div className="benefit-icon">♻️</div>
+              <h3>Waste Elimination</h3>
+              <p>We remove idle and orphaned resources and fix small leaks that quietly grow — delivering immediate, compounding savings.</p>
             </div>
-
-            <div className="timeline-item">
-              <div className="timeline-icon"><div className="icon-circle">🔁</div></div>
-              <div className="timeline-content">
-                <h3>Continuous Adjustments</h3>
-                <p>As your usage shifts, we adapt commitments and configuration so savings don’t decay over time. Your environment evolves — your optimization should too.</p>
-                <div className="timeline-details">
-                  <div className="detail-item"><span className="detail-label">Cadence:</span><span className="detail-value">Weekly checks, monthly review</span></div>
-                  <div className="detail-item"><span className="detail-label">Outcome:</span><span className="detail-value">Savings that stick</span></div>
-                </div>
-              </div>
+            <div className="benefit-card">
+              <div className="benefit-icon">🔁</div>
+              <h3>Continuous Tuning</h3>
+              <p>As your environment changes, we adjust commitments and configuration so savings continue month after month.</p>
             </div>
           </div>
         </div>
@@ -1316,43 +1289,23 @@ function Reporting() {
         </div>
       </div>
 
-      <section className="process-timeline">
+      <section className="process-benefits">
         <div className="container">
-          <div className="timeline">
-            <div className="timeline-item">
-              <div className="timeline-icon"><div className="icon-circle">📊</div></div>
-              <div className="timeline-content">
-                <h3>Monthly Savings Summary</h3>
-                <p>Exact dollar and percentage savings achieved, broken out by service and initiative. No fluff — just the results.</p>
-                <div className="timeline-details">
-                  <div className="detail-item"><span className="detail-label">Highlights:</span><span className="detail-value">New savings, cumulative impact</span></div>
-                  <div className="detail-item"><span className="detail-label">View:</span><span className="detail-value">Service, account, tag</span></div>
-                </div>
-              </div>
+          <div className="benefits-grid">
+            <div className="benefit-card">
+              <div className="benefit-icon">📊</div>
+              <h3>Monthly Savings Summary</h3>
+              <p>Exact dollar and percentage savings achieved by service and initiative — no fluff, just results.</p>
             </div>
-
-            <div className="timeline-item">
-              <div className="timeline-icon"><div className="icon-circle">🛠️</div></div>
-              <div className="timeline-content">
-                <h3>Changes Implemented</h3>
-                <p>Transparent record of what we adjusted — commitments, rightsizing, cleanup — and the expected ongoing effect.</p>
-                <div className="timeline-details">
-                  <div className="detail-item"><span className="detail-label">Scope:</span><span className="detail-value">Commitments, config, cleanups</span></div>
-                  <div className="detail-item"><span className="detail-label">Impact:</span><span className="detail-value">One-time vs recurring</span></div>
-                </div>
-              </div>
+            <div className="benefit-card">
+              <div className="benefit-icon">🛠️</div>
+              <h3>Changes Implemented</h3>
+              <p>Transparent record of what changed — commitments, rightsizing, and cleanup work — and the expected ongoing effect.</p>
             </div>
-
-            <div className="timeline-item">
-              <div className="timeline-icon"><div className="icon-circle">🔮</div></div>
-              <div className="timeline-content">
-                <h3>Forward Plan</h3>
-                <p>What we’ll do next month: adjustments, target areas, and projected savings so stakeholders know what to expect.</p>
-                <div className="timeline-details">
-                  <div className="detail-item"><span className="detail-label">Focus:</span><span className="detail-value">Upcoming optimizations</span></div>
-                  <div className="detail-item"><span className="detail-label">Value:</span><span className="detail-value">Predictable savings roadmap</span></div>
-                </div>
-              </div>
+            <div className="benefit-card">
+              <div className="benefit-icon">🔮</div>
+              <h3>Forward Plan</h3>
+              <p>What’s next: target areas, upcoming adjustments, and projected savings so stakeholders know what to expect.</p>
             </div>
           </div>
         </div>
