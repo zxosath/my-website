@@ -4392,7 +4392,7 @@ html {
 }
 
 .process-timeline {
-  padding: 6rem 0;
+  padding: 4rem 0;
   background: #000D1F;
 }
 
@@ -4416,7 +4416,7 @@ html {
 .timeline-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   position: relative;
 }
 
