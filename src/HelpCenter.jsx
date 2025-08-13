@@ -33,17 +33,17 @@ function HelpCenter() {
       id: 'faq', 
       name: 'Frequently Asked Questions', 
       icon: HelpCircle,
-      description: 'Common questions about VIRIDITY services and AWS optimization'
+      description: 'See how much you could save - risk free'
     },
     { 
       id: 'security', 
       name: 'Security & Access Management', 
       icon: Shield,
-      description: 'Security protocols and access management for AWS optimization'
+      description: 'Questions, troubleshooting, or advice - we\'re here to help'
     },
     { 
       id: 'billing', 
-      name: 'Billing', 
+      name: 'Billing Information & Payment Structure', 
       icon: DollarSign,
       description: 'Billing information and payment structure'
     }

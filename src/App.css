@@ -2920,11 +2920,11 @@ html {
 .help-center-hero .hero-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  text-align: left;
+  text-align: center;
   max-width: 600px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .help-center-hero h1 {
@@ -3116,7 +3116,7 @@ html {
 }
 
 .faq-answer {
-  padding: 0 1.5rem 1.5rem;
+  padding: 1rem 1rem 1rem;
   color: #6b7280;
   line-height: 1.6;
   border-top: 1px solid #f3f4f6;
@@ -3200,7 +3200,7 @@ html {
   }
   
   .faq-answer {
-    padding: 0 1rem 1rem;
+    padding: 1rem 1rem 1rem;
   }
   
   .contact-section {
@@ -3484,11 +3484,11 @@ html {
 .legal-hero .hero-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  text-align: left;
+  text-align: center;
   max-width: 600px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .legal-hero h1 {
@@ -3718,11 +3718,11 @@ html {
 .about-hero .hero-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  text-align: left;
+  text-align: center;
   max-width: 600px;
-  margin: 0;
+  margin: 0 auto;
   position: relative;
   z-index: 1;
 }
@@ -4245,11 +4245,11 @@ html {
 .contact-hero .hero-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  text-align: left;
+  text-align: center;
   max-width: 600px;
-  margin: 0;
+  margin: 0 auto;
   position: relative;
   z-index: 1;
 }
