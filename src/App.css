@@ -4846,8 +4846,8 @@ html {
     text-align: center !important;
   }
   .hero-text h1 { 
-    font-size: 2.25rem !important; 
-    line-height: 1.15 !important;
+    font-size: 3rem !important; 
+    line-height: 1.1 !important;
     background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
@@ -4884,9 +4884,11 @@ html {
   .hero-image {
     order: 3 !important;
     width: 100% !important;
+    display: block !important;
   }
   .dashboard-preview { 
     display: block !important;
+    visibility: visible !important;
     width: 100% !important;
     max-width: 100% !important;
     transform: none !important;
@@ -4895,6 +4897,29 @@ html {
     background: rgba(0, 0, 0, 0.8) !important;
     border-radius: 12px !important;
     padding: 1.5rem !important;
+    opacity: 1 !important;
+  }
+  
+  /* Ensure dashboard content is visible */
+  .dashboard-header,
+  .dashboard-tabs,
+  .dashboard-content,
+  .metric-card {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  .dashboard-tabs {
+    display: flex !important;
+    gap: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .dashboard-content {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
   }
 
   /* Article pages (How We Save / Reporting legal style) */
