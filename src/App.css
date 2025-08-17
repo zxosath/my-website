@@ -5011,15 +5011,16 @@ html {
   
   /* Why Viridity Section Mobile */
   .why-prosperops h2 {
-    font-size: 1.5rem !important;
-    margin-bottom: 0.75rem !important;
-    opacity: 0.7 !important;
+    font-size: 1.25rem !important;
+    margin-bottom: 0.5rem !important;
+    opacity: 1 !important;
+    color: inherit !important;
   }
   
   .benefits-showcase {
     display: flex !important;
     flex-direction: column !important;
-    gap: 2rem !important;
+    gap: 1rem !important;
   }
   
   .showcase-item {
@@ -5033,22 +5034,22 @@ html {
   }
   
   .showcase-content h3 {
-    font-size: 1.75rem !important;
-    margin-bottom: 1rem !important;
+    font-size: 1.4rem !important;
+    margin-bottom: 0.75rem !important;
   }
   
   .showcase-content p {
-    font-size: 1rem !important;
-    margin-bottom: 1.5rem !important;
-    line-height: 1.6 !important;
+    font-size: 0.9rem !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.5 !important;
   }
   
   .showcase-actions {
     order: 2 !important;
     display: flex !important;
     flex-direction: column !important;
-    gap: 0.75rem !important;
-    margin-bottom: 1.5rem !important;
+    gap: 0.5rem !important;
+    margin-bottom: 1rem !important;
   }
   
   .showcase-actions .btn-primary,
@@ -5056,6 +5057,8 @@ html {
     width: 100% !important;
     max-width: 280px !important;
     margin: 0 auto !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.8rem !important;
   }
   
   .showcase-visual {
@@ -5066,6 +5069,11 @@ html {
     width: 100% !important;
     height: auto !important;
     border-radius: 8px !important;
+  }
+  
+  /* Hide first showcase item on mobile only */
+  .showcase-item:first-child {
+    display: none !important;
   }
   
   /* Stats section */
