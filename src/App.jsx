@@ -430,13 +430,7 @@ function HomePage() {
               <p>
                 AWS commitment optimization presents a critical dilemma: commit conservatively and miss savings, or commit aggressively and risk waste when usage changes.
               </p>
-              <p>
-                Manual management consumes time that could be spent on strategic FinOps initiatives where human expertise delivers maximum value.
-              </p>
-              <p>
-                VIRIDITY eliminates this trade-off through expert analysis and strategic planning, delivering precise alignment between commitments and usage patterns.
-        </p>
-      </div>
+            </div>
             
             <div className="analytics-visual">
               <img 
@@ -449,6 +443,15 @@ function HomePage() {
                   boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)'
                 }}
               />
+            </div>
+
+            <div className="analytics-text-remaining">
+              <p>
+                Manual management consumes time that could be spent on strategic FinOps initiatives where human expertise delivers maximum value.
+              </p>
+              <p>
+                VIRIDITY eliminates this trade-off through expert analysis and strategic planning, delivering precise alignment between commitments and usage patterns.
+              </p>
             </div>
           </div>
         </div>
