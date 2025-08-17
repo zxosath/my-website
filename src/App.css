@@ -5397,8 +5397,9 @@ html {
     margin: 0 !important;
   }
   .hero-text h1 { 
-    font-size: 1.75rem !important;
+    font-size: 2.5rem !important;
     margin-bottom: 0.75rem !important;
+    line-height: 1.1 !important;
   }
   .hero-text p { 
     font-size: 0.95rem !important;
