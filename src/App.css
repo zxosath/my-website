@@ -4835,15 +4835,28 @@ html {
     padding: 5rem 0 3rem !important;
     background-size: 200% 200% !important;
     animation: gradientShift 30s ease-in-out infinite !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  .hero .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+    margin: 0 auto !important;
   }
   .hero-content {
     grid-template-columns: 1fr !important;
     gap: 3rem !important;
     text-align: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
   .hero-text {
     align-items: center !important;
     text-align: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
   .hero-text h1 { 
     font-size: 3rem !important; 
@@ -4853,15 +4866,19 @@ html {
     -webkit-text-fill-color: transparent !important;
     background-clip: text !important;
     margin-bottom: 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
   }
   .hero-text p { 
     font-size: 1rem !important; 
     margin-bottom: 2rem !important;
     opacity: 0.95 !important;
-    padding: 0 2rem !important;
-    max-width: 600px !important;
+    padding: 0 1rem !important;
+    max-width: 100% !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    word-wrap: break-word !important;
   }
   .hero-buttons {
     flex-direction: column !important;
@@ -4869,35 +4886,40 @@ html {
     align-items: center !important;
     justify-content: center !important;
     margin-bottom: 3rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
   .hero-buttons .btn-primary,
   .hero-buttons .btn-secondary {
     padding: 0.5rem 2rem !important;
     font-size: 0.85rem !important;
-    width: 100% !important;
-    max-width: 320px !important;
+    width: calc(100% - 2rem) !important;
+    max-width: 300px !important;
     height: auto !important;
     min-height: 44px !important;
+    margin: 0 auto !important;
   }
   
   /* Show dashboard preview on mobile below buttons */
   .hero-image {
     order: 3 !important;
     width: 100% !important;
+    max-width: 100% !important;
     display: block !important;
   }
   .dashboard-preview { 
     display: block !important;
     visibility: visible !important;
-    width: 100% !important;
+    width: calc(100% - 2rem) !important;
     max-width: 100% !important;
     transform: none !important;
     animation: none !important;
-    margin: 0 !important;
+    margin: 0 auto !important;
     background: rgba(0, 0, 0, 0.8) !important;
     border-radius: 12px !important;
     padding: 1.5rem !important;
     opacity: 1 !important;
+    box-sizing: border-box !important;
   }
   
   /* Ensure dashboard content is visible */
