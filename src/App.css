@@ -5009,6 +5009,64 @@ html {
     hyphens: auto !important;
   }
   
+  /* Why Viridity Section Mobile */
+  .why-prosperops h2 {
+    font-size: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .benefits-showcase {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+  
+  .showcase-item {
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+  
+  .showcase-content {
+    order: 1 !important;
+  }
+  
+  .showcase-content h3 {
+    font-size: 1.75rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .showcase-content p {
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+    line-height: 1.6 !important;
+  }
+  
+  .showcase-actions {
+    order: 2 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .showcase-actions .btn-primary,
+  .showcase-actions .btn-secondary {
+    width: 100% !important;
+    max-width: 280px !important;
+    margin: 0 auto !important;
+  }
+  
+  .showcase-visual {
+    order: 3 !important;
+  }
+  
+  .showcase-image {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+  }
+  
   /* Stats section */
   .stats-section { padding: 3rem 0; }
   .stats-section h2 { font-size: 1.75rem; margin-bottom: 2rem; }
