@@ -5077,24 +5077,62 @@ html {
   }
   
   /* Stats section */
-  .stats-section { padding: 3rem 0; }
-  .stats-section h2 { font-size: 1.75rem; margin-bottom: 2rem; }
+  .stats {
+    padding: 3rem 0 !important;
+    background: #000d1f !important;
+  }
+  .stats .container {
+    padding: 0 1rem !important;
+  }
   .stats-grid { 
-    grid-template-columns: 1fr; 
-    gap: 1rem; 
-    max-width: 100%;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    gap: 1rem !important;
+    max-width: 100% !important;
   }
   .stat-item { 
-    height: auto !important; 
-    padding: 1.5rem; 
-    margin: 0;
-    transform: none !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 12px !important;
+    padding: 1rem !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    min-height: 80px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
   }
-  .stat-item h3 { font-size: 1.4rem; }
-  .stat-item p { font-size: 0.95rem; }
-  .stat-item .stat-body { 
-    max-height: none !important;
+  .stat-item h3 { 
+    font-size: 0.9rem !important;
+    color: white !important;
+    margin-bottom: 0.5rem !important;
+    line-height: 1.3 !important;
+  }
+  .stat-item p { 
+    font-size: 0.8rem !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    line-height: 1.4 !important;
+    margin: 0.5rem 0 0 0 !important;
+    opacity: 0 !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
+  }
+  .stat-item.expanded p {
     opacity: 1 !important;
+    max-height: 200px !important;
+  }
+  .stat-item .expand-icon {
+    position: absolute !important;
+    bottom: 0.75rem !important;
+    right: 0.75rem !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-size: 1rem !important;
+    transition: transform 0.3s ease !important;
+  }
+  .stat-item.expanded .expand-icon {
+    transform: rotate(45deg) !important;
   }
 
   /* Benefits section */
@@ -5110,11 +5148,27 @@ html {
   .benefit-card h3 { font-size: 1.25rem; }
   .benefit-card p { font-size: 0.95rem; }
 
+  /* Why Viridity Section - Reduce bottom padding */
+  .why-prosperops {
+    padding-bottom: 2rem !important;
+  }
+
   /* Analytics section */
-  .analytics-section {
-    padding: 3rem 0 !important;
+  .analytics {
+    padding: 4rem 0 3rem 0 !important;
     text-align: center !important;
     background: #000d1f !important;
+  }
+  .analytics .container h2 {
+    color: white !important;
+    font-size: 1.75rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .analytics-intro {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 1rem !important;
+    margin-bottom: 2rem !important;
+    padding: 0 1rem !important;
   }
   .analytics-content {
     flex-direction: column !important;
@@ -5126,26 +5180,22 @@ html {
     margin-bottom: 2rem !important;
     padding: 0 1rem !important;
   }
-  .analytics-text h2 {
-    color: white !important;
-    font-size: 1.75rem !important;
-    margin-bottom: 1rem !important;
-  }
   .analytics-text p {
     color: rgba(255, 255, 255, 0.9) !important;
     font-size: 1rem !important;
     line-height: 1.6 !important;
+    margin-bottom: 1rem !important;
   }
-  .analytics-chart {
+  .analytics-visual {
     order: 2 !important;
     width: 100% !important;
     max-width: 100% !important;
     padding: 0 1rem !important;
   }
-  .analytics-chart img {
+  .analytics-visual img {
     width: 100% !important;
     height: auto !important;
-    border-radius: 8px !important;
+    border-radius: 12px !important;
   }
 
   /* Report image */
