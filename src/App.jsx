@@ -425,14 +425,33 @@ function HomePage() {
             Your engineering team ships fast. Your AWS bill grows faster. <strong>The same agility that powers your product is quietly burning through your budget.</strong>
           </p>
           
+          <div className="analytics-visual mobile-image">
+            <img 
+              src="/f08f2585-af0e-4765-ae1a-720a784c27fb.png" 
+              alt="Manual vs Expert AWS Optimization Chart" 
+              style={{
+                width: '100%',
+                height: 'auto',
+                borderRadius: '12px',
+                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)'
+              }}
+            />
+          </div>
+          
           <div className="analytics-content animate-on-scroll">
             <div className="analytics-text">
               <p>
                 AWS commitment optimization presents a critical dilemma: commit conservatively and miss savings, or commit aggressively and risk waste when usage changes.
               </p>
+              <p>
+                Manual management consumes time that could be spent on strategic FinOps initiatives where human expertise delivers maximum value.
+              </p>
+              <p>
+                VIRIDITY eliminates this trade-off through expert analysis and strategic planning, delivering precise alignment between commitments and usage patterns.
+              </p>
             </div>
             
-            <div className="analytics-visual">
+            <div className="analytics-visual desktop-image">
               <img 
                 src="/f08f2585-af0e-4765-ae1a-720a784c27fb.png" 
                 alt="Manual vs Expert AWS Optimization Chart" 
@@ -443,15 +462,6 @@ function HomePage() {
                   boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)'
                 }}
               />
-            </div>
-
-            <div className="analytics-text-remaining">
-              <p>
-                Manual management consumes time that could be spent on strategic FinOps initiatives where human expertise delivers maximum value.
-              </p>
-              <p>
-                VIRIDITY eliminates this trade-off through expert analysis and strategic planning, delivering precise alignment between commitments and usage patterns.
-              </p>
             </div>
           </div>
         </div>
