@@ -4838,7 +4838,7 @@ html {
   }
   .hero-content {
     grid-template-columns: 1fr !important;
-    gap: 2rem !important;
+    gap: 3rem !important;
     text-align: center !important;
   }
   .hero-text {
@@ -4846,7 +4846,7 @@ html {
     text-align: center !important;
   }
   .hero-text h1 { 
-    font-size: 1.75rem !important; 
+    font-size: 2.25rem !important; 
     line-height: 1.15 !important;
     background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%) !important;
     -webkit-background-clip: text !important;
@@ -4856,22 +4856,45 @@ html {
   }
   .hero-text p { 
     font-size: 1rem !important; 
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 2rem !important;
     opacity: 0.95 !important;
+    padding: 0 2rem !important;
+    max-width: 600px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
-  .dashboard-preview { display: none !important; }
   .hero-buttons {
     flex-direction: column !important;
     gap: 1rem !important;
     align-items: center !important;
     justify-content: center !important;
+    margin-bottom: 3rem !important;
   }
   .hero-buttons .btn-primary,
   .hero-buttons .btn-secondary {
-    padding: 0.75rem 1.5rem !important;
-    font-size: 0.95rem !important;
+    padding: 0.5rem 2rem !important;
+    font-size: 0.85rem !important;
     width: 100% !important;
-    max-width: 280px !important;
+    max-width: 320px !important;
+    height: auto !important;
+    min-height: 44px !important;
+  }
+  
+  /* Show dashboard preview on mobile below buttons */
+  .hero-image {
+    order: 3 !important;
+    width: 100% !important;
+  }
+  .dashboard-preview { 
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important;
+    animation: none !important;
+    margin: 0 !important;
+    background: rgba(0, 0, 0, 0.8) !important;
+    border-radius: 12px !important;
+    padding: 1.5rem !important;
   }
 
   /* Article pages (How We Save / Reporting legal style) */
@@ -5349,12 +5372,22 @@ html {
     margin: 0 !important;
   }
   .hero-text h1 { 
-    font-size: 1.5rem !important;
+    font-size: 1.75rem !important;
     margin-bottom: 0.75rem !important;
   }
   .hero-text p { 
     font-size: 0.95rem !important;
-    margin-bottom: 1rem !important;
+    margin-bottom: 1.5rem !important;
+    padding: 0 1.5rem !important;
+  }
+  .hero-buttons {
+    margin-bottom: 2.5rem !important;
+  }
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary {
+    padding: 0.5rem 1.75rem !important;
+    font-size: 0.8rem !important;
+    max-width: 300px !important;
   }
   
   .stats-section { 
