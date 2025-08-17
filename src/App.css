@@ -4766,8 +4766,12 @@ html {
 
 /* Global mobile refinements */
 @media (max-width: 1024px) {
-  .nav-desktop { display: none; }
-  .mobile-menu-btn { display: block !important; }
+  .nav-desktop { display: none !important; }
+  .mobile-menu-btn { 
+    display: flex !important; 
+    align-items: center !important;
+    justify-content: center !important;
+  }
   .desktop-only { display: none !important; }
 }
 
@@ -4794,10 +4798,18 @@ html {
   .nav-desktop { display: none !important; }
   .mobile-menu-btn { 
     display: flex !important; 
-    align-items: center;
-    justify-content: center;
-    z-index: 1003;
-    position: relative;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 1003 !important;
+    position: relative !important;
+    background: none !important;
+    border: none !important;
+    cursor: pointer !important;
+    color: white !important;
+  }
+  
+  .header.scrolled .mobile-menu-btn {
+    color: #6b7280 !important;
   }
 
   /* Mobile menu overlay */
