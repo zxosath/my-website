@@ -4832,7 +4832,7 @@ html {
 
   /* Hero Section Mobile - Clean Reset */
   .hero { 
-    padding: 5rem 1rem 3rem 1rem !important;
+    padding: 6rem 1rem 3rem 1rem !important;
     background-size: 200% 200% !important;
     animation: gradientShift 30s ease-in-out infinite !important;
   }
