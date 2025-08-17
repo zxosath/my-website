@@ -4911,7 +4911,7 @@ html {
     animation: none !important;
     opacity: 1 !important;
     margin: 0 !important;
-    width: calc(100vw - 0.5rem) !important;
+    width: calc(100vw - 1.5rem) !important;
     max-width: none !important;
     left: 0 !important;
     right: 0 !important;
