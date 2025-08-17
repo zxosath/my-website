@@ -4779,6 +4779,16 @@ html {
   }
   .logo-icon { width: 36px; height: 36px; }
   .logo h2 { font-size: 1.25rem; }
+  
+  /* Override any conflicting hero rules */
+  section.hero {
+    padding-top: 8rem !important;
+  }
+  
+  /* Override any conflicting button rules */
+  .hero .hero-buttons {
+    margin-bottom: 1rem !important;
+  }
 
   /* Navigation */
   .nav-desktop { display: none !important; }
