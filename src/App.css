@@ -4929,7 +4929,7 @@ html {
   
   .dashboard-tabs {
     display: flex !important;
-    gap: 0.25rem !important;
+    gap: 0.5rem !important;
     justify-content: center !important;
     flex-wrap: nowrap !important;
   }
