@@ -5150,52 +5150,12 @@ html {
 
   /* Why Viridity Section - Reduce bottom padding */
   .why-prosperops {
-    padding-bottom: 2rem !important;
+    padding-bottom: 1rem !important;
   }
 
-  /* Analytics section */
+  /* Analytics section - bring title down more */
   .analytics {
-    padding: 4rem 0 3rem 0 !important;
-    text-align: center !important;
-    background: #000d1f !important;
-  }
-  .analytics .container h2 {
-    color: white !important;
-    font-size: 1.75rem !important;
-    margin-bottom: 1rem !important;
-  }
-  .analytics-intro {
-    color: rgba(255, 255, 255, 0.9) !important;
-    font-size: 1rem !important;
-    margin-bottom: 2rem !important;
-    padding: 0 1rem !important;
-  }
-  .analytics-content {
-    flex-direction: column !important;
-    gap: 2rem !important;
-    max-width: 100% !important;
-  }
-  .analytics-text {
-    order: 1 !important;
-    margin-bottom: 2rem !important;
-    padding: 0 1rem !important;
-  }
-  .analytics-text p {
-    color: rgba(255, 255, 255, 0.9) !important;
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
-    margin-bottom: 1rem !important;
-  }
-  .analytics-visual {
-    order: 2 !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 1rem !important;
-  }
-  .analytics-visual img {
-    width: 100% !important;
-    height: auto !important;
-    border-radius: 12px !important;
+    padding-top: 5rem !important;
   }
 
   /* Report image */
